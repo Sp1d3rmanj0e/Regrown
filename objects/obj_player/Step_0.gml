@@ -78,7 +78,7 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 		y = y - (y mod TILE_SIZE) + (TILE_SIZE - 1) - (bbox_bottom - y) + TILE_SIZE;
 		air = false;
 	}
-	else y = y - (y mod TILE_SIZE) - (bbox_top - y);
+	else y = y - (y mod TILE_SIZE) - (bbox_top - y) - TILE_SIZE;
 	vsp = 0;
 }
 
@@ -110,7 +110,7 @@ camera_set_view_size(view_camera[0],ogViewW/zoom,ogViewH/zoom);
 #endregion
 
 
-/*
+
 #region animations
 
 if (hsp != 0) image_xscale = sign(hsp);
@@ -141,7 +141,7 @@ if (sprite_index = spr_playerChk) and (image_index >= image_number-1)
 }
 
 #endregion
-*/
+
 
 #region colliding with checkpoint
 

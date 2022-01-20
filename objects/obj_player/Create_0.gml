@@ -6,7 +6,7 @@ lock = false; //Don't touch this
 hsp = 0;
 vsp = 0;
 walkSp = 5;
-grv = 0.3; // Gravity
+grv = 0.8; // Gravity
 jumpH = 15; // Jump height
 air = false; // If airborne
 freeze = false; // Pause player controls
@@ -14,8 +14,10 @@ zoom = 1;
 hsp_fraction = 0;
 vsp_fraction = 0;
 healing = 0;
-P_health = 3;
+P_health = 1;
 P_maxHealth = 10;
+Xoffset = 500; //Healthbar
+Yoffset = 50; //Healthbar
 //Modular View
 ogViewH = camera_get_view_height(view_camera[0]);
 ogViewW = camera_get_view_width(view_camera[0]);
@@ -42,6 +44,8 @@ function pause(toggle)
 		freeze = false;
 	}
 }
+
+
 
 
 

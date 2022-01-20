@@ -1,14 +1,14 @@
 {
   "spriteId": {
-    "name": "MossyStone",
-    "path": "sprites/MossyStone/MossyStone.yy",
+    "name": "spr_tilesetMossyStone",
+    "path": "sprites/spr_tilesetMossyStone/spr_tilesetMossyStone.yy",
   },
-  "tileWidth": 64,
-  "tileHeight": 64,
+  "tileWidth": 32,
+  "tileHeight": 32,
   "tilexoff": 0,
   "tileyoff": 0,
-  "tilehsep": 10,
-  "tilevsep": 10,
+  "tilehsep": 5,
+  "tilevsep": 5,
   "spriteNoExport": true,
   "textureGroupId": {
     "name": "Default",

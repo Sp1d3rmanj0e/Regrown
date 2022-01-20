@@ -1,5 +1,5 @@
 /// @description Gain Health
-scr_followPlayer();
+scr_followPlayer(0,0);
 time += 100/heal_time/room_speed;
 if (healing = 1)
 {

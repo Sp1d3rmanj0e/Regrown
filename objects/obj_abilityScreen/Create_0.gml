@@ -10,3 +10,5 @@ action = false; // When the player activates the ability screen
 powerups = 0; //How many pwups are available (manual setting gets overrided)
 count = 0; // No touchie
 selectedCell = 0; //reference point for obj_powerups and obj_powerupCells
+
+
