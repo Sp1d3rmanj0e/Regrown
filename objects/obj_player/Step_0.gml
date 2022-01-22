@@ -6,7 +6,7 @@
 
 
 
-var bbox_side,p1,p2,p3;
+var bbox_side,p1,p2,p3,p4;
 
 if (freeze = false)
 {
@@ -51,18 +51,46 @@ vsp_fraction = vsp - (floor(abs(vsp)) * sign(vsp));
 vsp -= vsp_fraction;
 
 
-if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left; //Horizontal Collisions
+if (hsp > 0) bbox_side = bbox_right; else if (hsp < 0) bbox_side = bbox_left; else bbox_side = x;//Horizontal Collisions
 p1 = (tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top) != 0);
 p2 = (tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_bottom) != 0);
 p3 = (tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top+((bbox_bottom-bbox_top)/2)) != 0); 
 
 if (p1 == 1) || (p2 == 1) || (p3 == 1)
 {
-	if (hsp > 0) x = x - (x mod TILE_SIZE) + (TILE_SIZE - 1) - (bbox_right - x) + TILE_SIZE;
-	else x = x - (x mod TILE_SIZE) - (bbox_left - x) - TILE_SIZE;
+	if (hsp > 0) x = x - (x mod TILE_SIZE) + (TILE_SIZE - 1) - (bbox_right - x) + TILE_SIZE+5;
+	else x = x - (x mod TILE_SIZE) - (bbox_left - x) - TILE_SIZE - 5;
 	hsp = 0;
 }
-//Horizontal Collisions
+
+#region auto climb slopes
+p4 = -1;
+if (p2 == 1)
+{
+	for (var i = bbox_bottom; i > bbox_top; i-=TILE_SIZE)
+	{
+			if (p4 == -1) p4 = 1;
+		if (tilemap_get_at_pixel(tilemap,bbox_side+hsp,i-TILE_SIZE) != 0)
+		{
+			p4 = 0;
+		}
+	}
+	
+	
+}
+gamer1 = p4;
+
+if (p4 == 1)
+{
+	if (queue < 2)
+	{
+		queue++;
+	} else {
+		y -= TILE_SIZE;
+		queue = 0;
+	}
+} else queue = 0;
+#endregion
 
 //if (tilemap_get_at_pixel(tilemap,x,bbox_bottom+vsp) <= 1)
 

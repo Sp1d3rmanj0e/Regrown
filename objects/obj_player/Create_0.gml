@@ -23,7 +23,9 @@ ogViewH = camera_get_view_height(view_camera[0]);
 ogViewW = camera_get_view_width(view_camera[0]);
 xCamOffset = 0;
 yCamOffset = -50;
+queue = 0;
 
+gamer1 = -1;
 
 //Tilemaps
 tilemap = layer_tilemap_get_id("tile_collision");
