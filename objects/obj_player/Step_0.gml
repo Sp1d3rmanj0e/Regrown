@@ -63,7 +63,7 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 	hsp = 0;
 }
 
-#region auto climb slopes
+#region auto climb slopes BUGGED WITH CROUCH
 p4 = -1;
 if (p2 == 1)
 {
