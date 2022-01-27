@@ -1,0 +1,4 @@
+Play the powerup sound of the animal after 0.75 seconds of the generic powerup sound playing
+Example is shown in powerupExample_animal.mp3
+
+also lower the volume in-game, probably?
