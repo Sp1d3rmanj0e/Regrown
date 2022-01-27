@@ -1,20 +1,8 @@
-/// @description Insert description here
-// You can write your code in this editor
-/// @description Insert description here
-// You can write your code in this editor
-
-#region Keybind Setup
-//Initialization
 
 var bbox_side,p1,p2,p3;
 
-
-
-#endregion
-
-
-
 #region Movement response
+
 #region Basic Mobility
 //Basic Mobility
 
@@ -25,7 +13,12 @@ hsp = move;
 
 vsp += grv;
 #endregion
-#region Jumping UNUSED
+// Main Code Translations Here
+
+
+
+
+#region Jumping
 
 if (key_spaceH)
 {
@@ -35,9 +28,9 @@ if (key_spaceH)
         air = true;
     }
 }
-//else vsp += 0.5;
-
 #endregion
+
+// No more moving here
 #region Wall collisions tilemap
 var bbox_side;
 hsp += hsp_fraction;
@@ -89,33 +82,6 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 
 #endregion
 #endregion
-
-#region animations
-/*
-if (hsp != 0) image_xscale = sign(hsp);
-
-//Animation
-if (!freeze)
-{
-	if (vsp != 0)
-	{
-		if (key_spaceH) and (vsp < 5)
-		{
-			sprite_index = spr_playerAir;
-			image_index = 0;
-		}
-		else image_index = 1;
-	}
-	else if (key_crouch) sprite_index = spr_playerCrouch;
-	else if (hsp != 0) sprite_index = spr_playerWalk;
-	else sprite_index = spr_playerIdle;
-}
-else sprite_index = spr_playerIdle
-
-*/
-#endregion
-
-//Finalizing
 
 x += hsp;
 y += vsp;

@@ -6,7 +6,7 @@
 
 
 
-var bbox_side,p1,p2,p3,p4;
+var bbox_side,p1,p2,p3;
 
 if (freeze = false)
 {
@@ -14,7 +14,7 @@ if (freeze = false)
 	key_left = keyboard_check(ord("A"));
 	key_spaceP = keyboard_check_pressed(vk_space);
 	key_spaceH = keyboard_check(vk_space);
-	key_crouch = keyboard_check(vk_control);
+	key_crouch = 0//keyboard_check(vk_control);
 }
 
 #endregion
@@ -64,6 +64,7 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 }
 
 #region auto climb slopes BUGGED WITH CROUCH
+/*
 p4 = -1;
 if (p2 == 1)
 {
@@ -90,6 +91,7 @@ if (p4 == 1)
 		queue = 0;
 	}
 } else queue = 0;
+*/
 #endregion
 
 //if (tilemap_get_at_pixel(tilemap,x,bbox_bottom+vsp) <= 1)

@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+randomize();
 #macro TILE_SIZE 32
 
 maxpowerups = 19; // Array capacity (Easily changeable)
