@@ -66,6 +66,7 @@ p1 = (tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vsp) != 0);
 p2 = (tilemap_get_at_pixel(tilemap,bbox_right,bbox_side+vsp) != 0);
 p3 = (tilemap_get_at_pixel(tilemap,x,bbox_side+vsp) != 0);
 
+
 if (p1 == 1) || (p2 == 1) || (p3 == 1)
 {
 	

@@ -6,21 +6,22 @@
 hsp = 0;
 vsp = 0;
 walkSp = 3;
+ogwalkSp = walkSp;
 grv = 0.8; // Gravity
 jumpH = 17; // Jump height
 air = false; // If airborne
 hsp_fraction = 0;
 vsp_fraction = 0;
 distance = 0;
+hp = 10;
+oghp = hp;
 #endregion
 
 far_range = 90; //maximum dist from player
-close_range = 90; // Minimum Distance from player
+close_range = 50; // Minimum Distance from player
 
 view_range = 300;
 attack_range = 120;
-
-playerstate = 0; // 0 : Wander, 1 : Patrolling, 2: Attacking, 3: Running
 
 max_o_dist = 300; // max distance from origin (can be altered by playerstate)
 status_range = 0; //additional changes
@@ -34,21 +35,28 @@ oY = y;
 test = 0; //test draw
 
 //defaults
-d_min = 0;
-d_max = 0;
+dur_min = 0;
+dur_max = 0;
+// CHANGE BACK TO 0 EVENTUALLY \/\/\/\/
+playerstate = -1; // 0 : Wander, 1 : Patrolling, 2: Attacking, 3: Running
 
-//playerstate = 0
+// playerstate = 0 : Wander
 wanderMin = 1*room_speed;
-wanderMax = 3*room_speed;
+wanderMax = 4*room_speed;
 wanderRange = 300;
 
-
-
-// playerstate = 1
-alertMin = 2.5*room_speed;
-alertMax = 4*room_speed;
+// playerstate = 1 : Patrolling
+alertMin = 1.5*room_speed;
+alertMax = 3*room_speed;
 alertRange = 400;
 
+// playerstate = 2 : Attacking
+attackRange = 500;
+// playerstate = 3 : Running
+runningRange = 350;
+safeDist = 200;
+calmTime = 4*room_speed;
+fleeingValor = 10*room_speed;
 
 #region manual controls/Initialization
 touching_wall = 0;
