@@ -7,7 +7,7 @@
 	key_crouch = 0;
 
 #region Collision
-var bbox_side,p1,p2,p3;
+
 
 if (touching_wall != 0) key_spaceH = 1;
 	
