@@ -30,6 +30,16 @@ if (key_spaceH)
 }
 #endregion
 
+if (fling != 0)
+{
+	hsp += fling;
+	if (abs(fling)<0.1)
+	{
+		fling = 0;
+	}
+	fling *= random_fling;
+}
+
 // No more moving here
 #region Wall collisions tilemap
 var bbox_side;

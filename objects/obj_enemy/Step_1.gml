@@ -13,7 +13,18 @@ if (touching_wall != 0) key_spaceH = 1;
 	
 #endregion
 distance = abs(x-obj_player.x);
+#region visibility
+/*  Line of view
+point_direction(x,y,obj_player.x,obj_player.y); // Sets Dir to player
+var xDist = lengthdir_x(abs(obj_player.x-x));
+var yDist = lengthdir_y(abs(obj_player.y-y));
+var Dist = distance_to_object(obj_player);
+Dist /= view_buffer; // Divides the check points into 
+*/
 
+
+
+#endregion
 
 #region playerstate code
 if (playerstate == 0) or (playerstate == 1)// Wandering and alert
@@ -54,12 +65,13 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 	}
 } else if (playerstate == 2)
 {
+	left_right = (x-obj_player.x > 0);
 	walkSp = ogwalkSp;
 	// Enemy Engagement Distances
 	
 	if (distance > far_range)
 	{
-		if (x - obj_player.x > 0) //if player is to the left
+		if (left_right) //if player is to the left
 		{
 			key_left = 1;
 		}
@@ -68,22 +80,35 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 			key_right = 1;	
 		}
 	}
-
-	if (distance < close_range)
+	else if (distance < close_range) //Stay certain distance away
 	{
-			if (x - obj_player.x < 0) //if player is to the left
+			if (left_right == false) //if player is to the right
 		{
 			key_left = 1;
+			key_spaceP = 1;
 		}
-		else //if player is to the right
+		else //if player is to the left
 		{
 			key_right = 1;	
+			key_spaceP = 1;
+		}
+	} else
+	{
+		if (left_right == false) // If on the left, fling left
+		{
+			key_spaceH = 1;
+			if (fling == 0) fling = -13;
+		} else {				// If on the right, fling right
+			key_spaceH = 1;
+			if (fling == 0) fling = 13;
 		}
 	}
 	if (distance < safeDist) and (hp/oghp <= 0.5) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
 	{
 		playerstate = 3;
 	}
+
+	
 	
 	/*  Friendly Collisions
 	if (place_meeting(x,y,obj_enemy))

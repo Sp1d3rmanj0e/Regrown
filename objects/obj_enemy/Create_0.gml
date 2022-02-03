@@ -15,10 +15,18 @@ vsp_fraction = 0;
 distance = 0;
 hp = 10;
 oghp = hp;
+fling = 0;
 #endregion
 
-far_range = 90; //maximum dist from player
-close_range = 50; // Minimum Distance from player
+test = 0;
+
+view_buffer = 10;
+
+random_fling = random_range(0.79,0.99);
+random_dist = random_range(0,30);
+
+far_range = 90+random_dist; //maximum dist from player
+close_range = 50 + random_dist; // Minimum Distance from player
 
 view_range = 300;
 attack_range = 120;
