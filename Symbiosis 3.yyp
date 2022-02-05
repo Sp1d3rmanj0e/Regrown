@@ -38,6 +38,7 @@
     {"id":{"name":"Peaks","path":"sprites/Peaks/Peaks.yy",},"order":1,},
     {"id":{"name":"ts_extras","path":"tilesets/ts_extras/ts_extras.yy",},"order":2,},
     {"id":{"name":"spr_tileColl","path":"sprites/spr_tileColl/spr_tileColl.yy",},"order":13,},
+    {"id":{"name":"spr_ratRun","path":"sprites/spr_ratRun/spr_ratRun.yy",},"order":18,},
     {"id":{"name":"spr_healthBar","path":"sprites/spr_healthBar/spr_healthBar.yy",},"order":15,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
