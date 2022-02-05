@@ -38,6 +38,7 @@
     {"id":{"name":"ts_extras","path":"tilesets/ts_extras/ts_extras.yy",},"order":2,},
     {"id":{"name":"spr_tileColl","path":"sprites/spr_tileColl/spr_tileColl.yy",},"order":13,},
     {"id":{"name":"spr_healthBar","path":"sprites/spr_healthBar/spr_healthBar.yy",},"order":15,},
+    {"id":{"name":"enemies","path":"objects/enemies/enemies.yy",},"order":12,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},
   ],
   "Options": [

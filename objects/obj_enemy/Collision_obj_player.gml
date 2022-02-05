@@ -1,5 +1,3 @@
 /// @description Insert description here
 // You can write your code in this editor
-draw_self();
-draw_text(x,y,distance);
-draw_text(x,y+20,attack_reach);
+instance_destroy();

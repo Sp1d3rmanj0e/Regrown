@@ -6,6 +6,8 @@
 	key_spaceH = 0;
 	key_crouch = 0;
 
+	damage = 2;
+
 #region Collision
 
 
@@ -13,6 +15,8 @@ if (touching_wall != 0) key_spaceH = 1;
 	
 #endregion
 distance = abs(x-obj_player.x);
+
+
 #region visibility
 /*  Line of view
 point_direction(x,y,obj_player.x,obj_player.y); // Sets Dir to player
@@ -92,38 +96,30 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 			key_right = 1;	
 			key_spaceP = 1;
 		}
-	} else
+	} else if (distance_to_object(obj_player) < close_range + 2)
 	{
-		if (left_right == false) // If on the left, fling left
+				if (left_right == false) // If on the left, fling left
 		{
 			key_spaceH = 1;
 			if (fling == 0) fling = -13;
+			
 		} else {				// If on the right, fling right
 			key_spaceH = 1;
 			if (fling == 0) fling = 13;
+			
 		}
+		attack(damage);
 	}
+
+
 	if (distance < safeDist) and (hp/oghp <= 0.5) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
 	{
 		playerstate = 3;
 	}
 
-	
-	
-	/*  Friendly Collisions
-	if (place_meeting(x,y,obj_enemy))
-	{
-		if (choose(1,2) == 1)
-		{
-			key_left = 3;
-		} else {
-			key_right = 3;
-		}
-
-	}
-	*/
 } else if (playerstate == 3) //if Fleeing
 {
+	max_o_dist = runningRange;
 	walkSp = ogwalkSp+0.75;
 	if (distance < safeDist) //will only get activated if in fleeing mode
 	{
@@ -133,7 +129,20 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 	}
 }
 #endregion
+#region attacking
 
+if (distance <= attack_reach) and ((playerstate == 3) or (playerstate == 2)) //If within attacking range
+{
+	if (alarm[3] == -1)  // If attack cooldown is done
+	{
+		attack(damage);
+	}
+	
+}
+
+
+
+#endregion
 
 #region don't stray too far
 var odist = x-oX;

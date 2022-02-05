@@ -31,32 +31,12 @@ gamer1 = -1;
 //Tilemaps
 tilemap = layer_tilemap_get_id("tile_collision");
 
-// Weapons
-	
-//Functions
-/*
-function swap_weapon(weapon)
-{
-	// wType [0 : Melee, 1 : Ranged, 2 : AOE]
-	// range [How far the object can have effect]
-	// air_speed [How fast the object moves in air]
-	// cooldown [How long it takes until action can be done again]
-	// damage [damage inflicted on hit (or per sec)]
-	// knockback [how far back enemy is hit on impact]
-	
-	// 0 : Grappling hook
-	if (weapon == 0)
-	{
-		wType = 1; //ranged
-		range = 96; // 3 tiles
-		air_speed = 64/room_speed; // 2 tiles/sec
-		cooldown = 0.5*room_speed; // 0.5 secs
-		damage = 3.4; // 3-hit 10 lives
-		knockback = 5; // TEST OUT DIFF VALUES
-		
-	}
-}
-*/	
+// Fighting
+
+	// Enemy Hit
+	hit_stun = 1.5 * room_speed;
+
+// Functions
 
 
 function pause(toggle)

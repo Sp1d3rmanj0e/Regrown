@@ -25,11 +25,11 @@ view_buffer = 10;
 random_fling = random_range(0.79,0.99);
 random_dist = random_range(0,30);
 
-far_range = 90+random_dist; //maximum dist from player
-close_range = 50 + random_dist; // Minimum Distance from player
+far_range = 30+random_dist; //maximum dist from player
+close_range = 10 + random_dist; // Minimum Distance from player
 
 view_range = 300;
-attack_range = 120;
+attack_reach = 60;
 
 max_o_dist = 300; // max distance from origin (can be altered by playerstate)
 status_range = 0; //additional changes
@@ -59,14 +59,15 @@ alertMax = 3*room_speed;
 alertRange = 400;
 
 // playerstate = 2 : Attacking
-attackRange = 500;
+attack_range = 500;
+attack_stun = 3 * room_speed;
 // playerstate = 3 : Running
 runningRange = 350;
 safeDist = 200;
 calmTime = 4*room_speed;
 fleeingValor = 10*room_speed;
 
-#region manual controls/Initialization
+// manual controls/Initialization
 touching_wall = 0;
 
 tilemap = layer_tilemap_get_id("tile_collision");
@@ -75,4 +76,21 @@ tilemap = layer_tilemap_get_id("tile_collision");
 	key_spaceP = 0; 
 	key_spaceH = 0;
 	key_crouch = 0;
-#endregion
+
+// Functions
+
+function attack()
+{
+	with (obj_player)
+	{
+		if (alarm[0] == -1)
+		{
+			alarm[0] = hit_stun;
+			if (P_health > 0)
+			{
+				P_health -= other.damage;
+			} else P_health = 0;
+		}
+	}
+	alarm[3] = attack_stun;
+}
