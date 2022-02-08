@@ -1,4 +1,4 @@
 /// @description Calm Cooldown
 
-playerstate = 2; //aggro
+playerstate = 1; //patrol
 alarm[2] = fleeingValor; //cooldown to fight again

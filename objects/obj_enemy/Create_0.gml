@@ -63,7 +63,7 @@ attack_range = 500;
 attack_stun = 3 * room_speed;
 // playerstate = 3 : Running
 runningRange = 350;
-safeDist = 200;
+safeDist = 300;
 calmTime = 4*room_speed;
 fleeingValor = 10*room_speed;
 

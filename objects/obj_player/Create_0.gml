@@ -5,9 +5,9 @@
 lock = false; //Don't touch this
 hsp = 0;
 vsp = 0;
-walkSp = 5;
+walkSp = 8;
 grv = 0.8; // Gravity
-jumpH = 15; // Jump height
+jumpH = 23; // Jump height
 air = false; // If airborne
 freeze = false; // Pause player controls
 zoom = 1;

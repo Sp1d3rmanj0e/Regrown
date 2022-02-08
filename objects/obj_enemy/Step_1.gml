@@ -96,19 +96,6 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 			key_right = 1;	
 			key_spaceP = 1;
 		}
-	} else if (distance_to_object(obj_player) < close_range + 2)
-	{
-				if (left_right == false) // If on the left, fling left
-		{
-			key_spaceH = 1;
-			if (fling == 0) fling = -13;
-			
-		} else {				// If on the right, fling right
-			key_spaceH = 1;
-			if (fling == 0) fling = 13;
-			
-		}
-		attack(damage);
 	}
 
 
@@ -131,11 +118,23 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 #endregion
 #region attacking
 
-if (distance <= attack_reach) and ((playerstate == 3) or (playerstate == 2)) //If within attacking range
+if (distance_to_object(obj_player) <= attack_reach) and ((playerstate == 3) or (playerstate == 2)) //If within attacking range
 {
+	if (place_meeting(x,y,obj_player))
+	{
+				if (left_right == false) // If on the left, fling left
+		{
+			key_spaceH = 1;
+			if (fling == 0) fling = -17;
+			
+		} else {				// If on the right, fling right
+			key_spaceH = 1;
+			if (fling == 0) fling = 17;
+		}
+	}
 	if (alarm[3] == -1)  // If attack cooldown is done
 	{
-		attack(damage);
+		attack();
 	}
 	
 }
