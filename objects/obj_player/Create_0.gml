@@ -18,6 +18,9 @@ P_health = 1;
 P_maxHealth = 10;
 Xoffset = 500; //Healthbar
 Yoffset = 50; //Healthbar
+flash_alpha = 0;
+flash_colour = c_red;
+P_health_prev = P_health;
 
 
 //Modular View
@@ -37,6 +40,11 @@ tilemap = layer_tilemap_get_id("tile_collision");
 	hit_stun = 1.5 * room_speed;
 
 // Functions
+
+function flash()
+{
+	flash_alpha = 1;
+}
 
 
 function pause(toggle)

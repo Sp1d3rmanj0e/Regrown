@@ -69,6 +69,7 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 	}
 } else if (playerstate == 2)
 {
+	max_o_dist = attackRange;
 	left_right = (x-obj_player.x > 0);
 	walkSp = ogwalkSp;
 	// Enemy Engagement Distances
@@ -96,6 +97,14 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 			key_right = 1;	
 			key_spaceP = 1;
 		}
+	} else if (distance < 62) and (!place_meeting(x,y,obj_player)) // If player is over enemy
+	{
+		key_spaceH = 1;
+	}
+	
+	else // In attack Window
+	{
+		attack(0);
 	}
 
 
@@ -117,27 +126,6 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 }
 #endregion
 #region attacking
-
-if (distance_to_object(obj_player) <= attack_reach) and ((playerstate == 3) or (playerstate == 2)) //If within attacking range
-{
-	if (place_meeting(x,y,obj_player))
-	{
-				if (left_right == false) // If on the left, fling left
-		{
-			key_spaceH = 1;
-			if (fling == 0) fling = -17;
-			
-		} else {				// If on the right, fling right
-			key_spaceH = 1;
-			if (fling == 0) fling = 17;
-		}
-	}
-	if (alarm[3] == -1)  // If attack cooldown is done
-	{
-		attack();
-	}
-	
-}
 
 
 

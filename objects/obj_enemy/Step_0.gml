@@ -15,30 +15,26 @@ vsp += grv;
 #endregion
 // Main Code Translations Here
 
+if (vsp > fall_speed_stun) //If was previously falling at a threshold speed and now is not falling
+{
+	alarm[4] = fall_stun; // sets freeze to stun time
+}
 
 
 
 #region Jumping
 
-if (key_spaceH)
+if (key_spaceH) and (alarm[4] == -1)
 {
     if (!air)
     {
+		alarm[4] = jump_stun;
         vsp -= jumpH;
         air = true;
     }
 }
 #endregion
 
-if (fling != 0)
-{
-	hsp += fling;
-	if (abs(fling)<0.1)
-	{
-		fling = 0;
-	}
-	fling *= random_fling;
-}
 
 // No more moving here
 #region Wall collisions tilemap

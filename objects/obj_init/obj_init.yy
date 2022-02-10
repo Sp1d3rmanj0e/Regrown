@@ -24,8 +24,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "_spriteless",
+    "path": "folders/Objects/_spriteless.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_init",

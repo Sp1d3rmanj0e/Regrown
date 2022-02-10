@@ -15,7 +15,6 @@ vsp_fraction = 0;
 distance = 0;
 hp = 10;
 oghp = hp;
-fling = 0;
 #endregion
 
 test = 0;
@@ -26,7 +25,7 @@ random_fling = random_range(0.79,0.99);
 random_dist = random_range(0,30);
 
 far_range = 30+random_dist; //maximum dist from player
-close_range = 10 + random_dist; // Minimum Distance from player
+close_range = 0 + random_dist; // Minimum Distance from player
 
 view_range = 300;
 attack_reach = 60;
@@ -35,6 +34,10 @@ max_o_dist = 300; // max distance from origin (can be altered by playerstate)
 status_range = 0; //additional changes
 
 active = 0; //Activates movement
+
+fall_stun = 2 * room_speed;// Too fast fall go brrrr
+fall_speed_stun = 20 //How fast you need to fall in order to get stunned
+jump_stun = 1.25*room_speed; // Delay between jumping
 
 rando = 0; //Random number placeholder
 
@@ -59,7 +62,7 @@ alertMax = 3*room_speed;
 alertRange = 400;
 
 // playerstate = 2 : Attacking
-attack_range = 500;
+attackRange = 500;
 attack_stun = 3 * room_speed;
 // playerstate = 3 : Running
 runningRange = 350;
@@ -79,17 +82,20 @@ tilemap = layer_tilemap_get_id("tile_collision");
 
 // Functions
 
-function attack()
+function attack(type)
 {
-	with (obj_player)
+	if (type == 0) //Meelee
 	{
-		if (alarm[0] == -1)
+		with (obj_player)
 		{
-			alarm[0] = hit_stun;
-			if (P_health > 0)
+			if (alarm[0] == -1) //If is hittable, Attack
 			{
-				P_health -= other.damage;
-			} else P_health = 0;
+				alarm[0] = hit_stun;
+				if (P_health > 0)
+				{
+					P_health -= other.damage;
+				} else P_health = 0;
+			}
 		}
 	}
 	alarm[3] = attack_stun;

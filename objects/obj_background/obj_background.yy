@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_background",
-    "path": "sprites/spr_background/spr_background.yy",
+    "name": "spr_tileGround",
+    "path": "sprites/spr_tileGround/spr_tileGround.yy",
   },
   "solid": false,
   "visible": true,
@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Scenery",
-    "path": "folders/Objects/Scenery.yy",
+    "name": "Objects",
+    "path": "folders/Objects.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_background",

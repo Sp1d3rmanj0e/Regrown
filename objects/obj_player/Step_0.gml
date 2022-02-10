@@ -118,6 +118,23 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 #endregion
 
 
+// Main Code 
+
+
+if (flash_alpha > 0)
+{
+	flash_alpha -= 0.05;
+}
+
+/*
+if (P_health != P_health_prev) //If took damage
+{
+	flash();
+}
+P_health_prev = P_health;
+
+*/
+
 
 
 #region cameras
