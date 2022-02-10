@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description
 
 #region Keybind Setup
 //Initialization
@@ -19,17 +18,15 @@ if (freeze = false)
 
 #endregion
 #region Basic Mobility
-//Basic Mobility
 
 var move = walkSp * (key_right-key_left);
 
 hsp = move;
 
-
 vsp += grv;
-#endregion
-#region Jumping UNUSED
 
+#endregion
+#region Jumping
 if (key_spaceH)
 {
     if (!air)
@@ -38,8 +35,6 @@ if (key_spaceH)
         air = true;
     }
 }
-//else vsp += 0.5;
-
 #endregion
 #region Wall collisions tilemap
 var bbox_side;
@@ -63,39 +58,6 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 	hsp = 0;
 }
 
-#region auto climb slopes BUGGED WITH CROUCH
-/*
-p4 = -1;
-if (p2 == 1)
-{
-	for (var i = bbox_bottom; i > bbox_top; i-=TILE_SIZE)
-	{
-			if (p4 == -1) p4 = 1;
-		if (tilemap_get_at_pixel(tilemap,bbox_side+hsp,i-TILE_SIZE) != 0)
-		{
-			p4 = 0;
-		}
-	}
-	
-	
-}
-gamer1 = p4;
-
-if (p4 == 1)
-{
-	if (queue < 2)
-	{
-		queue++;
-	} else {
-		y -= TILE_SIZE;
-		queue = 0;
-	}
-} else queue = 0;
-*/
-#endregion
-
-//if (tilemap_get_at_pixel(tilemap,x,bbox_bottom+vsp) <= 1)
-
 if (vsp >= 0) bbox_side = bbox_bottom; else bbox_side = bbox_top; //Vertical Collisions
 p1 = (tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vsp) != 0);
 p2 = (tilemap_get_at_pixel(tilemap,bbox_right,bbox_side+vsp) != 0);
@@ -111,55 +73,25 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 	else y = y - (y mod TILE_SIZE) - (bbox_top - y) - TILE_SIZE;
 	vsp = 0;
 }
-
-
-
-
 #endregion
-
 
 // Main Code 
 
-
+#region Visual Effects
+// Makes flash go down over time
 if (flash_alpha > 0)
 {
 	flash_alpha -= 0.05;
 }
 
-/*
+// Flash if damaged
 if (P_health != P_health_prev) //If took damage
 {
-	flash();
+	flash_alpha = 1;
 }
 P_health_prev = P_health;
 
-*/
-
-
-
-#region cameras
-
-function camera_zoom (zoomX,_speed)
-{
-
-	if (zoomX > zoom) zoom += _speed;
-	else if (zoomX < zoom) zoom -= _speed;
-	else return true;
-}
-
-camera_set_view_size(view_camera[0],ogViewW/zoom,ogViewH/zoom);
-
 #endregion
-
-#region Abilities
-
-
-
-
-#endregion
-
-
-
 #region animations
 
 if (hsp != 0) image_xscale = sign(hsp);
@@ -190,8 +122,6 @@ if (sprite_index = spr_playerChk) and (image_index >= image_number-1)
 }
 
 #endregion
-
-
 #region colliding with checkpoint
 
 if (place_meeting(x,y,obj_checkpoint))
@@ -206,6 +136,7 @@ if (place_meeting(x,y,obj_checkpoint))
 
 
 #endregion
+
 //Finalizing
 
 x += hsp;
