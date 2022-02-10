@@ -20,6 +20,8 @@ Yoffset = 50; //Healthbar
 flash_alpha = 0;
 flash_colour = c_red;
 P_health_prev = P_health;
+x_move = 0;
+y_move = 0;
 #endregion
 
 // Cameras

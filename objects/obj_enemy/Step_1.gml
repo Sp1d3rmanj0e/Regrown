@@ -124,6 +124,11 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 		alarm[1] = calmTime;
 	}
 }
+if (playerstate != 3)
+{
+	alarm[1] = -1;
+	alarm[2] = -1;
+}
 #endregion
 #region attacking
 

@@ -1,31 +1,7 @@
 /// @description
 
-#region Keybind Setup
-//Initialization
-
-
 
 var bbox_side,p1,p2,p3;
-
-if (freeze = false)
-{
-	key_right = keyboard_check(ord("D"));
-	key_left = keyboard_check(ord("A"));
-	key_spaceP = keyboard_check_pressed(vk_space);
-	key_spaceH = keyboard_check(vk_space);
-	key_crouch = 0//keyboard_check(vk_control);
-}
-
-#endregion
-#region Basic Mobility
-
-var move = walkSp * (key_right-key_left);
-
-hsp = move;
-
-vsp += grv;
-
-#endregion
 #region Jumping
 if (key_spaceH)
 {

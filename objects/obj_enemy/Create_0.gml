@@ -95,6 +95,7 @@ function attack(type)
 				{
 					P_health -= other.damage;
 				} else P_health = 0;
+				fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),25);
 			}
 		}
 	}
