@@ -1,4 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
-draw_text(x,y,point_direction(x,y-(sprite_height/2),obj_player.x,obj_player.y))
+draw_text(x,y,lineof_sight);
+draw_text(x,y+20,alarm[6]);
+draw_text(x,y-20,playerstate);

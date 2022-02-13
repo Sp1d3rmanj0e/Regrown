@@ -16,19 +16,19 @@ if (touching_wall != 0) key_spaceH = 1;
 #endregion
 distance = abs(x-obj_player.x);
 
-
-#region visibility
-/*  Line of view
-point_direction(x,y,obj_player.x,obj_player.y); // Sets Dir to player
-var xDist = lengthdir_x(abs(obj_player.x-x));
-var yDist = lengthdir_y(abs(obj_player.y-y));
-var Dist = distance_to_object(obj_player);
-Dist /= view_buffer; // Divides the check points into 
-*/
-
+#region view engagement
+if (view_range >= distance_to_object(obj_player)) //If within range to be seen
+{
+	if (alarm[5] == -1)
+	{
+		alarm[5] = 0.25 * room_speed; // Activates seeing code
+	}
+} else lineof_sight = false;
 
 
 #endregion
+
+
 
 #region playerstate code
 if (playerstate == 0) or (playerstate == 1)// Wandering and alert
@@ -100,13 +100,12 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 	} else if (distance < 62) and (!place_meeting(x,y,obj_player)) // If player is over enemy
 	{
 		key_spaceH = 1;
+		hsp += sign(obj_player.x-x) * 5;
 	}
-	
 	else // In attack Window
 	{
 		attack(0);
 	}
-
 
 	if (distance < safeDist) and (hp/oghp <= 0.5) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
 	{
@@ -124,17 +123,34 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 		alarm[1] = calmTime;
 	}
 }
-if (playerstate != 3)
+#endregion
+
+
+
+
+#region playerstate transitions
+
+if (distance_to_object(obj_player) < senseRange) and (alarm[6] == -1)
 {
-	alarm[1] = -1;
-	alarm[2] = -1;
+	playerstate = 1;
+	alarm[6] = alertForget;
 }
+
+if (lineof_sight ==	1) and (passive == false) and (playerstate == 1)
+{
+	playerstate = 2; //If seen and aggro, and was alert, then 2
+}
+if (lineof_sight == 1)
+{
+	alarm[6] = attack_forget; //If time goes without seeing player, goes back to 0
+}
+
+
+
+
 #endregion
-#region attacking
 
 
-
-#endregion
 
 #region don't stray too far
 var odist = x-oX;

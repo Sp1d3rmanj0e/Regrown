@@ -15,11 +15,11 @@ vsp_fraction = 0;
 distance = 0;
 hp = 10;
 oghp = hp;
+lineof_sight = false;
 #endregion
 
 test = 0;
-
-view_buffer = 10;
+passive = false;
 
 random_fling = random_range(0.79,0.99);
 random_dist = random_range(0,30);
@@ -60,10 +60,13 @@ wanderRange = 300;
 alertMin = 1.5*room_speed;
 alertMax = 3*room_speed;
 alertRange = 400;
+alertForget = 7*room_speed;
+senseRange = 400;
 
 // playerstate = 2 : Attacking
 attackRange = 500;
 attack_stun = 3 * room_speed;
+attack_forget = 5 * room_speed;
 // playerstate = 3 : Running
 runningRange = 350;
 safeDist = 300;
@@ -72,7 +75,7 @@ fleeingValor = 10*room_speed;
 
 // manual controls/Initialization
 touching_wall = 0;
-
+tilemap_solid = layer_tilemap_get_id("tile_ground");
 tilemap = layer_tilemap_get_id("tile_collision");
 	key_right = 0;
 	key_left = 0;
