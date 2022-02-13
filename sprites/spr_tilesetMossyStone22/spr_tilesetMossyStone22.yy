@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 729,
+  "bbox_right": 364,
   "bbox_top": 0,
-  "bbox_bottom": 433,
+  "bbox_bottom": 216,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 736,
-  "height": 440,
+  "width": 368,
+  "height": 220,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"d8906149-d26f-435d-989e-bbcfdb6ae0e4","path":"sprites/Basic/Basic.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"d8906149-d26f-435d-989e-bbcfdb6ae0e4","path":"sprites/Basic/Basic.yy",},"LayerId":{"name":"88d364d0-867d-4160-9be6-28a41e262710","path":"sprites/Basic/Basic.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Basic","path":"sprites/Basic/Basic.yy",},"resourceVersion":"1.0","name":"d8906149-d26f-435d-989e-bbcfdb6ae0e4","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/spr_tilesetMossyStone22/spr_tilesetMossyStone22.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/spr_tilesetMossyStone22/spr_tilesetMossyStone22.yy",},"LayerId":{"name":"1a7978d0-30e3-4e7e-a1ae-a42c3e3d4d5a","path":"sprites/spr_tilesetMossyStone22/spr_tilesetMossyStone22.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_tilesetMossyStone22","path":"sprites/spr_tilesetMossyStone22/spr_tilesetMossyStone22.yy",},"resourceVersion":"1.0","name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Basic","path":"sprites/Basic/Basic.yy",},
+    "spriteId": {"name":"spr_tilesetMossyStone22","path":"sprites/spr_tilesetMossyStone22/spr_tilesetMossyStone22.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"f020e6ca-a8d0-48d6-90aa-22f69424c741","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8906149-d26f-435d-989e-bbcfdb6ae0e4","path":"sprites/Basic/Basic.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"6fb65854-b28f-41ea-ab07-86c00c72f41b","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/spr_tilesetMossyStone22/spr_tilesetMossyStone22.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Basic","path":"sprites/Basic/Basic.yy",},
+    "parent": {"name":"spr_tilesetMossyStone22","path":"sprites/spr_tilesetMossyStone22/spr_tilesetMossyStone22.yy",},
     "resourceVersion": "1.3",
-    "name": "Basic",
+    "name": "spr_tilesetMossyStone22",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"88d364d0-867d-4160-9be6-28a41e262710","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1a7978d0-30e3-4e7e-a1ae-a42c3e3d4d5a","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/EmerSave.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Basic",
+  "name": "spr_tilesetMossyStone22",
   "tags": [],
   "resourceType": "GMSprite",
 }

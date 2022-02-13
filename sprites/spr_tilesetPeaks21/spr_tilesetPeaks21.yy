@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 729,
+  "bbox_right": 364,
   "bbox_top": 0,
-  "bbox_bottom": 433,
+  "bbox_bottom": 216,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 736,
-  "height": 440,
+  "width": 368,
+  "height": 220,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/Peaks/Peaks.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/Peaks/Peaks.yy",},"LayerId":{"name":"1a7978d0-30e3-4e7e-a1ae-a42c3e3d4d5a","path":"sprites/Peaks/Peaks.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Peaks","path":"sprites/Peaks/Peaks.yy",},"resourceVersion":"1.0","name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/spr_tilesetPeaks21/spr_tilesetPeaks21.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/spr_tilesetPeaks21/spr_tilesetPeaks21.yy",},"LayerId":{"name":"1a7978d0-30e3-4e7e-a1ae-a42c3e3d4d5a","path":"sprites/spr_tilesetPeaks21/spr_tilesetPeaks21.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_tilesetPeaks21","path":"sprites/spr_tilesetPeaks21/spr_tilesetPeaks21.yy",},"resourceVersion":"1.0","name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"Peaks","path":"sprites/Peaks/Peaks.yy",},
+    "spriteId": {"name":"spr_tilesetPeaks21","path":"sprites/spr_tilesetPeaks21/spr_tilesetPeaks21.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"33d1f95d-e203-44fa-bb5f-2ec1ac893d79","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/Peaks/Peaks.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"fff279d7-94c8-43c4-8d3c-2c5e9c55ec5a","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/spr_tilesetPeaks21/spr_tilesetPeaks21.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,9 +58,9 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"Peaks","path":"sprites/Peaks/Peaks.yy",},
+    "parent": {"name":"spr_tilesetPeaks21","path":"sprites/spr_tilesetPeaks21/spr_tilesetPeaks21.yy",},
     "resourceVersion": "1.3",
-    "name": "Peaks",
+    "name": "spr_tilesetPeaks",
     "tags": [],
     "resourceType": "GMSequence",
   },
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/EmerSave.yy",
   },
   "resourceVersion": "1.0",
-  "name": "Peaks",
+  "name": "spr_tilesetPeaks21",
   "tags": [],
   "resourceType": "GMSprite",
 }

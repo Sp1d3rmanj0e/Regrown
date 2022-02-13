@@ -24,12 +24,12 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/MossyStone/MossyStone.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/MossyStone/MossyStone.yy",},"LayerId":{"name":"1a7978d0-30e3-4e7e-a1ae-a42c3e3d4d5a","path":"sprites/MossyStone/MossyStone.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"MossyStone","path":"sprites/MossyStone/MossyStone.yy",},"resourceVersion":"1.0","name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"d8906149-d26f-435d-989e-bbcfdb6ae0e4","path":"sprites/spr_tileGround23/spr_tileGround23.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"d8906149-d26f-435d-989e-bbcfdb6ae0e4","path":"sprites/spr_tileGround23/spr_tileGround23.yy",},"LayerId":{"name":"88d364d0-867d-4160-9be6-28a41e262710","path":"sprites/spr_tileGround23/spr_tileGround23.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"spr_tileGround23","path":"sprites/spr_tileGround23/spr_tileGround23.yy",},"resourceVersion":"1.0","name":"d8906149-d26f-435d-989e-bbcfdb6ae0e4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
-    "spriteId": {"name":"MossyStone","path":"sprites/MossyStone/MossyStone.yy",},
+    "spriteId": {"name":"spr_tileGround23","path":"sprites/spr_tileGround23/spr_tileGround23.yy",},
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 30.0,
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"07422f62-b6c6-47fe-91ab-a504c9409785","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"96f5913e-1acd-42b8-87ae-31f199ab6dd5","path":"sprites/MossyStone/MossyStone.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5d14dd43-2bbf-4c98-bf0f-a118c85c0581","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d8906149-d26f-435d-989e-bbcfdb6ae0e4","path":"sprites/spr_tileGround23/spr_tileGround23.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -58,14 +58,14 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"MossyStone","path":"sprites/MossyStone/MossyStone.yy",},
+    "parent": {"name":"spr_tileGround23","path":"sprites/spr_tileGround23/spr_tileGround23.yy",},
     "resourceVersion": "1.3",
-    "name": "MossyStone",
+    "name": "spr_tileGround",
     "tags": [],
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"1a7978d0-30e3-4e7e-a1ae-a42c3e3d4d5a","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"88d364d0-867d-4160-9be6-28a41e262710","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
@@ -73,7 +73,7 @@
     "path": "folders/Sprites/EmerSave.yy",
   },
   "resourceVersion": "1.0",
-  "name": "MossyStone",
+  "name": "spr_tileGround23",
   "tags": [],
   "resourceType": "GMSprite",
 }
