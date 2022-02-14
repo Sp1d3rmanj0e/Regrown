@@ -31,7 +31,6 @@ view_range = 300;
 attack_reach = 60;
 
 max_o_dist = 300; // max distance from origin (can be altered by playerstate)
-status_range = 0; //additional changes
 
 active = 0; //Activates movement
 
@@ -42,7 +41,6 @@ jump_stun = 1.25*room_speed; // Delay between jumping
 rando = 0; //Random number placeholder
 
 oX = x; //origin x and y
-oY = y;
 test = 0; //test draw
 
 //defaults
