@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_powOrgIcon","path":"sprites/spr_powOrgIcon/spr_powOrgIcon.yy",},"order":4,},
+    {"id":{"name":"spr_background1","path":"sprites/spr_background1/spr_background1.yy",},"order":19,},
     {"id":{"name":"spr_tilesetMossyBetter","path":"sprites/spr_tilesetMossyBetter/spr_tilesetMossyBetter.yy",},"order":17,},
     {"id":{"name":"spr_healingAnimation","path":"sprites/spr_healingAnimation/spr_healingAnimation.yy",},"order":9,},
     {"id":{"name":"scr_lineof_sight","path":"scripts/scr_lineof_sight/scr_lineof_sight.yy",},"order":1,},

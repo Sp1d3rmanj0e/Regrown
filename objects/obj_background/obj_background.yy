@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_tileGround",
-    "path": "sprites/spr_tileGround/spr_tileGround.yy",
+    "name": "spr_background1",
+    "path": "sprites/spr_background1/spr_background1.yy",
   },
   "solid": false,
   "visible": true,
