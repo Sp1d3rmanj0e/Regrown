@@ -22,6 +22,18 @@ flash_colour = c_red;
 P_health_prev = P_health;
 x_move = 0;
 y_move = 0;
+
+state = PLAYERSTATE.FREE;
+hitByAttack = ds_list_create();
+
+
+
+enum PLAYERSTATE
+{
+	FREE,
+	ATTACK_SLASH,
+	ATTACK_COMBO
+}
 #endregion
 
 // Cameras
