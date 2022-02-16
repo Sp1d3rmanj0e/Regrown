@@ -21,7 +21,7 @@ lineof_sight = false;
 test = 0;
 passive = false;
 
-random_fling = random_range(0.79,0.99);
+
 random_dist = random_range(0,30);
 
 far_range = 30+random_dist; //maximum dist from player

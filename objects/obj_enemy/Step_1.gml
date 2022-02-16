@@ -120,7 +120,10 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 	{
 		if (sign(x-obj_player.x) == 1) key_left = -1;//if to the right
 		else key_right = -1;
+		if (alarm[1] == -1)
+		{
 		alarm[1] = calmTime;
+		}
 	}
 }
 #endregion

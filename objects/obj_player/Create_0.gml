@@ -22,6 +22,7 @@ flash_colour = c_red;
 P_health_prev = P_health;
 x_move = 0;
 y_move = 0;
+damage = 2;
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
