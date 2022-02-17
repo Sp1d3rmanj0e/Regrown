@@ -27,6 +27,16 @@ damage = 2;
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
 
+// Layer Ids
+back1 = layer_get_id("BgBack1"); //Trees, Bushes, Stalagtites, Combines with Front1
+b1 = 0.4;
+back2 = layer_get_id("BgBack2"); //Far Foliage, Towns, Deep Caves
+b2 = 0.7;
+back3 = layer_get_id("BgBack3"); // Mountains and Such
+b3 = 0.9;
+front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
+f1 = 0.3;
+x_origin = x;
 
 
 enum PLAYERSTATE
