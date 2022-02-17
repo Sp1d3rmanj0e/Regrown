@@ -9,35 +9,14 @@ vsp = 0;
 
 //Start of the attack
 
-if (sprite_index != spr_playerAtk)
-{
-	sprite_index = spr_playerAtk;
-	image_index = 0;
-	ds_list_clear(hitByAttack);
-}
+ProcessAttack(spr_playerAtk,spr_playerAtkHB);
 
-// Use attack hitbox
-mask_index = spr_playerAtkHB; // Set mask to hitbox
-var hitByAttackNow = ds_list_create();
-var hits = instance_place_list(x,y,enemies,hitByAttackNow,false);
-if (hits > 0)
+// Trigger Combo Chain
+
+if (key_attack) and (image_index > 2) //If hitting attack and after a couple of frames
 {
-	for (var i = 0; i < hits; i++)
-	{
-		// If this instance has not yet been hit by this attack
-		var hitID = hitByAttackNow[| i];
-		if (ds_list_find_index(hitByAttack,hitID) == -1) //if hasn't been hit yet
-		{
-			ds_list_add(hitByAttack,hitID);
-			with (hitID)
-			{
-				EnemyHit(obj_player.damage);
-			}
-		}
-	}
+	state = PLAYERSTATE.ATTACK_COMBO;
 }
-ds_list_destroy(hitByAttackNow);
-mask_index = spr_playerIdle;
 
 if (animation_end())
 {

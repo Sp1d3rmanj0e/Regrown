@@ -14,6 +14,10 @@
 if (touching_wall != 0) key_spaceH = 1;
 	
 #endregion
+
+if (hp <= 0) exit;
+
+
 distance = abs(x-obj_player.x);
 
 #region view engagement

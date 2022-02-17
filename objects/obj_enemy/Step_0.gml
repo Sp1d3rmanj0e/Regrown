@@ -13,6 +13,9 @@ hsp = move;
 
 vsp += grv;
 #endregion
+
+
+
 // Main Code Translations Here
 
 if (vsp > fall_speed_stun) //If was previously falling at a threshold speed and now is not falling
@@ -92,3 +95,8 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 
 x += hsp;
 y += vsp;
+
+if (hp <= 0) and (air = false)
+{
+	instance_destroy();
+}

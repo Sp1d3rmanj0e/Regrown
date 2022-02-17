@@ -85,7 +85,16 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 
 #region animations
 
-if (hsp != 0) image_xscale = sign(hsp);
+if (hsp != 0)
+{
+	if (key_right)
+	{
+		image_xscale = 1;
+	} else
+	{
+		image_xscale = -1;
+	}
+}
 
 //Animation
 
