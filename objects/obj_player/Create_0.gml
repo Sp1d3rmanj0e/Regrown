@@ -38,6 +38,8 @@ front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with 
 f1 = 0.3;
 x_origin = x;
 
+//Room Change
+enteredRoom = false;
 
 enum PLAYERSTATE
 {
