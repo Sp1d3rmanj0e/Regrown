@@ -2,9 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 if (instance_exists(obj_player))
 {
-	hsp = 0;
-	vsp = 0;
-//Start of the attack
+
+Collisions(2);
 
 ProcessAttack(spr_playerCmbo,spr_playerCmboHB);
 

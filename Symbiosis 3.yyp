@@ -5,6 +5,7 @@
     {"id":{"name":"spr_tilesetMossyBetter","path":"sprites/spr_tilesetMossyBetter/spr_tilesetMossyBetter.yy",},"order":17,},
     {"id":{"name":"spr_playerAtk","path":"sprites/spr_playerAtk/spr_playerAtk.yy",},"order":5,},
     {"id":{"name":"spr_playerCmbo","path":"sprites/spr_playerCmbo/spr_playerCmbo.yy",},"order":7,},
+    {"id":{"name":"Collisions","path":"scripts/Collisions/Collisions.yy",},"order":8,},
     {"id":{"name":"spr_healingAnimation","path":"sprites/spr_healingAnimation/spr_healingAnimation.yy",},"order":9,},
     {"id":{"name":"scr_lineof_sight","path":"scripts/scr_lineof_sight/scr_lineof_sight.yy",},"order":1,},
     {"id":{"name":"spr_powerupCells","path":"sprites/spr_powerupCells/spr_powerupCells.yy",},"order":2,},
