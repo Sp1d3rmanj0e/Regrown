@@ -31,8 +31,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "rooms",
+    "path": "folders/Objects/rooms.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_exit",

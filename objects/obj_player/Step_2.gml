@@ -25,7 +25,11 @@ if (!enteredRoom) and (_exit == noone) //if not on exit block and room enter tag
 
 if (enteredRoom) and (_exit != noone) //If out of the exit space
 {
-	room_goto(_exit.targetRoom);
+	targetRoom = _exit.targetRoom;
+	enteredRoom = false;
+	room_control.fade = 0.01;
+	room_control.fadeDirection = 1;
+	alarm[2] = 25;
 	
 	room_control.targetInstance = _exit.targetInstance;
 }

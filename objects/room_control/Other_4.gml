@@ -1,5 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+fade = 1;
+fadeDirection = -1;
+
+
 if (instance_exists(targetInstance))
 {
 	if (!instance_exists(obj_player))
