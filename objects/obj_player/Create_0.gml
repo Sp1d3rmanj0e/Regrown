@@ -28,14 +28,19 @@ state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
 
 // Layer Ids
-back1 = layer_get_id("BgBack1"); //Trees, Bushes, Stalagtites, Combines with Front1
-b1 = 0.4;
-back2 = layer_get_id("BgBack2"); //Far Foliage, Towns, Deep Caves
-b2 = 0.7;
+
 back3 = layer_get_id("BgBack3"); // Mountains and Such
-b3 = 0.9;
+b3 = 0.05;
+
+back2 = layer_get_id("BgBack2"); //Far Foliage, Towns, Deep Caves
+b2 = 0.13;
+
+back1 = layer_get_id("BgBack1"); //Trees, Bushes, Stalagtites, Combines with Front1
+b1 = 0.25;
+
 front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
 f1 = 0.3;
+
 x_origin = x;
 
 //Room Change
@@ -61,6 +66,11 @@ tilemap = layer_tilemap_get_id("tile_collision");
 	// Enemy Hit
 	hit_stun = 1.5 * room_speed;
 
+// Powerups
+
+orgFill = noone;
+synFill = noone;
+
 // Functions
 
 function pause(toggle)
@@ -76,6 +86,7 @@ function pause(toggle)
 	else
 	{
 		freeze = false;
+		image_speed = 1;
 	}
 }
 

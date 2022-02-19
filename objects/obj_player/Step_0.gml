@@ -19,20 +19,6 @@ P_health_prev = P_health;
 
 #endregion
 
-#region colliding with checkpoint
-
-if (place_meeting(x,y,obj_checkpoint))
-{
-	pause(1);
-	
-	//Walk in animation here
-	
-	sprite_index = spr_playerChk;
-	x = obj_checkpoint.x;
-}
-
-
-#endregion
 
 //Finalizing
 

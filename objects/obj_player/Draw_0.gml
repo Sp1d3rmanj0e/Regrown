@@ -14,3 +14,6 @@ if (flash_alpha > 0)
 	draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, image_angle, flash_colour, flash_alpha);
 	shader_reset();
 }
+
+draw_text(obj_checkpoint.x+50,obj_checkpoint.y,synFill);
+draw_text(obj_checkpoint.x-60,obj_checkpoint.y,orgFill);

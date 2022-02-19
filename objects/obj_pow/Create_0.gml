@@ -12,7 +12,18 @@ selDestY = obj_player.camY; //Gets the Camera's Y location (top side)
 destOffset = 200; //offset from camera height
 
 
-
+function Choose()
+{
+		with(obj_pow) GoBack(other.type);
+		x = selDestX;
+		y = selDestY;
+		if (type = "syn") //Change active powerup
+		{
+			obj_player.synFill = count;
+		} else {
+			obj_player.orgFill = count;
+		}
+}
 
 function GoBack (TYP)
 {
@@ -26,3 +37,4 @@ function GoBack (TYP)
 			y = org_y;
 		}
 }
+
