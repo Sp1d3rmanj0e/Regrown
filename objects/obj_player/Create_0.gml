@@ -30,16 +30,16 @@ hitByAttack = ds_list_create();
 
 // Layer Ids
 
-back3 = layer_get_id("BgBack3"); // Mountains and Such
+//back3 = layer_get_id("BgBack3"); // Mountains and Such
 b3 = 0.05;
 
-back2 = layer_get_id("BgBack2"); //Far Foliage, Towns, Deep Caves
+//back2 = layer_get_id("BgBack2"); //Far Foliage, Towns, Deep Caves
 b2 = 0.13;
 
-back1 = layer_get_id("BgBack1"); //Trees, Bushes, Stalagtites, Combines with Front1
+//back1 = layer_get_id("BgBack1"); //Trees, Bushes, Stalagtites, Combines with Front1
 b1 = 0.25;
 
-front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
+//front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
 f1 = 0.3;
 
 x_origin = room_width/2; // Another reference is in room_control.
@@ -60,7 +60,8 @@ xCamOffset = 0;
 yCamOffset = -50;
 
 //Tilemaps
-tilemap = layer_tilemap_get_id("tile_collision");
+//Tilemap code is in Room Start
+//tilemap = layer_tilemap_get_id("tile_collision");
 
 // Fighting
 

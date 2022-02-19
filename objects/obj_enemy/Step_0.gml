@@ -98,5 +98,6 @@ y += vsp;
 
 if (hp <= 0) and (air = false)
 {
+	instance_create_layer(x,y,layer,obj_enemyDead);
 	instance_destroy();
 }
