@@ -23,7 +23,7 @@ if (!enteredRoom) and (_exit == noone) //if not on exit block and room enter tag
 	enteredRoom = true;  // set the tag to true
 }
 
-if (enteredRoom) and (_exit != noone) //If out of the exit space
+if (enteredRoom) and (_exit != noone) //If ready to exit room and is stepping on port
 {
 	targetRoom = _exit.targetRoom;
 	enteredRoom = false;

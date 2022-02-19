@@ -47,7 +47,7 @@ test = 0; //test draw
 dur_min = 0;
 dur_max = 0;
 // CHANGE BACK TO 0 EVENTUALLY \/\/\/\/
-playerstate = -1; // 0 : Wander, 1 : Patrolling, 2: Attacking, 3: Running
+playerstate = 0; // 0 : Wander, 1 : Patrolling, 2: Attacking, 3: Running
 
 // playerstate = 0 : Wander
 wanderMin = 1*room_speed;
@@ -89,16 +89,17 @@ function attack(type)
 	{
 		with (obj_player)
 		{
-			if (alarm[0] == -1) //If is hittable, Attack
+			if (alarm[0] == -1) and (!safe)//If is hittable and not safe, attack
 			{
-				alarm[0] = hit_stun;
-				if (P_health > 0)
+				alarm[0] = hit_stun; //activate hit stun
+				if (P_health > 0) //damage
 				{
 					P_health -= other.damage;
 				} else P_health = 0;
-				fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),25);
+				fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),25); 
+				if (instance_exists(inventory)) instance_destroy(inventory);
 			}
 		}
 	}
-	alarm[3] = attack_stun;
+	alarm[3] = attack_stun; //delay for enemy to hit again
 }

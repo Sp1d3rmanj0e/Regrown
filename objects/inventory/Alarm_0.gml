@@ -2,8 +2,8 @@
 // You can write your code in this editor
 
 lock = true;
-
-
+obj_player.safe = true; // Invincibility
+obj_player.alarm[0] = 3 * room_speed;
 		
 #region powerup spawning
 // Makes powerup area

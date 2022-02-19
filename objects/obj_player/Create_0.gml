@@ -23,6 +23,7 @@ P_health_prev = P_health;
 x_move = 0;
 y_move = 0;
 damage = 2;
+safe = false;
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
@@ -41,10 +42,10 @@ b1 = 0.25;
 front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
 f1 = 0.3;
 
-x_origin = x;
+x_origin = room_width/2; // Another reference is in room_control.
 
-//Room Change
-enteredRoom = false;
+
+
 
 enum PLAYERSTATE
 {
@@ -70,6 +71,12 @@ tilemap = layer_tilemap_get_id("tile_collision");
 
 orgFill = noone;
 synFill = noone;
+
+
+//Room Change
+enteredRoom = false;
+
+
 
 // Functions
 

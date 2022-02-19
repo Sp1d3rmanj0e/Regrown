@@ -9,6 +9,7 @@ for (var i = 0;i < ds_list_size(objects); i++)
 with (obj_player) {
 	
 	pause(0);
+	safe = false;
 }
 
 ds_list_destroy(objects);

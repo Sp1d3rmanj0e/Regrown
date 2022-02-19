@@ -143,10 +143,13 @@ if (distance_to_object(obj_player) < senseRange) and (alarm[6] == -1)
 	alarm[6] = alertForget;
 }
 
-if (lineof_sight ==	1) and (passive == false) and (playerstate == 1)
+if (lineof_sight ==	1) and (passive == false) and ((playerstate == 1) or (playerstate == 0))
 {
 	playerstate = 2; //If seen and aggro, and was alert, then 2
 }
+
+if (obj_player.safe) playerstate = 0; //No aggro when invincible
+
 if (lineof_sight == 1)
 {
 	alarm[6] = attack_forget; //If time goes without seeing player, goes back to 0
