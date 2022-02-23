@@ -2,7 +2,6 @@
   "resources": [
     {"id":{"name":"spr_powOrgIcon","path":"sprites/spr_powOrgIcon/spr_powOrgIcon.yy",},"order":4,},
     {"id":{"name":"spr_background1","path":"sprites/spr_background1/spr_background1.yy",},"order":19,},
-    {"id":{"name":"spr_tilesetMossyBetter","path":"sprites/spr_tilesetMossyBetter/spr_tilesetMossyBetter.yy",},"order":17,},
     {"id":{"name":"spr_playerAtk","path":"sprites/spr_playerAtk/spr_playerAtk.yy",},"order":5,},
     {"id":{"name":"spr_playerCmbo","path":"sprites/spr_playerCmbo/spr_playerCmbo.yy",},"order":7,},
     {"id":{"name":"inventory","path":"objects/inventory/inventory.yy",},"order":2,},
@@ -106,7 +105,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.5.589",
+    "IDEVersion": "2.3.7.606",
   },
   "resourceVersion": "1.4",
   "name": "Symbiosis 3",
