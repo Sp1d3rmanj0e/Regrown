@@ -22,6 +22,7 @@
     {"id":{"name":"spr_playerAir","path":"sprites/spr_playerAir/spr_playerAir.yy",},"order":0,},
     {"id":{"name":"spr_tilesetMossyStone","path":"sprites/spr_tilesetMossyStone/spr_tilesetMossyStone.yy",},"order":14,},
     {"id":{"name":"spr_powSyn","path":"sprites/spr_powSyn/spr_powSyn.yy",},"order":7,},
+    {"id":{"name":"spr_inventoryscreen_open","path":"sprites/spr_inventoryscreen_open/spr_inventoryscreen_open.yy",},"order":2,},
     {"id":{"name":"obj_pow","path":"objects/obj_pow/obj_pow.yy",},"order":9,},
     {"id":{"name":"spr_playerWalk","path":"sprites/spr_playerWalk/spr_playerWalk.yy",},"order":4,},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"order":6,},
