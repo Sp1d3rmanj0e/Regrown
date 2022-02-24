@@ -29,6 +29,7 @@
     {"id":{"name":"spr_checkpoint","path":"sprites/spr_checkpoint/spr_checkpoint.yy",},"order":0,},
     {"id":{"name":"PlayerState_Attack_Slash","path":"scripts/PlayerState_Attack_Slash/PlayerState_Attack_Slash.yy",},"order":3,},
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},"order":3,},
+    {"id":{"name":"powerup","path":"objects/powerup/powerup.yy",},"order":3,},
     {"id":{"name":"ProcessAttack","path":"scripts/ProcessAttack/ProcessAttack.yy",},"order":7,},
     {"id":{"name":"PlayerState_Free","path":"scripts/PlayerState_Free/PlayerState_Free.yy",},"order":2,},
     {"id":{"name":"Resources","path":"notes/Resources/Resources.yy",},"order":0,},

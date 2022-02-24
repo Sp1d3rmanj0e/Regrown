@@ -11,6 +11,7 @@ selDestX = obj_player.camX + 900;
 selDestY = obj_player.camY; //Gets the Camera's Y location (top side)
 destOffset = 200; //offset from camera height
 
+powerup_type = 0;
 
 function Choose()
 {

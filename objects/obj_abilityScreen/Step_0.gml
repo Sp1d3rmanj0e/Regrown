@@ -17,40 +17,7 @@ if (action = true)
 
 	image_alpha = 1;
 	
-	#region make cells and powerups
-	/*
-	if (!lock) // Make cells and powerups
-	{
-		lock = true;
-		x = obj_player.x;
-		y = obj_player.y-50;
-		count = 0
-		for (var i = 0;i < amt;i++) // powerup cells
-			{
-				count++;
-				with (instance_create_depth(x+xOffset,yOffset+spacing*i,depth-1,obj_powerupCells))
-				{
-					count = other.count;
-				}
-			}
-		count = 0;
-		for (var i = 0;i < columns;i++) // Columns
-		{
-			for (var j = 0;j < rows;j++) // Rows
-			{
-				count++;
-				if (powerups >= count) 
-				{
-					with (instance_create_depth(x+xOffset+spacing*i+powerupSep,yOffset+spacing*j,depth-2,obj_powerups))
-					{
-						count = other.count-1;
-					}
-				}
-			}
-		}
-	}
-	*/
-	#endregion
+
 	
 	
 }
