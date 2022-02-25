@@ -45,33 +45,37 @@ vsp_fraction = vsp - (floor(abs(vsp)) * sign(vsp));
 vsp -= vsp_fraction;
 
 
-if (hsp > 0) bbox_side = bbox_right; else if (hsp < 0) bbox_side = bbox_left; else bbox_side = x;//Horizontal Collisions
-p1 = (tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top) != 0);
-p2 = (tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_bottom) != 0);
-p3 = (tilemap_get_at_pixel(tilemap,bbox_side+hsp,bbox_top+((bbox_bottom-bbox_top)/2)) != 0); 
+var bbox_side, p1, p2, p3;
 
-if (p1 == 1) || (p2 == 1) || (p3 == 1)
-{
-	if (hsp > 0) x = x - (x mod TILE_SIZE) + (TILE_SIZE - 1) - (bbox_right - x) + TILE_SIZE+5;
-	else x = x - (x mod TILE_SIZE) - (bbox_left - x) - TILE_SIZE - 5;
+//Horizontal Collision
+if (hsp > 0) bbox_side = bbox_right; else bbox_side = bbox_left;
+p1 = tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_top);
+p2 = tilemap_get_at_pixel(tilemap, bbox_side+hsp,bbox_bottom);
+p3 = tilemap_get_at_pixel(tilemap, bbox_side+hsp, y);
+if (p1 != 0) or (p2 != 0) or (p3 != 0) {
+	if (hsp > 0) x = bbox_side - (bbox_side mod 32) + 31 - (bbox_right -x);
+	else x = bbox_side - (bbox_side mod 32) - (bbox_left - x);
 	hsp = 0;
 }
 
-if (vsp >= 0) bbox_side = bbox_bottom; else bbox_side = bbox_top; //Vertical Collisions
-p1 = (tilemap_get_at_pixel(tilemap,bbox_left,bbox_side+vsp) != 0);
-p2 = (tilemap_get_at_pixel(tilemap,bbox_right,bbox_side+vsp) != 0);
-p3 = (tilemap_get_at_pixel(tilemap,bbox_left+((bbox_right-bbox_left)/2),bbox_side+vsp) != 0);
 
-
-if (p1 == 1) || (p2 == 1) || (p3 == 1)
-{
-	if (vsp > 0) {
-		y = y - (y mod TILE_SIZE) + (TILE_SIZE - 1) - (bbox_bottom - y) + TILE_SIZE;
-		air = false;
-	}
-	else y = y - (y mod TILE_SIZE) - (bbox_top - y) - TILE_SIZE;
+//Vertical Collision
+if (vsp > 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
+p1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp);
+p2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp);
+p3 = tilemap_get_at_pixel(tilemap, x, bbox_side+vsp);
+if (p1 != 0) or (p2 != 0) or (p3 != 0){
+	if (vsp > 0) y = bbox_side - (bbox_side mod 32) + 31 - (bbox_bottom - y);
+	else y = bbox_side - (bbox_side mod 32) - (bbox_top - y);
 	vsp = 0;
 }
+
+p1 = tilemap_get_at_pixel(tilemap, x, bbox_bottom+1);
+
+if (p1 != 0) air = false;
+
+
 #endregion
+
 
 }
