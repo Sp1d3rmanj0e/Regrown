@@ -140,7 +140,7 @@
     "spriteId": {"name":"spr_playerAtkHB","path":"sprites/spr_playerAtkHB/spr_playerAtkHB.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 24.0,
+    "playbackSpeed": 36.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

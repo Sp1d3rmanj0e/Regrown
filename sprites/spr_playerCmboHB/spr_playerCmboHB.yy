@@ -132,7 +132,7 @@
     "spriteId": {"name":"spr_playerCmboHB","path":"sprites/spr_playerCmboHB/spr_playerCmboHB.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 16.0,
+    "playbackSpeed": 36.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

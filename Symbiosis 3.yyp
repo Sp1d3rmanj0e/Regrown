@@ -22,6 +22,7 @@
     {"id":{"name":"ts_ground","path":"tilesets/ts_ground/ts_ground.yy",},"order":0,},
     {"id":{"name":"sh_flash","path":"shaders/sh_flash/sh_flash.yy",},"order":0,},
     {"id":{"name":"PlayerState_Attack_Combo","path":"scripts/PlayerState_Attack_Combo/PlayerState_Attack_Combo.yy",},"order":4,},
+    {"id":{"name":"GUI_Draw","path":"objects/GUI_Draw/GUI_Draw.yy",},"order":4,},
     {"id":{"name":"init","path":"rooms/init/init.yy",},"order":1,},
     {"id":{"name":"obj_enemyDead","path":"objects/obj_enemyDead/obj_enemyDead.yy",},"order":16,},
     {"id":{"name":"Room2","path":"rooms/Room2/Room2.yy",},"order":2,},
@@ -69,6 +70,7 @@
   ],
   "isDnDProject": false,
   "isEcma": false,
+  "tutorialPath": "",
   "configs": {
     "name": "Default",
     "children": [],
@@ -96,6 +98,7 @@
     {"folderPath":"folders/Sprites/Player.yy","order":5,"resourceVersion":"1.0","name":"Player","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/_spriteless.yy","order":13,"resourceVersion":"1.0","name":"_spriteless","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Objects/rooms.yy","order":20,"resourceVersion":"1.0","name":"rooms","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Sprites/Scenery.yy","order":23,"resourceVersion":"1.0","name":"Scenery","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},
@@ -105,7 +108,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.1.1.610",
+    "IDEVersion": "2.3.7.606",
   },
   "resourceVersion": "1.4",
   "name": "Symbiosis 3",

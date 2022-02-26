@@ -126,7 +126,7 @@
     "spriteId": {"name":"spr_playerCmbo","path":"sprites/spr_playerCmbo/spr_playerCmbo.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 16.0,
+    "playbackSpeed": 36.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

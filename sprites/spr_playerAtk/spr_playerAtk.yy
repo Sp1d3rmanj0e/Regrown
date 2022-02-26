@@ -132,7 +132,7 @@
     "spriteId": {"name":"spr_playerAtk","path":"sprites/spr_playerAtk/spr_playerAtk.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 24.0,
+    "playbackSpeed": 36.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,

@@ -1,11 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
+
 healthPercent = P_health/P_maxHealth*100;
 
-draw_healthbar(camX,camY,camX+Xoffset,camY+Yoffset,healthPercent,c_black,make_color_rgb(0,238,255),make_color_rgb(0,222,234),0,true,true);
-draw_sprite(spr_healthBar,0,camX,camY);
-//draw_text(x,y,gamer1);
+draw_healthbar(x,y,x+Xoffset,y+Yoffset,healthPercent,c_black,make_color_rgb(0,238,255),make_color_rgb(0,222,234),0,true,true);
+draw_sprite(spr_healthBar,0,x,y);
 
 if (flash_alpha > 0)
 {
