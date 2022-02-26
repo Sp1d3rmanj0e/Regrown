@@ -7,6 +7,7 @@
     {"id":{"name":"spr_powSynIcon","path":"sprites/spr_powSynIcon/spr_powSynIcon.yy",},"order":8,},
     {"id":{"name":"obj_powerups","path":"objects/obj_powerups/obj_powerups.yy",},"order":1,},
     {"id":{"name":"spr_tilesetIce","path":"sprites/spr_tilesetIce/spr_tilesetIce.yy",},"order":10,},
+    {"id":{"name":"spr_playermelee","path":"sprites/spr_playermelee/spr_playermelee.yy",},"order":20,},
     {"id":{"name":"obj_powerupCells","path":"objects/obj_powerupCells/obj_powerupCells.yy",},"order":0,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
     {"id":{"name":"ts_collision","path":"tilesets/ts_collision/ts_collision.yy",},"order":1,},
