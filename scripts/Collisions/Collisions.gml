@@ -70,9 +70,15 @@ if (p1 != 0) or (p2 != 0) or (p3 != 0){
 	vsp = 0;
 }
 
-p1 = tilemap_get_at_pixel(tilemap, x, bbox_bottom+1);
+p1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom+1);
+p2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom+1);
 
-if (p1 != 0) air = false;
+if (p1 != 0) || (p2 != 0) {
+	
+	air = false;
+} else {
+	air = true;
+}
 
 
 #endregion
