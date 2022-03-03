@@ -14,7 +14,7 @@ if (instance_exists(targetInstance))
 	}
 	// Move player to target
 	obj_player.x = targetInstance.x;
-	obj_player.y = targetInstance.y;
+	obj_player.y = targetInstance.y-128;
 	obj_player.x_origin = room_width/2;
 }
 
