@@ -104,7 +104,7 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 	} else if (distance < 62) and (!place_meeting(x,y,obj_player)) // If player is over enemy
 	{
 		key_spaceH = 1;
-		hsp += sign(obj_player.x-x) * 5;
+		hsp -= sign(obj_player.x-x) * 5;
 	}
 	else // In attack Window
 	{
@@ -127,6 +127,10 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 		if (alarm[1] == -1)
 		{
 		alarm[1] = calmTime;
+		}
+		if (distance < safeDist/2) and (alarm[1] > calmTime/3)
+		{
+			alarm[1] = calmTime/3;
 		}
 	}
 }
