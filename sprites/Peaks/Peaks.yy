@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Peaks","path":"sprites/Peaks/Peaks.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Peaks",
     "tags": [],
     "resourceType": "GMSequence",
