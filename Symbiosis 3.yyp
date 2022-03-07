@@ -15,6 +15,7 @@
     {"id":{"name":"spr_playerAtkHB","path":"sprites/spr_playerAtkHB/spr_playerAtkHB.yy",},"order":6,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
     {"id":{"name":"obj_enter","path":"objects/obj_enter/obj_enter.yy",},"order":1,},
+    {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},"order":24,},
     {"id":{"name":"ts_collision","path":"tilesets/ts_collision/ts_collision.yy",},"order":1,},
     {"id":{"name":"spr_tilesetExtras","path":"sprites/spr_tilesetExtras/spr_tilesetExtras.yy",},"order":16,},
     {"id":{"name":"spr_healthBar","path":"sprites/spr_healthBar/spr_healthBar.yy",},"order":18,},
@@ -69,7 +70,6 @@
   ],
   "isDnDProject": false,
   "isEcma": false,
-  "tutorialPath": "",
   "configs": {
     "name": "Default",
     "children": [],
@@ -107,7 +107,7 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2.3.7.606",
+    "IDEVersion": "2022.1.1.610",
   },
   "resourceVersion": "1.4",
   "name": "Symbiosis 3",

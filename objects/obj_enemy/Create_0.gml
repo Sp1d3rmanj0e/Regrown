@@ -2,6 +2,8 @@
 // You can write your code in this editor
 /// @description Insert description here
 // You can write your code in this editor
+
+
 #region basics
 hsp = 0;
 vsp = 0;
@@ -16,6 +18,7 @@ distance = 0;
 hp = 10;
 oghp = hp;
 lineof_sight = false;
+safeFall = true;
 #endregion
 
 test = 0;
@@ -46,6 +49,7 @@ test = 0; //test draw
 //defaults
 dur_min = 0;
 dur_max = 0;
+cliff_height = 4; //How many tiles down is scary
 // CHANGE BACK TO 0 EVENTUALLY \/\/\/\/
 playerstate = 0; // 0 : Wander, 1 : Patrolling, 2: Attacking, 3: Running
 

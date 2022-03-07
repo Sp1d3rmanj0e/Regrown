@@ -178,5 +178,26 @@ if (abs(odist) > max_o_dist) //If too far from origin
 	}
 }
 
+var move = key_right - key_left;
 
+safeFall = false;
+
+if (move != 0) {
+var check = move * TILE_SIZE/2; //Gets the x coordinate of the tile to either the left or right of them
+for (var i = 0; i < cliff_height; i++)
+{
+	draw_sprite(spr_test,-1,x+check,y+i*TILE_SIZE);
+	if (tilemap_get_at_pixel(tilemap,x+check,y+i*TILE_SIZE) != 0) or (air == true){
+		safeFall = true;
+	}
+}
+	
+}
+if (safeFall = false) and (move != 0){
+	if (move = 1) {
+		key_right = 0;
+	} else if (move = -1) {
+		key_left = 0;
+	}
+}
 #endregion
