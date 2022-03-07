@@ -174,7 +174,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAtkHB","path":"sprites/spr_playerAtkHB/spr_playerAtkHB.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAtkHB",
     "tags": [],
     "resourceType": "GMSequence",

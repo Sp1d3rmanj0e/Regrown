@@ -142,7 +142,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerCrouch","path":"sprites/spr_playerCrouch/spr_playerCrouch.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerCrouch",
     "tags": [],
     "resourceType": "GMSequence",

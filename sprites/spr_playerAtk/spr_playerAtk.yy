@@ -166,7 +166,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAtk","path":"sprites/spr_playerAtk/spr_playerAtk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAtk",
     "tags": [],
     "resourceType": "GMSequence",
