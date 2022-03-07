@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_powSynIcon","path":"sprites/spr_powSynIcon/spr_powSynIcon.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_powSynIcon",
     "tags": [],
     "resourceType": "GMSequence",

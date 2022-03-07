@@ -111,7 +111,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_healingAnimation","path":"sprites/spr_healingAnimation/spr_healingAnimation.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_healingAnimation",
     "tags": [],
     "resourceType": "GMSequence",

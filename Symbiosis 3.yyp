@@ -55,6 +55,7 @@
   ],
   "isDnDProject": false,
   "isEcma": false,
+  "tutorialPath": "",
   "configs": {
     "name": "Default",
     "children": [],
@@ -91,9 +92,9 @@
   ],
   "IncludedFiles": [],
   "MetaData": {
-    "IDEVersion": "2022.2.0.614",
+    "IDEVersion": "2.3.7.606",
   },
-  "resourceVersion": "1.5",
+  "resourceVersion": "1.4",
   "name": "Symbiosis 3",
   "tags": [],
   "resourceType": "GMProject",

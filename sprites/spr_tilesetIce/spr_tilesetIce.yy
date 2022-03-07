@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tilesetIce","path":"sprites/spr_tilesetIce/spr_tilesetIce.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_tilesetIce",
     "tags": [],
     "resourceType": "GMSequence",

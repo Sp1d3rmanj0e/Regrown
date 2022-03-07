@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_chlorophyte_receptor","path":"sprites/spr_chlorophyte_receptor/spr_chlorophyte_receptor.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_chlorophyte_receptor",
     "tags": [],
     "resourceType": "GMSequence",

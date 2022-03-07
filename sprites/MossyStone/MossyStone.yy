@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"MossyStone","path":"sprites/MossyStone/MossyStone.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "MossyStone",
     "tags": [],
     "resourceType": "GMSequence",

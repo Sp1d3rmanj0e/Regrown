@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tileGround","path":"sprites/spr_tileGround/spr_tileGround.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_tileGround",
     "tags": [],
     "resourceType": "GMSequence",
