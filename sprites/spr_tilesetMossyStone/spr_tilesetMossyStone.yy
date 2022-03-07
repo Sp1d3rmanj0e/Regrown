@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tilesetMossyStone","path":"sprites/spr_tilesetMossyStone/spr_tilesetMossyStone.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_tilesetMossyStone",
     "tags": [],
     "resourceType": "GMSequence",
