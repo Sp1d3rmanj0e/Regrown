@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tileColl","path":"sprites/spr_tileColl/spr_tileColl.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_tileColl",
     "tags": [],
     "resourceType": "GMSequence",

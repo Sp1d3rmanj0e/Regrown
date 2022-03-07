@@ -6,13 +6,32 @@
 	key_spaceH = 0;
 	key_crouch = 0;
 
+	damage = 2;
+
 #region Collision
 
 
 if (touching_wall != 0) key_spaceH = 1;
 	
 #endregion
+
+if (hp <= 0) exit;
+
+
 distance = abs(x-obj_player.x);
+
+#region view engagement
+if (view_range >= distance_to_object(obj_player)) //If within range to be seen
+{
+	if (alarm[5] == -1)
+	{
+		alarm[5] = 0.25 * room_speed; // Activates seeing code
+	}
+} else lineof_sight = false;
+
+
+#endregion
+
 
 
 #region playerstate code
@@ -54,12 +73,14 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 	}
 } else if (playerstate == 2)
 {
+	max_o_dist = attackRange;
+	left_right = (x-obj_player.x > 0);
 	walkSp = ogwalkSp;
 	// Enemy Engagement Distances
 	
 	if (distance > far_range)
 	{
-		if (x - obj_player.x > 0) //if player is to the left
+		if (left_right) //if player is to the left
 		{
 			key_left = 1;
 		}
@@ -67,47 +88,82 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 		{
 			key_right = 1;	
 		}
+	}
+	else if (distance < close_range) //Stay certain distance away
+	{
+			if (left_right == false) //if player is to the right
+		{
+			key_left = 1;
+			key_spaceP = 1;
+		}
+		else //if player is to the left
+		{
+			key_right = 1;	
+			key_spaceP = 1;
+		}
+	} else if (distance < 62) and (!place_meeting(x,y,obj_player)) // If player is over enemy
+	{
+		key_spaceH = 1;
+		hsp -= sign(obj_player.x-x) * 5;
+	}
+	else // In attack Window
+	{
+		attack(0);
 	}
 
-	if (distance < close_range)
-	{
-			if (x - obj_player.x < 0) //if player is to the left
-		{
-			key_left = 1;
-		}
-		else //if player is to the right
-		{
-			key_right = 1;	
-		}
-	}
 	if (distance < safeDist) and (hp/oghp <= 0.5) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
 	{
 		playerstate = 3;
 	}
-	
-	/*  Friendly Collisions
-	if (place_meeting(x,y,obj_enemy))
-	{
-		if (choose(1,2) == 1)
-		{
-			key_left = 3;
-		} else {
-			key_right = 3;
-		}
 
-	}
-	*/
 } else if (playerstate == 3) //if Fleeing
 {
+	max_o_dist = runningRange;
 	walkSp = ogwalkSp+0.75;
 	if (distance < safeDist) //will only get activated if in fleeing mode
 	{
 		if (sign(x-obj_player.x) == 1) key_left = -1;//if to the right
 		else key_right = -1;
+		if (alarm[1] == -1)
+		{
 		alarm[1] = calmTime;
+		}
+		if (distance < safeDist/2) and (alarm[1] > calmTime/3)
+		{
+			alarm[1] = calmTime/3;
+		}
 	}
 }
 #endregion
+
+
+
+
+#region playerstate transitions
+
+if (distance_to_object(obj_player) < senseRange) and (alarm[6] == -1)
+{
+	playerstate = 1;
+	alarm[6] = alertForget;
+}
+
+if (lineof_sight ==	1) and (passive == false) and ((playerstate == 1) or (playerstate == 0))
+{
+	playerstate = 2; //If seen and aggro, and was alert, then 2
+}
+
+if (obj_player.safe) playerstate = 0; //No aggro when invincible
+
+if (lineof_sight == 1)
+{
+	alarm[6] = attack_forget; //If time goes without seeing player, goes back to 0
+}
+
+
+
+
+#endregion
+
 
 
 #region don't stray too far
@@ -122,5 +178,26 @@ if (abs(odist) > max_o_dist) //If too far from origin
 	}
 }
 
+var move = key_right - key_left;
 
+safeFall = false;
+
+if (move != 0) {
+var check = move * TILE_SIZE/2; //Gets the x coordinate of the tile to either the left or right of them
+for (var i = 0; i < cliff_height; i++)
+{
+	draw_sprite(spr_test,-1,x+check,y+i*TILE_SIZE);
+	if (tilemap_get_at_pixel(tilemap,x+check,y+i*TILE_SIZE) != 0) or (air == true){
+		safeFall = true;
+	}
+}
+	
+}
+if (safeFall = false) and (move != 0){
+	if (move = 1) {
+		key_right = 0;
+	} else if (move = -1) {
+		key_left = 0;
+	}
+}
 #endregion

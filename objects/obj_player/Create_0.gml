@@ -1,16 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
-
+#region setups
 //Initializing
 lock = false; //Don't touch this
 hsp = 0;
 vsp = 0;
-walkSp = 5;
+walkSp = 8;
 grv = 0.8; // Gravity
-jumpH = 15; // Jump height
+jumpH = 23; // Jump height
 air = false; // If airborne
 freeze = false; // Pause player controls
-zoom = 1;
 hsp_fraction = 0;
 vsp_fraction = 0;
 healing = 0;
@@ -18,46 +17,72 @@ P_health = 1;
 P_maxHealth = 10;
 Xoffset = 500; //Healthbar
 Yoffset = 50; //Healthbar
+flash_alpha = 0;
+flash_colour = c_red;
+P_health_prev = P_health;
+x_move = 0;
+y_move = 0;
+damage = 2;
+safe = false;
+
+state = PLAYERSTATE.FREE;
+hitByAttack = ds_list_create();
+
+// Layer Ids
+
+//back3 = layer_get_id("BgBack3"); // Mountains and Such
+b3 = 0.05;
+
+//back2 = layer_get_id("BgBack2"); //Far Foliage, Towns, Deep Caves
+b2 = 0.13;
+
+//back1 = layer_get_id("BgBack1"); //Trees, Bushes, Stalagtites, Combines with Front1
+b1 = 0.25;
+
+//front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
+f1 = 0.3;
+
+x_origin = room_width/2; // Another reference is in room_control.
 
 
-//Modular View
-ogViewH = camera_get_view_height(view_camera[0]);
-ogViewW = camera_get_view_width(view_camera[0]);
+
+
+enum PLAYERSTATE
+{
+	FREE,
+	ATTACK_SLASH,
+	ATTACK_COMBO
+}
+#endregion
+
+// Cameras
 xCamOffset = 0;
 yCamOffset = -50;
 
-gamer1 = -1;
-
 //Tilemaps
-tilemap = layer_tilemap_get_id("tile_collision");
+//Tilemap code is in Room Start
+//tilemap = layer_tilemap_get_id("tile_collision");
+sprite_bbox_left = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);
+sprite_bbox_right = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
+sprite_bbox_top = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index);
+sprite_bbox_bottom = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
+// Fighting
 
-// Weapons
-	
-//Functions
-/*
-function swap_weapon(weapon)
-{
-	// wType [0 : Melee, 1 : Ranged, 2 : AOE]
-	// range [How far the object can have effect]
-	// air_speed [How fast the object moves in air]
-	// cooldown [How long it takes until action can be done again]
-	// damage [damage inflicted on hit (or per sec)]
-	// knockback [how far back enemy is hit on impact]
-	
-	// 0 : Grappling hook
-	if (weapon == 0)
-	{
-		wType = 1; //ranged
-		range = 96; // 3 tiles
-		air_speed = 64/room_speed; // 2 tiles/sec
-		cooldown = 0.5*room_speed; // 0.5 secs
-		damage = 3.4; // 3-hit 10 lives
-		knockback = 5; // TEST OUT DIFF VALUES
-		
-	}
-}
-*/	
+	// Enemy Hit
+	hit_stun = 1.5 * room_speed;
 
+// Powerups
+
+orgFill = noone;
+synFill = noone;
+
+
+//Room Change
+enteredRoom = false;
+
+
+
+// Functions
 
 function pause(toggle)
 {
@@ -72,6 +97,7 @@ function pause(toggle)
 	else
 	{
 		freeze = false;
+		image_speed = 1;
 	}
 }
 

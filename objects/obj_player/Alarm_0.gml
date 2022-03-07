@@ -1,4 +1,2 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Exist
 
-with (obj_abilityScreen) action = true;
