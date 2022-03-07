@@ -1,10 +1,4 @@
 /// @description Calm Cooldown
 
-if (lineof_sight = true)
-{
-	playerstate = 2;
-} else 
-{
-	playerstate = 1; //patrol
-}
+playerstate = 2; //aggro
 alarm[2] = fleeingValor; //cooldown to fight again

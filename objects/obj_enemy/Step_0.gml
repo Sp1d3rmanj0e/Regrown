@@ -13,31 +13,22 @@ hsp = move;
 
 vsp += grv;
 #endregion
-
-
-
 // Main Code Translations Here
 
-if (vsp > fall_speed_stun) //If was previously falling at a threshold speed and now is not falling
-{
-	alarm[4] = fall_stun; // sets freeze to stun time
-}
 
 
 
 #region Jumping
 
-if (key_spaceH) and (alarm[4] == -1)
+if (key_spaceH)
 {
     if (!air)
     {
-		alarm[4] = jump_stun;
         vsp -= jumpH;
         air = true;
     }
 }
 #endregion
-
 
 // No more moving here
 #region Wall collisions tilemap
@@ -95,9 +86,3 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 
 x += hsp;
 y += vsp;
-
-if (hp <= 0) and (air = false)
-{
-	instance_create_layer(x,y,layer,obj_enemyDead);
-	instance_destroy();
-}
