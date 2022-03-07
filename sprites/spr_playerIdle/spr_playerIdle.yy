@@ -7,14 +7,23 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
+<<<<<<< HEAD
   "bbox_left": 0,
   "bbox_right": 63,
+=======
+  "bbox_left": 96,
+  "bbox_right": 155,
+>>>>>>> 2a3731692a91bae22dfc46a2df8ffccea6ab3175
   "bbox_top": 0,
   "bbox_bottom": 63,
   "HTile": false,
   "VTile": false,
   "For3D": false,
+<<<<<<< HEAD
   "width": 64,
+=======
+  "width": 256,
+>>>>>>> 2a3731692a91bae22dfc46a2df8ffccea6ab3175
   "height": 64,
   "textureGroupId": {
     "name": "Default",
@@ -137,7 +146,11 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
+<<<<<<< HEAD
     "xorigin": 32,
+=======
+    "xorigin": 128,
+>>>>>>> 2a3731692a91bae22dfc46a2df8ffccea6ab3175
     "yorigin": 32,
     "eventToFunction": {},
     "eventStubScript": null,
