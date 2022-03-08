@@ -25,7 +25,7 @@ test = 0;
 passive = false;
 
 
-random_dist = random_range(25,30);
+random_dist = random_range(0,5);
 
 far_range = 30+random_dist; //maximum dist from player
 close_range = 0 + random_dist; // Minimum Distance from player
