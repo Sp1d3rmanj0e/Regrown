@@ -58,15 +58,21 @@
     "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
+<<<<<<< HEAD
 <<<<<<< HEAD:sprites/spr_tilesetPeaks/spr_tilesetPeaks.yy
     "parent": {"name":"spr_tilesetPeaks","path":"sprites/spr_tilesetPeaks/spr_tilesetPeaks.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_tilesetPeaks",
 =======
     "parent": {"name":"spr_tilesetIce","path":"sprites/spr_tilesetIce/spr_tilesetIce.yy",},
     "resourceVersion": "1.3",
     "name": "spr_tilesetIce",
 >>>>>>> 2a3731692a91bae22dfc46a2df8ffccea6ab3175:sprites/spr_tilesetIce/spr_tilesetIce.yy
+=======
+    "parent": {"name":"spr_tilesetIce","path":"sprites/spr_tilesetIce/spr_tilesetIce.yy",},
+    "resourceVersion": "1.4",
+    "name": "spr_tilesetIce",
+>>>>>>> origin
     "tags": [],
     "resourceType": "GMSequence",
   },

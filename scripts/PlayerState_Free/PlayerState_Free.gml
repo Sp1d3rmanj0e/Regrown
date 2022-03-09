@@ -6,7 +6,7 @@ if (instance_exists(obj_player))
 Collisions(walkSp);
 
 #region Jumping
-if (key_spaceH)
+if (key_spaceH) and (tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2)) == 0) and (tilemap_get_at_pixel(tilemap,bbox_right,bbox_top-(TILE_SIZE/2)) == 0)
 {
     if (!air)
     {
