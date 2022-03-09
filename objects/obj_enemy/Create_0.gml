@@ -7,7 +7,7 @@
 #region basics
 hsp = 0;
 vsp = 0;
-walkSp = 3;
+walkSp = random_range(2.5,3);
 ogwalkSp = walkSp;
 grv = 0.8; // Gravity
 jumpH = 17; // Jump height
@@ -30,7 +30,7 @@ random_dist = random_range(0,5);
 far_range = 30+random_dist; //maximum dist from player
 close_range = 0 + random_dist; // Minimum Distance from player
 
-view_range = 300;
+view_range = 200;
 attack_reach = 60;
 
 max_o_dist = 300; // max distance from origin (can be altered by playerstate)
@@ -74,6 +74,7 @@ runningRange = 350;
 safeDist = 300;
 calmTime = 4*room_speed;
 fleeingValor = 10*room_speed;
+fleehealthdec = 0.2;
 
 // manual controls/Initialization
 touching_wall = 0;

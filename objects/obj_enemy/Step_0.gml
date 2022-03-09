@@ -93,6 +93,15 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 #endregion
 #endregion
 
+#region animations
+if (abs(hsp) > 0) sprite_index = spr_ratRun; else sprite_index = spr_ratIdle;
+if (hsp != 0) {
+	if (hsp > 0) image_xscale = 1; else image_xscale = -1;
+}
+
+#endregion
+
+
 x += hsp;
 y += vsp;
 

@@ -111,7 +111,7 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 		attack(0);
 	}
 
-	if (distance < safeDist) and (hp/oghp <= 0.5) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
+	if (distance < safeDist) and (hp/oghp <= fleehealthdec) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
 	{
 		playerstate = 3;
 	}
@@ -128,10 +128,7 @@ if (playerstate == 0) or (playerstate == 1)// Wandering and alert
 		{
 		alarm[1] = calmTime;
 		}
-		if (distance < safeDist/2) and (alarm[1] > calmTime/3)
-		{
-			alarm[1] = calmTime/3;
-		}
+
 	}
 }
 #endregion

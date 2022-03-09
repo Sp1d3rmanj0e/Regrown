@@ -1,11 +1,14 @@
 {
   "spriteId": {
-    "name": "spr_enemy",
-    "path": "sprites/spr_enemy/spr_enemy.yy",
+    "name": "spr_ratRun",
+    "path": "sprites/spr_ratRun/spr_ratRun.yy",
   },
   "solid": false,
   "visible": true,
-  "spriteMaskId": null,
+  "spriteMaskId": {
+    "name": "spr_ratIdle",
+    "path": "sprites/spr_ratIdle/spr_ratIdle.yy",
+  },
   "persistent": false,
   "parentObjectId": {
     "name": "enemies",
