@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inventoryscreen_open","path":"sprites/spr_inventoryscreen_open/spr_inventoryscreen_open.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_inventoryscreen_open",
     "tags": [],
     "resourceType": "GMSequence",

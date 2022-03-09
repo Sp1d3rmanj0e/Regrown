@@ -71,7 +71,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_ratIdle","path":"sprites/spr_ratIdle/spr_ratIdle.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_ratIdle",
     "tags": [],
     "resourceType": "GMSequence",
