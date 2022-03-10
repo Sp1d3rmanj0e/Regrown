@@ -40,7 +40,7 @@ b2 = 0.13;
 b1 = 0.25;
 
 //front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
-f1 = 0.3;
+f1 = -0.1;
 
 x_origin = room_width/2; // Another reference is in room_control.
 
@@ -59,13 +59,6 @@ enum PLAYERSTATE
 xCamOffset = 0;
 yCamOffset = -50;
 
-//Tilemaps
-//Tilemap code is in Room Start
-//tilemap = layer_tilemap_get_id("tile_collision");
-sprite_bbox_left = sprite_get_bbox_left(sprite_index) - sprite_get_xoffset(sprite_index);
-sprite_bbox_right = sprite_get_bbox_right(sprite_index) - sprite_get_xoffset(sprite_index);
-sprite_bbox_top = sprite_get_bbox_top(sprite_index) - sprite_get_yoffset(sprite_index);
-sprite_bbox_bottom = sprite_get_bbox_bottom(sprite_index) - sprite_get_yoffset(sprite_index);
 // Fighting
 
 	// Enemy Hit

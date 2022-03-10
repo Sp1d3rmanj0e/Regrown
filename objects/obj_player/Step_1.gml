@@ -6,7 +6,7 @@ if (freeze = false)
 	key_right = keyboard_check(ord("D"));
 	key_left = keyboard_check(ord("A"));
 	key_spaceP = keyboard_check_pressed(vk_space);
-	key_spaceH = keyboard_check(vk_space);
+	key_spaceH = keyboard_check(vk_space) || keyboard_check(ord("W"));
 	key_crouch = 0//keyboard_check(vk_control);
 	key_attack = mouse_check_button_pressed(mb_left);
 }

@@ -5,9 +5,10 @@ count = 0;
 rows = 3; // How many rows of powerups
 columns = 3; // How many columns of powerups
 powerups = rows*columns*2;
-spacing = 120; // Spacing between powerups
+spacing = 80; // Spacing between powerups
 split = columns*spacing + 50; // Spacing between Organic and Synthetic powerup sets
-startingY = -360; //Starting coord of the powerup spawns
+startingY = -270; //Starting coord of the powerup spawns
+startingX = 280;
 
 
 lock = false;
