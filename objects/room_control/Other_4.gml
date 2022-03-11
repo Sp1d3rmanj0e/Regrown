@@ -25,7 +25,6 @@ targetInstance = noone;
 if (array_length(global.roomData) > room) and (is_array(global.roomData[room])) {
 	
 	var _objectCount = array_length(global.objectsToSave);
-	
 	for (var i = 0; i < _objectCount; i++) {
 		instance_destroy(global.objectsToSave[i]);
 	}
@@ -40,3 +39,4 @@ if (array_length(global.roomData) > room) and (is_array(global.roomData[room])) 
 	}
 	
 }
+

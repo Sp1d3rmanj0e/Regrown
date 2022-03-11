@@ -5,7 +5,7 @@
  global.roomData[room] = [];
  
  // Save data
- 
+
  var _objectCount = array_length(global.objectsToSave); //get length
  
  for (var i = 0; i < _objectCount; i++) {
