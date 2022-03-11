@@ -44,7 +44,6 @@ hsp -= hsp_fraction;
 vsp_fraction = vsp - (floor(abs(vsp)) * sign(vsp));
 vsp -= vsp_fraction;
 
-
 var bbox_side, p1, p2, p3;
 
 //Horizontal Collision
@@ -69,6 +68,18 @@ if (p1 != 0) or (p2 != 0) or (p3 != 0){
 	else y = bbox_side - (bbox_side mod 32) - (bbox_top - y);
 	vsp = 0;
 }
+
+
+
+if (tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom) != 0) {
+	x-= 32;
+}
+if (tilemap_get_at_pixel(tilemap,bbox_left,bbox_bottom) != 0) {
+	x+= 32;
+	
+}
+
+
 
 p1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom+1);
 p2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom+1);
