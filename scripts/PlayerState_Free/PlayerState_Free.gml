@@ -24,7 +24,7 @@ if (hsp != 0)
 	if (key_right)
 	{
 		image_xscale = 1;
-	} else
+	} else if (key_left)
 	{
 		image_xscale = -1;
 	}
@@ -32,11 +32,9 @@ if (hsp != 0)
 
 //Animation
 
-if (!freeze)
-{
-	if (vsp != 0)
-	{
-		if (key_spaceH) and (vsp < 5)
+if (!freeze) {
+if (vsp != 0) {
+	if (key_spaceH) and (vsp < 5)
 		{
 			sprite_index = spr_playerAir;
 			image_index = 0;
@@ -44,8 +42,8 @@ if (!freeze)
 		else image_index = 1;
 	}
 	else if (key_crouch) sprite_index = spr_playerCrouch;
-	else if (hsp != 0) sprite_index = spr_playerWalk;
-	else sprite_index = spr_playerIdle;
+	else if (hsp != 0) sprite_index = spr_playerAlt_Walk;
+	else sprite_index = spr_playerAlt_Idle;
 }
 else sprite_index = spr_playerChk;
 
