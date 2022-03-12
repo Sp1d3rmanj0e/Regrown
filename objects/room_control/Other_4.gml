@@ -20,7 +20,7 @@ if (instance_exists(targetInstance))
 
 // Clear Target
 targetInstance = noone;
-
+if (global.saveObjects == 1) {
 //remove all current instances
 if (array_length(global.roomData) > room) and (is_array(global.roomData[room])) {
 	
@@ -38,5 +38,8 @@ if (array_length(global.roomData) > room) and (is_array(global.roomData[room])) 
 		_roomData[i].Create();
 	}
 	
+}
+} else {
+	global.saveObjects = 1;
 }
 

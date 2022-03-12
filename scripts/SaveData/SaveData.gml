@@ -1,3 +1,5 @@
+global.saveObjects = 1;
+
 global.objectsToSave = [
 	enemies
 
