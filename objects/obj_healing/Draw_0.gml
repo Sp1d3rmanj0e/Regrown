@@ -1,5 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Healthbar Drawing
 draw_self();
-//draw_text(x,y,time);
-draw_healthbar(bbox_left,bbox_bottom,bbox_right,bbox_bottom+10,time,c_black,c_aqua,c_purple,0,true,true);
+
+
+//True Healthbar
+draw_healthbar(bbox_left,bbox_bottom,bbox_right,bbox_bottom+10,healPercent,c_black,c_aqua,c_purple,0,true,true);
+
+
+draw_text(x,y,obj_player.P_health);
