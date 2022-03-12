@@ -12,3 +12,4 @@ count = 0; // No touchie
 
 
 
+instance_destroy(obj_player);

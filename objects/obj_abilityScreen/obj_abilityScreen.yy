@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "spr_abilityScreen",
-    "path": "sprites/spr_abilityScreen/spr_abilityScreen.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
