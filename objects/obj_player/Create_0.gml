@@ -25,10 +25,6 @@ y_move = 0;
 damage = 2;
 safe = false;
 
-s1 = 0;
-s2 = 0;
-s3 = 0;
-s4 = 0;
 
 
 state = PLAYERSTATE.FREE;

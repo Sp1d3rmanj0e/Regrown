@@ -7,6 +7,9 @@ camera_set_view_pos(view_camera[0],x-view_width/2+xCamOffset,y-view_height/2+yCa
 camX = camera_get_view_x(view_camera[0]);
 camY = camera_get_view_y(view_camera[0]);
 
+halfViewX = camX + view_width/2;
+halfViewY = camY + view_height/2;
+
 
 // Background Movement
 x_change = x-x_origin;

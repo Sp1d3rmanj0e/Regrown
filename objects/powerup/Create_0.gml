@@ -9,3 +9,6 @@ for (var i = 0; i < maxpowerups; i++)
 {
 	ds_list_add(powerups,0);
 }
+
+
+ds_list_replace(powerups,2,1);

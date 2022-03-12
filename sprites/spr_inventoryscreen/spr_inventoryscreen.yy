@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "Inventory",
+    "path": "folders/Sprites/UI/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_inventoryscreen",
