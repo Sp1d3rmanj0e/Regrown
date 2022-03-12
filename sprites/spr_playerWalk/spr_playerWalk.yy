@@ -152,8 +152,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "Archived",
+    "path": "folders/Sprites/Archived.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerWalk",

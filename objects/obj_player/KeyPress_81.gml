@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description Healing
 if (healing = 0) 
 {
 	healing = 1;
