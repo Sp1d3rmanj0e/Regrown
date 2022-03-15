@@ -11,8 +11,10 @@ startingY = -270; //Starting coord of the powerup spawns
 startingX = 280;
 page = 0; //Which screen the inventory is showing
 maxPages = 1; //Includes 0
+pageSubimg = 0; //Sets default subimage for inventory
 
 inventoryOpen = false;
+
 
 objects = ds_list_create();
 
@@ -35,13 +37,14 @@ function switchPage(page) {
 if (inventoryOpen = true) {
 	switch (page) {
 		case 0: //Passive Upgrades
+	pageSubimg = 0;
 		
-		
-		break; //Active Powerups
+	break; //Active Powerups
 		case 1:
+	
+	pageSubimg = 1;
 		
 	#region Active Upgrades
-		// Makes powerup area
 	// Organic
 	for (var i = 0; i < rows; i++) //columns
 	{
@@ -75,7 +78,7 @@ if (inventoryOpen = true) {
 
 	#endregion
 	
-		break;
+	break;
 	}
 }
 }
