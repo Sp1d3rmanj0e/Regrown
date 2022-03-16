@@ -1,6 +1,10 @@
 /// @description Insert description here
 // You can write your code in this editor
 //powerup organization
+closeOn = false; //Prevents spamming the close button
+invOpenSpeed = 0.5; //Sets delay to opening real inventory settings
+alpha = 0;
+maxAlpha = 0.75;
 count = 0;
 rows = 3; // How many rows of powerups
 columns = 3; // How many columns of powerups
