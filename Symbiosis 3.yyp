@@ -60,6 +60,7 @@
     {"id":{"name":"obj_exit","path":"objects/obj_exit/obj_exit.yy",},"order":2,},
     {"id":{"name":"obj_healing","path":"objects/obj_healing/obj_healing.yy",},"order":11,},
     {"id":{"name":"spr_tileGround","path":"sprites/spr_tileGround/spr_tileGround.yy",},"order":1,},
+    {"id":{"name":"spr_inventoryscreen_close","path":"sprites/spr_inventoryscreen_close/spr_inventoryscreen_close.yy",},"order":3,},
     {"id":{"name":"SaveData","path":"scripts/SaveData/SaveData.yy",},"order":9,},
     {"id":{"name":"obj_checkpoint","path":"objects/obj_checkpoint/obj_checkpoint.yy",},"order":1,},
     {"id":{"name":"spr_plant1","path":"sprites/spr_plant1/spr_plant1.yy",},"order":1,},
