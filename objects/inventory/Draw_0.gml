@@ -10,6 +10,5 @@ if (inventoryOpen) {
 	draw_set_alpha(1);
 	draw_sprite(spr_inventoryscreen,pageSubimg,obj_player.halfViewX,obj_player.halfViewY);
 } else {
-	image_speed = invOpenSpeed;  //Probably 0.5
-	draw_sprite(spr_inventoryscreen_open,-1,obj_player.halfViewX,obj_player.halfViewY);
+	draw_sprite(transAnimation,frame,obj_player.halfViewX,obj_player.halfViewY);
 }

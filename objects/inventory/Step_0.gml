@@ -10,3 +10,6 @@ if (alpha > 0) {
 }
 
 }
+if (frame < maxFrames) {
+	frame += secsPerFrame;
+}

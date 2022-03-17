@@ -1,8 +1,11 @@
 /// @description Insert description here
 // You can write your code in this editor
 //powerup organization
+frame = 0; //Controllable frame counter
+maxFrames = 0;  //Sets a limit to the frame counter to prevent memory links [ Controlled by toggleFrames() ]
+secsPerFrame = 0.5; //How many frames happen every second
+transAnimation = spr_inventoryscreen_open; //Toggleable to change whether open or close animation is being used
 closeOn = false; //Prevents spamming the close button
-invOpenSpeed = 0.5; //Sets delay to opening real inventory settings
 alpha = 0;
 maxAlpha = 0.75;
 count = 0;
@@ -24,19 +27,18 @@ objects = ds_list_create();
 
 
 
-
-
-
-with (obj_player) {
-	
+with (obj_player) { //Pauses Player Movements
 	pause(1);
 	sprite_index = spr_playerChk;
-	
 }
 
-alarm[0] = 30; //Activate the inventory
+function toggleFrames(_frames) {
+	frame = 0;
+	maxFrames = _frames;
+}
 
 function switchPage(page) {
+if (!closeOn) {
 	removePowerups();
 if (inventoryOpen = true) {
 	switch (page) {
@@ -86,6 +88,7 @@ if (inventoryOpen = true) {
 	}
 }
 }
+}
 
 function removePowerups() {
 	
@@ -101,3 +104,7 @@ count = 0; //Resetting count for powerup Spawning
 
 ds_list_clear(objects);
 }
+
+toggleFrames(30); //Turn on frame counter for 30 frames
+alarm[0] = 30; //Activate the inventory
+
