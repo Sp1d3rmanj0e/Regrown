@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-powerup_type = ds_list_find_value(powerup.powerups,count);
+//powerup_type = ds_list_find_value(powerup.powerups,count);
 
 if (!lock)
 {
