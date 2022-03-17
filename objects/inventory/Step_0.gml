@@ -6,7 +6,7 @@ if (alpha < maxAlpha) {
 }
 } else { //if closing
 if (alpha > 0) {
-	alpha -= 0.05;
+	alpha -= 0.03;
 }
 
 }
