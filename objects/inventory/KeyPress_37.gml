@@ -1,7 +1,7 @@
 /// @description Exit inventory
 if (!closeOn) {
 	
-secsPerFrame = 0.75;
+secsPerFrame = 0.7;
 transAnimation = spr_inventoryscreen_close;
 toggleFrames(15);
 closeOn = true;
@@ -11,5 +11,5 @@ ds_list_destroy(objects); //Prevents memory leak
 
 inventoryOpen = false;
 
- alarm[1] = 17;
+ alarm[1] = 15;
 }
