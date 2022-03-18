@@ -19,7 +19,7 @@ global.powerup_grid = ds_grid_create(5,maxpowerups);
 #region Powerup Data
 //Initialize so there aren't any empty values
 for (var i = 0; i < maxpowerups; i++) {
-	ds_grid_set(global.powerup_grid,0,i,"Not Assigned"); //Name
+	ds_grid_set(global.powerup_grid,0,i,"No Name"); //Name
 	ds_grid_set(global.powerup_grid,1,i,0); //Image Number
 	ds_grid_set(global.powerup_grid,2,i,false); //Unlocked?
 	ds_grid_set(global.powerup_grid,3,i,"Empty Value"); //Definition

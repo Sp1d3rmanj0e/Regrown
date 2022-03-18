@@ -8,7 +8,7 @@ draw_set_color(make_color_rgb(0,45,45));
 if (inventoryOpen) {
 	draw_set_color(c_white);
 	draw_set_alpha(1);
-	draw_sprite(spr_inventoryscreen,pageSubimg,obj_player.halfViewX,obj_player.halfViewY);
+	draw_sprite(spr_inventoryscreenPassive,pageSubimg,obj_player.halfViewX,obj_player.halfViewY);
 } else {
 	draw_sprite(transAnimation,frame,obj_player.halfViewX,obj_player.halfViewY);
 }

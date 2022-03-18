@@ -1,5 +1,15 @@
 /// @description Insert description here
 // You can write your code in this editor
+
+function transferPowData() {
+	
+	ds_list_add(other.objects,id);
+	count = other.count;
+	powerup_type = ds_grid_get(global.powerup_grid,1,count);
+	powerup_name = ds_grid_get(global.powerup_grid,0,count);
+}
+
+
 count = 0;
 lock = false;
 type = "unknown";
@@ -11,6 +21,7 @@ selDestX = obj_player.camX + 300;
 selDestY = obj_player.camY; //Gets the Camera's Y location (top side)
 destOffset = 200; //offset from camera height
 
+powerup_name = "Unfilled";
 powerup_type = 0;
 
 function Choose()

@@ -37,6 +37,8 @@ function toggleFrames(_frames) {
 	maxFrames = _frames;
 }
 
+
+
 function switchPage(page) {
 if (!closeOn) {
 	removePowerups();
@@ -60,10 +62,9 @@ if (inventoryOpen = true) {
 			with (instance_create_layer(x + startingX + spacing * j,y + startingY + spacing * i,"inventory",obj_pow))
 			{
 				sprite_index = spr_powOrg;
-				count = other.count;
-				powerup_type = ds_grid_get(global.powerup_grid,1,count);
 				type = "org";
-				ds_list_add(other.objects,id);
+				transferPowData();
+				
 			}
 			count++;
 		}
@@ -75,11 +76,10 @@ if (inventoryOpen = true) {
 		{
 			with (instance_create_layer(x + startingX + spacing * j,y + startingY + split + spacing * i,"inventory",obj_pow))
 			{
+				
 				sprite_index = spr_powSyn;
-				count = other.count;
-				powerup_type = ds_grid_get(global.powerup_grid,1,count-1);
 				type = "syn";
-				ds_list_add(other.objects,id);
+				transferPowData();
 			}
 			count++;
 		}
