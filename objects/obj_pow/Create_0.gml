@@ -9,6 +9,7 @@ function transferPowData() {
 	powerup_name = ds_grid_get(global.powerup_grid,0,count);
 }
 
+shade = c_white;
 
 count = 0;
 lock = false;
