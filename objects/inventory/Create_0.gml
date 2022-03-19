@@ -9,16 +9,16 @@ closeOn = false; //Prevents spamming the close button
 alpha = 0;
 maxAlpha = 0.75;
 count = 0;
-rows = 3; // How many rows of powerups
-columns = 3; // How many columns of powerups
+rows = 4; // How many rows of powerups
+columns = 2; // How many columns of powerups
 powerups = rows*columns*2;
 spacing = 80; // Spacing between powerups
-split = columns*spacing + 50; // Spacing between Organic and Synthetic powerup sets
-startingY = -270; //Starting coord of the powerup spawns
-startingX = 280;
+startingY = -160; //Starting coord of the powerup spawns
+startingXorg = -obj_player.view_width/2+spacing+120;
+startingXsyn = obj_player.view_width/2-spacing*columns-120;
 page = 0; //Which screen the inventory is showing
 maxPages = 1; //Includes 0
-pageSubimg = 0; //Sets default subimage for inventory
+pageSprite = noone; //Sets default subimage for inventory
 
 inventoryOpen = false;
 
@@ -45,12 +45,12 @@ if (!closeOn) {
 if (inventoryOpen = true) {
 	switch (page) {
 		case 0: //Passive Upgrades
-	pageSubimg = 0;
+	pageSprite = spr_inventoryscreenPassive;
 		
 	break; //Active Powerups
 		case 1:
 	
-	pageSubimg = 1;
+	pageSprite = spr_inventoryscreenActive;
 		
 	#region Active Upgrades
 	// Organic
@@ -59,7 +59,7 @@ if (inventoryOpen = true) {
 		for (var j = 0; j < columns; j++) // rows
 		{
 			
-			with (instance_create_layer(x + startingX + spacing * j,y + startingY + spacing * i,"inventory",obj_pow))
+			with (instance_create_layer(x + startingXorg + spacing * j,y + startingY + spacing * i,"inventory",obj_pow))
 			{
 				sprite_index = spr_powOrg;
 				type = "org";
@@ -74,7 +74,7 @@ if (inventoryOpen = true) {
 	{
 		for (j = 0; j < columns; j++) // rows
 		{
-			with (instance_create_layer(x + startingX + spacing * j,y + startingY + split + spacing * i,"inventory",obj_pow))
+			with (instance_create_layer(x + startingXsyn + spacing * j,y + startingY + spacing * i,"inventory",obj_pow))
 			{
 				
 				sprite_index = spr_powSyn;

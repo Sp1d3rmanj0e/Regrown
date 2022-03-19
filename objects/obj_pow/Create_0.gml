@@ -17,9 +17,9 @@ type = "unknown";
 org_x = x;
 org_y = y;
 
-selDestX = obj_player.camX + 300;
-selDestY = obj_player.camY; //Gets the Camera's Y location (top side)
-destOffset = 200; //offset from camera height
+selDestX = obj_player.halfViewX;
+selectedYsyn = obj_player.camY + obj_player.view_height - 150;
+selectedYorg = obj_player.camY + 170;
 
 powerup_name = "Unfilled";
 powerup_type = 0;
@@ -28,11 +28,13 @@ function Choose()
 {
 		with(obj_pow) GoBack(other.type);
 		x = selDestX;
-		y = selDestY;
+		
 		if (type = "syn") //Change active powerup
 		{
+			y = selectedYsyn;
 			obj_player.synFill = count;
 		} else {
+			y = selectedYorg;
 			obj_player.orgFill = count;
 		}
 }
