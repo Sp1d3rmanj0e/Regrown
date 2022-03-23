@@ -23,10 +23,11 @@ if (overlay == PTYPE.SYN) { //Synthetic Definitions
 	
 	draw_sprite(spr_inventorycoverActive,0,camX+135,camY+94); //Adds Cover
 	draw_sprite(spr_inventoryscreenSchematics,sel_powerupNum, camX + 156, camY+340); //Adds Schematic
+	draw_text(camX+156, camY+110, ds_grid_get(global.powerup_grid, 3, sel_powerupNum));
 	
 } else if (overlay == PTYPE.ORG) { //Organic Definitions
 	
 	draw_sprite(spr_inventorycoverActive,0,camX+615,camY+94); //Adds Cover
 	draw_sprite(spr_inventoryscreenSchematics,sel_powerupNum, camX+636, camY+340); //Adds Schematic
-
+	draw_text(camX+636, camY+110, ds_grid_get(global.powerup_grid, 3, sel_powerupNum));
 }
