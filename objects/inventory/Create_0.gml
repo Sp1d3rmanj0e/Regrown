@@ -1,6 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 //powerup organization
+
 frame = 0; //Controllable frame counter
 maxFrames = 0;  //Sets a limit to the frame counter to prevent memory links [ Controlled by toggleFrames() ]
 secsPerFrame = 0.5; //How many frames happen every second
@@ -21,9 +22,17 @@ maxPages = 1; //Includes 0
 pageSprite = noone; //Sets default subimage for inventory
 
 inventoryOpen = false;
-
+overlay = PTYPE.NONE;
+sel_powerupNum = 0;
 
 objects = ds_list_create();
+
+enum PTYPE 
+{
+	ORG,
+	SYN,
+	NONE
+}
 
 
 
@@ -40,9 +49,12 @@ function toggleFrames(_frames) {
 
 
 function switchPage(page) {
+	
 if (!closeOn) {
 	removePowerups();
+	
 if (inventoryOpen = true) {
+	
 	switch (page) {
 		case 0: //Passive Upgrades
 	pageSprite = spr_inventoryscreenPassive;

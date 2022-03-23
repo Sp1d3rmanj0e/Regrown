@@ -1,3 +1,5 @@
+
+
 /// @description Insert description here
 // You can write your code in this editor
 
@@ -9,8 +11,9 @@ function transferPowData() {
 	powerup_name = ds_grid_get(global.powerup_grid,0,count);
 }
 
-shade = c_white;
+shade = c_ltgray;
 
+selected = false;
 count = 0;
 lock = false;
 type = "unknown";
@@ -38,16 +41,20 @@ function Choose()
 			y = selectedYorg;
 			obj_player.orgFill = count;
 		}
+		selected = true;
 }
 
 function GoBack (TYP)
 {
+	
 	if (TYP = "syn") and (type = "syn")
 		{
+			selected = false;
 			x = org_x;
 			y = org_y;
 		} else if (TYP = "org") and (type = "org")
 		{
+			selected = false;
 			x = org_x;
 			y = org_y;
 		}

@@ -1,3 +1,6 @@
+
+
+
 /// @description Insert description here
 // You can write your code in this editor
 #region setups
@@ -24,8 +27,6 @@ x_move = 0;
 y_move = 0;
 damage = 2;
 safe = false;
-
-
 
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();

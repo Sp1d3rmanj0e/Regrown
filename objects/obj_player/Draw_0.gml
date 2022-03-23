@@ -12,3 +12,4 @@ if (flash_alpha > 0)
 	shader_reset();
 }
 if (instance_exists(inventory)) draw_text(x,y,inventory.page)
+
