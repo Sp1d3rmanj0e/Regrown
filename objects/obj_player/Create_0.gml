@@ -28,6 +28,15 @@ y_move = 0;
 damage = 2;
 safe = false;
 
+//ScreenShake
+shakeIntensity = 3;
+shake = false;
+
+function _shake(int) {
+	shake = true;
+	alarm[3] = int;
+}
+
 state = PLAYERSTATE.FREE;
 hitByAttack = ds_list_create();
 
