@@ -1,6 +1,6 @@
 /// @description Insert description here
 // You can write your code in this editor
-if (place_meeting(x,y,obj_player)) //CHANGE THIS TO THE CHECKPOINT BUTTON
+if (place_meeting(x,y,obj_player)) and (obj_player.state != PLAYERSTATE.DEAD) //CHANGE THIS TO THE CHECKPOINT BUTTON
 {
 	obj_player.respawnX = x;
 	obj_player.respawnY = y;

@@ -1,7 +1,7 @@
 /// @description Gain Health
 scr_followPlayer(0,0);
 
-healPercent += 100/healthPerSecond;
+healPercent += 100/healthPerSecond; //This heals 1 cell per loop
 if (healPercent >= 100) {
 	healPercent = 0;
 	addHealth();

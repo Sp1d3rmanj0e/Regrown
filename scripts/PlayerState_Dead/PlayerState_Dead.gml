@@ -5,6 +5,7 @@ if (instance_exists(obj_player))
 if (!lock) {
 	image_index = 0;
 	lock = true;
+	audio_play_sound(snd_die,100,false);
 }
 Collisions(0); 
 sprite_index = spr_playerAlt_Dead;

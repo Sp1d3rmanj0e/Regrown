@@ -21,6 +21,8 @@ page = 0; //Which screen the inventory is showing
 maxPages = 1; //Includes 0
 pageSprite = noone; //Sets default subimage for inventory
 
+
+
 inventoryOpen = false;
 overlay = PTYPE.NONE;
 sel_powerupNum = 0;
@@ -125,3 +127,4 @@ ds_list_clear(objects);
 toggleFrames(30); //Turn on frame counter for 30 frames
 alarm[0] = 30; //Activate the inventory
 
+audio_play_sound(snd_invOpen,1,false);
