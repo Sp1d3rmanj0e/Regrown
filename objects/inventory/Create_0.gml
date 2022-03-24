@@ -25,6 +25,8 @@ inventoryOpen = false;
 overlay = PTYPE.NONE;
 sel_powerupNum = 0;
 
+if (obj_player.state != PLAYERSTATE.DEAD) obj_player.image_index = 0; //Resets his Checkpoint animation if not dead
+
 objects = ds_list_create();
 
 enum PTYPE 

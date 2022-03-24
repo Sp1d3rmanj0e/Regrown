@@ -28,13 +28,20 @@ y_move = 0;
 damage = 2;
 safe = false;
 
+//Respawn is changed on obj_checkpoint collision
+//Respawn is activated in PlayerState_Dead
+respawnX = x;
+respawnY = y;
+respawnRoom = room;
+
 //ScreenShake
 shakeIntensity = 3;
 shake = false;
 
-function _shake(int) {
+function _shake(int,dur) {
 	shake = true;
-	alarm[3] = int;
+	alarm[3] = dur;
+	shakeIntensity = int;
 }
 
 state = PLAYERSTATE.FREE;
@@ -63,7 +70,8 @@ enum PLAYERSTATE
 {
 	FREE,
 	ATTACK_SLASH,
-	ATTACK_COMBO
+	ATTACK_COMBO,
+	DEAD
 }
 #endregion
 

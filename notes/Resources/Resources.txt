@@ -8,3 +8,10 @@ https://www.youtube.com/watch?v=3PZwCgJk-jc&t=0s
 
 //SaveStates
 https://www.youtube.com/watch?v=R84mR52QaMg
+
+//Camera Shake
+https://www.youtube.com/watch?v=BdTNFvu3DcI
+
+//End animation
+//Script courtesy of PixellatedPope & Minty Python from the GameMaker subreddit discord 
+//https://www.reddit.com/r/gamemaker/wiki/discord

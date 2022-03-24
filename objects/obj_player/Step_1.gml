@@ -13,9 +13,14 @@ if (freeze = false)
 
 #endregion
 
+if (P_health <= 0) {
+	state = PLAYERSTATE.DEAD;
+}
+
 switch (state)
 {
 	case PLAYERSTATE.FREE: PlayerState_Free(); break;
 	case PLAYERSTATE.ATTACK_SLASH: PlayerState_Attack_Slash(); break;
 	case PLAYERSTATE.ATTACK_COMBO: PlayerState_Attack_Combo(); break;
+	case PLAYERSTATE.DEAD: PlayerState_Dead(); break;
 }

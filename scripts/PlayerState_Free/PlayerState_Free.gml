@@ -49,12 +49,11 @@ if (vsp != 0) {
 	else if (hsp != 0) sprite_index = spr_playerAlt_Walk;
 	else sprite_index = spr_playerAlt_Idle;
 }
-else sprite_index = spr_playerChk;
+else sprite_index = spr_playerChk; //Checkpoint animation resets to 0 (Create of Inventory)
 
-if (sprite_index = spr_playerChk) and (image_index >= image_number-1)
+if (sprite_index = spr_playerChk) and (animation_end())
 {
 	image_speed = 0;
-	//camera_zoom(0.5,0.5);
 }
 
 #endregion

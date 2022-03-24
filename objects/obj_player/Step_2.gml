@@ -31,6 +31,7 @@ if (!enteredRoom) and (_exit == noone) //if not on exit block and room enter tag
 
 if (enteredRoom) and (_exit != noone) //If ready to exit room and is stepping on port
 {
+	
 	targetRoom = _exit.targetRoom;
 	enteredRoom = false;
 	room_control.fade = 0.01;
