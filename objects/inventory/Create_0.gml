@@ -19,7 +19,7 @@ startingXorg = -obj_player.view_width/2+spacing+120;
 startingXsyn = obj_player.view_width/2-spacing*columns-120;
 page = 0; //Which screen the inventory is showing
 maxPages = 1; //Includes 0
-pageSprite = noone; //Sets default subimage for inventory
+pageSprite = spr_inventoryscreenPassive; //Sets default subimage for inventory
 
 
 
