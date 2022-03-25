@@ -15,11 +15,12 @@ if (frame < maxFrames) {
 }
 
  //You need a sprite to check for collisions apparently
-var _id = instance_place(mouse_x,mouse_y,obj_pow);
-if (_id != noone) {
-	var type = _id.type;
-	var count = _id.count;
-	
+ if (instance_exists(obj_pow))obj_pow.shade = c_ltgray; //All powerups shade gray
+var _id = instance_place(mouse_x,mouse_y,obj_pow); //Gets id of selected pow
+if (_id != noone) { //If id is not nothing
+	var type = _id.type; //Get pow type
+	var count = _id.count; //Get pow number
+	_id.shade = c_white; //Set pow to selected color
 	if (type == "org") {
 		overlay = PTYPE.ORG;
 	} else if (type == "syn") {

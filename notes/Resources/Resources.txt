@@ -15,3 +15,6 @@ https://www.youtube.com/watch?v=BdTNFvu3DcI
 //End animation
 //Script courtesy of PixellatedPope & Minty Python from the GameMaker subreddit discord 
 //https://www.reddit.com/r/gamemaker/wiki/discord
+
+//Textbox Tutorial
+https://www.youtube.com/watch?v=Uq-ZF8Gs6mw

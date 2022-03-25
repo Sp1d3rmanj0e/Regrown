@@ -21,7 +21,12 @@ page = 0; //Which screen the inventory is showing
 maxPages = 1; //Includes 0
 pageSprite = spr_inventoryscreenPassive; //Sets default subimage for inventory
 
-
+//For textbox sizes
+stringHeight = string_height("ABCDEFG"); //How tall the text is
+boxWidth = 168; //width of textbox
+sideOffset = 10;
+textPart = "";
+charCount = 0;
 
 inventoryOpen = false;
 overlay = PTYPE.NONE;
