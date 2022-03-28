@@ -50,7 +50,15 @@ test = 0; //test draw
 dur_min = 0;
 dur_max = 0;
 cliff_height = 5; //How many tiles down is scary
-// CHANGE BACK TO 0 EVENTUALLY \/\/\/\/
+
+
+enum STATE {
+	WANDER,
+	PATROL,
+	ATTACK,
+	RUN	
+}
+
 playerstate = 0; // 0 : Wander, 1 : Patrolling, 2: Attacking, 3: Running
 
 // playerstate = 0 : Wander

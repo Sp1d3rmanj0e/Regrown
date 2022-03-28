@@ -2,9 +2,9 @@
 
 if (lineof_sight = true)
 {
-	playerstate = 2;
+	playerstate = STATE.ATTACK;
 } else 
 {
-	playerstate = 1; //patrol
+	playerstate = STATE.PATROL; //patrol
 }
 alarm[2] = fleeingValor; //cooldown to fight again
