@@ -3,7 +3,7 @@
 function enemy_attack_melee(far_range, close_range){
 
 
-	max_o_dist = attackRange;
+	max_origin_dist = attackRange;
 	left_right = (x-obj_player.x > 0);
 	walkSp = ogwalkSp;
 	// Enemy Engagement Distances

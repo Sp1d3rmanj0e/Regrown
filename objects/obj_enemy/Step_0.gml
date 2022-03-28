@@ -32,8 +32,8 @@ if (key_spaceH) and (alarm[4] == -1)
     if (!air)
     {
 		alarm[4] = jump_stun;
-        vsp -= jumpH;
-        air = true;
+        vsp -= jump_height;
+        airborne = true;
     }
 }
 #endregion
@@ -81,7 +81,7 @@ if (p1 == 1) || (p2 == 1) || (p3 == 1)
 	
 	if (vsp > 0) {
 		y = y - (y mod TILE_SIZE) + (TILE_SIZE - 1) - (bbox_bottom - y);
-		air = false;
+		airborne = false;
 	}
 	else y = y - (y mod TILE_SIZE) - (bbox_top - y);
 	vsp = 0;
@@ -105,7 +105,7 @@ if (hsp != 0) {
 x += hsp;
 y += vsp;
 
-if (hp <= 0) and (air = false)
+if (hp <= 0) and (airborne = false)
 {
 	instance_create_depth(x,y,depth,obj_enemyDead);
 	instance_destroy();

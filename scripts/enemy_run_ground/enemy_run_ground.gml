@@ -3,7 +3,7 @@
 function enemy_run_ground(safeDist) {
 	
 	walkSp = ogwalkSp+0.75;
-	max_o_dist = runningRange;
+	max_origin_dist = runningRange;
 	
 	if (distance < safeDist) //will only get activated if in fleeing mode
 	{

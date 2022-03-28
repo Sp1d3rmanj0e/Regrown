@@ -1,29 +1,33 @@
 /// @description Insert description here
 // You can write your code in this editor
-/// @description Insert description here
-// You can write your code in this editor
-
 
 #region basics
+
 hsp = 0;
 vsp = 0;
-walkSp = random_range(2.5,3);
-ogwalkSp = walkSp;
-grv = 0.8; // Gravity
-jumpH = 17; // Jump height
-air = false; // If airborne
+walkSp = 2.75
+ogwalkSp = walkSp; //Saves the original walk speed
+grv = 0.8;
+jump_height = 17; // Jump height
+airborne = false;
+
+hp = 10;
+oghp = hp; //saves original hp
+
+damage = 2;
+
+#endregion
+
 hsp_fraction = 0;
 vsp_fraction = 0;
-distance = 0;
-hp = 10;
-oghp = hp;
-lineof_sight = false;
-safeFall = true;
-#endregion
 
 test = 0;
 passive = false;
 
+distance = 0;
+
+lineof_sight = false;
+safeFall = true;
 
 random_dist = random_range(0,5);
 
@@ -33,7 +37,7 @@ close_range = 0 + random_dist; // Minimum Distance from player
 view_range = 200;
 attack_reach = 60;
 
-max_o_dist = 300; // max distance from origin (can be altered by playerstate)
+max_origin_dist = 300; // max distance from origin (can be altered by playerstate)
 
 active = 0; //Activates movement
 
@@ -41,9 +45,9 @@ fall_stun = 2 * room_speed;// Too fast fall go brrrr
 fall_speed_stun = 20 //How fast you need to fall in order to get stunned
 jump_stun = 1.25*room_speed; // Delay between jumping
 
-rando = 0; //Random number placeholder
+move_direction = 0; //Random number placeholder
 
-oX = x; //origin x and y
+startX = x; //origin x
 test = 0; //test draw
 
 //defaults
@@ -51,8 +55,8 @@ dur_min = 0;
 dur_max = 0;
 cliff_height = 5; //How many tiles down is scary
 
-
-enum STATE {
+enum STATE { //Adds enemystates
+	
 	WANDER,
 	PATROL,
 	ATTACK,
@@ -62,11 +66,13 @@ enum STATE {
 playerstate = 0; // 0 : Wander, 1 : Patrolling, 2: Attacking, 3: Running
 
 // playerstate = 0 : Wander
+
 wanderMin = 1*room_speed;
 wanderMax = 4*room_speed;
 wanderRange = 300;
 
 // playerstate = 1 : Patrolling
+
 alertMin = 1.5*room_speed;
 alertMax = 3*room_speed;
 alertRange = 400;
@@ -74,10 +80,13 @@ alertForget = 7*room_speed;
 senseRange = 400;
 
 // playerstate = 2 : Attacking
+
 attackRange = 500;
 attack_stun = 3 * room_speed;
 attack_forget = 5 * room_speed;
+
 // playerstate = 3 : Running
+
 runningRange = 350;
 safeDist = 300;
 calmTime = 4*room_speed;
@@ -85,6 +94,7 @@ fleeingValor = 10*room_speed;
 fleehealthdec = 0.2;
 
 // manual controls/Initialization
+
 touching_wall = 0;
 tilemap_solid = layer_tilemap_get_id("tile_ground");
 tilemap = layer_tilemap_get_id("tile_collision");
