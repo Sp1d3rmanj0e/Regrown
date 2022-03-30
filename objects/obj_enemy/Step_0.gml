@@ -29,7 +29,7 @@ if (vsp > fall_speed_stun) //If was previously falling at a threshold speed and 
 
 if (key_spaceH) and (alarm[4] == -1)
 {
-    if (!air)
+    if (!airborne)
     {
 		alarm[4] = jump_stun;
         vsp -= jump_height;
