@@ -1,14 +1,11 @@
-/// @description Initialize and Start Alarms
+/// @description initialize and start alarms
+
+// healing initializers
 healPercent = 0;
-healthPerSecond = room_speed/(1/0.857);  //Heals 2 health per second
+healthPerSecond = room_speed/(1/0.857);  // heals 2 health per second
 
-stun = 2; //Player slows while healing
+// player slows while healing
+stun = 2; 
 obj_player.walkSp /= stun;
-
-
-function addHealth() {
-	obj_player.P_health += 1;
-}
-
 
 snd_heal = audio_play_sound(snd_batteryCharge_s,1,true);

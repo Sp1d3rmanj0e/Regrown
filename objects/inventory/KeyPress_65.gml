@@ -1,4 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description switch page left
+
 page = max(0, page-1);
 switchPage(page);

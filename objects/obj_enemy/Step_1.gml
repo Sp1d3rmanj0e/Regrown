@@ -1,5 +1,6 @@
-/// @description Enemy AI
+/// @description enemy AI
 
+// reset controls
 key_right = 0;
 key_left = 0;
 key_spaceP = 0; 
@@ -7,44 +8,44 @@ key_spaceH = 0;
 key_crouch = 0;
 
 
-if (touching_wall != 0) key_spaceH = 1; //jump when facing a wall
+if (touching_wall != 0) key_spaceH = 1; // jump when facing a wall
 
-if (hp <= 0) exit; //stop code if dead
+if (hp <= 0) exit; // stop code if dead
 
 distance = abs(x-obj_player.x);
 
 
 #region playerstate transitions
 
-//checks if enemy can see player (not through walls)
-if (view_range >= distance_to_object(obj_player)) //if player is close enough to be seen
+// checks if enemy can see player (not through walls)
+if (view_range >= distance_to_object(obj_player)) // if player is close enough to be seen
 {
 	if (alarm[5] == -1)
 	{
-		alarm[5] = 0.25 * room_speed; //activates line_of_sight()
+		alarm[5] = 0.25 * room_speed; // activates line_of_sight()
 	}
 } else lineof_sight = false;
 
-//attack player if it sees player and isn't passive
+// attack player if it sees player and isn't passive
 if (lineof_sight ==	true) and (passive == false) and ((playerstate != STATE.RUN))
 {
 	playerstate = STATE.ATTACK;
 }
 
-//if time goes without seeing player, enemy no longer is aggro
+// if time goes without seeing player, enemy no longer is aggro
 if (lineof_sight == 1)
 {
 	alarm[6] = attack_forget;
 }
 
-//start patrolling if player is too close
+// start patrolling if player is too close
 if (distance_to_object(obj_player) < senseRange) and (alarm[6] == -1)
 {
 	playerstate = STATE.PATROL;
 	alarm[6] = alertForget;
 }
 
-//player is safe while in inventory
+// player is safe while in inventory
 if (obj_player.safe) playerstate = STATE.PATROL;
 
 #endregion
@@ -63,12 +64,12 @@ switch (playerstate)
 
 var dist_from_origin = x-startX;
 
-if (abs(dist_from_origin) > max_origin_dist) //If too far from origin
+if (abs(dist_from_origin) > max_origin_dist) // if too far from origin
 {
-	if (sign(dist_from_origin) == 1) //if player is to the right
+	if (sign(dist_from_origin) == 1) // if player is to the right
 	{
 		if (move_direction == 1) move_direction = 0;
-	} else { //if player is to the left
+	} else { // if player is to the left
 		if (move_direction == -1) move_direction = 0;
 	}
 }

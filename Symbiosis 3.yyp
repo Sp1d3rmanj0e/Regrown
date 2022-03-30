@@ -22,7 +22,6 @@
     {"id":{"name":"spr_playerAlt","path":"sprites/spr_playerAlt/spr_playerAlt.yy",},"order":21,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
     {"id":{"name":"enemy_alert_ground","path":"scripts/enemy_alert_ground/enemy_alert_ground.yy",},"order":3,},
-    {"id":{"name":"obj_textbox","path":"objects/obj_textbox/obj_textbox.yy",},"order":4,},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},"order":7,},
     {"id":{"name":"enemy_run_ground","path":"scripts/enemy_run_ground/enemy_run_ground.yy",},"order":0,},
     {"id":{"name":"logotest","path":"sprites/logotest/logotest.yy",},"order":28,},

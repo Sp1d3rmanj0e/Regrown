@@ -1,4 +1,5 @@
-/// @description Reset walkSpeed
+/// @description reset walkSpeed
+
 obj_player.walkSp *= stun;
 obj_player.healing = 0;
 

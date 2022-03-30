@@ -1,5 +1,1 @@
-/// @description Fleeing Valor Timer
-
-// Referenced directly
-
-// Turns off FleeingValor
+/// @description turns off fleeing valor

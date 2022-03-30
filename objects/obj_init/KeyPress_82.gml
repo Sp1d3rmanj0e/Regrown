@@ -1,4 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-global.saveObjects = 0;
+/// @description restarts game
+
+global.saveObjects = 0; //completely resets enemies
 game_restart();

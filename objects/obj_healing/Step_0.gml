@@ -1,15 +1,16 @@
-/// @description Gain Health
+/// @description gain health
 scr_followPlayer(0,0);
 
-healPercent += 100/healthPerSecond; //This heals 1 cell per loop
+// heal 1 cell per loop
+healPercent += 100/healthPerSecond;
 if (healPercent >= 100) {
 	healPercent = 0;
-	addHealth();
+	obj_player.P_health += 1;
 }
 
 
-
-if (obj_player.P_health >= obj_player.P_maxHealth) { //If at full health, cancel
+// cancel loop if at full heath
+if (obj_player.P_health >= obj_player.P_maxHealth) {
 	obj_player.P_health = obj_player.P_maxHealth;
 	instance_destroy();
 

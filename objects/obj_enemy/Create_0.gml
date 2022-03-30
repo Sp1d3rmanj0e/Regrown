@@ -1,7 +1,6 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description initialization
 
-#region basics
+// basic initializations
 
 hsp = 0;
 vsp = 0;
@@ -16,18 +15,35 @@ oghp = hp; //saves original hp
 
 damage = 2;
 
-#endregion
+// manual controls/Initialization
+
+key_right = 0;
+key_left = 0;
+key_spaceP = 0; 
+key_spaceH = 0;
+key_crouch = 0;
+
+// dynamic initializations
 
 hsp_fraction = 0;
 vsp_fraction = 0;
 
-test = 0;
-passive = false;
-
-distance = 0;
-
+distance = 0; 
 lineof_sight = false;
 safeFall = true;
+
+max_origin_dist = 300; // max distance from origin (can be altered by playerstate)
+
+active = 0; // activates movement
+
+move_direction = 0; //Random number placeholder
+
+dur_min = 0; // minimum time of motion
+dur_max = 0; // maximum time of motion
+
+touching_wall = 0;
+
+// static initializations
 
 random_dist = random_range(0,5);
 
@@ -35,27 +51,22 @@ far_range = 30+random_dist; //maximum dist from player
 close_range = 0 + random_dist; // Minimum Distance from player
 
 view_range = 200;
-attack_reach = 60;
 
-max_origin_dist = 300; // max distance from origin (can be altered by playerstate)
+passive = false;
 
-active = 0; //Activates movement
-
-fall_stun = 2 * room_speed;// Too fast fall go brrrr
-fall_speed_stun = 20 //How fast you need to fall in order to get stunned
-jump_stun = 1.25*room_speed; // Delay between jumping
-
-move_direction = 0; //Random number placeholder
-
-startX = x; //origin x
-test = 0; //test draw
-
-//defaults
-dur_min = 0;
-dur_max = 0;
+fall_stun = 2 * room_speed;// stun how long to stun by fall
+fall_speed_stun = 20 // how fast you need to fall in order to get stunned
+jump_stun = 1.25*room_speed; // jump delay
 cliff_height = 5; //How many tiles down is scary
 
-enum STATE { //Adds enemystates
+startX = x; // origin
+
+tilemap_solid = layer_tilemap_get_id("tile_ground");
+tilemap = layer_tilemap_get_id("tile_collision");
+
+// enemystates
+
+enum STATE {
 	
 	WANDER,
 	PATROL,
@@ -63,15 +74,17 @@ enum STATE { //Adds enemystates
 	RUN	
 }
 
-playerstate = 0; // 0 : Wander, 1 : Patrolling, 2: Attacking, 3: Running
+playerstate = STATE.WANDER;
 
-// playerstate = 0 : Wander
+// playerstate settings (static)
+
+	// playerstate = STATE.WANDER
 
 wanderMin = 1*room_speed;
 wanderMax = 4*room_speed;
 wanderRange = 300;
 
-// playerstate = 1 : Patrolling
+	// playerstate = STATE.PATROL
 
 alertMin = 1.5*room_speed;
 alertMax = 3*room_speed;
@@ -79,13 +92,13 @@ alertRange = 400;
 alertForget = 7*room_speed;
 senseRange = 400;
 
-// playerstate = 2 : Attacking
+	// playerstate = STATE.ATTACK
 
 attackRange = 500;
 attack_stun = 3 * room_speed;
 attack_forget = 5 * room_speed;
 
-// playerstate = 3 : Running
+	// playerstate = STATE.RUN
 
 runningRange = 350;
 safeDist = 300;
@@ -93,18 +106,7 @@ calmTime = 4*room_speed;
 fleeingValor = 10*room_speed;
 fleehealthdec = 0.2;
 
-// manual controls/Initialization
-
-touching_wall = 0;
-tilemap_solid = layer_tilemap_get_id("tile_ground");
-tilemap = layer_tilemap_get_id("tile_collision");
-	key_right = 0;
-	key_left = 0;
-	key_spaceP = 0; 
-	key_spaceH = 0;
-	key_crouch = 0;
-
-// Functions
+// attack player function
 
 function attack(type)
 {
@@ -112,10 +114,10 @@ function attack(type)
 	{
 		with (obj_player)
 		{
-			if (alarm[0] == -1) and (!safe)//If is hittable and not safe, attack
+			if (alarm[0] == -1) and (!safe)// if is hittable and not safe, attack
 			{
-				alarm[0] = hit_stun; //activate hit stun
-				if (P_health > 0) //damage
+				alarm[0] = hit_stun; // activate hit stun
+				if (P_health > 0) // damage
 				{
 					P_health -= other.damage;
 				} else P_health = 0;
@@ -124,5 +126,5 @@ function attack(type)
 			}
 		}
 	}
-	alarm[3] = attack_stun; //delay for enemy to hit again
+	alarm[3] = attack_stun; // delay for enemy to hit again
 }

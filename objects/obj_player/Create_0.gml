@@ -1,11 +1,9 @@
+/// @description initialize
 
-
-
-/// @description Insert description here
-// You can write your code in this editor
 #region setups
 //Initializing
-lock = false; //Don't touch this
+
+// basic initialize
 hsp = 0;
 vsp = 0;
 walkSp = 8;
@@ -13,20 +11,25 @@ grv = 0.8; // Gravity
 jumpH = 23; // Jump height
 air = false; // If airborne
 freeze = false; // Pause player controls
+damage = 2;
+
+// dynamic initialize
+lock = false; // don't touch this
 hsp_fraction = 0;
 vsp_fraction = 0;
 healing = 0;
 P_health = 1;
-P_maxHealth = 10;
-Xoffset = 500; //Healthbar
-Yoffset = 50; //Healthbar
-flash_alpha = 0;
-flash_colour = c_red;
 P_health_prev = P_health;
-x_move = 0;
-y_move = 0;
-damage = 2;
+flash_alpha = 0;
 safe = false;
+x_move = 0; //fling x
+y_move = 0; //fling y
+
+// reference initialize
+P_maxHealth = 10;
+Xoffset = 500; // healthbar
+Yoffset = 50; // healthbar
+flash_colour = c_red;
 
 //Respawn is changed on obj_checkpoint collision
 //Respawn is activated in PlayerState_Dead

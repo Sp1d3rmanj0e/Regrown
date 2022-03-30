@@ -1,9 +1,10 @@
-/// @description Delayed Setup Steps
+/// @description delayed setup steps
 
-//Readjust position in case player moved during opening animation
+// readjust position in case player moved during opening animation
 x = obj_player.x;
 y = obj_player.y;
-inventoryOpen = true;
-obj_player.safe = true; // Invincibility
 
-switchPage(0);
+inventoryOpen = true; // tells game the inventory is open
+obj_player.safe = true; // make player invincible
+
+switchPage(0); // open first page

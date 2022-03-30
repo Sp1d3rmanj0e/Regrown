@@ -1,3 +1,3 @@
-/// @description Aggro Cooldown
+/// @description aggro cooldown
 
 playerstate = STATE.WANDER;

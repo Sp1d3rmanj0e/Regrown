@@ -1,3 +1,4 @@
-/// @description Destruction animation delay
-//Set to 30 in [Close Action]
+/// @description destroy after closed
+
+//Set to 15 in [Close Action]
 instance_destroy();

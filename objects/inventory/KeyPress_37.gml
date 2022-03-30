@@ -1,15 +1,18 @@
-/// @description Exit inventory
-if (!closeOn) {
+/// @description close inventory
+
+
+if (!closeOn) { // only activate if not actively closing
+	closeOn = true;
 	
-secsPerFrame = 0.7;
-transAnimation = spr_inventoryscreen_close;
-toggleFrames(15);
-closeOn = true;
-removePowerups(); //Removes powerup selection options
+	secsPerFrame = 0.7; // change animation speed
+	transAnimation = spr_inventoryscreen_close;
+	toggleFrames(15);
 
-ds_list_destroy(objects); //Prevents memory leak
+	removePowerups(); // removes powerup selection options
 
-inventoryOpen = false;
+	ds_list_destroy(objects); // prevents memory leak
 
- alarm[1] = 15;
+	inventoryOpen = false;
+
+	 alarm[1] = 15; //delay destroying self to allow closing animation
 }

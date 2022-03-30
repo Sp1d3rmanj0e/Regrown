@@ -1,10 +1,11 @@
-/// @description Calm Cooldown
+/// @description calm cooldown
 
 if (lineof_sight = true)
 {
 	playerstate = STATE.ATTACK;
 } else 
 {
-	playerstate = STATE.PATROL; //patrol
+	playerstate = STATE.PATROL; // patrol
 }
-alarm[2] = fleeingValor; //cooldown to fight again
+
+alarm[2] = fleeingValor; // cooldown to fight again

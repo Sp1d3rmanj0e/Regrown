@@ -1,1 +1,1 @@
-/// @description Attack Cooldown
+/// @description attack cooldown

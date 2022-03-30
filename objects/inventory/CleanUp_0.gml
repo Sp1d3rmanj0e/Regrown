@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description unfreeze player
 with (obj_player) {
 	
 	pause(0);
