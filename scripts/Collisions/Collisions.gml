@@ -31,12 +31,8 @@ if (abs(y_move) > 0.1)
 hsp += x_move;
 vsp += y_move;
 
-
-var bbox_side,p1,p2,p3;
-
-
 #region Wall collisions tilemap
-var bbox_side;
+
 hsp += hsp_fraction;
 vsp += vsp_fraction;
 hsp_fraction = hsp - (floor(abs(hsp)) * sign(hsp));
@@ -52,10 +48,11 @@ p1 = tilemap_get_at_pixel(tilemap, bbox_side+hsp, bbox_top);
 p2 = tilemap_get_at_pixel(tilemap, bbox_side+hsp,bbox_bottom);
 p3 = tilemap_get_at_pixel(tilemap, bbox_side+hsp, y);
 if (p1 != 0) or (p2 != 0) or (p3 != 0) {
+	if (hsp > 0) touching_wall = 1; else touching_wall = -1;
 	if (hsp > 0) x = bbox_side - (bbox_side mod 32) + 31 - (bbox_right -x);
 	else x = bbox_side - (bbox_side mod 32) - (bbox_left - x);
 	hsp = 0;
-}
+} else touching_wall = 0;
 
 
 //Vertical Collision
