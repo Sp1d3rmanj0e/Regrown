@@ -1,4 +1,4 @@
-/// @description Mouse still on button when released
+/// @description mouse still on button when released
 
 if (clicked) and (position_meeting(mouse_x,mouse_y,id)) { //If mouse is still on the button when released
 	if (obj_player.orgFill == count) {

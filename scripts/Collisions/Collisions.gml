@@ -86,9 +86,9 @@ p2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom+1);
 
 if (p1 != 0) || (p2 != 0) {
 	
-	air = false;
+	airborne = false;
 } else {
-	air = true;
+	airborne = true;
 }
 
 

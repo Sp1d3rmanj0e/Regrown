@@ -9,7 +9,7 @@ vsp = 0;
 walkSp = 8;
 grv = 0.8; // Gravity
 jumpH = 23; // Jump height
-air = false; // If airborne
+airborne = false; // If airborne
 freeze = false; // Pause player controls
 damage = 2;
 
@@ -22,13 +22,13 @@ P_health = 1;
 P_health_prev = P_health;
 flash_alpha = 0;
 safe = false;
-x_move = 0; //fling x
+x_move = 0; //referenced in collisions
 y_move = 0; //fling y
 
 // reference initialize
 P_maxHealth = 10;
-Xoffset = 500; // healthbar
-Yoffset = 50; // healthbar
+Xoffset = 550; // healthbar
+Yoffset = 75; // healthbar
 flash_colour = c_red;
 
 //Respawn is changed on obj_checkpoint collision

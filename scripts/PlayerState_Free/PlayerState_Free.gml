@@ -8,14 +8,14 @@ Collisions(walkSp);
 #region Jumping
 if (key_spaceH) and (tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2)) == 0) and (tilemap_get_at_pixel(tilemap,bbox_right,bbox_top-(TILE_SIZE/2)) == 0)
 {
-    if (!air)
+    if (!airborne )
     {
 		if (instance_exists(obj_healing)) {
 			instance_destroy(Heffect);
 			healing = 0;
 		}
         vsp -= jumpH;
-        air = true;
+        airborne = true;
     }
 }
 #endregion

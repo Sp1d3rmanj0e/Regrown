@@ -43,6 +43,9 @@ dur_max = 0; // maximum time of motion
 
 touching_wall = 0;
 
+x_move = 0;
+y_move = 0;
+
 // static initializations
 
 random_dist = random_range(0,5);
