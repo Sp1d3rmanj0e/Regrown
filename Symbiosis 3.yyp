@@ -71,6 +71,7 @@
     {"id":{"name":"spr_enemyDie","path":"sprites/spr_enemyDie/spr_enemyDie.yy",},"order":21,},
     {"id":{"name":"spr_playerWalk","path":"sprites/spr_playerWalk/spr_playerWalk.yy",},"order":2,},
     {"id":{"name":"spr_junglepalatte_syn","path":"sprites/spr_junglepalatte_syn/spr_junglepalatte_syn.yy",},"order":1,},
+    {"id":{"name":"spr_testbkgnd_distant","path":"sprites/spr_testbkgnd_distant/spr_testbkgnd_distant.yy",},"order":3,},
     {"id":{"name":"EnemyHit","path":"scripts/EnemyHit/EnemyHit.yy",},"order":5,},
     {"id":{"name":"snd_glitch1","path":"sounds/snd_glitch1/snd_glitch1.yy",},"order":2,},
     {"id":{"name":"spr_playerAlt_Dead","path":"sprites/spr_playerAlt_Dead/spr_playerAlt_Dead.yy",},"order":24,},
