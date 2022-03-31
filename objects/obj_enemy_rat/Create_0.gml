@@ -1,18 +1,15 @@
 /// @description initialization
 
-// inherit default enemy code
-event_inherited()
-
-// enemy sprites
-sprIdle = spr_ratIdle;
-sprMove = spr_ratRun;
+event_inherited();
 
 // basic initializations
-walkSp = enemySpeed;
-jumpHeight = enemyJumpHeight;
-ogwalkSp = walkSp;
-grv = 0.8;
 
+hsp = 0;
+vsp = 0;
+walkSp = 2.75
+ogwalkSp = walkSp; //Saves the original walk speed
+grv = 0.8;
+jump_height = 17; // Jump height
 airborne = false;
 
 hp = 10;
@@ -37,7 +34,7 @@ distance = 0;
 lineof_sight = false;
 safeFall = true;
 
-max_origin_dist = 300; // max distance from origin (can be altered by playerstate)
+max_origin_dist = 300; // max distance from origin (can be altered by state)
 
 active = 0; // activates movement
 
@@ -72,52 +69,11 @@ startX = x; // origin
 tilemap_solid = layer_tilemap_get_id("tile_ground");
 tilemap = layer_tilemap_get_id("tile_collision");
 
+// enemystates
+
+state = ENEMYSTATE.IDLE;
 
 
-
-
-
-// playerstate settings (static)
-
-	// playerstate = STATE.WANDER
-
-wanderMin = 1*room_speed;
-wanderMax = 4*room_speed;
-wanderRange = 300;
-
-	// playerstate = STATE.PATROL
-
-alertMin = 1.5*room_speed;
-alertMax = 3*room_speed;
-alertRange = 400;
-alertForget = 7*room_speed;
-senseRange = 300;
-
-	// playerstate = STATE.ATTACK
-
-attackRange = 500;
-attack_stun = 3 * room_speed;
-attack_forget = 5 * room_speed;
-
-	// playerstate = STATE.RUN
-
-runningRange = 350;
-safeDist = 300;
-calmTime = 4*room_speed;
-fleeingValor = 10*room_speed;
-fleehealthdec = 0.2;
-
-
-
-// enemy scripts
-state = ENEMYSTATE.WANDER;
-
-enemyScript[ENEMYSTATE.WANDER] = enemy_wander_ground;
-enemyScript[ENEMYSTATE.PATROL] = enemy_alert_ground;
-enemyScript[ENEMYSTATE.CHASE] = enemy_attack_melee;
-enemyScript[ENEMYSTATE.FLEE] = enemy_run_ground;
-
-// attack player function
 
 function attack(type)
 {

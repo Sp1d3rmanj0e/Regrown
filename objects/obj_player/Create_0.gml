@@ -69,13 +69,7 @@ x_origin = room_width/2; // Another reference is in room_control.
 
 
 
-enum PLAYERSTATE
-{
-	FREE,
-	ATTACK_SLASH,
-	ATTACK_COMBO,
-	DEAD
-}
+
 #endregion
 
 // Cameras

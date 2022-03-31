@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function enemy_run_ground(safeDist) {
+function enemy_run_ground() {
 	
 	walkSp = ogwalkSp+0.75;
 	max_origin_dist = runningRange;
@@ -15,7 +15,6 @@ function enemy_run_ground(safeDist) {
 		}
 
 	}
-
 }
 
 

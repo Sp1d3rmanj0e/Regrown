@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function enemy_attack_melee(far_range, close_range){
+function enemy_attack_melee(){
 
 	// initialize
 	max_origin_dist = attackRange;
@@ -43,9 +43,7 @@ function enemy_attack_melee(far_range, close_range){
 
 	if (distance < safeDist) and (hp/oghp <= fleehealthdec) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
 	{
-		playerstate = STATE.RUN;
+		state = ENEMYSTATE.FLEE;
 	}
-
-
-
+	
 }

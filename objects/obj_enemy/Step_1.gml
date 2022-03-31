@@ -1,5 +1,6 @@
 /// @description enemy AI
 
+
 // reset controls
 key_right = 0;
 key_left = 0;
@@ -15,7 +16,7 @@ if (hp <= 0) exit; // stop code if dead
 distance = abs(x-obj_player.x);
 
 
-#region playerstate transitions
+#region state transitions
 
 // checks if enemy can see player (not through walls)
 if (view_range >= distance_to_object(obj_player)) // if player is close enough to be seen
@@ -27,9 +28,9 @@ if (view_range >= distance_to_object(obj_player)) // if player is close enough t
 } else lineof_sight = false;
 
 // attack player if it sees player and isn't passive
-if (lineof_sight ==	true) and (passive == false) and ((playerstate != STATE.RUN))
+if (lineof_sight ==	true) and (passive == false) and ((state != ENEMYSTATE.FLEE))
 {
-	playerstate = STATE.ATTACK;
+	state = ENEMYSTATE.CHASE;
 }
 
 // if time goes without seeing player, enemy no longer is aggro
@@ -41,23 +42,15 @@ if (lineof_sight == 1)
 // start patrolling if player is too close
 if (distance_to_object(obj_player) < senseRange) and (alarm[6] == -1)
 {
-	playerstate = STATE.PATROL;
+	state = ENEMYSTATE.PATROL;
 	alarm[6] = alertForget;
 }
 
 // player is safe while in inventory
-if (obj_player.safe) playerstate = STATE.PATROL;
+if (obj_player.safe) state = ENEMYSTATE.PATROL;
 
 #endregion
 
-
-switch (playerstate) 
-{
-	case 0: enemy_wander_ground(); break;
-	case 1: enemy_alert_ground(); break;
-	case 2: enemy_attack_melee(far_range,close_range); break;
-	case 3: enemy_run_ground(safeDist); break;
-}
 
 
 #region motion limitations

@@ -54,6 +54,7 @@
     {"id":{"name":"snd_die","path":"sounds/snd_die/snd_die.yy",},"order":5,},
     {"id":{"name":"ProcessAttack","path":"scripts/ProcessAttack/ProcessAttack.yy",},"order":7,},
     {"id":{"name":"spr_junglepalatte_org","path":"sprites/spr_junglepalatte_org/spr_junglepalatte_org.yy",},"order":0,},
+    {"id":{"name":"_MACROS","path":"scripts/_MACROS/_MACROS.yy",},"order":13,},
     {"id":{"name":"spr_inventoryscreenSchematics","path":"sprites/spr_inventoryscreenSchematics/spr_inventoryscreenSchematics.yy",},"order":6,},
     {"id":{"name":"PlayerState_Free","path":"scripts/PlayerState_Free/PlayerState_Free.yy",},"order":2,},
     {"id":{"name":"snd_glitch2","path":"sounds/snd_glitch2/snd_glitch2.yy",},"order":3,},

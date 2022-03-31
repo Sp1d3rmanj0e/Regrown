@@ -1,3 +1,3 @@
 /// @description aggro cooldown
 
-playerstate = STATE.WANDER;
+state = ENEMYSTATE.WANDER;
