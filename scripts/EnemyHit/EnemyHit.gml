@@ -4,14 +4,6 @@ function EnemyHit(_damage)
 {
 
 hp -= _damage;
-//Add flash damage
-if (hp > 0)
-{
-	//damage animation
-} else
-{
-	//death animation
-}
-
+fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),15); 
 
 }

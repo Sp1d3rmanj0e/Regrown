@@ -2,12 +2,12 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemy_attack_melee(far_range, close_range){
 
-
+	// initialize
 	max_origin_dist = attackRange;
 	left_right = (x-obj_player.x > 0);
 	walkSp = ogwalkSp;
-	// Enemy Engagement Distances
 	
+	// Enemy Engagement Distances
 	if (distance > far_range)
 	{
 		if (left_right) //if player is to the left
