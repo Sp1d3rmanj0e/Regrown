@@ -38,7 +38,7 @@ function enemy_attack_melee(){
 	}
 	else // In attack Window
 	{
-		attack(0);
+		attack();
 	}
 
 	if (distance < safeDist) and (enemyHealth/oghp <= enemyFleeHealthDecimal) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone

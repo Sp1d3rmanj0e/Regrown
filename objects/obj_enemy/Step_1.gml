@@ -19,7 +19,7 @@ distance = abs(x-obj_player.x);
 #region state transitions
 
 // checks if enemy can see player (not through walls)
-if (view_range >= distance_to_object(obj_player)) // if player is close enough to be seen
+if (enemyAggroRadius >= distance_to_object(obj_player)) // if player is close enough to be seen
 {
 	if (alarm[5] == -1)
 	{
@@ -39,15 +39,8 @@ if (lineof_sight == 1)
 	alarm[6] = attack_forget;
 }
 
-// start patrolling if player is too close
-if (distance_to_object(obj_player) < senseRange) and (alarm[6] == -1)
-{
-	state = ENEMYSTATE.PATROL;
-	alarm[6] = alertForget;
-}
-
 // player is safe while in inventory
-if (obj_player.safe) state = ENEMYSTATE.PATROL;
+if (obj_player.safe) state = ENEMYSTATE.WANDER;
 
 #endregion
 

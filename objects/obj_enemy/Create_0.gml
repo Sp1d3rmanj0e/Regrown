@@ -27,6 +27,10 @@ key_spaceH = 0;
 key_crouch = 0;
 
 // dynamic initializations
+target = obj_player;
+
+motionTime = 0;
+chaseForgetTime = 0;
 
 hsp_fraction = 0;
 vsp_fraction = 0;
@@ -78,8 +82,6 @@ tilemap = layer_tilemap_get_id("tile_collision");
 
 	// playerstate = STATE.PATROL
 
-alertForget = 7*room_speed;
-senseRange = 300;
 
 	// playerstate = STATE.ATTACK
 
@@ -97,18 +99,16 @@ fleeingValor = 10*room_speed;
 // enemy scripts
 state = ENEMYSTATE.WANDER;
 
-enemyScript[ENEMYSTATE.WANDER] = enemy_wander_ground;
+enemyScript[ENEMYSTATE.WANDER] = ratWander;
 enemyScript[ENEMYSTATE.PATROL] = enemy_alert_ground;
 enemyScript[ENEMYSTATE.CHASE] = enemy_attack_melee;
 enemyScript[ENEMYSTATE.FLEE] = enemy_run_ground;
 
 // attack player function
 
-function attack(type)
+function attack(target)
 {
-	if (type == 0) //Meelee
-	{
-		with (obj_player)
+		with (target)
 		{
 			if (alarm[0] == -1) and (!safe)// if is hittable and not safe, attack
 			{
@@ -121,6 +121,5 @@ function attack(type)
 				if (instance_exists(inventory)) instance_destroy(inventory);
 			}
 		}
-	}
 	alarm[3] = attack_stun; // delay for enemy to hit again
 }
