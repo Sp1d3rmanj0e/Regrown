@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description start out picked if active
 
 //powerup_type = ds_list_find_value(powerup.powerups,count);
 

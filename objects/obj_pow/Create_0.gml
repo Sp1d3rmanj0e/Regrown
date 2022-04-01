@@ -1,8 +1,7 @@
-
-
 /// @description Insert description here
 // You can write your code in this editor
 
+// give the powerup instance specific data
 function transferPowData() {
 	
 	ds_list_add(other.objects,id);
@@ -28,12 +27,13 @@ selectedYorg = obj_player.camY + 170;
 powerup_name = "Unfilled";
 powerup_type = 0;
 
+// change active powerup
 function Choose()
 {
 		with(obj_pow) GoBack(other.type);
 		x = selDestX;
 		
-		if (type = "syn") //Change active powerup
+		if (type = "syn") // change active powerup
 		{
 			y = selectedYsyn;
 			obj_player.synFill = count;
@@ -44,6 +44,7 @@ function Choose()
 		selected = true;
 }
 
+// send powerups back
 function GoBack (TYP)
 {
 	

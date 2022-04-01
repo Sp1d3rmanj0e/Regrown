@@ -1,11 +1,12 @@
-/// @description calm cooldown
+/// @description fleeing timer
+// what happens after enemy has been safe for a while
 
 if (lineof_sight = true)
 {
-	playerstate = STATE.ATTACK;
-} else 
-{
-	playerstate = STATE.PATROL; // patrol
+	state = ENEMYSTATE.CHASE;
+} 
+else {
+	state = ENEMYSTATE.WANDER;
 }
 
 alarm[2] = fleeingValor; // cooldown to fight again

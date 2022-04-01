@@ -2,11 +2,11 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "archived",
-    "path": "folders/Scripts/archived.yy",
+    "name": "Scripts",
+    "path": "folders/Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "enemy_attack_melee",
+  "name": "_MACROS",
   "tags": [],
   "resourceType": "GMScript",
 }

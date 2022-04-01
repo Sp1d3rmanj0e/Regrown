@@ -1,13 +1,15 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function enemy_attack_melee(far_range, close_range){
 
+/*
+function enemy_attack_melee(){
 
-	max_origin_dist = attackRange;
-	left_right = (x-obj_player.x > 0);
-	walkSp = ogwalkSp;
-	// Enemy Engagement Distances
+	// initialize
 	
+	left_right = (x-obj_player.x > 0);
+	enemySpeed = ogwalkSp;
+	
+	// Enemy Engagement Distances
 	if (distance > far_range)
 	{
 		if (left_right) //if player is to the left
@@ -38,14 +40,12 @@ function enemy_attack_melee(far_range, close_range){
 	}
 	else // In attack Window
 	{
-		attack(0);
+		attack();
 	}
 
-	if (distance < safeDist) and (hp/oghp <= fleehealthdec) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
+	if (distance < safeDist) and (enemyHealth/oghp <= enemyFleeHealthDecimal) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
 	{
-		playerstate = STATE.RUN;
+		state = ENEMYSTATE.FLEE;
 	}
-
-
-
+	
 }

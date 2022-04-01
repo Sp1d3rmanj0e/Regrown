@@ -1,5 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
+/// @description disappear if overlay is covering
 
 var p1 = 0;
 

@@ -1,20 +1,19 @@
 /// @description initialization
 
-// inherit default enemy code
-event_inherited()
-
-// enemy sprites
-sprIdle = spr_ratIdle;
-sprMove = spr_ratRun;
+event_inherited();
 
 // basic initializations
-jumpHeight = enemyJumpHeight;
-ogwalkSp = enemySpeed;
-grv = 0.8;
 
+hsp = 0;
+vsp = 0;
+walkSp = 2.75
+ogwalkSp = walkSp; //Saves the original walk speed
+grv = 0.8;
+jump_height = 17; // Jump height
 airborne = false;
 
-oghp = enemyHealth; //saves original hp
+hp = 10;
+oghp = hp; //saves original hp
 
 damage = 2;
 
@@ -27,10 +26,6 @@ key_spaceH = 0;
 key_crouch = 0;
 
 // dynamic initializations
-target = obj_player;
-
-motionTime = 0;
-chaseForgetTime = 0;
 
 hsp_fraction = 0;
 vsp_fraction = 0;
@@ -39,11 +34,14 @@ distance = 0;
 lineof_sight = false;
 safeFall = true;
 
-max_origin_dist = enemyMaxOriginDist; // max distance from origin (can be altered by playerstate)
+max_origin_dist = 300; // max distance from origin (can be altered by state)
 
 active = 0; // activates movement
 
 move_direction = 0; //Random number placeholder
+
+dur_min = 0; // minimum time of motion
+dur_max = 0; // maximum time of motion
 
 touching_wall = 0;
 
@@ -54,6 +52,11 @@ y_move = 0;
 
 random_dist = random_range(0,5);
 
+far_range = 30+random_dist; //maximum dist from player
+close_range = 0 + random_dist; // Minimum Distance from player
+
+view_range = 200;
+
 passive = false;
 
 fall_stun = 2 * room_speed;// stun how long to stun by fall
@@ -61,48 +64,22 @@ fall_speed_stun = 20 // how fast you need to fall in order to get stunned
 jump_stun = 1.25*room_speed; // jump delay
 cliff_height = 5; //How many tiles down is scary
 
+startX = x; // origin
+
 tilemap_solid = layer_tilemap_get_id("tile_ground");
 tilemap = layer_tilemap_get_id("tile_collision");
 
+// enemystates
+
+state = ENEMYSTATE.IDLE;
 
 
 
-
-
-// playerstate settings (static)
-
-	// playerstate = STATE.WANDER
-
-
-
-	// playerstate = STATE.PATROL
-
-
-	// playerstate = STATE.ATTACK
-
-attack_stun = 3 * room_speed;
-attack_forget = 5 * room_speed;
-
-	// playerstate = STATE.RUN
-
-safeDist = 300;
-calmTime = 4*room_speed;
-fleeingValor = 10*room_speed;
-
-
-
-// enemy scripts
-state = ENEMYSTATE.WANDER;
-
-enemyScript[ENEMYSTATE.WANDER] = ratWander;
-enemyScript[ENEMYSTATE.CHASE] = ratChase;
-enemyScript[ENEMYSTATE.FLEE] = enemy_run_ground;
-
-// attack player function
-
-function attack(target)
+function attack(type)
 {
-		with (target)
+	if (type == 0) //Meelee
+	{
+		with (obj_player)
 		{
 			if (alarm[0] == -1) and (!safe)// if is hittable and not safe, attack
 			{
@@ -115,5 +92,6 @@ function attack(target)
 				if (instance_exists(inventory)) instance_destroy(inventory);
 			}
 		}
+	}
 	alarm[3] = attack_stun; // delay for enemy to hit again
 }

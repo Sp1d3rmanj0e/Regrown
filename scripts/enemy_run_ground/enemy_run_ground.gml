@@ -1,9 +1,8 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function enemy_run_ground(safeDist) {
+function enemy_run_ground() {
 	
-	walkSp = ogwalkSp+0.75;
-	max_origin_dist = runningRange;
+	enemySpeed = ogwalkSp+0.75;
 	
 	if (distance < safeDist) //will only get activated if in fleeing mode
 	{
@@ -15,7 +14,6 @@ function enemy_run_ground(safeDist) {
 		}
 
 	}
-
 }
 
 

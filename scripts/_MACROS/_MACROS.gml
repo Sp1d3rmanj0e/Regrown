@@ -1,0 +1,21 @@
+#macro TILE_SIZE 32
+
+enum ENEMYSTATE {
+	
+	IDLE,
+	WANDER,
+	FLEE,
+	CHASE,
+	ATTACK,
+	HURT,
+	DIE,
+	WAIT
+}
+
+enum PLAYERSTATE
+{
+	FREE,
+	ATTACK_SLASH,
+	ATTACK_COMBO,
+	DEAD
+}

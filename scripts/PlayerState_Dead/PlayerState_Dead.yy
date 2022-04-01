@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Player Playerstates",
+    "path": "folders/Scripts/Player Playerstates.yy",
   },
   "resourceVersion": "1.0",
   "name": "PlayerState_Dead",

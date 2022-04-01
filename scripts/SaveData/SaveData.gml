@@ -19,11 +19,11 @@ function InstanceData (_instance) constructor {
 }
 
 function EnemyData (_instance) : InstanceData (_instance) constructor {
-	hp = _instance.hp; // Get/Store hp data
+	enemyHealth = _instance.enemyHealth; // Get/Store hp data
 	
 	static BaseCreate = Create; //Get instance that was created
 	static Create = function () { //Create new create function
 		var _inst = BaseCreate(); //Get id of new instance
-		_inst.hp = hp; //add hp value to new instance
+		_inst.enemyHealth = enemyHealth; //add hp value to new instance
 	}
 }
