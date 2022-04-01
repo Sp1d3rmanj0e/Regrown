@@ -1,8 +1,10 @@
 
 //Room Swaps
 https://www.yoyogames.com/en/blog/multiple-levels-tutorial
+
 //Melee Tutorial 1
 https://www.youtube.com/watch?v=93Dz2hgsZy0
+
 //Melee Tutorial 2
 https://www.youtube.com/watch?v=3PZwCgJk-jc&t=0s
 
@@ -21,3 +23,6 @@ https://www.youtube.com/watch?v=Uq-ZF8Gs6mw
 
 //Enemy Basics
 https://www.youtube.com/watch?v=1B7RpEw8deI
+
+//Enemy Clumping Fix
+https://forum.yoyogames.com/index.php?threads/preventing-enemy-clumping.5819/

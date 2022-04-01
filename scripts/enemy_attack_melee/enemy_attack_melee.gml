@@ -3,9 +3,9 @@
 function enemy_attack_melee(){
 
 	// initialize
-	max_origin_dist = attackRange;
+	
 	left_right = (x-obj_player.x > 0);
-	walkSp = ogwalkSp;
+	enemySpeed = ogwalkSp;
 	
 	// Enemy Engagement Distances
 	if (distance > far_range)
@@ -41,7 +41,7 @@ function enemy_attack_melee(){
 		attack(0);
 	}
 
-	if (distance < safeDist) and (hp/oghp <= fleehealthdec) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
+	if (distance < safeDist) and (enemyHealth/oghp <= enemyFleeHealthDecimal) and (alarm[2] == -1)//if health is below 50% and fleeing valor is gone
 	{
 		state = ENEMYSTATE.FLEE;
 	}

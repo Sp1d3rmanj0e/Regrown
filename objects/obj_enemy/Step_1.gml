@@ -11,7 +11,7 @@ key_crouch = 0;
 
 if (touching_wall != 0) key_spaceH = 1; // jump when facing a wall
 
-if (hp <= 0) exit; // stop code if dead
+if (enemyHealth <= 0) exit; // stop code if dead
 
 distance = abs(x-obj_player.x);
 
@@ -55,7 +55,7 @@ if (obj_player.safe) state = ENEMYSTATE.PATROL;
 
 #region motion limitations
 
-var dist_from_origin = x-startX;
+var dist_from_origin = x-xstart;
 
 if (abs(dist_from_origin) > max_origin_dist) // if too far from origin
 {

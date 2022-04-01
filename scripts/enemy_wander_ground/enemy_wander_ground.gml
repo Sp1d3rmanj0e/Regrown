@@ -2,18 +2,13 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemy_wander_ground(){
 
-	max_origin_dist = wanderRange;
-	dur_min = wanderMin;
-	dur_max = wanderMax;
-
-
-	if (active == 0) // One-time tick per action
+	if (active == 0) // one-time tick per action
 	{
-		active = 1; //Locks to activate only once
+		active = 1; // locks to activate only once
 		move_direction = irandom_range(-1,1); // -1 : left, 0 : none, 1: right
-		walkSp = ogwalkSp + random_range(-.3,.3); //variation in speeds
+		enemySpeed = ogwalkSp + random_range(-.3,.3); // variation in speeds
 	
-		alarm[0] = irandom_range(dur_min,dur_max); //Action time
+		alarm[0] = irandom_range(enemyMotionTimeMin, enemyMotionTimeMax); // action time
 	} 
 	else {  //when active
 		
