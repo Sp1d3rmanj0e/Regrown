@@ -5,10 +5,10 @@ function ratChase(){
 	// if going to player
 	moveDirection = sign(target.x-x); //figures out which direction to go
 	
-	switch(moveDirection) {
+	switch (moveDirection) {
 		
 		case 1: key_right = 1; break;
-		case 2: key_left = 1; break;
+		case -1: key_left = 1; break;
 	}
 	
 	// if at player
@@ -31,6 +31,6 @@ function ratChase(){
 	else {
 		
 		// reset timer if enemy finds player again
-		chaseForgetTime = room_speed * 3;
+		chaseForgetTime = 1;
 	}
 }

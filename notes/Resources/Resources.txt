@@ -21,7 +21,7 @@ https://www.youtube.com/watch?v=BdTNFvu3DcI
 //Textbox Tutorial
 https://www.youtube.com/watch?v=Uq-ZF8Gs6mw
 
-//Enemy Basics
+//Enemy Playerstates
 https://www.youtube.com/watch?v=1B7RpEw8deI
 
 //Enemy Clumping Fix

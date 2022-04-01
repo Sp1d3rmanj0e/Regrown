@@ -22,7 +22,7 @@
     {"id":{"name":"spr_playerIdle","path":"sprites/spr_playerIdle/spr_playerIdle.yy",},"order":3,},
     {"id":{"name":"spr_playerAlt","path":"sprites/spr_playerAlt/spr_playerAlt.yy",},"order":21,},
     {"id":{"name":"obj_enemy","path":"objects/obj_enemy/obj_enemy.yy",},"order":7,},
-    {"id":{"name":"enemy_alert_ground","path":"scripts/enemy_alert_ground/enemy_alert_ground.yy",},"order":3,},
+    {"id":{"name":"enemy_alert_ground","path":"scripts/enemy_alert_ground/enemy_alert_ground.yy",},"order":0,},
     {"id":{"name":"spr_textbox","path":"sprites/spr_textbox/spr_textbox.yy",},"order":7,},
     {"id":{"name":"enemy_run_ground","path":"scripts/enemy_run_ground/enemy_run_ground.yy",},"order":0,},
     {"id":{"name":"logotest","path":"sprites/logotest/logotest.yy",},"order":28,},
@@ -153,6 +153,7 @@
     {"folderPath":"folders/Scripts/Enemy Playerstates.yy","order":11,"resourceVersion":"1.0","name":"Enemy Playerstates","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Sprites/dialogue boxes.yy","order":29,"resourceVersion":"1.0","name":"dialogue boxes","tags":[],"resourceType":"GMFolder",},
     {"folderPath":"folders/Scripts/Player Playerstates.yy","order":12,"resourceVersion":"1.0","name":"Player Playerstates","tags":[],"resourceType":"GMFolder",},
+    {"folderPath":"folders/Scripts/archived.yy","order":14,"resourceVersion":"1.0","name":"archived","tags":[],"resourceType":"GMFolder",},
   ],
   "AudioGroups": [
     {"targets":-1,"resourceVersion":"1.3","name":"audiogroup_default","resourceType":"GMAudioGroup",},

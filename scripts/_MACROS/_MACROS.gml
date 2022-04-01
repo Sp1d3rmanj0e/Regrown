@@ -4,7 +4,6 @@ enum ENEMYSTATE {
 	
 	IDLE,
 	WANDER,
-	PATROL,
 	FLEE,
 	CHASE,
 	ATTACK,

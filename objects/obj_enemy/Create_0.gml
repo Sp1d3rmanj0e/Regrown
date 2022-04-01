@@ -54,11 +54,6 @@ y_move = 0;
 
 random_dist = random_range(0,5);
 
-far_range = 30+random_dist; //maximum dist from player
-close_range = 0 + random_dist; // Minimum Distance from player
-
-view_range = 200;
-
 passive = false;
 
 fall_stun = 2 * room_speed;// stun how long to stun by fall
@@ -100,8 +95,7 @@ fleeingValor = 10*room_speed;
 state = ENEMYSTATE.WANDER;
 
 enemyScript[ENEMYSTATE.WANDER] = ratWander;
-enemyScript[ENEMYSTATE.PATROL] = enemy_alert_ground;
-enemyScript[ENEMYSTATE.CHASE] = enemy_attack_melee;
+enemyScript[ENEMYSTATE.CHASE] = ratChase;
 enemyScript[ENEMYSTATE.FLEE] = enemy_run_ground;
 
 // attack player function

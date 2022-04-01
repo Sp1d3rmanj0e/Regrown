@@ -1,5 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+/*
 function enemy_wander_ground(){
 
 	if (active == 0) // one-time tick per action
