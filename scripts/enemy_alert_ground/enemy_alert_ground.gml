@@ -2,25 +2,23 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemy_alert_ground(){
 
-	if (active == 0) // one-time tick per action
-	{
+	if (active == 0) { // one-time tick per action
+		
 		active = 1; // locks to activate only once
-		move_direction = irandom_range(-1,1); // -1 : left, 0 : none, 1: right
+		move_direction = choose(1,-1); // -1 : left, 1: right
 		enemySpeed = ogwalkSp + random_range(-.3,.3); // variation in speeds
 	
 		alarm[0] = irandom_range(enemyMotionTimeMin,enemyMotionTimeMax); // action time
-	} else {  //when active
+	} 
+	else {  // when active
 		
-		
-		if (move_direction == -1) //Direction of motion
-		{
-			key_left = 1;
-		} else if (move_direction == 1)
-		{
+		if (move_direction == 1) { // direction of motion
+			
 			key_right = 1;
-		} else if (move_direction == 0)
-		{
-			move_direction = choose(-1,1);
+		} 
+		else {
+			
+			key_left = 1;
 		}
 	}
 }

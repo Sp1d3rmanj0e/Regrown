@@ -73,8 +73,7 @@ safeFall = false;
 
 if (move != 0) {
 	var check = move * TILE_SIZE/2; //Gets the x coordinate of the tile to either the left or right of them
-	for (var i = 0; i < cliff_height; i++)
-	{
+	for (var i = 0; i < cliff_height; i++) {
 
 		if (tilemap_get_at_pixel(tilemap,x+check,y+i*TILE_SIZE) != 0) or (airborne == true){
 			safeFall = true;

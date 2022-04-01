@@ -76,15 +76,15 @@ if (tilemap_get_at_pixel(tilemap,bbox_left,bbox_bottom) != 0) {
 	
 }
 
-
-
 p1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_bottom+1);
 p2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_bottom+1);
 
 if (p1 != 0) || (p2 != 0) {
 	
 	airborne = false;
-} else {
+} 
+else {
+	
 	airborne = true;
 }
 
