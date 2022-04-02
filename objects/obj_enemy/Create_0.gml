@@ -31,6 +31,7 @@ target = obj_player;
 
 motionTime = 0;
 chaseForgetTime = 0;
+runCalmTime = 0;
 
 hsp_fraction = 0;
 vsp_fraction = 0;
@@ -87,7 +88,7 @@ attack_forget = 5 * room_speed;
 
 safeDist = 300;
 calmTime = 4*room_speed;
-fleeingValor = 10*room_speed;
+fleeingValor = 0;
 
 
 
@@ -96,7 +97,7 @@ state = ENEMYSTATE.WANDER;
 
 enemyScript[ENEMYSTATE.WANDER] = ratWander;
 enemyScript[ENEMYSTATE.CHASE] = ratChase;
-enemyScript[ENEMYSTATE.FLEE] = enemy_run_ground;
+enemyScript[ENEMYSTATE.FLEE] = ratRun;
 
 // attack player function
 

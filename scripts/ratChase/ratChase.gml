@@ -31,6 +31,20 @@ function ratChase(){
 	else {
 		
 		// reset timer if enemy finds player again
-		chaseForgetTime = 1;
+		chaseForgetTime = 2.5;
+	}
+	
+	// reduce fleeing valor if needed
+	if (fleeingValor > 0) {
+		
+		fleeingValor -= 1/room_speed;
+	}
+	
+	// run if health is too low
+	
+	if (enemyHealth <= enemyFleeHealth) and (fleeingValor <= 0) {
+		
+		state = ENEMYSTATE.FLEE;
+		runCalmTime = 5; // delay before it can wander again
 	}
 }

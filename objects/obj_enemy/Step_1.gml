@@ -27,18 +27,6 @@ if (enemyAggroRadius >= distance_to_object(obj_player)) // if player is close en
 	}
 } else lineof_sight = false;
 
-// attack player if it sees player and isn't passive
-if (lineof_sight ==	true) and (passive == false) and ((state != ENEMYSTATE.FLEE))
-{
-	state = ENEMYSTATE.CHASE;
-}
-
-// if time goes without seeing player, enemy no longer is aggro
-if (lineof_sight == 1)
-{
-	alarm[6] = attack_forget;
-}
-
 // player is safe while in inventory
 if (obj_player.safe) state = ENEMYSTATE.WANDER;
 
