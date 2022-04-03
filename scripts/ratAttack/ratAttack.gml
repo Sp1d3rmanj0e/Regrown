@@ -1,0 +1,38 @@
+// Script assets have changed for v2.3.0 see
+// https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
+function ratAttack() {
+
+	enemySpeed = ogwalkSp * 1.5;
+
+	attackSequenceTime += 1/room_speed;
+
+	// prep for jump
+
+	// jump and move after delay
+	if (attackSequenceTime > 1) {
+	
+		key_spaceH = 1;
+	
+		moveDirection = sign(target.x-x); // figures out which direction to go
+	
+		switch (moveDirection) {
+		
+			case 1: key_right = 1; break;
+			case -1: key_left = 1; break;
+		}
+	
+	}
+
+	// check if able to attack
+	if (distance_to_object(target) < enemyAttackReach) and (attackSequenceTime > 0.5) {
+	
+		attack(target);
+	}
+
+	// revert back to chase state after attacking
+	if (attackSequenceTime > 1.5) and (!airborne) {
+	
+	enemySpeed = ogwalkSp;
+	state = ENEMYSTATE.CHASE;
+	}
+}

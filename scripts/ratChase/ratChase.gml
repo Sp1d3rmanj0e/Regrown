@@ -11,11 +11,14 @@ function ratChase(){
 		case -1: key_left = 1; break;
 	}
 	
-	// if at player
-	if (distance_to_object(target) < enemyAttackReach) {
+	// attack if close enough
+	if (distance_to_object(target) < enemyAttackRadius) {
+		sprite_index = sprAttack;
+		attackSequenceTime = 0;
+		state = ENEMYSTATE.ATTACK;
 		
-		attack(target);
 	}
+	
 	// if can't find player
 	
 	if (distance_to_object(target) > enemyAggroRadius) {

@@ -6,6 +6,7 @@ event_inherited()
 // enemy sprites
 sprIdle = spr_ratIdle;
 sprMove = spr_ratRun;
+sprAttack = spr_ratIdle;
 
 // basic initializations
 jumpHeight = enemyJumpHeight;
@@ -29,9 +30,11 @@ key_crouch = 0;
 // dynamic initializations
 target = obj_player;
 
+	// timers
 motionTime = 0;
 chaseForgetTime = 0;
 runCalmTime = 0;
+attackSequenceTime = 0;
 
 hsp_fraction = 0;
 vsp_fraction = 0;
@@ -98,6 +101,7 @@ state = ENEMYSTATE.WANDER;
 enemyScript[ENEMYSTATE.WANDER] = ratWander;
 enemyScript[ENEMYSTATE.CHASE] = ratChase;
 enemyScript[ENEMYSTATE.FLEE] = ratRun;
+enemyScript[ENEMYSTATE.ATTACK] = ratAttack;
 
 // attack player function
 
