@@ -97,6 +97,7 @@
     {"id":{"name":"scr_followPlayer","path":"scripts/scr_followPlayer/scr_followPlayer.yy",},"order":0,},
     {"id":{"name":"ts_extras","path":"tilesets/ts_extras/ts_extras.yy",},"order":2,},
     {"id":{"name":"spr_tileColl","path":"sprites/spr_tileColl/spr_tileColl.yy",},"order":0,},
+    {"id":{"name":"ratDie","path":"scripts/ratDie/ratDie.yy",},"order":8,},
     {"id":{"name":"snd_switch","path":"sounds/snd_switch/snd_switch.yy",},"order":1,},
     {"id":{"name":"snd_softGlitch2","path":"sounds/snd_softGlitch2/snd_softGlitch2.yy",},"order":1,},
     {"id":{"name":"enemies","path":"objects/enemies/enemies.yy",},"order":0,},

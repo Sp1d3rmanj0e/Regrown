@@ -1,3 +1,3 @@
 /// @description change direction of motion
 
-active = 0;
+//active = 0;

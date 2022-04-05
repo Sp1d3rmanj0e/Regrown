@@ -44,10 +44,9 @@ function ratChase(){
 	}
 	
 	// run if health is too low
-	
 	if (enemyHealth <= enemyFleeHealth) and (fleeingValor <= 0) {
 		
 		state = ENEMYSTATE.FLEE;
-		runCalmTime = 5; // delay before it can wander again
+		runCalmTime = 3; // delay before it can wander again
 	}
 }

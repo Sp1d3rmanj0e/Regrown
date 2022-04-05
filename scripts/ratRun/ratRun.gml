@@ -15,7 +15,7 @@ function ratRun(){
 	}
 
 	// calm down timer
-	fleeingValor = 10;
+	fleeingValor = 7;
 	runCalmTime -= 1/room_speed;
 
 	if (runCalmTime <= 0) {

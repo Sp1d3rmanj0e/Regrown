@@ -29,6 +29,19 @@ function ratAttack() {
 		attack(target);
 	}
 
+	// reduce fleeing valor if needed
+	if (fleeingValor > 0) {
+		
+		fleeingValor -= 1/room_speed;
+	}
+	
+	// run if health is too low
+	if (enemyHealth <= enemyFleeHealth) and (fleeingValor <= 0) {
+		
+		state = ENEMYSTATE.FLEE;
+		runCalmTime = 3; // delay before it can wander again
+	}
+
 	// revert back to chase state after attacking
 	if (attackSequenceTime > 1.5) and (!airborne) {
 	
