@@ -102,23 +102,3 @@ enemyScript[ENEMYSTATE.WANDER] = ratWander;
 enemyScript[ENEMYSTATE.CHASE] = ratChase;
 enemyScript[ENEMYSTATE.FLEE] = ratRun;
 enemyScript[ENEMYSTATE.ATTACK] = ratAttack;
-
-// attack player function
-
-function attack(target)
-{
-		with (target)
-		{
-			if (alarm[0] == -1) and (!safe)// if is hittable and not safe, attack
-			{
-				alarm[0] = hit_stun; // activate hit stun
-				if (P_health > 0) // damage
-				{
-					P_health -= other.damage;
-				} else P_health = 0;
-				fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),25); 
-				if (instance_exists(inventory)) instance_destroy(inventory);
-			}
-		}
-	alarm[3] = attack_stun; // delay for enemy to hit again
-}
