@@ -14,6 +14,7 @@ freeze = false; // Pause player controls
 damage = 2;
 
 // dynamic initialize
+hitStunTimer = 0;
 lock = false; // don't touch this
 hsp_fraction = 0;
 vsp_fraction = 0;
@@ -78,8 +79,6 @@ yCamOffset = -50;
 
 // Fighting
 
-	// Enemy Hit
-	hit_stun = 1.5 * room_speed;
 
 // Powerups
 

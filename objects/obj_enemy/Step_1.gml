@@ -8,18 +8,14 @@ key_spaceP = 0;
 key_spaceH = 0;
 key_crouch = 0;
 
+if (enemyHealth <= 0) exit;
 
 if (touching_wall != 0) key_spaceH = 1; // jump when facing a wall
 
-if (enemyHealth <= 0) exit; // stop code if dead
-
 distance = abs(x-obj_player.x);
 
-
-#region state transitions
-
 // checks if enemy can see player (not through walls)
-if (enemyAggroRadius >= distance_to_object(obj_player)) // if player is close enough to be seen
+if (enemyAggroRadius >= distance_to_object(obj_player))
 {
 	if (alarm[5] == -1)
 	{
@@ -29,9 +25,3 @@ if (enemyAggroRadius >= distance_to_object(obj_player)) // if player is close en
 
 // player is safe while in inventory
 if (obj_player.safe) state = ENEMYSTATE.WANDER;
-
-#endregion
-
-
-
-

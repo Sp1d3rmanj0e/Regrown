@@ -2,6 +2,12 @@
 // inherit state machine
 event_inherited();
 
+// die if health is too low
+if (enemyHealth <= 0) {
+	
+	state = ENEMYSTATE.DIE;
+	exit;
+}
 
 #region motion limitations
 
@@ -61,12 +67,7 @@ if (key_spaceH) and (alarm[4] == -1) //if not stunned and want to jump
     }
 }
 
-#region wall collisions tilemap
 
-// makes all motion integers for tilemaps
-Collisions(enemySpeed);
-
-#endregion
 
 // animations
 
@@ -76,12 +77,13 @@ if (hsp != 0) {
 	if (hsp > 0) image_xscale = 1; else image_xscale = -1;
 }
 
-// if dead, destroy self
-if (enemyHealth <= 0) and (airborne = false)
-{
-	instance_create_depth(x,y,depth,obj_enemyDead);
-	instance_destroy();
+if (!global.gamePaused) {
+	
+	image_speed = 1;
+	Collisions(enemySpeed);
+	x += hsp;
+	y += vsp;
+} else {
+	
+	image_speed = 0;
 }
-
-x += hsp;
-y += vsp;

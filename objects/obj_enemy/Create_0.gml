@@ -7,6 +7,7 @@ event_inherited()
 sprIdle = spr_ratIdle;
 sprMove = spr_ratRun;
 sprAttack = spr_ratIdle;
+sprDie = spr_enemyDie;
 
 // basic initializations
 jumpHeight = enemyJumpHeight;
@@ -102,3 +103,4 @@ enemyScript[ENEMYSTATE.WANDER] = ratWander;
 enemyScript[ENEMYSTATE.CHASE] = ratChase;
 enemyScript[ENEMYSTATE.FLEE] = ratRun;
 enemyScript[ENEMYSTATE.ATTACK] = ratAttack;
+enemyScript[ENEMYSTATE.DIE] = ratDie;

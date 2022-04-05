@@ -1,3 +1,9 @@
-/// @description close game entirely
+/// @description toggle pause
 
-game_end();
+if (!global.gamePaused) {
+	
+	global.gamePaused = true;
+} else {
+	
+	global.gamePaused = false;
+}

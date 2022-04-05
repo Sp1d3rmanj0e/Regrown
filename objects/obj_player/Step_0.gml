@@ -29,8 +29,17 @@ P_health_prev = P_health;
 
 #endregion
 
-
-//Finalizing
-
-x += hsp;
-y += vsp;
+if (!global.gamePaused) {
+	
+	if (hitStunTimer > 0) {
+		
+		hitStunTimer -= 1/room_speed;
+	}
+	
+	image_speed = 1;
+	x += hsp;
+	y += vsp;
+} else {
+	
+	image_speed = 0;
+}
