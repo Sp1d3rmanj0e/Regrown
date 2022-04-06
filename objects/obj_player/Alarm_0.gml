@@ -1,2 +1,2 @@
-/// @description Exist
+/// @description Hit protection timer
 

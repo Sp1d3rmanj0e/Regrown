@@ -27,6 +27,7 @@ function ratWander(){
 		
 		state = ENEMYSTATE.CHASE;
 		target = obj_player;
+		motionTime = 0;
 	}
 	
 }

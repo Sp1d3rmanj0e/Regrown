@@ -18,7 +18,7 @@ lock = false; // don't touch this
 hsp_fraction = 0;
 vsp_fraction = 0;
 healing = 0;
-P_health = 1;
+P_health = 10;
 P_health_prev = P_health;
 flash_alpha = 0;
 safe = false;
@@ -78,8 +78,6 @@ yCamOffset = -50;
 
 // Fighting
 
-	// Enemy Hit
-	hit_stun = 1.5 * room_speed;
 
 // Powerups
 

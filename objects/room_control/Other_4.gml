@@ -44,5 +44,6 @@ if (array_length(global.roomData) > room) and (is_array(global.roomData[room])) 
 }
 } else {
 	global.saveObjects = 1;
+	global.roomData = [];
 }
 

@@ -1,6 +1,6 @@
-/// @description 
-#region Keybind Setup
-//Initialization
+/// @description preparation
+
+// keybind initialization
 if (freeze = false)
 {
 	key_right = keyboard_check(ord("D"));
@@ -11,16 +11,18 @@ if (freeze = false)
 	key_attack = mouse_check_button_pressed(mb_left);
 }
 
-#endregion
-
+// become dead if health is too low
 if (P_health <= 0) {
 	state = PLAYERSTATE.DEAD;
 }
 
-switch (state)
-{
-	case PLAYERSTATE.FREE: PlayerState_Free(); break;
-	case PLAYERSTATE.ATTACK_SLASH: PlayerState_Attack_Slash(); break;
-	case PLAYERSTATE.ATTACK_COMBO: PlayerState_Attack_Combo(); break;
-	case PLAYERSTATE.DEAD: PlayerState_Dead(); break;
+// player state engine
+if (!global.gamePaused) {
+	switch (state)
+	{
+		case PLAYERSTATE.FREE: PlayerState_Free(); break;
+		case PLAYERSTATE.ATTACK_SLASH: PlayerState_Attack_Slash(); break;
+		case PLAYERSTATE.ATTACK_COMBO: PlayerState_Attack_Combo(); break;
+		case PLAYERSTATE.DEAD: PlayerState_Dead(); break;
+	}
 }

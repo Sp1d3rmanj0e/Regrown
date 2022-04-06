@@ -11,11 +11,14 @@ function ratChase(){
 		case -1: key_left = 1; break;
 	}
 	
-	// if at player
-	if (distance_to_object(target) < enemyAttackReach) {
+	// attack if close enough
+	if (distance_to_object(target) < enemyAttackRadius) {
+		sprite_index = sprAttack;
+		attackSequenceTime = 0;
+		state = ENEMYSTATE.ATTACK;
 		
-		attack(target);
 	}
+	
 	// if can't find player
 	
 	if (distance_to_object(target) > enemyAggroRadius) {
@@ -31,6 +34,19 @@ function ratChase(){
 	else {
 		
 		// reset timer if enemy finds player again
-		chaseForgetTime = 1;
+		chaseForgetTime = 2.5;
+	}
+	
+	// reduce fleeing valor if needed
+	if (fleeingValor > 0) {
+		
+		fleeingValor -= 1/room_speed;
+	}
+	
+	// run if health is too low
+	if (enemyHealth <= enemyFleeHealth) and (fleeingValor <= 0) {
+		
+		state = ENEMYSTATE.FLEE;
+		runCalmTime = 3; // delay before it can wander again
 	}
 }

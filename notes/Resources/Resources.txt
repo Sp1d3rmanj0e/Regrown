@@ -23,6 +23,11 @@ https://www.youtube.com/watch?v=Uq-ZF8Gs6mw
 
 //Enemy Playerstates
 https://www.youtube.com/watch?v=1B7RpEw8deI
+https://www.youtube.com/watch?v=YqMVLHBJ7Yo
+https://www.youtube.com/watch?v=B_AVpAti1Eg
 
 //Enemy Clumping Fix
 https://forum.yoyogames.com/index.php?threads/preventing-enemy-clumping.5819/
+
+//Game Pause Advice
+https://www.yoyogames.com/en/blog/coffee-break-tutorials-pausing-your-game-gml

@@ -6,6 +6,8 @@ event_inherited()
 // enemy sprites
 sprIdle = spr_ratIdle;
 sprMove = spr_ratRun;
+sprAttack = spr_ratIdle;
+sprDie = spr_enemyDie;
 
 // basic initializations
 jumpHeight = enemyJumpHeight;
@@ -29,8 +31,11 @@ key_crouch = 0;
 // dynamic initializations
 target = obj_player;
 
+	// timers
 motionTime = 0;
 chaseForgetTime = 0;
+runCalmTime = 0;
+attackSequenceTime = 0;
 
 hsp_fraction = 0;
 vsp_fraction = 0;
@@ -87,7 +92,7 @@ attack_forget = 5 * room_speed;
 
 safeDist = 300;
 calmTime = 4*room_speed;
-fleeingValor = 10*room_speed;
+fleeingValor = 0;
 
 
 
@@ -96,24 +101,6 @@ state = ENEMYSTATE.WANDER;
 
 enemyScript[ENEMYSTATE.WANDER] = ratWander;
 enemyScript[ENEMYSTATE.CHASE] = ratChase;
-enemyScript[ENEMYSTATE.FLEE] = enemy_run_ground;
-
-// attack player function
-
-function attack(target)
-{
-		with (target)
-		{
-			if (alarm[0] == -1) and (!safe)// if is hittable and not safe, attack
-			{
-				alarm[0] = hit_stun; // activate hit stun
-				if (P_health > 0) // damage
-				{
-					P_health -= other.damage;
-				} else P_health = 0;
-				fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),25); 
-				if (instance_exists(inventory)) instance_destroy(inventory);
-			}
-		}
-	alarm[3] = attack_stun; // delay for enemy to hit again
-}
+enemyScript[ENEMYSTATE.FLEE] = ratRun;
+enemyScript[ENEMYSTATE.ATTACK] = ratAttack;
+enemyScript[ENEMYSTATE.DIE] = ratDie;
