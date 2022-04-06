@@ -29,17 +29,22 @@ P_health_prev = P_health;
 
 #endregion
 
+// if game is running normally
 if (!global.gamePaused) {
 	
-	if (hitStunTimer > 0) {
-		
-		hitStunTimer -= 1/room_speed;
-	}
+
 	
 	image_speed = 1;
 	x += hsp;
 	y += vsp;
-} else {
+} 
+else { // if game is paused
+	
+	// pause hit protection timer
+	if (alarm[0] != -1) {
+		
+		alarm[0]++;
+	}
 	
 	image_speed = 0;
 }

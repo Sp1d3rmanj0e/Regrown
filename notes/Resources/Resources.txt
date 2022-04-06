@@ -28,3 +28,6 @@ https://www.youtube.com/watch?v=B_AVpAti1Eg
 
 //Enemy Clumping Fix
 https://forum.yoyogames.com/index.php?threads/preventing-enemy-clumping.5819/
+
+//Game Pause Advice
+https://www.yoyogames.com/en/blog/coffee-break-tutorials-pausing-your-game-gml

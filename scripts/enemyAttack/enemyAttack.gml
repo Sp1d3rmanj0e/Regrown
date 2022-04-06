@@ -6,7 +6,7 @@ function enemyAttack(target, damage){
 		
 		if (alarm[0] == -1) and (!safe) {// if is hittable and not safe, attack
 			
-			alarm[0] = hit_stun; // activate hit stun
+			alarm[0] = 1.5 * room_speed; // activate hit stun
 			if (P_health > 0) {// damage
 			
 				P_health -= damage;
