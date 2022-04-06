@@ -11,6 +11,7 @@
     {"id":{"name":"spr_healingAnimation","path":"sprites/spr_healingAnimation/spr_healingAnimation.yy",},"order":9,},
     {"id":{"name":"enemy_attack_melee","path":"scripts/enemy_attack_melee/enemy_attack_melee.yy",},"order":1,},
     {"id":{"name":"scr_lineof_sight","path":"scripts/scr_lineof_sight/scr_lineof_sight.yy",},"order":1,},
+    {"id":{"name":"spr_junglebckgrnd_middle","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},"order":5,},
     {"id":{"name":"spr_powerupCells","path":"sprites/spr_powerupCells/spr_powerupCells.yy",},"order":0,},
     {"id":{"name":"spr_dialogueopen","path":"sprites/spr_dialogueopen/spr_dialogueopen.yy",},"order":1,},
     {"id":{"name":"spr_sussyspeak","path":"sprites/spr_sussyspeak/spr_sussyspeak.yy",},"order":0,},
