@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Enemy Playerstates.yy",
   },
   "resourceVersion": "1.0",
-  "name": "ratState",
+  "name": "ratStates",
   "tags": [],
   "resourceType": "GMScript",
 }

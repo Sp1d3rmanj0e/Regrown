@@ -2,8 +2,6 @@
 // You can write your code in this editor
 draw_self();
 
-draw_text(x,y,alarm[0]);
-
 if (flash_alpha > 0)
 {
 	shader_set(sh_flash);
