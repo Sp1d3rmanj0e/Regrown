@@ -7,15 +7,15 @@
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
-  "bbox_left": 200,
-  "bbox_right": 2999,
+  "bbox_left": 20,
+  "bbox_right": 299,
   "bbox_top": 0,
-  "bbox_bottom": 999,
+  "bbox_bottom": 99,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 3000,
-  "height": 1000,
+  "width": 300,
+  "height": 100,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -26,6 +26,7 @@
   "frames": [
     {"compositeImage":{"FrameId":{"name":"3fb82b8f-982a-4055-812a-0d083a6b7ca0","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"3fb82b8f-982a-4055-812a-0d083a6b7ca0","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},"LayerId":{"name":"3bad359e-47ea-4571-80c9-3a5955a5948b","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"3fb82b8f-982a-4055-812a-0d083a6b7ca0","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},"LayerId":{"name":"8613d5c2-a560-4802-8c6e-8458a7152934","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_junglebckgrnd_middle","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},"resourceVersion":"1.0","name":"3fb82b8f-982a-4055-812a-0d083a6b7ca0","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -54,8 +55,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 1500,
-    "yorigin": 500,
+    "xorigin": 150,
+    "yorigin": 50,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_junglebckgrnd_middle","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},
@@ -66,6 +67,7 @@
   },
   "layers": [
     {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"3bad359e-47ea-4571-80c9-3a5955a5948b","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"Layer 1","resourceVersion":"1.0","name":"8613d5c2-a560-4802-8c6e-8458a7152934","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
