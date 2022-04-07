@@ -16,5 +16,5 @@ function enemyAttack(target, damage){
 			if (instance_exists(inventory)) instance_destroy(inventory);
 		}
 	}
-	alarm[3] = attack_stun; // delay for enemy to hit again
+	alarm[1] = enemyAttackStun; // delay for enemy to hit again
 }

@@ -25,7 +25,7 @@ function ratWander(){
 
 	if (instance_exists(obj_player) && distance_to_object(obj_player) < enemyAggroRadius) && (lineof_sight) {
 		
-		state = ENEMYSTATE.CHASE;
+		switchState(ENEMYSTATE.CHASE)
 		target = obj_player;
 		motionTime = 0;
 	}

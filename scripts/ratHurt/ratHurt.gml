@@ -2,13 +2,12 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function ratHurt(){
 	
-	// increment time
-	hurtStunTime += 1/room_speed;
-	
-	// revert back to normal
-	if (hurtStunTime >= 1) {
+	if (hurtStunTimer > 0) {
 		
-		state = ENEMYSTATE.CHASE;
-		hurtStunTime = 0;
+		hurtStunTimer -= 1/room_speed;
+	}
+	else {
+		
+		switchState(previousState);
 	}
 }

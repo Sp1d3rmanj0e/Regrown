@@ -29,7 +29,7 @@ if (hits > 0)
 			ds_list_add(hitByAttack,hitID);
 			with (hitID)
 			{
-				EnemyHit(obj_player.damage);
+				EnemyHit(damage);
 			}
 		}
 	}

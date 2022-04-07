@@ -32,9 +32,7 @@ P_health_prev = P_health;
 // if game is running normally
 if (!global.gamePaused) {
 	
-
-	
-	image_speed = 1;
+	image_speed = imageSpeed;
 	x += hsp;
 	y += vsp;
 } 

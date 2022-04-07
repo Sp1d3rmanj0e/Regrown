@@ -53,7 +53,7 @@ else sprite_index = spr_playerChk; //Checkpoint animation resets to 0 (Create of
 
 if (sprite_index = spr_playerChk) and (animation_end())
 {
-	image_speed = 0;
+	imageSpeed = 0;
 }
 
 #endregion

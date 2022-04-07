@@ -41,7 +41,7 @@ function ratAttack() {
 	// run if health is too low
 	if (enemyHealth <= enemyFleeHealth) and (fleeingValor <= 0) {
 		
-		state = ENEMYSTATE.FLEE;
+		switchState(ENEMYSTATE.FLEE);
 		runCalmTime = 3; // delay before it can wander again
 	}
 
@@ -49,6 +49,6 @@ function ratAttack() {
 	if (attackSequenceTime > 1.5) and (!airborne) {
 	
 	enemySpeed = ogwalkSp;
-	state = ENEMYSTATE.CHASE;
+	switchState(ENEMYSTATE.CHASE);
 	}
 }

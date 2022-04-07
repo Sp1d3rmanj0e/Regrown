@@ -21,6 +21,6 @@ function ratRun(){
 	if (runCalmTime <= 0) {
 		
 		enemySpeed = ogwalkSp;
-		state = ENEMYSTATE.WANDER;
+		switchState(ENEMYSTATE.WANDER);
 	}
 }

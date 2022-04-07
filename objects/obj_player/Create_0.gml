@@ -14,6 +14,7 @@ freeze = false; // Pause player controls
 damage = 2;
 
 // dynamic initialize
+imageSpeed = 1;
 lock = false; // don't touch this
 hsp_fraction = 0;
 vsp_fraction = 0;
@@ -105,7 +106,7 @@ function pause(toggle)
 	else
 	{
 		freeze = false;
-		image_speed = 1;
+		imageSpeed = 1;
 	}
 }
 
