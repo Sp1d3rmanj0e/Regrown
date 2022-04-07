@@ -82,7 +82,7 @@ if (!global.gamePaused) {
 	image_speed = 1;
 	Collisions(enemySpeed);
 	x += hsp;
-	y += vsp;
+	y += min(vsp,20);
 } else {
 	
 	image_speed = 0;

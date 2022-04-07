@@ -40,10 +40,9 @@ if (!freeze) {
 if (vsp != 0) {
 	if (key_spaceH) and (vsp < 5)
 		{
-			sprite_index = spr_playerAir;
-			image_index = 0;
+			sprite_index = spr_playerAlt_AirUp;
 		}
-		else image_index = 1;
+		else sprite_index = spr_playerAlt_AirDown;
 	}
 	else if (key_crouch) sprite_index = spr_playerCrouch;
 	else if (hsp != 0) sprite_index = spr_playerAlt_Walk;
