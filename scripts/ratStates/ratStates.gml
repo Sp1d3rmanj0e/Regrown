@@ -27,7 +27,7 @@ function ratAttack() {
 	// check if able to attack
 	if (distance_to_object(target) < enemyAttackReach) and (attackSequenceTime > 0.5) {
 	
-		enemyAttack(target, enemyDamage);
+		enemyAttack(target, enemyDamage, 25);
 	}
 
 	// reduce fleeing valor if needed

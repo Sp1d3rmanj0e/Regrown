@@ -1,6 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-function enemyAttack(target, damage){
+function enemyAttack(target, damage, mag){
 
 	with (target) {
 		
@@ -23,7 +23,7 @@ function enemyAttack(target, damage){
 			else P_health = 0;
 			
 			// yeet player
-			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),25); 
+			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
 			
 			// close inventory if it is open
 			if (instance_exists(inventory)) instance_destroy(inventory);
