@@ -1,5 +1,5 @@
 /// @description Healing
-if (state != PLAYERSTATE.DEAD) {
+if (state != PLAYERSTATE.DEAD) and (nanobotCount > 0) and (!instance_exists(inventory)) {
 	if (healing = 0) 
 	{
 		healing = 1;

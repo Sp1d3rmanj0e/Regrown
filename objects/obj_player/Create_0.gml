@@ -7,11 +7,13 @@
 hsp = 0;
 vsp = 0;
 walkSp = 8;
-grv = 0.8; // Gravity
-jumpH = 23; // Jump height
-airborne = false; // If airborne
-freeze = false; // Pause player controls
+grv = 0.8; // gravity
+jumpH = 23; // jump height
+airborne = false; // if airborne
+freeze = false; // pause player controls
 damage = 2;
+P_health = 1;
+nanobotCount = 10; // healing capsules
 
 // dynamic initialize
 imageSpeed = 1;
@@ -19,7 +21,6 @@ lock = false; // don't touch this
 hsp_fraction = 0;
 vsp_fraction = 0;
 healing = 0;
-P_health = 10;
 P_health_prev = P_health;
 flash_alpha = 0;
 safe = false;
@@ -28,8 +29,9 @@ y_move = 0; //fling y
 
 // reference initialize
 P_maxHealth = 10;
-Xoffset = 550; // healthbar
-Yoffset = 75; // healthbar
+maxNanobotCount = 10;
+Xoffset = 500; // healthbar
+Yoffset = 50; // healthbar
 flash_colour = c_red;
 
 //Respawn is changed on obj_checkpoint collision
