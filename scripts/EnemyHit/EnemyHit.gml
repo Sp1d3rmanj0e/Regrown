@@ -7,4 +7,6 @@ fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),10);
 
 hurtStunTimer = enemyHurtStun;
 if (state != ENEMYSTATE.HURT) switchState(ENEMYSTATE.HURT);
+
+showHealthBarTimer = 5;
 }

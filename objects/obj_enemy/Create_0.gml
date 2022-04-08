@@ -28,6 +28,7 @@ key_crouch = 0;
 target = obj_player;
 
 	// timers
+showHealthBarTimer = 0;
 hurtStunTimer = 0;
 motionTime = 0;
 chaseForgetTime = 0;

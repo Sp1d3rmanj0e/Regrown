@@ -115,7 +115,10 @@ function ratHurt() {
 		hurtStunTimer -= 1/room_speed;
 	}
 	else {
-		
+		if (previousState = ENEMYSTATE.ATTACK) {
+			
+			attackSequenceTime /= 2;
+		}
 		switchState(previousState);
 	}
 }

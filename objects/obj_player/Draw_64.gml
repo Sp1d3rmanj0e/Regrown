@@ -1,6 +1,5 @@
 /// @description GUI
 
-
 if (!instance_exists(inventory)) {
 	
 	// draw healthbar GUI
