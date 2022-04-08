@@ -24,12 +24,12 @@ function enemyAttack(target, damage, mag){
 			
 			// yeet player
 			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
-			
+			show_debug_message(obj_player.vsp);
 			// close inventory if it is open
 			if (instance_exists(inventory)) instance_destroy(inventory);
+			
 		}
 	}
 	
-	// enemy hit delay
-	alarm[1] = enemyAttackStun;
+
 }

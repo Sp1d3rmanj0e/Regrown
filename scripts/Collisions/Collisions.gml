@@ -17,7 +17,6 @@ function fling(dir,mag)
 {
 	x_move = clamp(lengthdir_x(mag,dir),-mag/2, mag/2);
 	y_move = clamp(lengthdir_y(mag,dir),-mag/2, mag/2);
-	show_debug_message(y_move);
 }
 if (abs(x_move) > 0.1)
 {

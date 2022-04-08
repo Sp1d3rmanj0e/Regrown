@@ -53,15 +53,15 @@ if (safeFall = false) and (move != 0){
 if (vsp > fall_speed_stun)
 {
 	
-	alarm[2] = fall_stun; // sets freeze to stun time
+	alarm[1] = fall_stun; // sets freeze to stun time
 }
 
 // jumping
-if (key_spaceH) and (alarm[2] == -1) //if not stunned and want to jump
+if (key_spaceH) and (alarm[1] == -1) //if not stunned and want to jump
 {
     if (!airborne)
     {
-		alarm[2] = jump_stun;
+		alarm[1] = jump_stun;
         vsp -= enemyJumpHeight;
         airborne = true;
     }
@@ -87,5 +87,4 @@ if (!global.gamePaused) {
 	
 	image_speed = 0;
 	alarm[1]++;
-	alarm[2]++;
 }

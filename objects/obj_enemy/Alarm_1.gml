@@ -1,1 +1,1 @@
-/// @description attack cooldown
+/// @description Jump Stun
