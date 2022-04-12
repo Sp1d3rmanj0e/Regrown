@@ -10,22 +10,16 @@ function ratAttack() {
 //if (attackSequenceTime < 1) moveDirection = sign(target.x-x); // figures out which direction to go
 
 	// jump and move after delay
-	if (attackSequenceTime > 1) {
+	if (attackSequenceTime > 1) and (attackSequenceTime < 2) {
 	
 		key_spaceH = 1;
 	
-		moveDirection = sign(target.x-x); // figures out which direction to go
-	
-		switch (moveDirection) {
-		
-			case 1: key_right = 1; break;
-			case -1: key_left = 1; break;
-		}
+		followTarget(target,1);
 	
 	}
 
 	// check if able to attack
-	if (distance_to_object(target) < enemyAttackReach) and (attackSequenceTime > 0.5) {
+	if (distance_to_object(target) < enemyAttackReach) and ((attackSequenceTime > 0.5) and (attackSequenceTime < 2)) {
 	
 		enemyAttack(target, enemyDamage, 25);
 	}
@@ -44,7 +38,7 @@ function ratAttack() {
 	}
 
 	// revert back to chase state after attacking
-	if (attackSequenceTime > 2) and (!airborne) {
+	if ((attackSequenceTime > 4) and (!airborne)) or (!lineof_sight) {
 	
 	enemySpeed = ogwalkSp;
 	switchState(ENEMYSTATE.CHASE);
@@ -54,13 +48,7 @@ function ratAttack() {
 function ratChase() {
 	
 	// if going to player
-	moveDirection = sign(target.x-x); //figures out which direction to go
-	
-	switch (moveDirection) {
-		
-		case 1: key_right = 1; break;
-		case -1: key_left = 1; break;
-	}
+	followTarget(target,1);
 	
 	// attack if close enough
 	if (distance_to_object(target) < enemyAttackRadius) and (!enemyPassive) {
@@ -134,13 +122,7 @@ function ratRun() {
 	enemySpeed = ogwalkSp+0.75;
 
 	// move away from player
-	moveDirection = -sign(obj_player.x-x);
-
-	switch(moveDirection) {
-	
-		case 1: key_right = 1; break;
-		case -1: key_left = 1; break;
-	}
+	followTarget(obj_player,-1);
 
 	// calm down timer
 	fleeingValor = 7;

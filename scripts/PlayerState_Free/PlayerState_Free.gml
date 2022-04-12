@@ -23,15 +23,13 @@ if (key_spaceH) and (tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/
 
 #region animations
 
-if (hsp != 0)
-{
-	if (key_right)
-	{
-		image_xscale = 1;
-	} else if (key_left)
-	{
-		image_xscale = -1;
-	}
+
+if (key_right) {
+	
+	image_xscale = 1;
+} else if (key_left) {
+	
+	image_xscale = -1;
 }
 
 //Animation
