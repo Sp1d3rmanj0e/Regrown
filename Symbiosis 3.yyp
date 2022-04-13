@@ -29,6 +29,7 @@
     {"id":{"name":"enemy_run_ground","path":"scripts/enemy_run_ground/enemy_run_ground.yy",},"order":3,},
     {"id":{"name":"logotest","path":"sprites/logotest/logotest.yy",},"order":28,},
     {"id":{"name":"spr_inventoryscreenES","path":"sprites/spr_inventoryscreenES/spr_inventoryscreenES.yy",},"order":0,},
+    {"id":{"name":"Spr_BushSet1","path":"sprites/Spr_BushSet1/Spr_BushSet1.yy",},"order":7,},
     {"id":{"name":"obj_enter","path":"objects/obj_enter/obj_enter.yy",},"order":1,},
     {"id":{"name":"spr_test","path":"sprites/spr_test/spr_test.yy",},"order":20,},
     {"id":{"name":"spr_inventoryscreenActive","path":"sprites/spr_inventoryscreenActive/spr_inventoryscreenActive.yy",},"order":4,},
