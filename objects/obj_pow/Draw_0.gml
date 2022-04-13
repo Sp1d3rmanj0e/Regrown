@@ -18,8 +18,11 @@ if (selected) {
 }
 
 if (p1 == 1) {
-	draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,0,shade,100);
 	
+	// draw powerup backdrop
+	draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,0,ds_grid_get(global.powerup_grid,6,count),100);
+	
+	// draw icons for the powerups
 	if (sprite_index = spr_powOrg)
 	{
 		draw_sprite_ext(spr_powOrgIcon,powerup_type,x,y,1,1,0,shade,100);

@@ -1,7 +1,6 @@
 
 
-if (place_meeting(x,y,obj_player)) {
+if (place_meeting(x,y,obj_player)) and (!instance_exists(inventory)) {
 	
-	draw_sprite(spr_infoBox,-1,obj_player.view_width/2,obj_player.view_height/2);
-
+	draw_sprite(spr_infoBox,-1,display_get_gui_width()/2,display_get_gui_height()/2);
 }

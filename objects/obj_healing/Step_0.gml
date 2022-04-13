@@ -2,11 +2,13 @@
 scr_followPlayer(0,0);
 
 // heal 1 cell per loop
-healPercent += 100/healthPerSecond;
-if (healPercent >= 100) {
-	healPercent = 0;
+healCounter += 1;
+if (healCounter >= room_speed/healthPerSecond) {
+	healCounter = 0;
 	obj_player.P_health += 1;
 	obj_player.nanobotCount--;
+	audio_stop_sound(snd_heal);
+	audio_play_sound(snd_heal,1,false);
 }
 
 

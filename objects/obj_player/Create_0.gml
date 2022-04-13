@@ -12,7 +12,7 @@ jumpH = 23; // jump height
 airborne = false; // if airborne
 freeze = false; // pause player controls
 damage = 2;
-P_health = 10;
+P_health = 1;
 nanobotCount = 5; // healing capsules
 
 // dynamic initialize
