@@ -18,11 +18,23 @@ if (P_health <= 0) {
 
 // player state engine
 if (!global.gamePaused) {
-	switch (state)
-	{
+	
+	switch (state) {
+		
 		case PLAYERSTATE.FREE: PlayerState_Free(); break;
 		case PLAYERSTATE.ATTACK_SLASH: PlayerState_Attack_Slash(); break;
 		case PLAYERSTATE.ATTACK_COMBO: PlayerState_Attack_Combo(); break;
 		case PLAYERSTATE.DEAD: PlayerState_Dead(); break;
+	}
+}
+
+// powerup state engine
+if (!global.gamePaused) {
+	
+	if (global.orgFill != -4) {
+		if (ds_grid_get(global.powerup_grid,4,global.orgFill)) {
+			
+			script_execute(ds_grid_get(global.powerup_grid,4,global.orgFill));
+		}
 	}
 }

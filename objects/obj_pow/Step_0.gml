@@ -5,11 +5,9 @@
 if (!lock)
 {
 
-
 	lock = true;
-
 	
-		if (obj_player.synFill == count) or (obj_player.orgFill == count)
+		if (global.synFill == count) or (global.orgFill == count)
 	{
 		Choose();
 	}

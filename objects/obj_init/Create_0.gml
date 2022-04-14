@@ -1,5 +1,8 @@
 /// @description initialize
 
+global.orgFill = -4;
+global.synFill = -4;
+
 global.gamePaused = false;
 
 randomize();

@@ -38,12 +38,12 @@ function Choose()
 		if (type = "syn") // change active powerup
 		{
 			y = selectedYsyn;
-			obj_player.synFill = count;
+			global.synFill = count;
 		} else {
 			y = selectedYorg;
-			obj_player.orgFill = count;
+			global.orgFill = count;
 		}
-		selected = true;
+		selected = true
 }
 
 // send powerups back

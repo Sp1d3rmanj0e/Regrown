@@ -29,6 +29,7 @@ x_move = 0; //referenced in collisions
 y_move = 0; //fling y
 
 // reference initialize
+ogwalkSp = walkSp;
 P_maxHealth = 10;
 maxNanobotCount = 10;
 Xoffset = 500; // healthbar

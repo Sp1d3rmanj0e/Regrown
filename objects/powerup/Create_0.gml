@@ -14,8 +14,11 @@ maxpowerups = 16; // Array capacity (Easily changeable)
 // w = 6  -->  Color blend (C_ or RGB)
 
 
+if (global.saveObjects == 1) { //prevents creating infinite ds_grids upon resetting
+	
+	global.powerup_grid = ds_grid_create(7,maxpowerups);
+}
 
-global.powerup_grid = ds_grid_create(7,maxpowerups);
 
 #region Powerup Data
 
@@ -37,7 +40,7 @@ ds_grid_set(global.powerup_grid,0,0,"Moose"); //Name
 ds_grid_set(global.powerup_grid,1,0,1); //Image Number
 ds_grid_set(global.powerup_grid,2,0,true); //Unlocked?
 ds_grid_set(global.powerup_grid,3,0,"Hits a heavy, one-directional blow."); //Definition
-ds_grid_set(global.powerup_grid,4,0,noone); //Script (ADD ONE)
+ds_grid_set(global.powerup_grid,4,0,powTest); //Script 
 ds_grid_set(global.powerup_grid,5,0,noone); //Sound (ADD ONE)
 ds_grid_set(global.powerup_grid,6,0,c_orange); //Color
 
