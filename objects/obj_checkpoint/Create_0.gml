@@ -1,3 +1,0 @@
-/// @description initialize
-
-contact = false;
