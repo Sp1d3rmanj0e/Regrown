@@ -2,12 +2,17 @@
 
 var p1 = 0;
 
+// draw self if mouse is not over either side
 if (inventory.overlay == PTYPE.NONE) {
 		p1 = 1;
+
+// draw self if mouse is on synthetic side and type is organic
 } else if (inventory.overlay == PTYPE.ORG) {
 	if (type == "org") {
 		p1 = 1;
 	}
+
+// draw self if mouse is on organic side and type is synthetic
 } else if (inventory.overlay == PTYPE.SYN) {
 	if (type == "syn") {
 		p1 = 1;

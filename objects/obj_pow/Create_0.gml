@@ -27,6 +27,8 @@ selectedYorg = obj_player.camY + 170;
 powerup_name = "Unfilled";
 powerup_type = 0;
 
+clicked = false;
+
 // change active powerup
 function Choose()
 {
