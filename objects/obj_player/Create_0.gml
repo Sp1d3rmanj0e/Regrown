@@ -12,10 +12,11 @@ jumpH = 23; // jump height
 airborne = false; // if airborne
 freeze = false; // pause player controls
 damage = 2;
-P_health = 1;
-nanobotCount = 5; // healing capsules
+P_health = 10;
+nanobotCount = 10; // healing capsules
 
 // dynamic initialize
+jumpBuffer = 0; // coyote jumping
 imageSpeed = 1;
 lock = false; // don't touch this
 hsp_fraction = 0;

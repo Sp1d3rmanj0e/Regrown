@@ -5,11 +5,16 @@ if (instance_exists(obj_player))
 	
 Collisions(walkSp);
 
+var p1 = tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2));
+var p2 = tilemap_get_at_pixel(tilemap,bbox_right,bbox_top-(TILE_SIZE/2));
+
 #region Jumping
-if (key_spaceH) and (tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2)) == 0) and (tilemap_get_at_pixel(tilemap,bbox_right,bbox_top-(TILE_SIZE/2)) == 0)
+if (key_spaceH) and (p1 == 0) and (p2 == 0)
 {
-    if (!airborne )
+    if (!airborne) or (jumpBuffer > 0)
     {
+		jumpBuffer = 0;
+		
 		if (instance_exists(obj_healing)) {
 			instance_destroy(Heffect);
 			healing = 0;

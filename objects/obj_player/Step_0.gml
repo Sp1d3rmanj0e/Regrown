@@ -3,7 +3,15 @@
 
 // Main Code 
 
-#region Visual Effects
+if (airborne) {
+	
+	if (jumpBuffer > 0) jumpBuffer -= 1/room_speed;
+} 
+else {
+	
+	jumpBuffer = 0.25;
+}
+
 // Makes flash go down over time
 if (flash_alpha > 0)
 {
@@ -26,8 +34,6 @@ if (P_health < P_health_prev)
 	}
 }
 P_health_prev = P_health;
-
-#endregion
 
 // if game is running normally
 if (!global.gamePaused) {
