@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Symbiosis 3",
-    "path": "Symbiosis 3.yyp",
+    "name": "Scenery",
+    "path": "folders/Sprites/Scenery.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_origPipe",
