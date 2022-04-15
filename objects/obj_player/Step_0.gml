@@ -21,17 +21,7 @@ if (flash_alpha > 0)
 //TAKING DAMAGE
 if (P_health < P_health_prev)
 {
-	flash_alpha = 1; // flash
-	_shake(10-P_health,20); // shake
-	if (P_health >= P_maxHealth/2) {
-		
-		audio_play_sound(choose(snd_softGlitch1,snd_softGlitch2),1,false);
-		
-	} else {
-		
-		audio_play_sound(choose(snd_glitch1,snd_glitch2),1,false);
-		
-	}
+
 }
 P_health_prev = P_health;
 

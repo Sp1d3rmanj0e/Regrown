@@ -2,6 +2,8 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function EnemyHit(_damage) {
 
+airborne = true;
+
 enemyHealth -= _damage;
 fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),10); 
 

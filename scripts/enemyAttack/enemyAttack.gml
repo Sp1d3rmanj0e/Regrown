@@ -23,13 +23,29 @@ function enemyAttack(target, damage, mag){
 			else P_health = 0;
 			
 			// yeet player
+			target.airborne = true; // prevent big hit boost
+			
 			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
 			show_debug_message(obj_player.vsp);
 			// close inventory if it is open
 			if (instance_exists(inventory)) instance_destroy(inventory);
 			
+			
+			if (other.target = obj_player) {
+		
+				obj_player.jumpBuffer = true; // prevent big hit boost coyote
+				flash_alpha = 1; // flash
+				_shake(10-P_health,20); // shake
+				if (P_health >= P_maxHealth/2) {
+		
+					audio_play_sound(choose(snd_softGlitch1,snd_softGlitch2),1,false);
+		
+				} else {
+		
+					audio_play_sound(choose(snd_glitch1,snd_glitch2),1,false);
+		
+				}
+			}
 		}
 	}
-	
-
 }
