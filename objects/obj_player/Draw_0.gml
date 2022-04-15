@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 draw_self();
-
+draw_text(x,y,vsp);
 if (flash_alpha > 0)
 {
 	shader_set(sh_flash);

@@ -5,3 +5,5 @@ if (global.orgFill != -4) {
 }
 global.orgFill = -4;
 
+x = 1920;
+y = 1216;

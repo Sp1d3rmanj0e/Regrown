@@ -49,24 +49,27 @@ p2 = tilemap_get_at_pixel(tilemap, bbox_side+hsp,bbox_bottom);
 p3 = tilemap_get_at_pixel(tilemap, bbox_side+hsp, y);
 if (p1 != 0) or (p2 != 0) or (p3 != 0) {
 	if (hsp > 0) touching_wall = 1; else touching_wall = -1;
-	if (hsp > 0) x = bbox_side - (bbox_side mod 32) + 31 - (bbox_right -x);
-	else x = bbox_side - (bbox_side mod 32) - (bbox_left - x);
+	if (hsp > 0) x = bbox_side - (bbox_side mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_right -x);
+	else x = bbox_side - (bbox_side mod TILE_SIZE) - (bbox_left - x);
 	hsp = 0;
 } else touching_wall = 0;
 
-
+//vsp = min(vsp,TILE_SIZE);
 //Vertical Collision
 if (vsp > 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
-p1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+vsp);
-p2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+vsp);
-p3 = tilemap_get_at_pixel(tilemap, x, bbox_side+vsp);
+p1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+min(vsp,TILE_SIZE));
+p2 = tilemap_get_at_pixel(tilemap, bbox_right, bbox_side+min(vsp,TILE_SIZE));
+p3 = tilemap_get_at_pixel(tilemap, x, bbox_side+min(vsp,TILE_SIZE));
 if (p1 != 0) or (p2 != 0) or (p3 != 0){
-	if (vsp > 0) y = bbox_side - (bbox_side mod 32) + 31 - (bbox_bottom - y);
-	else y = bbox_side - (bbox_side mod 32) - (bbox_top - y);
+	if (vsp > 0) y = bbox_side - (bbox_side mod TILE_SIZE) + (TILE_SIZE-1) - (bbox_bottom - y);
+	else y = bbox_side - (bbox_side mod TILE_SIZE) - (bbox_top - y);
 	vsp = 0;
 }
 
-
+// extreme emergency case if pla
+if (tilemap_get_at_pixel(tilemap,x,y) != 0) {
+	y -= TILE_SIZE;
+}
 
 if (tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom) != 0) {
 	x-= 32;
