@@ -1,5 +1,6 @@
 /// @description draw inventory and panels
 
+
 // get camera information from player
 camX = obj_player.camX;
 camY = obj_player.camY;

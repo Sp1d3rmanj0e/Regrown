@@ -1,5 +1,6 @@
 /// @description Initialization
 
+
 // controls the opening and closing animations
 
 frame = 0; //Controllable frame counter
@@ -23,6 +24,7 @@ startingXorg = -obj_player.view_width/2+spacing+120;
 startingXsyn = obj_player.view_width/2-spacing*columns-120;
 
 // inventory screens control
+alreadyChangedPage = false; // for mouse commands, prevents infinite page changing
 oldX = x;
 oldY = y;
 page = 0; //Which screen the inventory is showing

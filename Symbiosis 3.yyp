@@ -104,6 +104,7 @@
     {"id":{"name":"spr_infoBox","path":"sprites/spr_infoBox/spr_infoBox.yy",},"order":2,},
     {"id":{"name":"spr_playerAlt_AirDown","path":"sprites/spr_playerAlt_AirDown/spr_playerAlt_AirDown.yy",},"order":25,},
     {"id":{"name":"spr_tileGround","path":"sprites/spr_tileGround/spr_tileGround.yy",},"order":1,},
+    {"id":{"name":"_scalingSprite","path":"sprites/_scalingSprite/_scalingSprite.yy",},"order":17,},
     {"id":{"name":"spr_drippingPipe","path":"sprites/spr_drippingPipe/spr_drippingPipe.yy",},"order":7,},
     {"id":{"name":"spr_inventoryscreen_close","path":"sprites/spr_inventoryscreen_close/spr_inventoryscreen_close.yy",},"order":3,},
     {"id":{"name":"SaveData","path":"scripts/SaveData/SaveData.yy",},"order":9,},
