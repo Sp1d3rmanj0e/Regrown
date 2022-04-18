@@ -20,9 +20,9 @@ type = "unknown";
 org_x = x;
 org_y = y;
 
-selDestX = obj_player.halfViewX;
-selectedYsyn = obj_player.camY + obj_player.view_height - 150;
-selectedYorg = obj_player.camY + 170;
+selDestX = global.halfViewX;
+selectedYsyn = global.viewY + global.viewHeight - 150;
+selectedYorg = global.viewY + 170;
 
 powerup_name = "Unfilled";
 powerup_type = 0;

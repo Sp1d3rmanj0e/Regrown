@@ -1,18 +1,10 @@
 /// @description Post Processing
-view_width = camera_get_view_width(view_camera[0]);
-view_height = camera_get_view_height(view_camera[0]);
 
 if (shake) { //If screenshake is activated
-	camera_set_view_pos(view_camera[0],x-view_width/2+xCamOffset+random_range(-shakeIntensity,shakeIntensity),y-view_height/2+yCamOffset+random_range(-shakeIntensity,shakeIntensity));
+	camera_set_view_pos(view_camera[0],x-global.viewWidth/2+xCamOffset+random_range(-shakeIntensity,shakeIntensity),y-global.viewHeight/2+yCamOffset+random_range(-shakeIntensity,shakeIntensity));
 } else { //If camera is normal
-	camera_set_view_pos(view_camera[0],x-view_width/2+xCamOffset,y-view_height/2+yCamOffset);
+	camera_set_view_pos(view_camera[0],x-global.viewWidth/2+xCamOffset,y-global.viewHeight/2+yCamOffset);
 }
-camX = camera_get_view_x(view_camera[0]);
-camY = camera_get_view_y(view_camera[0]);
-
-halfViewX = camX + view_width/2;
-halfViewY = camY + view_height/2;
-
 
 // Background Movement
 x_change = x-x_origin;

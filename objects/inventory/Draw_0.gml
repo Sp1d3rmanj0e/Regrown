@@ -2,27 +2,21 @@
 
 
 // get camera information from player
-camX = obj_player.camX;
-camY = obj_player.camY;
-view_width = obj_player.view_width;
-view_height = obj_player.view_height;
-halfViewX = obj_player.halfViewX;
-halfViewY = obj_player.halfViewY;
 
 // make a translucent black background
 draw_set_color(make_color_rgb(0,45,45));
 	draw_set_alpha(alpha);
-	draw_rectangle(camX,camY,camX+view_width,camY+view_height,false);
+	draw_rectangle(global.viewX,global.viewY,global.viewX+global.viewWidth,global.viewY+global.viewHeight,false);
 
 // draw inventory screen / open-close animations
 if (inventoryOpen) { 
 	
 	draw_set_color(c_white);
 	draw_set_alpha(1);
-	draw_sprite(pageSprite,0,halfViewX,halfViewY);
+	draw_sprite(pageSprite,0,global.halfViewX,global.halfViewY);
 } else {
 	
-	draw_sprite(transAnimation,frame,halfViewX,halfViewY);
+	draw_sprite(transAnimation,frame,global.halfViewX,global.halfViewY);
 }
 
 // progressive text engine (so text doesn't all pop on at the same time)
@@ -36,13 +30,13 @@ if (overlay != PTYPE.NONE) {
 	// draw information overlay
 if (overlay == PTYPE.SYN) { //Synthetic Definitions
 	
-	draw_sprite(spr_inventorycoverActive,0,camX+135,camY+94); // adds Cover
-	draw_sprite(spr_inventoryscreenSchematics,sel_powerupNum, camX + 157, camY+112); // adds schematic
-	draw_text_ext(camX+156+sideOffset, camY+340+sideOffset, textPart,stringHeight,boxWidth-sideOffset); // adds text
+	draw_sprite(spr_inventorycoverActive,0,global.viewX+135,global.viewY+94); // adds Cover
+	draw_sprite(spr_inventoryscreenSchematics,sel_powerupNum, global.viewX + 157, global.viewY+112); // adds schematic
+	draw_text_ext(global.viewX+156+sideOffset, global.viewY+340+sideOffset, textPart,stringHeight,boxWidth-sideOffset); // adds text
 	
 } else if (overlay == PTYPE.ORG) { //Organic Definitions
 	
-	draw_sprite(spr_inventorycoverActive,0,camX+615,camY+94); // adds cover
-	draw_sprite(spr_inventoryscreenSchematics,sel_powerupNum, camX+637, camY+112); // adds schematic
-	draw_text_ext(camX+636+sideOffset, camY+340+sideOffset,textPart,stringHeight,boxWidth-sideOffset); //adds text
+	draw_sprite(spr_inventorycoverActive,0,global.viewX+615,global.viewY+94); // adds cover
+	draw_sprite(spr_inventoryscreenSchematics,sel_powerupNum, global.viewX+637, global.viewY+112); // adds schematic
+	draw_text_ext(global.viewX+636+sideOffset, global.viewY+340+sideOffset,textPart,stringHeight,boxWidth-sideOffset); //adds text
 }

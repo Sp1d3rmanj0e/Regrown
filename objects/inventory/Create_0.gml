@@ -20,8 +20,8 @@ columns = 2; // How many columns of powerups
 
 spacing = 80; // Spacing between powerups
 startingY = -160; //Starting coord of the powerup spawns
-startingXorg = -obj_player.view_width/2+spacing+120;
-startingXsyn = obj_player.view_width/2-spacing*columns-120;
+startingXorg = -global.viewWidth/2+spacing+120;
+startingXsyn = global.viewWidth/2-spacing*columns-120;
 
 // inventory screens control
 alreadyChangedPage = false; // for mouse commands, prevents infinite page changing
