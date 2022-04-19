@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Inventory",
-    "path": "folders/Sprites/UI/Inventory.yy",
+    "path": "folders/Sprites/GUI/Inventory.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_inventoryscreenPassive",

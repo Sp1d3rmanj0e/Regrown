@@ -102,7 +102,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Powerups",
-    "path": "folders/Sprites/UI/Powerups.yy",
+    "path": "folders/Sprites/GUI/Powerups.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_powerupCells",
