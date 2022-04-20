@@ -12,10 +12,23 @@ enum ENEMYSTATE {
 	WAIT
 }
 
-enum PLAYERSTATE
-{
+enum PLAYERSTATE {
+	
 	FREE,
 	ATTACK_SLASH,
 	ATTACK_COMBO,
 	DEAD
+}
+
+enum LIST_TYPE {
+	
+	PAUSE,
+	SETTINGS
+}
+
+enum PR {
+	
+	NAME,
+	SELECTED,
+	VALUES
 }

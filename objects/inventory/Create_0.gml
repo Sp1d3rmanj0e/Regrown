@@ -108,7 +108,7 @@ function switchPage(page) {
 					for (var j = 0; j < columns; j++) // rows
 					{
 			
-						with (instance_create_layer(x + startingXorg + spacing * j,y + startingY + spacing * i,"inventory",obj_pow))
+						with (instance_create_layer(x + startingXorg + spacing * j,y + startingY + spacing * i,"gui",obj_pow))
 						{
 							sprite_index = spr_powOrg;
 							type = "org";
@@ -125,7 +125,7 @@ function switchPage(page) {
 				{
 					for (j = 0; j < columns; j++) // rows
 					{
-						with (instance_create_layer(x + startingXsyn + spacing * j,y + startingY + spacing * i,"inventory",obj_pow))
+						with (instance_create_layer(x + startingXsyn + spacing * j,y + startingY + spacing * i,"gui",obj_pow))
 						{
 				
 							sprite_index = spr_powSyn;
