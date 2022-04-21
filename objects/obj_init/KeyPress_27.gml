@@ -1,9 +1,15 @@
 /// @description toggle pause
 
-if (!global.gamePaused) {
+if (room != rm_titleScreen) {
 	
-	global.gamePaused = true;
-} else {
+	global.gamePaused = !global.gamePaused;
 	
-	global.gamePaused = false;
+	if (global.gamePaused) {
+		
+		createList(50,50,300,240,LIST_TYPE.PAUSE);
+	}
+	else {
+		
+		instance_destroy(obj_list);
+	}
 }

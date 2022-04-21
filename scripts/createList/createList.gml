@@ -13,8 +13,8 @@ function createList(_x, _y, _width, _height, _type) {
 		
 			case LIST_TYPE.PAUSE:
 			
-				ds_list_add(list,["TEST1",0,[1,2,3,4]]);
-				ds_list_add(list,["TEST2",-1,[]]);
+				ds_list_add(list,["Saving Test",global.game_mode-1,[1,2,3,4]]);
+				ds_list_add(list,["Close",-1,[]]);
 			break;
 		}
 	}

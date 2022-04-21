@@ -1,6 +1,8 @@
 /// @description
 
-draw_set_color($48413b);
+draw_text(500,300,global.game_mode);
+
+draw_set_color(make_color_rgb(20, 201, 247));
 draw_roundrect(x,y,x+width,y+height,0);
 draw_set_color(-1);
 
@@ -19,6 +21,7 @@ for (var i = 0; i < _size; i++) {
 	var _y = y + padding + itemH * i;
 	
 	// color if not selected
+	draw_text(50,50,hoverID);
 	if (i != hoverID) draw_set_color(c_black);
 	
 	// draw name

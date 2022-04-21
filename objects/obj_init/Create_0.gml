@@ -1,5 +1,7 @@
 /// @description initialize
 
+global.game_mode = 1; //test variable
+
 global.orgFill = -4;
 global.synFill = -4;
 

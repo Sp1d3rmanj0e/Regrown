@@ -7,6 +7,9 @@ var _mousePress = mouse_check_button_pressed(mb_left);
 // operate on list
 var _size = ds_list_size(list);
 
+// reset selected
+hoverID = -1;
+
 for (var i = 0; i < _size; i++) {
 	
 	// get data
@@ -34,9 +37,8 @@ for (var i = 0; i < _size; i++) {
 			
 			switch (_name) {
 				
-				case "TEST2":
+				case "Close":
 					instance_destroy();
-					show_debug_message("worked");
 				break;
 			}
 		}
@@ -59,14 +61,12 @@ for (var i = 0; i < _size; i++) {
 				
 				if (type == LIST_TYPE.PAUSE) {
 					
-					//switch(_name) {
+					switch(_name) {
 						
-						/*
-						case "Mode":
+						case "Saving Test":
 							global.game_mode = _vals[_sel];
 						break;
-						*/
-					//}
+					}
 				}
 			}
 		}

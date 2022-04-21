@@ -25,7 +25,7 @@ function enemyAttack(target, damage, mag){
 			// yeet player
 			target.airborne = true; // prevent big hit boost
 			
-			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
+			if (!other.airborne) fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
 			show_debug_message(obj_player.vsp);
 			// close inventory if it is open
 			if (instance_exists(inventory)) instance_destroy(inventory);
@@ -33,7 +33,7 @@ function enemyAttack(target, damage, mag){
 			
 			if (other.target = obj_player) {
 		
-				obj_player.jumpBuffer = true; // prevent big hit boost coyote
+				obj_player.jumpBuffer = 0; // prevent big hit boost coyote
 				flash_alpha = 1; // flash
 				_shake(10-P_health,20); // shake
 				if (P_health >= P_maxHealth/2) {
