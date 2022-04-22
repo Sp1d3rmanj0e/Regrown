@@ -1,5 +1,8 @@
 /// @description Initialization
 
+// controls player view
+storedZoom = global.playerSight; //change to player sight later
+targetZoom = 1;
 
 // controls the opening and closing animations
 
@@ -16,12 +19,6 @@ maxAlpha = 0.75;
 count = 0; //labels the powerups 0-15
 rows = 4; // How many rows of powerups
 columns = 2; // How many columns of powerups
-//powerups = rows*columns*2;
-
-spacing = 80; // Spacing between powerups
-startingY = -160; //Starting coord of the powerup spawns
-startingXorg = -global.viewWidth/2+spacing+120;
-startingXsyn = global.viewWidth/2-spacing*columns-120;
 
 // inventory screens control
 alreadyChangedPage = false; // for mouse commands, prevents infinite page changing
@@ -101,6 +98,12 @@ function switchPage(page) {
 		
 				#region spawn powerups
 		
+				// initialize locations
+				var spacing = 80;
+				var startingY = -160;
+				var startingXorg = -global.viewWidth/2+spacing+120;
+				var startingXsyn = global.viewWidth/2-spacing*columns-120;
+				
 				// spawn organic powerups
 		
 				for (var i = 0; i < rows; i++) //columns

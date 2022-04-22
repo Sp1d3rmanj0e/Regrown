@@ -1,5 +1,8 @@
 /// @description dynamic features
 
+// zoom camera to fit inventory
+cameraZoom(targetZoom, 0.15);
+
 if (!global.gamePaused) {
 
 	//counts frames manually when activated
