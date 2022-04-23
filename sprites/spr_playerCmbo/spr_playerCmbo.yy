@@ -168,8 +168,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Player",
-    "path": "folders/Sprites/Player.yy",
+    "name": "player attacks",
+    "path": "folders/Sprites/Player/player attacks.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_playerCmbo",

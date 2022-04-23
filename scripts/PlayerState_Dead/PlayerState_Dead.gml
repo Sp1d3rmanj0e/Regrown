@@ -14,8 +14,8 @@ sprite_index = spr_playerAlt_Dead;
 if (animation_end()) {
 	lock = false;
 	with (obj_player) {
-		P_health = P_maxHealth; //Set Health to Full
-		
+		P_health = P_maxHealth; // reset health
+		nanobotCount = maxNanobotCount; // reset nanobots
 		//Go to the room your checkpoint is in
 		room_goto(respawnRoom);
 		

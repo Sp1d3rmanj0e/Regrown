@@ -15,8 +15,8 @@ vsp += grv;
 
 function fling(dir,mag)
 {
-	x_move = lengthdir_x(mag,dir);
-	y_move = lengthdir_y(mag,dir);
+	x_move = clamp(lengthdir_x(mag,dir),-mag/2, mag/2);
+	y_move = clamp(lengthdir_y(mag,dir),-mag/2, mag/2);
 }
 if (abs(x_move) > 0.1)
 {

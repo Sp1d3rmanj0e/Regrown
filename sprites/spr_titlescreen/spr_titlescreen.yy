@@ -89,8 +89,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "UI",
-    "path": "folders/Sprites/UI.yy",
+    "name": "Scenery",
+    "path": "folders/Sprites/Scenery.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_titlescreen",

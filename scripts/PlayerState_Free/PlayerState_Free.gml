@@ -5,11 +5,16 @@ if (instance_exists(obj_player))
 	
 Collisions(walkSp);
 
+var p1 = tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2));
+var p2 = tilemap_get_at_pixel(tilemap,bbox_right,bbox_top-(TILE_SIZE/2));
+
 #region Jumping
-if (key_spaceH) and (tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2)) == 0) and (tilemap_get_at_pixel(tilemap,bbox_right,bbox_top-(TILE_SIZE/2)) == 0)
+if (key_spaceH) and (p1 == 0) and (p2 == 0)
 {
-    if (!airborne )
+    if (!airborne) or (jumpBuffer > 0)
     {
+		jumpBuffer = 0;
+		
 		if (instance_exists(obj_healing)) {
 			instance_destroy(Heffect);
 			healing = 0;
@@ -23,15 +28,13 @@ if (key_spaceH) and (tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/
 
 #region animations
 
-if (hsp != 0)
-{
-	if (key_right)
-	{
-		image_xscale = 1;
-	} else if (key_left)
-	{
-		image_xscale = -1;
-	}
+
+if (key_right) {
+	
+	image_xscale = 1;
+} else if (key_left) {
+	
+	image_xscale = -1;
 }
 
 //Animation
@@ -40,10 +43,9 @@ if (!freeze) {
 if (vsp != 0) {
 	if (key_spaceH) and (vsp < 5)
 		{
-			sprite_index = spr_playerAir;
-			image_index = 0;
+			sprite_index = spr_playerAlt_AirUp;
 		}
-		else image_index = 1;
+		else sprite_index = spr_playerAlt_AirDown;
 	}
 	else if (key_crouch) sprite_index = spr_playerCrouch;
 	else if (hsp != 0) sprite_index = spr_playerAlt_Walk;
@@ -53,7 +55,7 @@ else sprite_index = spr_playerChk; //Checkpoint animation resets to 0 (Create of
 
 if (sprite_index = spr_playerChk) and (animation_end())
 {
-	image_speed = 0;
+	imageSpeed = 0;
 }
 
 #endregion

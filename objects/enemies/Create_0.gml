@@ -15,3 +15,16 @@ enemyScript[ENEMYSTATE.ATTACK] = -1;
 enemyScript[ENEMYSTATE.HURT] = -1;
 enemyScript[ENEMYSTATE.DIE] = -1;
 enemyScript[ENEMYSTATE.WAIT] = -1;
+
+// tilemaps
+tilemap_solid = layer_tilemap_get_id("tile_ground");
+tilemap = layer_tilemap_get_id("tile_collision");
+
+// dynamic variables
+x_move = 0;
+y_move = 0;
+
+hsp_fraction = 0;
+vsp_fraction = 0;
+
+previousState = ENEMYSTATE.IDLE;

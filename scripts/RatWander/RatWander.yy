@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Enemy Playerstates",
-    "path": "folders/Scripts/Enemy Playerstates.yy",
+    "name": "archived",
+    "path": "folders/Scripts/archived.yy",
   },
   "resourceVersion": "1.0",
   "name": "ratWander",

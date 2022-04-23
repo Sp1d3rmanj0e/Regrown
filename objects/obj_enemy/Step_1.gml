@@ -12,14 +12,14 @@ if (enemyHealth <= 0) exit;
 
 if (touching_wall != 0) key_spaceH = 1; // jump when facing a wall
 
-distance = abs(x-obj_player.x);
+
 
 // checks if enemy can see player (not through walls)
 if (enemyAggroRadius >= distance_to_object(obj_player))
 {
-	if (alarm[5] == -1)
+	if (alarm[0] == -1)
 	{
-		alarm[5] = 0.25 * room_speed; // activates line_of_sight()
+		alarm[0] = 0.25 * room_speed; // activates line_of_sight()
 	}
 } else lineof_sight = false;
 
