@@ -1,6 +1,6 @@
 /// @description one-option buttons
 
-switch (list[i2][0]) {
+switch (list[i2][OS.NAME]) {
 	
 	case "Options":
 		// FIX check to see if list already exists

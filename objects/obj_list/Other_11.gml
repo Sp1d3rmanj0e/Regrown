@@ -1,7 +1,7 @@
 /// @description multiple-option buttons
 
-var _name = list[i2,0];
-var _sel = list[i2,1];
+var _name = list[i2,OS.NAME];
+var _sel = list[i2,OS.SEL];
 
 switch (_name) {
 	

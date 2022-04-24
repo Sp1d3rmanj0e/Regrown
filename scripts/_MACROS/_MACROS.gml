@@ -25,3 +25,10 @@ enum LIST_TYPE {
 	PAUSE,
 	OPTIONS
 }
+
+enum OS {
+	
+	NAME,
+	SEL,
+	VALS
+}

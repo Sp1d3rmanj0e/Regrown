@@ -34,13 +34,13 @@ for (var i = 0; i < _size; i++) {
 	
 	// draw name
 	draw_set_valign(fa_middle);
-	draw_text(x1 + padding, y3,list[i][0]);
+	draw_text(x1 + padding, y3,list[i][OS.NAME]);
 	
-	if (list[i][1] > -1) {
+	if (list[i][OS.SEL] > -1) {
 		
 		// draw value
 		draw_set_halign(fa_middle);
-			draw_text(x3,y3,list[i][2][list[i][1]]);
+			draw_text(x3,y3,list[i][OS.VALS][list[i][OS.SEL]]);
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
 		
@@ -52,7 +52,7 @@ for (var i = 0; i < _size; i++) {
 		if (hoverArrowSide == 1) draw_set_color(_saveColor);
 		
 			// left arrow
-		if (list[i][1] > 0)
+		if (list[i][OS.SEL] > 0)
 		draw_arrow(x3 - 60, y3, x3 - 80, y3, 20);
 		
 			// set color
@@ -60,7 +60,7 @@ for (var i = 0; i < _size; i++) {
 		if (hoverArrowSide == -1) draw_set_color(_saveColor);
 		
 			//right arrow
-		if (list[i][1] < array_length(list[i][2])-1)
+		if (list[i][OS.SEL] < array_length(list[i][OS.VALS])-1)
 		draw_arrow(x3 + 60, y3, x3 + 80 , y3, 20);
 		
 		// reset colors

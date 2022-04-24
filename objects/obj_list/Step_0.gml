@@ -38,7 +38,7 @@ for (var i = 0; i < _size; i++) {
 		}
 		
 		// arrow click check
-			if (list[i][1] > -1) {
+			if (list[i][OS.SEL] > -1) {
 				// check to see if mouse is over either arrow
 					var p1 = point_in_rectangle(_mouseX, _mouseY, x3 + 60, y3 - 20, x3 + 80, y3 + 20); // right
 					var p2 = point_in_rectangle(_mouseX, _mouseY, x3 - 80, y3 - 20, x3 - 60, y3 + 20); // left
@@ -46,8 +46,8 @@ for (var i = 0; i < _size; i++) {
 				// check if movement is possible
 				if (p1 + p2 != 0) {
 					
-					if (list[i][1] == 0) p2 = 0;
-					if (list[i][1] == array_length(list[i][2])-1) p1 = 0;
+					if (list[i][OS.SEL] == 0) p2 = 0;
+					if (list[i][OS.SEL] == array_length(list[i][OS.VALS])-1) p1 = 0;
 					
 					// return selected arrow to DrawGUI
 					hoverArrowID = i;
@@ -58,7 +58,7 @@ for (var i = 0; i < _size; i++) {
 						
 						var _click = p1-p2;
 						
-						list[i][1] += _click;
+						list[i][OS.SEL] += _click;
 						
 						event_user(1);
 					}
