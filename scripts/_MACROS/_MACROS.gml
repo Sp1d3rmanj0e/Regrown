@@ -23,12 +23,5 @@ enum PLAYERSTATE {
 enum LIST_TYPE {
 	
 	PAUSE,
-	SETTINGS
-}
-
-enum PR {
-	
-	NAME,
-	SELECTED,
-	VALUES
+	OPTIONS
 }

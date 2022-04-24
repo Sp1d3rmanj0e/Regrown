@@ -12,3 +12,12 @@ global.gamePaused = false;
 
 randomize();
 draw_set_font(fnt_text);
+
+
+// test initializers
+global.sfx = 0;
+global.antiAil = 0;
+global.volume = 0;
+global.graphics = 2;
+global.test1 = 0;
+global.test2 = 2;

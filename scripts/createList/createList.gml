@@ -1,22 +1,37 @@
-function createList(_x, _y, _width, _height, _type) {
+function createList(_x,_y,_width,_height,_type) {
 	
-	var _list = instance_create_layer(_x,_y,"gui",obj_list);
+	var _list = instance_create_layer(_x,_y,"Instances",obj_list);
 	
-	with(_list) {
+	with (_list) {
 		
-		width = _width;
-		height = _height;
+		// assign type
 		type = _type;
-	
-	
-		switch(_type) {
+		
+		// add options
+		switch (type) {
 		
 			case LIST_TYPE.PAUSE:
 			
-				ds_list_add(list,["Saving Test",global.game_mode-1,[1,2,3,4]]);
-				ds_list_add(list,["Close",-1,[]]);
+				array_push(list,["Test1",global.test1,[1,2,3]]);
+				array_push(list,["Test2",global.test2,["one","two","three"]]);
+				array_push(list,["Options",-1,[]]);
+				array_push(list,["Close",-1,[]]);
+			break;
+			
+			case LIST_TYPE.OPTIONS:
+			
+				array_push(list,["SFX",global.sfx,["100%","75%","50%","25%","0%"]]);
+				array_push(list,["Graphics",global.graphics,["POTATO","LOW","MEDIUM","HIGH"]]);
+				array_push(list,["Anti-Ailizing",global.antiAil,["ON","OFF"]]);
+				array_push(list,["Volume",global.volume,["100%","75%","50%","25%","0%"]]);
+			
 			break;
 		}
+		
+		// assign width and height
+		width = _width;
+		if (_height != 0) height = _height; else height = array_length(list)*textH+padding*2;
+
 	}
 	
 	return _list;

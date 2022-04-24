@@ -6,7 +6,7 @@ if (room != rm_titleScreen) {
 	
 	if (global.gamePaused) {
 		
-		createList(50,50,300,240,LIST_TYPE.PAUSE);
+		createList(50,50,400,0,LIST_TYPE.PAUSE);
 	}
 	else {
 		

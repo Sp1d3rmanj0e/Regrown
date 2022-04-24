@@ -1,74 +1,75 @@
 /// @description
-// get mouse input
+
+// check if clicked
+var _clicked = mouse_check_button_pressed(mb_left);
+
+// get relative mouse coords
 var _mouseX = device_mouse_x_to_gui(0);
 var _mouseY = device_mouse_y_to_gui(0);
-var _mousePress = mouse_check_button_pressed(mb_left);
 
-// operate on list
-var _size = ds_list_size(list);
+// get size of array
+var _size = array_length(list);
 
-// reset selected
+
+// reset hoverID
 hoverID = -1;
 
+// text and hitboxes
 for (var i = 0; i < _size; i++) {
+	i2 = i;
+	// get locations
+	var x1 = x + padding;
+	var y1 = y + padding + textH * i;
+	var x2 = x + width - padding;
+	var y2 = y1 + textH;
+	var x3 = x1 + (width - padding*2) * 0.75; // setting offset
+	var y3 = y1 + textH/2;
+	var p1, p2;
 	
-	// get data
-	var _arr = list[| i];
-	var _name = _arr[PR.NAME];
-	var _sel = _arr[PR.SELECTED];
-	var _vals = _arr[PR.VALUES];
-	
-	// get mouse input locations for buttons
-	var _x1 = x + padding;
-	var _y1 = y + padding + itemH * i;
-	var _x2 = x + width - padding;
-	var _y2 = _y1 + itemH;
-	
-	// get if hovering
-	var _hover = point_in_rectangle(_mouseX, _mouseY, _x1, _y1, _x2, _y2);
-	
-	if (_hover) {
+	// check if mouse is touching
+	if (point_in_rectangle(_mouseX, _mouseY, x, y1, x + width, y2)) {
 		
-		// set hover variable
 		hoverID = i;
 		
-		// select
-		if (_sel == -1 and _mousePress) {
+		// button commands
+		if (_clicked) {
 			
-			switch (_name) {
-				
-				case "Close":
-					instance_destroy();
-				break;
-			}
+			event_user(0);
 		}
 		
-		// change value
-		if (_sel > -1) {
-			
-			var _wheel = mouse_wheel_up()-mouse_wheel_down();
-			
-			// wheel input
-			if (_wheel != 0) {
-				
-				_sel += _wheel;
-				
-				// clamp
-				_sel = clamp(_sel,0,array_length(_vals)-1);
-				
-				// apply to list
-				_arr[@ PR.SELECTED] = _sel;
-				
-				if (type == LIST_TYPE.PAUSE) {
+		// arrow click check
+			if (list[i][1] > -1) {
+				// check to see if mouse is over either arrow
+					var p1 = point_in_rectangle(_mouseX, _mouseY, x3 + 60, y3 - 20, x3 + 80, y3 + 20); // right
+					var p2 = point_in_rectangle(_mouseX, _mouseY, x3 - 80, y3 - 20, x3 - 60, y3 + 20); // left
+		
+				// check if movement is possible
+				if (p1 + p2 != 0) {
 					
-					switch(_name) {
+					if (list[i][1] == 0) p2 = 0;
+					if (list[i][1] == array_length(list[i][2])-1) p1 = 0;
+					
+					// return selected arrow to DrawGUI
+					hoverArrowID = i;
+					hoverArrowSide = p1-p2;
+					
+					// switch data if button was clicked
+					if (_clicked) {
 						
-						case "Saving Test":
-							global.game_mode = _vals[_sel];
-						break;
+						var _click = p1-p2;
+						
+						list[i][1] += _click;
+						
+						event_user(1);
 					}
+				} 
+				else {
+					
+					hoverArrowID = -1;
 				}
 			}
-		}
+		
+		// switch selected setting
+		
 	}
 }

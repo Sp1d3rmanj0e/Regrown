@@ -1,42 +1,80 @@
 /// @description
 
-draw_text(500,300,global.game_mode);
+// get real mouse coords
+var _mouseX = device_mouse_x_to_gui(0);
+var _mouseY = device_mouse_y_to_gui(0);
 
-draw_set_color(make_color_rgb(20, 201, 247));
-draw_roundrect(x,y,x+width,y+height,0);
+// draw background
+draw_set_color(c_aqua);
+draw_roundrect(x,y,x+width,y+height,1);
 draw_set_color(-1);
 
-var _size = ds_list_size(list);
+// get size of array
+var _size = array_length(list);
 
+// text and hitboxes
 for (var i = 0; i < _size; i++) {
 	
-	// get data
-	var _arr = list[| i];
-	var _name = _arr[PR.NAME]
-	var _sel = _arr[PR.SELECTED]
-	var _vals = _arr[PR.VALUES]
+	// get locations
+	var x1 = x + padding;
+	var y1 = y + padding + textH * i;
+	var x2 = x + width - padding;
+	var y2 = y1 + textH;
+	var x3 = x1 + (width - padding*2) * 0.75; // setting offset
+	var y3 = y1 + textH/2;
 	
-	// position to draw
-	var _x = x + padding;
-	var _y = y + padding + itemH * i;
+	// set initial color
+	draw_set_color(c_aqua);
 	
-	// color if not selected
-	draw_text(50,50,hoverID);
-	if (i != hoverID) draw_set_color(c_black);
+	// if selected - set to specific color
+	if (hoverID == i) draw_set_color(c_white);
+	
+	// draw border
+	draw_roundrect(x1,y1+1,x2,y2-2,1);
 	
 	// draw name
-	draw_text(_x,_y,_name);
+	draw_set_valign(fa_middle);
+	draw_text(x1 + padding, y3,list[i][0]);
 	
-	// draw value
-	if (_sel > -1) {
+	if (list[i][1] > -1) {
 		
-		var _val = _vals[_sel];
-		
-		draw_set_halign(fa_right);
-		draw_text(x+width-padding,_y, _val);
+		// draw value
+		draw_set_halign(fa_middle);
+			draw_text(x3,y3,list[i][2][list[i][1]]);
 		draw_set_halign(fa_left);
+		draw_set_valign(fa_top);
+		
+		// draw arrows
+		
+			// set color
+		var _saveColor = draw_get_color();
+		if (hoverArrowID == i) draw_set_color(c_ltgray);
+		if (hoverArrowSide == 1) draw_set_color(_saveColor);
+		
+			// left arrow
+		if (list[i][1] > 0)
+		draw_arrow(x3 - 60, y3, x3 - 80, y3, 20);
+		
+			// set color
+		if (hoverArrowID == i) draw_set_color(c_ltgray);
+		if (hoverArrowSide == -1) draw_set_color(_saveColor);
+		
+			//right arrow
+		if (list[i][1] < array_length(list[i][2])-1)
+		draw_arrow(x3 + 60, y3, x3 + 80 , y3, 20);
+		
+		// reset colors
+		draw_set_color(-1);
+
 	}
 	
 	// reset color
-	draw_set_color(c_white);
+	draw_set_color(-1);
 }
+
+draw_text(0,20,global.test1);
+draw_text(0,40,global.test2);
+draw_text(0,60,global.sfx);
+draw_text(0,80,global.graphics);
+draw_text(0,100,global.antiAil);
+draw_text(0,120,global.volume);
