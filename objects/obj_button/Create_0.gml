@@ -10,4 +10,4 @@ text = "Click Here";
 hover = 0;
 
 // script
-buttonScript = -1
+bScript = -1

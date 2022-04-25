@@ -32,3 +32,10 @@ enum OS {
 	SEL,
 	VALS
 }
+
+enum B_ACTION {
+	
+	PLAY,
+	CREDITS,
+	QUIT
+}

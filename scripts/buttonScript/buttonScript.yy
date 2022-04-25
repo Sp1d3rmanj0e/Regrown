@@ -6,7 +6,7 @@
     "path": "folders/Scripts/GUI.yy",
   },
   "resourceVersion": "1.0",
-  "name": "buttonTest",
+  "name": "buttonScript",
   "tags": [],
   "resourceType": "GMScript",
 }

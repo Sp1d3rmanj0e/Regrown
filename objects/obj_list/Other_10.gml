@@ -16,7 +16,7 @@ switch (list[i2][OS.NAME]) {
 	break;
 	
 	case "Close":
-	
+		global.gamePaused = false;
 		instance_destroy(obj_list);
 	break;
 }

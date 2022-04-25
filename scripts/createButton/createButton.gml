@@ -9,7 +9,7 @@ function createButton(_x,_y,_width,_height,_text,_buttonScript) {
 		width = _width;
 		height = _height;
 		text = _text;
-		buttonScript = _buttonScript;
+		bScript = _buttonScript;
 	}
 	
 	 return _button;
