@@ -36,13 +36,7 @@ for (var i = 0; i < maxpowerups; i++) {
 
 // test manual fill
 
-ds_grid_set(global.powerup_grid,0,0,"Moose"); //Name
-ds_grid_set(global.powerup_grid,1,0,1); //Image Number
-ds_grid_set(global.powerup_grid,2,0,true); //Unlocked?
-ds_grid_set(global.powerup_grid,3,0,"Hits a heavy, one-directional blow."); //Definition
-ds_grid_set(global.powerup_grid,4,0,powTest); //Script 
-ds_grid_set(global.powerup_grid,5,0,noone); //Sound (ADD ONE)
-ds_grid_set(global.powerup_grid,6,0,c_orange); //Color
+createPowerup(0, "Moose", 1, true, "Hits a heavy, one-directional blow.", powTest, noone, c_orange);
 
 #endregion
 

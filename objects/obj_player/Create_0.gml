@@ -58,13 +58,13 @@ hitByAttack = ds_list_create();
 // Layer Ids
 
 //back3 = layer_get_id("BgBack3"); // Mountains and Such
-b3 = 0.05;
+b3 = -0.005;
 
 //back2 = layer_get_id("BgBack2"); //Far Foliage, Towns, Deep Caves
-b2 = 0.13;
+b2 = -0.013;
 
 //back1 = layer_get_id("BgBack1"); //Trees, Bushes, Stalagtites, Combines with Front1
-b1 = 0.25;
+b1 = -0.025;
 
 //front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
 f1 = -0.1;

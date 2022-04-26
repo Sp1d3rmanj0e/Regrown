@@ -19,4 +19,10 @@ switch (list[i2][OS.NAME]) {
 		global.gamePaused = false;
 		instance_destroy(obj_list);
 	break;
+	
+	case  "Restart":
+		instance_destroy(obj_list);
+		global.gamePaused = false;
+		game_restart(); //FIX this later
+	break;
 }

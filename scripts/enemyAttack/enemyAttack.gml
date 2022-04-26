@@ -13,7 +13,7 @@ function enemyAttack(target, damage, mag){
 			}
 			
 			// activate hit protection
-			alarm[0] = 1.5 * room_speed;
+			alarm[0] = 1 * room_speed;
 			
 			// apply damage
 			if (P_health > 0) {
@@ -25,7 +25,7 @@ function enemyAttack(target, damage, mag){
 			// yeet player
 			target.airborne = true; // prevent big hit boost
 			
-			if (!other.airborne) fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
+			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
 			show_debug_message(obj_player.vsp);
 			// close inventory if it is open
 			if (instance_exists(inventory)) instance_destroy(inventory);

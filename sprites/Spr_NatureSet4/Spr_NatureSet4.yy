@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Scenery",
+    "path": "folders/Sprites/Scenery.yy",
   },
   "resourceVersion": "1.0",
   "name": "Spr_NatureSet4",

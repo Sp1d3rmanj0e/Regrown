@@ -71,10 +71,3 @@ for (var i = 0; i < _size; i++) {
 	// reset color
 	draw_set_color(-1);
 }
-
-draw_text(0,20,global.test1);
-draw_text(0,40,global.test2);
-draw_text(0,60,global.sfx);
-draw_text(0,80,global.graphics);
-draw_text(0,100,global.antiAil);
-draw_text(0,120,global.volume);

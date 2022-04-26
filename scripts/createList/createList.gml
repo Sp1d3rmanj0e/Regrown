@@ -11,10 +11,9 @@ function createList(_x,_y,_width,_height,_type) {
 		switch (type) {
 		
 			case LIST_TYPE.PAUSE:
-			
-				array_push(list,["Test1",global.test1,[1,2,3]]);
-				array_push(list,["Test2",global.test2,["one","two","three"]]);
+		
 				array_push(list,["Options",-1,[]]);
+				array_push(list,["Restart",-1,[]]);
 				array_push(list,["Close",-1,[]]);
 			break;
 			

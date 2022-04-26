@@ -157,8 +157,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Scenery",
-    "path": "folders/Sprites/Scenery.yy",
+    "name": "GUI",
+    "path": "folders/Sprites/GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_welderHeals",
