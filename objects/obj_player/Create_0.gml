@@ -32,8 +32,8 @@ y_move = 0; //fling y
 ogwalkSp = walkSp;
 P_maxHealth = 10;
 maxNanobotCount = 10;
-Xoffset = 500; // healthbar
-Yoffset = 50; // healthbar
+Xoffset = 498; // healthbar
+Yoffset = 48; // healthbar
 flash_colour = c_red;
 
 //Respawn is changed on obj_checkpoint collision

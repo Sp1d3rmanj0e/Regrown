@@ -38,7 +38,7 @@ function ratAttack() {
 	}
 
 	// revert back to chase state after attacking
-	if ((attackSequenceTime > 3) and (!airborne)) or (!lineof_sight) {
+	if ((attackSequenceTime > 3) and (!airborne)) {
 	
 	enemySpeed = ogwalkSp;
 	switchState(ENEMYSTATE.CHASE);

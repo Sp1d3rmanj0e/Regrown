@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_healingAnimation",
-    "path": "sprites/spr_healingAnimation/spr_healingAnimation.yy",
+    "name": "spr_welderHeals",
+    "path": "sprites/spr_welderHeals/spr_welderHeals.yy",
   },
   "solid": false,
   "visible": true,

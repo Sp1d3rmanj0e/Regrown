@@ -24,9 +24,9 @@ function enemyAttack(target, damage, mag){
 			
 			// yeet player
 			target.airborne = true; // prevent big hit boost
+			if (target == obj_player) obj_player.jumpBuffer = 0;
 			
 			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
-			show_debug_message(obj_player.vsp);
 			// close inventory if it is open
 			if (instance_exists(inventory)) instance_destroy(inventory);
 			
