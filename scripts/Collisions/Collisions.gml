@@ -55,7 +55,6 @@ if (p1 != 0) or (p2 != 0) or (p3 != 0) {
 	hsp = 0;
 } else touching_wall = 0;
 
-//vsp = min(vsp,TILE_SIZE);
 //Vertical Collision
 if (vsp > 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
 p1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+min(vsp,TILE_SIZE));
@@ -68,9 +67,9 @@ if (p1 != 0) or (p2 != 0) or (p3 != 0){
 }
 
 // extreme emergency case if pla
-if (tilemap_get_at_pixel(tilemap,x,y) != 0) {
-	y -= TILE_SIZE;
-}
+//if (tilemap_get_at_pixel(tilemap,x,y) != 0) {
+	//y -= TILE_SIZE;
+//}
 
 if (tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom) != 0) {
 	x-= 32;
