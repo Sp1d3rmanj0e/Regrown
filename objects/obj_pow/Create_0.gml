@@ -50,13 +50,15 @@ function Choose()
 function GoBack (TYP)
 {
 	
-	if (TYP = "syn") and (type = "syn")
-		{
+	if (TYP = "syn") and (type = "syn") {
+			
+			if (global.synFill == count) event_user(1);
 			selected = false;
 			x = org_x;
 			y = org_y;
-		} else if (TYP = "org") and (type = "org")
-		{
+		} else if (TYP = "org") and (type = "org") {
+			
+			if (global.orgFill == count) event_user(0);
 			selected = false;
 			x = org_x;
 			y = org_y;
