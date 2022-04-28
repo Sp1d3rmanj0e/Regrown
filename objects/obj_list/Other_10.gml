@@ -23,6 +23,7 @@ switch (list[i2][OS.NAME]) {
 	case  "Restart":
 		instance_destroy(obj_list);
 		global.gamePaused = false;
+		global.saveObjects = 0; //completely resets enemies
 		game_restart(); //FIX this later
 	break;
 }
