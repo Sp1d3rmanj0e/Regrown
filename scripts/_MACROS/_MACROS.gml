@@ -37,5 +37,6 @@ enum B_ACTION {
 	
 	PLAY,
 	CREDITS,
-	QUIT
+	QUIT,
+	BACK
 }
