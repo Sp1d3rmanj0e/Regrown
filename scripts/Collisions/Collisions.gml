@@ -17,20 +17,20 @@ function fling(dir,mag)
 {
 	vsp = 0;
 		x_move = clamp(lengthdir_x(mag,dir),-mag/2, mag/2);
-		y_move = clamp(lengthdir_y(mag,dir),-5, mag);
+		//y_move = clamp(lengthdir_y(mag,dir),-5, mag);
 }
 if (abs(x_move) > 0.1)
 {
 	x_move /= 1.1;
 } else x_move = 0;
-
+/*
 if (abs(y_move) > 0.1)
 {
 	y_move /= 1.6;
 } else y_move = 0;
-
+*/
 hsp += x_move;
-vsp += y_move;
+//vsp += y_move;
 
 #region Wall collisions tilemap
 

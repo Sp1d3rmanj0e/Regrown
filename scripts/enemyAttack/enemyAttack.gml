@@ -22,11 +22,12 @@ function enemyAttack(target, damage, mag){
 			} 
 			else P_health = 0;
 			
-			// yeet player
+			// yeet player + safeguards
 			target.airborne = true; // prevent big hit boost
-			if (target == obj_player) obj_player.jumpBuffer = 0;
 			
 			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
+			target.y_move = 0;
+			
 			// close inventory if it is open
 			if (instance_exists(inventory)) instance_destroy(inventory);
 			

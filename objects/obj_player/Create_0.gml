@@ -67,7 +67,7 @@ b2 = -0.013;
 b1 = -0.025;
 
 //front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
-f1 = -0.1;
+f1 = 0;
 
 x_origin = room_width/2; // Another reference is in room_control.
 
