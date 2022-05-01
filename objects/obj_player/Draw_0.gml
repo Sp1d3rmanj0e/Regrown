@@ -11,3 +11,4 @@ if (flash_alpha > 0)
 }
 if (instance_exists(inventory)) draw_text(x,y,inventory.page)
 
+draw_text(x,y+40,global.roomData);
