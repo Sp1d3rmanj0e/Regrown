@@ -40,3 +40,12 @@ enum B_ACTION {
 	QUIT,
 	BACK
 }
+
+enum ATK {
+	
+	LOW,
+	NORM,
+	SLANTUP,
+	SLANTDOWN,
+	UP
+}

@@ -2,7 +2,7 @@
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 if (instance_exists(obj_player))
 {
-	
+
 Collisions(walkSp);
 
 var p1 = tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2));
@@ -27,7 +27,6 @@ if (key_spaceH) and (p1 == 0) and (p2 == 0)
 
 
 #region animations
-
 
 if (key_right) {
 	
@@ -62,7 +61,6 @@ if (sprite_index = spr_playerChk) and (animation_end())
 
 
 if (key_attack) {
-	
 	state = PLAYERSTATE.ATTACK_SLASH;
 	
 	if (healing == 1) instance_destroy(obj_healing);

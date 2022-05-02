@@ -4,7 +4,6 @@ function ProcessAttack(argument0,argument1)
 {
 if (instance_exists(obj_player))
 {
-
 //Start of the attack
 
 if (sprite_index != argument0)

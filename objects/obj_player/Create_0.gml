@@ -16,6 +16,7 @@ P_health = 10;
 nanobotCount = 10; // healing capsules
 
 // dynamic initialize
+attackCalled = false;
 jumpBuffer = 0; // coyote jumping
 imageSpeed = 1;
 lock = false; // don't touch this
