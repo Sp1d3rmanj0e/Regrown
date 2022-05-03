@@ -24,18 +24,35 @@ if (selected) {
 
 if (p1 == 1) {
 	
-	// draw powerup backdrop
-	draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,0,ds_grid_get(global.powerup_grid,6,count),100);
+	// if powerup unlocked
+	if (ds_grid_get(global.powerup_grid,2,count)) {
+		
+		// draw powerup backdrop
+		draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,0,ds_grid_get(global.powerup_grid,6,count),100);
 	
-	// draw icons for the powerups
-	if (sprite_index = spr_powOrg)
-	{
-		draw_sprite_ext(spr_powOrgIcon,powerup_type,x,y,1,1,0,shade,100);
+		// draw icons for the powerups
+		if (sprite_index = spr_powOrg)
+		{
+			draw_sprite_ext(spr_powOrgIcon,powerup_type,x,y,1,1,0,shade,100);
+		}
+		else draw_sprite_ext(spr_powSynIcon,powerup_type,x,y,1,1,0,shade,100);
+			draw_set_halign(fa_center);
+			draw_text(x,y-20,powerup_type);
+			draw_text(x,y+20,powerup_name);
+			draw_set_halign(fa_left);
 	}
-	else draw_sprite_ext(spr_powSynIcon,powerup_type,x,y,1,1,0,shade,100);
-		draw_set_halign(fa_center);
-		draw_text(x,y-20,powerup_type);
-		draw_text(x,y+20,powerup_name);
-		draw_set_halign(fa_left);
+	else { // if powerup not unlocked
+		
+		// draw gray background
+		draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,0,c_gray,0.75);
+		
+		// draw gray icons for the powerups
+		if (sprite_index = spr_powOrg)
+		{
+			draw_sprite_ext(spr_powOrgIcon,powerup_type,x,y,1,1,0,c_gray,0.75);
+		}
+		else draw_sprite_ext(spr_powSynIcon,powerup_type,x,y,1,1,0,c_gray,0.75);
+	}
 }
+	
 

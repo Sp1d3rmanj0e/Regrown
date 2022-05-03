@@ -22,7 +22,7 @@ if (animation_end()) {
 		
 		//Goto Checkpoint coords
 		x = respawnX;
-		y = respawnY;
+		y = respawnY-50;
 		
 		state = PLAYERSTATE.FREE; //Go Back to Normal
 	}

@@ -1,3 +1,4 @@
+
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemyAttack(target, damage, mag){
@@ -46,6 +47,12 @@ function enemyAttack(target, damage, mag){
 					audio_play_sound(choose(snd_glitch1,snd_glitch2),1,false);
 		
 				}
+			}
+			
+			if (thorns = true) {
+				
+				other.enemyHealth -= obj_player.damage/2;
+				other.showHealthBarTimer = 5;
 			}
 		}
 	}

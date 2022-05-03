@@ -34,13 +34,13 @@ if (!global.gamePaused) {
 	if (global.orgFill != -4) {
 		if (ds_grid_get(global.powerup_grid,4,global.orgFill)) {
 			
-			powTest(global.orgFill);
+			powScript(global.orgFill);
 		}
 	}
 	if (global.synFill != -4) {
 		if (ds_grid_get(global.powerup_grid,4,global.synFill)) {
 			
-			powTest(global.synFill);
+			powScript(global.synFill);
 		}
 	}
 }

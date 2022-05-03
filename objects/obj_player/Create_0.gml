@@ -29,6 +29,9 @@ safe = false;
 x_move = 0; //referenced in collisions
 y_move = 0; //fling y
 
+// powerup statuses
+thorns = false;
+
 // reference initialize
 ogwalkSp = walkSp;
 P_maxHealth = 10;

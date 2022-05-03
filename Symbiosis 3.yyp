@@ -61,7 +61,7 @@
     {"id":{"name":"spr_skyboxtest","path":"sprites/spr_skyboxtest/spr_skyboxtest.yy",},"order":14,},
     {"id":{"name":"spr_playerAttack_LowHB","path":"sprites/spr_playerAttack_LowHB/spr_playerAttack_LowHB.yy",},"order":12,},
     {"id":{"name":"spr_playerAlt_Walk","path":"sprites/spr_playerAlt_Walk/spr_playerAlt_Walk.yy",},"order":6,},
-    {"id":{"name":"powTest","path":"scripts/powTest/powTest.yy",},"order":0,},
+    {"id":{"name":"powScript","path":"scripts/powScript/powScript.yy",},"order":0,},
     {"id":{"name":"ratHurt","path":"scripts/ratHurt/ratHurt.yy",},"order":7,},
     {"id":{"name":"snd_invOpen","path":"sounds/snd_invOpen/snd_invOpen.yy",},"order":0,},
     {"id":{"name":"spr_nanobotCapsuleIcon","path":"sprites/spr_nanobotCapsuleIcon/spr_nanobotCapsuleIcon.yy",},"order":3,},
