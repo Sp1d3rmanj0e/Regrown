@@ -29,7 +29,7 @@ if (!attackCalled) {
 		if (hsp == 0) {
 			
 			if (vsp < 0) and (!key_crouch) attack = ATK.UP;
-			else attack = ATK.DOWN;
+			else if (!key_right) and (!key_left) attack = ATK.DOWN;
 		}
 
 	} 
