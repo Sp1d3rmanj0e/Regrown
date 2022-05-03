@@ -16,17 +16,28 @@ if (!attackCalled) {
 	if (vsp != 0) {
 
 		// slant down
-		if (vsp > 0) or (key_crouch) attack = ATK.SLANTDOWN; // 3
+		if (vsp > 0) {
+			if (key_crouch) attack = ATK.DOWN;
+			else attack = ATK.SLANTDOWN; // 3
+			
+		}
 
 		// slant up
 		else if (vsp < 0) attack = ATK.SLANTUP;
 
 		// direct up
-		if (hsp == 0) attack = ATK.UP;
+		if (hsp == 0) {
+			
+			if (vsp < 0) and (!key_crouch) attack = ATK.UP;
+			else attack = ATK.DOWN;
+		}
 
 	} 
 	// low hit
-	else if (key_crouch) attack = ATK.LOW; // 0
+	else {
+		
+		if (key_crouch) attack = ATK.LOW; // 0
+	}
 }
 switch(attack) {
 	
@@ -50,24 +61,27 @@ switch(attack) {
 		ProcessAttack(spr_playerAttack_Low,spr_playerAttack_LowHB);
 	break;
 	
+	case ATK.DOWN:
+		ProcessAttack(spr_playerAttack_DirDown,spr_playerAttack_DirDownHB);
+	break;
+	
 	default:
 		ProcessAttack(spr_playerAttack_Norm,spr_playerAttack_NormHB);
 		show_debug_message("ERROR: Script PlayerState_Attack_Slash - Attack not registered");
 }
 
 
-show_debug_message(attack);
-//ProcessAttack(spr_playerAtk,spr_playerAtkHB);
 
 
 
 
 // Trigger Combo Chain
-
+/*
 if (key_attack) and (image_index > 2) //If hitting attack and after a couple of frames
 {
 	state = PLAYERSTATE.ATTACK_COMBO;
 }
+*/
 
 if (animation_end())
 {

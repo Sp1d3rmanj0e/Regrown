@@ -47,5 +47,6 @@ enum ATK {
 	NORM,
 	SLANTUP,
 	SLANTDOWN,
-	UP
+	UP,
+	DOWN
 }
