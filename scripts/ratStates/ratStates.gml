@@ -1,5 +1,7 @@
 function ratAttack() {
-
+	
+	image_xscale = sign(obj_player.x-x);
+	
 	enemySpeed = ogwalkSp * 1.5;
 
 	attackSequenceTime += 1/room_speed;
@@ -52,7 +54,7 @@ function ratChase() {
 	
 	// attack if close enough
 	if (distance_to_object(target) < enemyAttackRadius) and (!enemyPassive) {
-		sprite_index = sprAttack;
+		//sprite_index = sprAttack;
 		attackSequenceTime = 0;
 		switchState(ENEMYSTATE.ATTACK);
 		

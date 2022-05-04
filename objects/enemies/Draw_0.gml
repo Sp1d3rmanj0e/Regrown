@@ -1,8 +1,7 @@
-/// @description instance info
+/// @description draw healthbar
 draw_self();
 draw_text(x,y+20,enemyHealth);
 draw_text(x-20,y-20,state);
-draw_text(x-20,y, alarm[1]);
 
 // show healthbar after getting attacked
 if (showHealthBarTimer != -1) and (state != ENEMYSTATE.DIE) {

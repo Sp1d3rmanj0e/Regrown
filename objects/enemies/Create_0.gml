@@ -1,4 +1,4 @@
-
+/// @description initialize variables
 // intrinsic Variables
 state = ENEMYSTATE.IDLE;
 hsp = 0;

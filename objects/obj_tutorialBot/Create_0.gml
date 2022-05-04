@@ -1,19 +1,20 @@
-/// @description initialization
+/// @description initialize variables
 
-// inherit default enemy code
-event_inherited()
+// REPLACE ALL ITEMS CALLED "FILL"
+event_inherited();
+
 
 // enemy sprites
-sprIdle = spr_ratIdle;
-sprMove = spr_ratRun;
-sprAttack = spr_ratIdle;
+sprIdle = spr_tutorialBotIdle;
+sprMove = spr_tutorialBotRun;
+sprAttack = spr_tutorialBotExplode;
 sprDie = spr_enemyDie;
 
 // basic initializations
 ogwalkSp = enemySpeed;
 grv = 0.4;
 airborne = false;
-damage = 2;
+damage = 3;
 
 // manual controls/Initialization
 
@@ -28,13 +29,13 @@ key_crouch = 0;
 target = obj_player;
 
 	// timers
-showHealthBarTimer = 0;
-hurtStunTimer = 0;
-motionTime = 0;
-chaseForgetTime = 0;
-runCalmTime = 0;
-attackSequenceTime = 0;
-fleeingValor = 0;
+	showHealthBarTimer = 0;
+	hurtStunTimer = 0;
+	motionTime = 0;
+	chaseForgetTime = 0;
+	runCalmTime = 0;
+	attackSequenceTime = 0;
+	fleeingValor = 0;
 
 lineof_sight = false;
 safeFall = true;

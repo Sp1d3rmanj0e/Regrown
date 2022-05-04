@@ -1,5 +1,4 @@
-/// @description enemy Logic
-
+/// @description sight and player protection
 
 // reset controls
 key_right = 0;
@@ -9,10 +8,6 @@ key_spaceH = 0;
 key_crouch = 0;
 
 if (enemyHealth <= 0) exit;
-
-if (touching_wall != 0) key_spaceH = 1; // jump when facing a wall
-
-
 
 // checks if enemy can see player (not through walls)
 if (enemyAggroRadius >= distance_to_object(obj_player))
