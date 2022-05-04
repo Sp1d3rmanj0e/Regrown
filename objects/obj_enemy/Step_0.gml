@@ -6,14 +6,13 @@ event_inherited();
 if (enemyHealth <= 0) {
 	
 	state = ENEMYSTATE.DIE;
-	exit;
 }
 
 #region motion limitations
 
 var dist_from_origin = x-xstart;
 
-if (abs(dist_from_origin) > enemyMaxOriginDist) and (state == ENEMYSTATE.WANDER)// if too far from origin
+if (abs(dist_from_origin)  > enemyMaxOriginDist) and (state == ENEMYSTATE.WANDER)// if too far from origin
 {
 
 	if (sign(dist_from_origin) > 0) { // if origin is to the left
@@ -67,22 +66,12 @@ if (key_spaceH) and (alarm[1] == -1) //if not stunned and want to jump
     }
 }
 
-
-
-// animations
-
-if (abs(hsp) > 1) sprite_index = spr_ratRun; else sprite_index = spr_ratIdle;
-if (hsp != 0) {
-	
-	if (hsp > 0) image_xscale = 1; else image_xscale = -1;
-}
-
 if (!global.gamePaused) {
 	
 	image_speed = 1;
 	Collisions(enemySpeed);
 	x += hsp;
-	y += min(vsp,20);
+	y += vsp;
 } else {
 	
 	image_speed = 0;

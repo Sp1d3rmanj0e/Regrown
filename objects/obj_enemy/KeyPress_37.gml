@@ -1,0 +1,2 @@
+/// @description
+state = ENEMYSTATE.DIE;
