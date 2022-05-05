@@ -1,4 +1,5 @@
 /// @description animations
+/*
 if (state != ENEMYSTATE.DIE) {
 	
 	// animations
@@ -10,3 +11,6 @@ if (state != ENEMYSTATE.DIE) {
 	}
 	if (state == ENEMYSTATE.ATTACK) sprite_index = sprAttack;
 }
+*/
+
+if (hsp != 0) image_xscale = sign(hsp);

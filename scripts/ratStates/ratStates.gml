@@ -1,5 +1,7 @@
 function ratAttack() {
 	
+	sprite_index = sprAttack;
+	
 	image_xscale = sign(obj_player.x-x);
 	
 	enemySpeed = ogwalkSp * 1.5;
@@ -48,6 +50,9 @@ function ratAttack() {
 }
 	
 function ratChase() {
+	
+	if (hsp == 0) sprite_index = sprIdle;
+	else sprite_index = sprMove;
 	
 	// if going to player
 	followTarget(target,1);
@@ -119,7 +124,10 @@ function ratIdle() {
 }
 	
 function ratRun() {
-
+	
+	if (hsp == 0) sprite_index = sprIdle;
+	else sprite_index = sprMove;
+	
 	// increase running speed
 	enemySpeed = ogwalkSp+0.75;
 
@@ -138,7 +146,10 @@ function ratRun() {
 }
 	
 function ratWander() {
-
+	
+	if (hsp == 0) sprite_index = sprIdle;
+	else sprite_index = sprMove;
+	
 	// if changing directions
 	if (motionTime <= 0) {
 		
