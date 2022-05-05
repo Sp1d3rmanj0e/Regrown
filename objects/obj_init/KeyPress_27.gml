@@ -1,6 +1,6 @@
 /// @description toggle pause
 
-if (room != rm_titleScreen) {
+if (room != rm_titleScreen) and (room != rm_credits) {
 	
 	global.gamePaused = !global.gamePaused;
 	

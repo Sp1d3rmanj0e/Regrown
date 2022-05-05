@@ -9,17 +9,17 @@ function ratAttack() {
 	attackSequenceTime += 1/room_speed;
 
 	// prep for jump
-	
-	//NERFED RAT OPTION
-//if (attackSequenceTime < 1) moveDirection = sign(target.x-x); // figures out which direction to go
+	if (attackSequenceTime < 1) moveDirection = sign(target.x-x); // figures out which direction to go
 
 	// jump and move after delay
 	if (attackSequenceTime > 1) and (attackSequenceTime < 2) {
 	
 		key_spaceH = 1;
-	
-		followTarget(target,1);
-	
+		switch (moveDirection) {
+		
+			case 1: key_right = 1; break;
+			case -1: key_left = 1; break;
+		}
 	}
 
 	// check if able to attack

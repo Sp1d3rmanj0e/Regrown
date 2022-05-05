@@ -11,7 +11,6 @@ if (healCounter >= room_speed/healthPerSecond) {
 	audio_play_sound(snd_heal,1,false);
 }
 
-
 // cancel loop if at full heath
 if (obj_player.P_health >= obj_player.P_maxHealth) or (obj_player.nanobotCount <= 0) {
 	instance_destroy();

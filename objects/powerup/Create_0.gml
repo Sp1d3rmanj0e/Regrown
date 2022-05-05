@@ -37,7 +37,7 @@ for (var i = 0; i < maxpowerups; i++) {
 // test manual fill
 
 createPowerup(0, "Kangaroo TEST", 1, true, "Hits a heavy, one-directional blow.", powScript, noone, c_orange);
-createPowerup(1, "Cheetah TEST", 2, false, "WWW", powScript, noone, c_yellow);
+createPowerup(1, "Cheetah TEST", 2, true, "WWW", powScript, noone, c_yellow);
 createPowerup(2, "Thorns", 3, true, "Hurt enemies that hit you for half your current damage.", powScript, noone, c_green);
 
 #endregion

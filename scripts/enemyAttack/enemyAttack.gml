@@ -49,7 +49,7 @@ function enemyAttack(target, damage, mag){
 				}
 			}
 			
-			if (thorns = true) {
+			if (thorns = true) and (obj_player.state != PLAYERSTATE.DEAD) {
 				
 				other.enemyHealth -= obj_player.damage/2;
 				other.showHealthBarTimer = 5;
