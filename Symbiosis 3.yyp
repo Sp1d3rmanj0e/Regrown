@@ -170,6 +170,7 @@
     {"id":{"name":"ratStates","path":"scripts/ratStates/ratStates.yy",},"order":10,},
     {"id":{"name":"spr_checkpointRock","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"order":17,},
     {"id":{"name":"spr_chlorophyte_receptor","path":"sprites/spr_chlorophyte_receptor/spr_chlorophyte_receptor.yy",},"order":0,},
+    {"id":{"name":"changeKeybind","path":"scripts/changeKeybind/changeKeybind.yy",},"order":21,},
     {"id":{"name":"PlayerState_Dead","path":"scripts/PlayerState_Dead/PlayerState_Dead.yy",},"order":3,},
     {"id":{"name":"spr_ratRun","path":"sprites/spr_ratRun/spr_ratRun.yy",},"order":1,},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},"order":0,},

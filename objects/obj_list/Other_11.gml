@@ -9,4 +9,5 @@ switch (_name) {
 	case "Graphics": global.graphics = _sel; break;
 	case "Anti-Ailizing": global.antiAil = _sel; break;
 	case "Volume": global.volume = _sel; break;
+	case "Fullscreen": window_set_fullscreen(_sel); break;
 }

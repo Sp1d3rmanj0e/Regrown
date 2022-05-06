@@ -18,4 +18,5 @@ hoverArrowID = -1;
 hoverArrowSide = 0;
 
 optionOpen = -1;
+keybindsOpen = -1;
 i2 = 0;
