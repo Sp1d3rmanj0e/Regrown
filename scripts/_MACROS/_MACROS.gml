@@ -64,3 +64,9 @@ enum KB {
 	ORGATTACK,
 	SYNATTACK
 }
+
+enum MK {
+	
+	MOUSE,
+	KEYBOARD
+}

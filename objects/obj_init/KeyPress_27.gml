@@ -1,6 +1,6 @@
 /// @description toggle pause
 
-if (room != rm_titleScreen) and (room != rm_credits) {
+if (room != rm_titleScreen) and (room != rm_credits) and (!instance_exists(obj_keybind)) {
 	
 	global.gamePaused = !global.gamePaused;
 	

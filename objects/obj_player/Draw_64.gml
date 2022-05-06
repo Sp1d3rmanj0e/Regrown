@@ -1,6 +1,6 @@
 /// @description GUI
 
-if (!instance_exists(inventory)) {
+if (!instance_exists(inventory)) and (!global.gamePaused) {
 	
 	// draw healthbar GUI
 	var healthPercent = P_health/P_maxHealth*100;

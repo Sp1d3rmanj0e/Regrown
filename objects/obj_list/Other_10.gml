@@ -46,8 +46,11 @@ switch (list[i2][OS.NAME]) {
 		}
 	break;
 	
+	case "Right": 
+		with (instance_create_depth(global.halfGuiX,global.halfGuiY,depth,obj_keybind)) change = KB.RIGHT;
+	break;
+	
 	case "Left":
-		
-		
+		with (instance_create_depth(global.halfGuiX,global.halfGuiY,depth,obj_keybind)) change = KB.LEFT;
 	break;
 }

@@ -71,3 +71,15 @@ for (var i = 0; i < _size; i++) {
 	// reset color
 	draw_set_color(-1);
 }
+
+if (instance_exists(obj_keybind)) {
+	
+	// draw gray background
+draw_set_color(make_color_rgb(0,45,45));
+	draw_set_alpha(0.75);
+	draw_rectangle(global.viewX,global.viewY,global.viewX+global.viewWidth,global.viewY+global.viewHeight,false);
+	draw_set_alpha(1);
+draw_set_color(-1);
+
+draw_sprite(spr_keybindInfo,0,global.guiWidth/2,global.guiHeight/2);
+}

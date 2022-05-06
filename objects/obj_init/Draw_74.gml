@@ -15,3 +15,11 @@ if (global.gamePaused) {
 	// reset colors
 	draw_set_color(c_white);
 }
+else {
+	// screen damage cracks
+	if (instance_exists(obj_player)) {
+		
+		var _subimg = 4-4*(obj_player.P_health/obj_player.P_maxHealth);
+		draw_sprite_stretched(spr_GlassShatter,_subimg,0, 0,global.guiWidth,global.guiHeight);
+	}
+}
