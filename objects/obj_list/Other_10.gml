@@ -9,9 +9,15 @@ switch (list[i2][OS.NAME]) {
 			optionOpen = createList(x + width + padding, y, width, 0, LIST_TYPE.OPTIONS);
 		}
 		else {
+			// destroy any children list made
+			if (optionOpen.keybindsOpen != -1) {
+				
+				instance_destroy(optionOpen.keybindsOpen);
+			}
 			
 			instance_destroy(optionOpen);
 			optionOpen = -1;
+			
 		}
 	break;
 	
@@ -31,7 +37,7 @@ switch (list[i2][OS.NAME]) {
 	
 		if (keybindsOpen == -1) {
 			
-			keybindsOpen = createList(x+2*(width+padding), y, width, 0, LIST_TYPE.KEYBINDS);
+			keybindsOpen = createList(x+width+padding, y, width, 0, LIST_TYPE.KEYBINDS);
 		}
 		else {
 			
@@ -40,7 +46,7 @@ switch (list[i2][OS.NAME]) {
 		}
 	break;
 	
-	case "Jump":
+	case "Left":
 		
 		
 	break;

@@ -3,7 +3,7 @@
 // keybind initialization
 if (freeze = false)
 {
-	key_right = keyboard_check(ord("D"));
+	key_right = keyboard_check(global.keybinds[KB.RIGHT]);
 	key_left = keyboard_check(ord("A"));
 	key_spaceP = keyboard_check_pressed(vk_space);
 	key_spaceH = keyboard_check(vk_space) || keyboard_check(ord("W"));

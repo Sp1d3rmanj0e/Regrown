@@ -19,11 +19,13 @@ global.volume = 0;
 global.graphics = 2;
 
 global.keybinds = [];
-changeKeybind(global.keybinds, KB.JUMP,ord("W"));
-changeKeybind(global.keybinds, KB.JUMPALT,vk_space);
-changeKeybind(global.keybinds, KB.LEFT,ord("A"));
-changeKeybind(global.keybinds, KB.RIGHT,ord("D"));
-changeKeybind(global.keybinds, KB.CROUCH,vk_control);
-changeKeybind(global.keybinds, KB.ATTACK,mb_left);
-changeKeybind(global.keybinds, KB.ORGATTACK,ord("Z"));
-changeKeybind(global.keybinds, KB.SYNATTACK,ord("X"));
+
+changeKeybind(KB.JUMP,vk_space);
+changeKeybind(KB.JUMPALT,ord("W"));
+changeKeybind(KB.LEFT,ord("A"));
+changeKeybind(KB.RIGHT,ord("D"));
+changeKeybind(KB.CROUCH,vk_control);
+changeKeybind(KB.CROUCHALT,ord("S"));
+changeKeybind(KB.ATTACK,mb_left);
+changeKeybind(KB.ORGATTACK,ord("Z"));
+changeKeybind(KB.SYNATTACK,ord("X"));
