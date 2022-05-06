@@ -113,6 +113,7 @@
     {"id":{"name":"spr_powSyn","path":"sprites/spr_powSyn/spr_powSyn.yy",},"order":3,},
     {"id":{"name":"enemyAttack","path":"scripts/enemyAttack/enemyAttack.yy",},"order":15,},
     {"id":{"name":"spr_inventoryscreen_open","path":"sprites/spr_inventoryscreen_open/spr_inventoryscreen_open.yy",},"order":2,},
+    {"id":{"name":"snd_chime","path":"sounds/snd_chime/snd_chime.yy",},"order":6,},
     {"id":{"name":"spr_junglebckgrnd_middleCOPY","path":"sprites/spr_junglebckgrnd_middleCOPY/spr_junglebckgrnd_middleCOPY.yy",},"order":16,},
     {"id":{"name":"fnt_text","path":"fonts/fnt_text/fnt_text.yy",},"order":0,},
     {"id":{"name":"obj_cameraZoom","path":"objects/obj_cameraZoom/obj_cameraZoom.yy",},"order":7,},

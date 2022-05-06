@@ -11,5 +11,6 @@ else { //set keybind
 	else if (type == MK.MOU) changeKeybind(change, mouse_lastbutton, MK.MOU);
 	else show_debug_message("ERROR: STEP IN OBJ_KEYBIND - INPUT TYPE NOT RECOGNIZED)");
 	
+	audio_play_sound(snd_chime,0,false);
 	instance_destroy();
 }

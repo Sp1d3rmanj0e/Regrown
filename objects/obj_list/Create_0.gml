@@ -21,6 +21,8 @@ optionOpen = -1;
 keybindsOpen = -1;
 i2 = 0;
 
+sound = noone;
+
 // functions
 function prepKeybind(_input) {
 	

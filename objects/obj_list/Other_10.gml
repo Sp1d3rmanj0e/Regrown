@@ -1,4 +1,5 @@
 /// @description one-option buttons
+sound = snd_switch;
 
 switch (list[i2][OS.NAME]) {
 	
@@ -82,4 +83,8 @@ switch (list[i2][OS.NAME]) {
 		changeKeybind(KB.SELECT,ord("E"),MK.KEY);
 		changeKeybind(KB.HEAL,ord("Q"),MK.KEY);
 	break;
+	
+	default: sound = noone;
 }
+
+audio_play_sound(sound,0,false);
