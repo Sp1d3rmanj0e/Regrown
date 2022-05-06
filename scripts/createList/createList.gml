@@ -38,14 +38,17 @@ function createList(_x,_y,_width,_height,_type) {
 				array_push(list,["Left",-1,[]]);
 				array_push(list,["Right",-1,[]]);
 				array_push(list,["Jump",-1,[]]);
-				array_push(list,["Crouch",-1,[]]);
-				array_push(list,["",-1,[]]);
 				array_push(list,["Jump Alt",-1,[]]);
+				array_push(list,["Crouch",-1,[]]);
 				array_push(list,["Crouch Alt",-1,[]]);
+				array_push(list,["Select",-1,[]]);
+				array_push(list,["Heal",-1,[]]);
 				array_push(list,["",-1,[]]);
 				array_push(list,["Generic Attack",-1,[]]);
 				array_push(list,["Organic Attack",-1,[]]);
 				array_push(list,["Synthetic Attack",-1,[]]);
+				array_push(list,["",-1,[]]);
+				array_push(list,["Reset To Defaults",-1,[]]);
 			break;
 		}
 		

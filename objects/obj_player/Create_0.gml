@@ -1,5 +1,4 @@
 /// @description initialize
-
 #region setups
 //Initializing
 
@@ -117,7 +116,6 @@ function pause(toggle)
 		imageSpeed = 1;
 	}
 }
-
 
 
 

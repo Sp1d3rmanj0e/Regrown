@@ -5,7 +5,7 @@ if (place_meeting(x,y,obj_player))
 and (obj_player.state != PLAYERSTATE.DEAD) {
 	
 	// only activate if e is pressed
-	if (keyboard_check_pressed(ord("E"))) {
+	if (input_check_pressed(KB.SELECT)) {
 		
 		// save respawn information
 		obj_player.respawnX = x;

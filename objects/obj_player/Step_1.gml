@@ -3,14 +3,15 @@
 // keybind initialization
 if (freeze = false)
 {
-	key_right = keyboard_check(global.keybinds[KB.RIGHT]);
-	key_left = keyboard_check(ord("A"));
-	key_spaceP = keyboard_check_pressed(vk_space);
-	key_spaceH = keyboard_check(vk_space) || keyboard_check(ord("W"));
-	key_crouch = keyboard_check(vk_control) || keyboard_check(ord("S"));
-	key_attack = mouse_check_button_pressed(mb_left);
+	key_right = input_check(KB.RIGHT);
+	key_left = input_check(KB.LEFT);
+	key_spaceP = input_check_pressed(KB.JUMP);
+	key_spaceH = input_check(KB.JUMP) || input_check(KB.JUMPALT);
+	key_crouch = input_check(KB.CROUCH) || input_check(KB.CROUCHALT);
+	key_attack = input_check_pressed(KB.ATTACK);
+	key_orgAttack = input_check_pressed(KB.ORGATTACK);
+	key_synAttack = input_check_pressed(KB.SYNATTACK);
 }
-
 // become dead if health is too low
 if (P_health <= 0) {
 	state = PLAYERSTATE.DEAD;
