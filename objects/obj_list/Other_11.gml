@@ -9,8 +9,8 @@ var _sel = list[i2,OS.SEL];
 
 switch (_name) {
 	
-	case "Damage Overlay": global.overlay = _sel; break;
-	case "Camera Shake": global.cameraShake = _sel; break;
+	case "Overlay": global.overlay = _sel; break;
+	case "Cam Shake": global.cameraShake = _sel; break;
 	case "GUI Size": global.guiSize = _sel; break;
 	case "Text Size": global.textSize = _sel; break;
 	case "Fullscreen": window_set_fullscreen(_sel); break;
