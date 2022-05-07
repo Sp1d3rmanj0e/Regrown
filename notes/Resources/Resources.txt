@@ -38,3 +38,6 @@ https://www.youtube.com/watch?v=KjtAhp4rhP4
 
 //Sound Tutorial
 https://www.youtube.com/watch?v=1bBxWOwfID0
+
+//Reference code
+https://forum.yoyogames.com/index.php?threads/how-do-i-convert-key-code-to-its-correct-key.76372/post-452717

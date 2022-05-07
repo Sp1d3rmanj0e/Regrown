@@ -66,7 +66,8 @@ enum KB {
 	ORGATTACK,
 	SYNATTACK,
 	SELECT,
-	HEAL
+	HEAL,
+	NONE
 }
 
 enum MK {

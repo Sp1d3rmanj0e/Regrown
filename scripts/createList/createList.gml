@@ -9,12 +9,15 @@ function createList(_x,_y,_width,_height,_type) {
 		
 		
 		/*
-		Array Positions
+		Multi-Option Array Positions
 		[0] - Name
 		[1] - Initialize variable
 		[2] - Possible settings
 		
-		
+		Single-Option Array Positions
+		[0] - Name
+		[1] - -1
+		[2] - [OPTIONAL] - Custom variable
 		*/
 		// add options
 		switch (type) {
@@ -37,20 +40,20 @@ function createList(_x,_y,_width,_height,_type) {
 			
 			case LIST_TYPE.KEYBINDS:
 				
-				array_push(list,["Left",-1,[]]);
-				array_push(list,["Right",-1,[]]);
-				array_push(list,["Jump",-1,[]]);
-				array_push(list,["Jump Alt",-1,[]]);
-				array_push(list,["Crouch",-1,[]]);
-				array_push(list,["Crouch Alt",-1,[]]);
-				array_push(list,["Select",-1,[]]);
-				array_push(list,["Heal",-1,[]]);
-				array_push(list,["",-1,[]]);
-				array_push(list,["Generic Attack",-1,[]]);
-				array_push(list,["Organic Attack",-1,[]]);
-				array_push(list,["Synthetic Attack",-1,[]]);
-				array_push(list,["",-1,[]]);
-				array_push(list,["Reset To Defaults",-1,[]]);
+				array_push(list,["Left",-1,[KB.LEFT]]);
+				array_push(list,["Right",-1,[KB.RIGHT]]);
+				array_push(list,["Jump",-1,[KB.JUMP]]);
+				array_push(list,["Jump Alt",-1,[KB.JUMPALT]]);
+				array_push(list,["Crouch",-1,[KB.CROUCH]]);
+				array_push(list,["Crouch Alt",-1,[KB.CROUCHALT]]);
+				array_push(list,["Select",-1,[KB.SELECT]]);
+				array_push(list,["Heal",-1,[KB.HEAL]]);
+				array_push(list,["",-1,[KB.NONE]]);
+				array_push(list,["Generic Attack",-1,[KB.ATTACK]]);
+				array_push(list,["Organic Attack",-1,[KB.ORGATTACK]]);
+				array_push(list,["Synthetic Attack",-1,[KB.SYNATTACK]]);
+				array_push(list,["",-1,[KB.NONE]]);
+				array_push(list,["Reset To Defaults",-1,[KB.NONE]]);
 			break;
 			
 			case LIST_TYPE.VISIBILITY:
