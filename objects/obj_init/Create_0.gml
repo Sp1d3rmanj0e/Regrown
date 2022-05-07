@@ -13,10 +13,7 @@ draw_set_font(fnt_text);
 
 
 // test initializers
-global.sfx = 0;
-global.antiAil = 0;
-global.volume = 0;
-global.graphics = 2;
+global.volume = 4;
 global.overlay = true;
 global.cameraShake = true;
 global.guiSize = 0;

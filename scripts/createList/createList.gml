@@ -63,6 +63,11 @@ function createList(_x,_y,_width,_height,_type) {
 				//array_push(list,["Colorblind Mode",-1,[]]);
 				
 			break;
+			
+			case LIST_TYPE.AUDIO:
+				
+				array_push(list,["Volume",global.volume,["0%","25%","50%","75%","100%"]]);
+			break;
 		}
 		
 		// assign width and height

@@ -35,3 +35,6 @@ https://www.yoyogames.com/en/blog/coffee-break-tutorials-pausing-your-game-gml
 //Button Tutorials 1 and 2
 https://www.youtube.com/watch?v=jsWPUuwB1RQ
 https://www.youtube.com/watch?v=KjtAhp4rhP4
+
+//Sound Tutorial
+https://www.youtube.com/watch?v=1bBxWOwfID0

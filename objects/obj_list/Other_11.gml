@@ -15,6 +15,7 @@ switch (_name) {
 	case "Text Size": global.textSize = _sel; break;
 	case "Fullscreen": window_set_fullscreen(_sel); break;
 	case "Visible Enemies": global.visibleEnemies = _sel; break;
+	case "Volume": global.volume = _sel; break;
 	default: sound = noone;
 }
 

@@ -64,7 +64,7 @@ switch (list[i2][OS.NAME]) {
 		
 		if (options2Open == -1) {
 			
-			options2Open = createList(x+width+padding, y, width, 0, LIST_TYPE.VISIBILITY);
+			options2Open = createList(x+width+padding, y, width, 0, LIST_TYPE.AUDIO);
 		}
 		else {
 			
