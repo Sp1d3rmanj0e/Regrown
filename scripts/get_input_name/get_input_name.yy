@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Settings.yy",
   },
   "resourceVersion": "1.0",
-  "name": "input_check",
+  "name": "get_input_name",
   "tags": [],
   "resourceType": "GMScript",
 }

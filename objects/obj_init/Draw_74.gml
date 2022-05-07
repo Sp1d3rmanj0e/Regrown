@@ -1,4 +1,5 @@
 /// @description draw GUI
+
 var _scale = 1 + 0.25*global.guiSize;
 
 if (global.gamePaused) {

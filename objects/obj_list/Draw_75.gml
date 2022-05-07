@@ -39,11 +39,10 @@ for (var i = 0; i < _size; i++) {
 		
 		if (list[i][2][0] != KB.NONE) {
 			
-			//draw_text_transformed(x1+padding*2+string_width(list[i][OS.NAME])*global.textScale, y3,
-			//global._fhinputKeys[global.keybinds[list[i][OS.VALS][0]][0]],global.textScale,global.textScale,0);
-
 			draw_text_transformed(x1 + padding*2 + string_width(list[i][OS.NAME])*global.textScale, y3,
-			"(" + global._fhinputKeys[global.keybinds[list[i][OS.VALS][0]][0]] + ")",
+			"(" + 
+			get_input_name(list[i][OS.VALS][0])
+			+ ")",
 			global.textScale,global.textScale,0);
 		}
 		
