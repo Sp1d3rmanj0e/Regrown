@@ -36,11 +36,17 @@ changeKeybind(KB.SELECT,ord("E"),MK.KEY);
 changeKeybind(KB.HEAL,ord("Q"),MK.KEY);
 
 // rooms not to pause in
-doNotPause = [
+doNotPauseRoom = [
 	
 	rm_credits,
 	rm_titleScreen,
 	init
+]
+
+doNotPauseInst = [
+	
+	obj_keybind,
+	inventory
 ]
 
 #region references

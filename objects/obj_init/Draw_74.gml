@@ -28,7 +28,7 @@ else {
 	
 	// draw healthbars
 	with (obj_player) {
-		if (!instance_exists(inventory)) and (!global.overlay) {
+		if (!instance_exists(inventory)) and (global.overlay) {
 	
 			// draw healthbar GUI
 			var healthPercent = P_health/P_maxHealth*100;
