@@ -34,3 +34,11 @@ changeKeybind(KB.ORGATTACK,ord("Z"),MK.KEY);
 changeKeybind(KB.SYNATTACK,ord("X"),MK.KEY);
 changeKeybind(KB.SELECT,ord("E"),MK.KEY);
 changeKeybind(KB.HEAL,ord("Q"),MK.KEY);
+
+// rooms not to pause in
+doNotPause = [
+	
+	rm_credits,
+	rm_titleScreen,
+	init
+]
