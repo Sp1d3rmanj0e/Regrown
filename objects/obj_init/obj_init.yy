@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "_spriteless",
-    "path": "folders/Objects/_spriteless.yy",
+    "name": "Functions",
+    "path": "folders/Objects/_spriteless/Functions.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_init",

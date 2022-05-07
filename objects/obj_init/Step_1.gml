@@ -13,6 +13,8 @@ global.guiHeight = display_get_gui_height();
 global.viewWidth = camera_get_view_width(view_camera[0]);
 global.viewHeight = camera_get_view_height(view_camera[0]);
 
+global.textScale = 1 + 0.5 * global.textSize;
+
 camera_set_view_size(view_camera[0],960*global.cameraScale,540*global.cameraScale);
 global.cameraScale = camera_get_view_width(view_camera[0]) / 960; // inventory was based off of a 960 width
 

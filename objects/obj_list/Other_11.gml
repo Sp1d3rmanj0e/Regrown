@@ -9,11 +9,12 @@ var _sel = list[i2,OS.SEL];
 
 switch (_name) {
 	
-	case "SFX": global.sfx = _sel; break;
-	case "Graphics": global.graphics = _sel; break;
-	case "Anti-Ailizing": global.antiAil = _sel; break;
-	case "Volume": global.volume = _sel; break;
+	case "Damage Overlay": global.overlay = _sel; break;
+	case "Camera Shake": global.cameraShake = _sel; break;
+	case "GUI Size": global.guiSize = _sel; break;
+	case "Text Size": global.textSize = _sel; break;
 	case "Fullscreen": window_set_fullscreen(_sel); break;
+	case "Visible Enemies": global.visibleEnemies = _sel; break;
 	default: sound = noone;
 }
 

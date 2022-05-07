@@ -25,8 +25,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "_spriteless",
-    "path": "folders/Objects/_spriteless.yy",
+    "name": "GUI",
+    "path": "folders/Objects/_spriteless/GUI.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_button",

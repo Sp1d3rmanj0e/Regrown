@@ -34,13 +34,13 @@ for (var i = 0; i < _size; i++) {
 	
 	// draw name
 	draw_set_valign(fa_middle);
-	draw_text(x1 + padding, y3,list[i][OS.NAME]);
+	draw_text_transformed(x1 + padding, y3,list[i][OS.NAME],global.textScale,global.textScale,0);
 	
 	if (list[i][OS.SEL] > -1) {
 		
 		// draw value
 		draw_set_halign(fa_middle);
-			draw_text(x3,y3,list[i][OS.VALS][list[i][OS.SEL]]);
+			draw_text_transformed(x3,y3,list[i][OS.VALS][list[i][OS.SEL]],global.textScale,global.textScale,0);
 		draw_set_halign(fa_left);
 		draw_set_valign(fa_top);
 		

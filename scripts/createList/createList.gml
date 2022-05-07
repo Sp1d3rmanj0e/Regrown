@@ -29,6 +29,8 @@ function createList(_x,_y,_width,_height,_type) {
 			case LIST_TYPE.OPTIONS:
 			
 				array_push(list,["Keybinds",-1,[]]);
+				array_push(list,["Visibility",-1,[]]);
+				array_push(list,["Audio",-1,[]]);
 				array_push(list,["Fullscreen",window_get_fullscreen(),["False","True"]]);
 			
 			break;
@@ -49,6 +51,17 @@ function createList(_x,_y,_width,_height,_type) {
 				array_push(list,["Synthetic Attack",-1,[]]);
 				array_push(list,["",-1,[]]);
 				array_push(list,["Reset To Defaults",-1,[]]);
+			break;
+			
+			case LIST_TYPE.VISIBILITY:
+				
+				array_push(list,["Overlay",global.overlay,["OFF","ON"]]);
+				array_push(list,["Cam Shake",global.cameraShake,["OFF","ON"]]);
+				array_push(list,["Visible Enemies",global.visibleEnemies,["OFF","ON"]]);
+				array_push(list,["GUI Size",global.guiSize,["100%","125%","150%","175%","200%"]]);
+				array_push(list,["Text Size",global.textSize,["100%","150%","200%"]]);
+				//array_push(list,["Colorblind Mode",-1,[]]);
+				
 			break;
 		}
 		

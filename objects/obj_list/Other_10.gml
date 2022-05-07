@@ -11,9 +11,9 @@ switch (list[i2][OS.NAME]) {
 		}
 		else {
 			// destroy any children list made
-			if (optionOpen.keybindsOpen != -1) {
+			if (optionOpen.options2Open != -1) {
 				
-				instance_destroy(optionOpen.keybindsOpen);
+				instance_destroy(optionOpen.options2Open);
 			}
 			
 			instance_destroy(optionOpen);
@@ -36,14 +36,40 @@ switch (list[i2][OS.NAME]) {
 	
 	case "Keybinds":
 	
-		if (keybindsOpen == -1) {
+		if (options2Open == -1) {
 			
-			keybindsOpen = createList(x+width+padding, y, width, 0, LIST_TYPE.KEYBINDS);
+			options2Open = createList(x+width+padding, y, width, 0, LIST_TYPE.KEYBINDS);
 		}
 		else {
 			
-			instance_destroy(keybindsOpen);
-			keybindsOpen = -1;
+			instance_destroy(options2Open);
+			options2Open = -1;
+		}
+	break;
+	
+	case "Visibility":
+		
+		if (options2Open == -1) {
+			
+			options2Open = createList(x+width+padding, y, width, 0, LIST_TYPE.VISIBILITY);
+		}
+		else {
+			
+			instance_destroy(options2Open);
+			options2Open = -1;
+		}
+	break;
+	
+	case "Audio":
+		
+		if (options2Open == -1) {
+			
+			options2Open = createList(x+width+padding, y, width, 0, LIST_TYPE.VISIBILITY);
+		}
+		else {
+			
+			instance_destroy(options2Open);
+			options2Open = -1;
 		}
 	break;
 	

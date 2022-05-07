@@ -17,6 +17,12 @@ global.sfx = 0;
 global.antiAil = 0;
 global.volume = 0;
 global.graphics = 2;
+global.overlay = true;
+global.cameraShake = true;
+global.guiSize = 0;
+global.textSize = 0;
+//global.colorblindMode = false;
+global.visibleEnemies = 0;
 
 global.keybinds = [];
 

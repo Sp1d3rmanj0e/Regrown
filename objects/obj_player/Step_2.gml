@@ -1,6 +1,6 @@
 /// @description Post Processing
 
-if (shake) { //If screenshake is activated
+if (shake) and (global.cameraShake){ //If screenshake is activated
 	camera_set_view_pos(view_camera[0],x-global.viewWidth/2+xCamOffset+random_range(-shakeIntensity,shakeIntensity),y-global.viewHeight/2+yCamOffset+random_range(-shakeIntensity,shakeIntensity));
 } else { //If camera is normal
 	camera_set_view_pos(view_camera[0],x-global.viewWidth/2+xCamOffset,y-global.viewHeight/2+yCamOffset);

@@ -43,8 +43,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "_spriteless",
-    "path": "folders/Objects/_spriteless.yy",
+    "name": "parents",
+    "path": "folders/Objects/_spriteless/parents.yy",
   },
   "resourceVersion": "1.0",
   "name": "enemies",

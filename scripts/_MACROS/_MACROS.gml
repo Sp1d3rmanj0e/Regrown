@@ -24,7 +24,9 @@ enum LIST_TYPE {
 	
 	PAUSE,
 	OPTIONS,
-	KEYBINDS
+	KEYBINDS,
+	VISIBILITY,
+	AUDIO
 }
 
 enum OS {
