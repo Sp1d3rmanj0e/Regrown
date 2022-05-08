@@ -6,7 +6,7 @@
     "path": "folders/Scripts/Powerup Scripts.yy",
   },
   "resourceVersion": "1.0",
-  "name": "powScript",
+  "name": "powMoose",
   "tags": [],
   "resourceType": "GMScript",
 }

@@ -114,8 +114,6 @@ function tBotWander() {
 		target = obj_player;
 		motionTime = 0;
 	}
-	
 	sprite_index = sprIdle;
-	
 }
 

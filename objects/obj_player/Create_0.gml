@@ -28,6 +28,9 @@ safe = false;
 x_move = 0; //referenced in collisions
 y_move = 0; //fling y
 
+orgCooldown = 0;
+synCooldown = 0;
+
 // powerup statuses
 thorns = false;
 

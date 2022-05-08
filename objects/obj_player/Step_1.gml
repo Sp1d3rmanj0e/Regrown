@@ -9,8 +9,8 @@ if (freeze = false)
 	key_spaceH = input_check(KB.JUMP) || input_check(KB.JUMPALT);
 	key_crouch = input_check(KB.CROUCH) || input_check(KB.CROUCHALT);
 	key_attack = input_check_pressed(KB.ATTACK);
-	key_orgAttack = input_check_pressed(KB.ORGATTACK);
-	key_synAttack = input_check_pressed(KB.SYNATTACK);
+	key_orgAttack = input_check(KB.ORGATTACK);
+	key_synAttack = input_check(KB.SYNATTACK);
 }
 // become dead if health is too low
 if (P_health <= 0) {
@@ -33,15 +33,22 @@ if (!global.gamePaused) {
 if (!global.gamePaused) {
 	
 	if (global.orgFill != -4) {
-		if (ds_grid_get(global.powerup_grid,4,global.orgFill)) {
+		
+		// get script and execute
+		var _orgScript = ds_grid_get(global.powerup_grid,4,global.orgFill);
+		if (_orgScript) {
 			
-			powScript(global.orgFill);
+			_orgScript(key_orgAttack);
 		}
 	}
+	
 	if (global.synFill != -4) {
-		if (ds_grid_get(global.powerup_grid,4,global.synFill)) {
+		
+		// get script and execute
+		var _synScript = ds_grid_get(global.powerup_grid,4,global.orgFill);
+		if (_synScript) {
 			
-			powScript(global.synFill);
+			_synScript(key_synAttack);
 		}
 	}
 }

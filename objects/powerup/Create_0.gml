@@ -12,11 +12,12 @@ maxpowerups = 16; // Array capacity (Easily changeable)
 // w = 4  -->  Script (Executable)
 // w = 5  -->  Sound when chosen or mouse hovers over it (Executable)
 // w = 6  -->  Color blend (C_ or RGB)
+// w = 7  -->  Cooldown (secs)
 
 
 if (global.saveObjects == 1) { //prevents creating infinite ds_grids upon resetting
 	
-	global.powerup_grid = ds_grid_create(7,maxpowerups);
+	global.powerup_grid = ds_grid_create(8,maxpowerups);
 }
 
 
@@ -32,13 +33,14 @@ for (var i = 0; i < maxpowerups; i++) {
 	ds_grid_set(global.powerup_grid,4,i,noone); //Script
 	ds_grid_set(global.powerup_grid,5,i,noone); //Sound 
 	ds_grid_set(global.powerup_grid,6,i,c_white); //Color
+	ds_grid_set(global.powerup_grid,7,i,-1); //Cooldown
 }
 
 // test manual fill
 
-createPowerup(0, "Kangaroo TEST", 1, true, "Hits a heavy, one-directional blow.", powScript, noone, c_orange);
-createPowerup(1, "Cheetah TEST", 2, true, "WWW", powScript, noone, c_yellow);
-createPowerup(2, "Thorns", 3, true, "Hurt enemies that hit you for half your current damage.", powScript, noone, c_green);
+createPowerup(0, "Moose", 1, true, "Hits a heavy, one-directional blow.", powMoose, noone, c_orange, 2);
+createPowerup(1, "Cheetah TEST", 2, true, "WWW", noone, noone, c_yellow, -1);
+createPowerup(2, "Thorns", 3, true, "Hurt enemies that hit you for half your current damage.", powThorns, noone, c_green, -1);
 
 #endregion
 
