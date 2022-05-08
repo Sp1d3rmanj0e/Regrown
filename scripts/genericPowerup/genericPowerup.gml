@@ -1,4 +1,4 @@
-function powMoose(_activate) constructor {
+//function powGeneric(_activate) constructor {
 	
 	with (obj_player) {
 		
@@ -9,7 +9,7 @@ function powMoose(_activate) constructor {
 		if (_activate) and (orgCooldown == 0) {
 			
 			orgCooldown = ds_grid_get(global.powerup_grid,7,global.orgFill);
-			state = PLAYERSTATE.ATTACK_MOOSE;
+			
 		}
 		
 		if (orgCooldown > 0) orgCooldown -= 1/room_speed;
@@ -23,4 +23,4 @@ function powMoose(_activate) constructor {
 			
 		}
 	}	
-}
+//}

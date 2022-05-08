@@ -38,6 +38,20 @@ function PlayerState_Attack_Slash() {
 		
 			if (key_crouch) attack = ATK.LOW; // 0
 		}
+		
+		var _powOrgName = ds_grid_get(global.powerup_grid,0,global.orgFill);
+		
+		if (key_orgAttack) {
+			switch(_powOrgName) {
+				
+				case "Moose":
+					
+					ProcessAttack(spr_playerAttack_Moose,spr_playerAttack_MooseHB);
+					attack = 0;
+				break;
+			}
+		}
+		
 	}
 	switch(attack) {
 	
@@ -64,10 +78,6 @@ function PlayerState_Attack_Slash() {
 		case ATK.DOWN:
 			ProcessAttack(spr_playerAttack_DirDown,spr_playerAttack_DirDownHB);
 		break;
-	
-		default:
-			ProcessAttack(spr_playerAttack_Norm,spr_playerAttack_NormHB);
-			show_debug_message("ERROR: Script PlayerState_Attack_Slash - Attack not registered");
 	}
 
 

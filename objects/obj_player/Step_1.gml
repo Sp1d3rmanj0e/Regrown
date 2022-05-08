@@ -9,8 +9,8 @@ if (freeze = false)
 	key_spaceH = input_check(KB.JUMP) || input_check(KB.JUMPALT);
 	key_crouch = input_check(KB.CROUCH) || input_check(KB.CROUCHALT);
 	key_attack = input_check_pressed(KB.ATTACK);
-	key_orgAttack = input_check(KB.ORGATTACK);
-	key_synAttack = input_check(KB.SYNATTACK);
+	key_orgAttack = input_check_pressed(KB.ORGATTACK);
+	key_synAttack = input_check_pressed(KB.SYNATTACK);
 }
 // become dead if health is too low
 if (P_health <= 0) {
@@ -26,6 +26,7 @@ if (!global.gamePaused) {
 		case PLAYERSTATE.ATTACK_SLASH: PlayerState_Attack_Slash(); break;
 		case PLAYERSTATE.ATTACK_COMBO: PlayerState_Attack_Combo(); break;
 		case PLAYERSTATE.DEAD: PlayerState_Dead(); break;
+		case PLAYERSTATE.ATTACK_MOOSE: PlayerState_Attack_Moose(); break;
 	}
 }
 
@@ -45,7 +46,7 @@ if (!global.gamePaused) {
 	if (global.synFill != -4) {
 		
 		// get script and execute
-		var _synScript = ds_grid_get(global.powerup_grid,4,global.orgFill);
+		var _synScript = ds_grid_get(global.powerup_grid,4,global.synFill);
 		if (_synScript) {
 			
 			_synScript(key_synAttack);
