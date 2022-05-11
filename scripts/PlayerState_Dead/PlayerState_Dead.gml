@@ -17,11 +17,12 @@ if (animation_end()) {
 		P_health = P_maxHealth; // reset health
 		nanobotCount = maxNanobotCount; // reset nanobots
 		//Go to the room your checkpoint is in
+		global.saveObjects = 0;
 		room_goto(respawnRoom);
 		
 		//Goto Checkpoint coords
 		x = respawnX;
-		y = respawnY;
+		y = respawnY-50;
 		
 		state = PLAYERSTATE.FREE; //Go Back to Normal
 	}

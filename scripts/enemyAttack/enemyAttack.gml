@@ -1,3 +1,4 @@
+
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function enemyAttack(target, damage, mag){
@@ -22,11 +23,12 @@ function enemyAttack(target, damage, mag){
 			} 
 			else P_health = 0;
 			
-			// yeet player
+			// yeet player + safeguards
 			target.airborne = true; // prevent big hit boost
 			
 			fling(point_direction(other.x,other.y-(sprite_height/2)+30,x,y),mag); 
-			show_debug_message(obj_player.vsp);
+			target.y_move = 0;
+			
 			// close inventory if it is open
 			if (instance_exists(inventory)) instance_destroy(inventory);
 			
@@ -45,6 +47,12 @@ function enemyAttack(target, damage, mag){
 					audio_play_sound(choose(snd_glitch1,snd_glitch2),1,false);
 		
 				}
+			}
+			
+			if (thorns = true) and (obj_player.state != PLAYERSTATE.DEAD) {
+				
+				other.enemyHealth -= obj_player.damage/2;
+				other.showHealthBarTimer = 5;
 			}
 		}
 	}

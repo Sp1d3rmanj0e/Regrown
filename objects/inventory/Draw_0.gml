@@ -22,7 +22,17 @@ if (inventoryOpen) {
 // progressive text engine (so text doesn't all pop on at the same time)
 if (overlay != PTYPE.NONE) {
 	charCount++;
-	textPart = string_copy(ds_grid_get(global.powerup_grid,3, sel_powerupNum),1,charCount);
+	// check to see if hovered powerup is locked or not
+	if (ds_grid_get(global.powerup_grid,2,sel_powerupNum)) {
+		
+		// if is unlocked
+		textPart = string_copy(ds_grid_get(global.powerup_grid,3, sel_powerupNum),1,charCount);
+	}
+	else {
+		
+		// if is locked
+		textPart = string_copy("Currently locked! Find the powerup to use it!",1,charCount)
+	}
 } else {
 	charCount = 0;
 }

@@ -3,15 +3,21 @@
 switch (list[i2][OS.NAME]) {
 	
 	case "Options":
-		// FIX check to see if list already exists
+		
 		if (optionOpen == -1) {
 			
 			optionOpen = createList(x + width + padding, y, width, 0, LIST_TYPE.OPTIONS);
 		}
 		else {
+			// destroy any children list made
+			if (optionOpen.keybindsOpen != -1) {
+				
+				instance_destroy(optionOpen.keybindsOpen);
+			}
 			
 			instance_destroy(optionOpen);
 			optionOpen = -1;
+			
 		}
 	break;
 	
@@ -23,6 +29,25 @@ switch (list[i2][OS.NAME]) {
 	case  "Restart":
 		instance_destroy(obj_list);
 		global.gamePaused = false;
+		global.saveObjects = 0; //completely resets enemies
 		game_restart(); //FIX this later
+	break;
+	
+	case "Keybinds":
+	
+		if (keybindsOpen == -1) {
+			
+			keybindsOpen = createList(x+width+padding, y, width, 0, LIST_TYPE.KEYBINDS);
+		}
+		else {
+			
+			instance_destroy(keybindsOpen);
+			keybindsOpen = -1;
+		}
+	break;
+	
+	case "Left":
+		
+		
 	break;
 }

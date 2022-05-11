@@ -9,7 +9,7 @@ if (airborne) {
 } 
 else {
 	
-	jumpBuffer = 0.25;
+	jumpBuffer = 0.1;
 }
 
 // Makes flash go down over time

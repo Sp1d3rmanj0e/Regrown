@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_healingAnimation",
-    "path": "sprites/spr_healingAnimation/spr_healingAnimation.yy",
+    "name": "spr_welderHeals",
+    "path": "sprites/spr_welderHeals/spr_welderHeals.yy",
   },
   "solid": false,
   "visible": true,
@@ -25,6 +25,7 @@
     {"isDnD":false,"eventNum":0,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":12,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
     {"isDnD":false,"eventNum":0,"eventType":8,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
+    {"isDnD":false,"eventNum":2,"eventType":3,"collisionObjectId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMEvent",},
   ],
   "properties": [],
   "overriddenProperties": [],

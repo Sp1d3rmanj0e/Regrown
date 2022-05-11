@@ -16,6 +16,7 @@ P_health = 10;
 nanobotCount = 10; // healing capsules
 
 // dynamic initialize
+attackCalled = false;
 jumpBuffer = 0; // coyote jumping
 imageSpeed = 1;
 lock = false; // don't touch this
@@ -28,12 +29,15 @@ safe = false;
 x_move = 0; //referenced in collisions
 y_move = 0; //fling y
 
+// powerup statuses
+thorns = false;
+
 // reference initialize
 ogwalkSp = walkSp;
 P_maxHealth = 10;
 maxNanobotCount = 10;
-Xoffset = 500; // healthbar
-Yoffset = 50; // healthbar
+Xoffset = 498; // healthbar
+Yoffset = 48; // healthbar
 flash_colour = c_red;
 
 //Respawn is changed on obj_checkpoint collision
@@ -67,7 +71,7 @@ b2 = -0.013;
 b1 = -0.025;
 
 //front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
-f1 = -0.1;
+f1 = 0;
 
 x_origin = room_width/2; // Another reference is in room_control.
 

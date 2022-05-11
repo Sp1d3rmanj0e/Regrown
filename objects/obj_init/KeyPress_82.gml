@@ -1,4 +1,4 @@
 /// @description restarts game
 
-global.saveObjects = 0; //completely resets enemies
+global.saveObjects = 0;
 game_restart();

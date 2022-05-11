@@ -3,11 +3,11 @@
 // keybind initialization
 if (freeze = false)
 {
-	key_right = keyboard_check(ord("D"));
+	key_right = keyboard_check(global.keybinds[KB.RIGHT]);
 	key_left = keyboard_check(ord("A"));
 	key_spaceP = keyboard_check_pressed(vk_space);
 	key_spaceH = keyboard_check(vk_space) || keyboard_check(ord("W"));
-	key_crouch = 0//keyboard_check(vk_control);
+	key_crouch = keyboard_check(vk_control) || keyboard_check(ord("S"));
 	key_attack = mouse_check_button_pressed(mb_left);
 }
 
@@ -34,13 +34,13 @@ if (!global.gamePaused) {
 	if (global.orgFill != -4) {
 		if (ds_grid_get(global.powerup_grid,4,global.orgFill)) {
 			
-			powTest(global.orgFill);
+			powScript(global.orgFill);
 		}
 	}
 	if (global.synFill != -4) {
 		if (ds_grid_get(global.powerup_grid,4,global.synFill)) {
 			
-			powTest(global.synFill);
+			powScript(global.synFill);
 		}
 	}
 }

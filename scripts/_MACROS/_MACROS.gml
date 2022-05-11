@@ -23,7 +23,8 @@ enum PLAYERSTATE {
 enum LIST_TYPE {
 	
 	PAUSE,
-	OPTIONS
+	OPTIONS,
+	KEYBINDS
 }
 
 enum OS {
@@ -37,5 +38,29 @@ enum B_ACTION {
 	
 	PLAY,
 	CREDITS,
-	QUIT
+	QUIT,
+	BACK
+}
+
+enum ATK {
+	
+	LOW,
+	NORM,
+	SLANTUP,
+	SLANTDOWN,
+	UP,
+	DOWN
+}
+
+enum KB {
+	
+	JUMP,
+	JUMPALT,
+	LEFT,
+	RIGHT,
+	CROUCH,
+	CROUCHALT,
+	ATTACK,
+	ORGATTACK,
+	SYNATTACK
 }
