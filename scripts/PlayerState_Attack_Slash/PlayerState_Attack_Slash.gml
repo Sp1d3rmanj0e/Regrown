@@ -42,7 +42,7 @@ if (!attackCalled) {
 switch(attack) {
 	
 	case ATK.NORM:
-		ProcessAttack(spr_playerAttack_Norm,spr_playerAttack_NormHB);
+		ProcessAttack(spr_playerAttack_Norm,spr_playermelee_CHAR_HB);
 	break;
 	
 	case ATK.SLANTDOWN:
