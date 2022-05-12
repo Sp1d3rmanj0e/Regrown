@@ -177,6 +177,7 @@
     {"id":{"name":"snd_softGlitch2","path":"sounds/snd_softGlitch2/snd_softGlitch2.yy",},"order":1,},
     {"id":{"name":"getHover","path":"scripts/getHover/getHover.yy",},"order":0,},
     {"id":{"name":"enemies","path":"objects/enemies/enemies.yy",},"order":0,},
+    {"id":{"name":"Spr_PowerUp_BreakWall","path":"sprites/Spr_PowerUp_BreakWall/Spr_PowerUp_BreakWall.yy",},"order":25,},
     {"id":{"name":"spr_playerAttack_SlantDown","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"order":10,},
     {"id":{"name":"Spr_NatureSet5","path":"sprites/Spr_NatureSet5/Spr_NatureSet5.yy",},"order":20,},
     {"id":{"name":"spr_tutorialBotIdle","path":"sprites/spr_tutorialBotIdle/spr_tutorialBotIdle.yy",},"order":3,},
