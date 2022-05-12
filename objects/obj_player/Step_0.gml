@@ -1,6 +1,12 @@
 /// @description
 
 // Main Code 
+if (place_meeting(x+5,y,obj_obstruction)) {
+	
+	show_debug_message("Collides");
+	obj_obstruction.exists = false;
+}
+
 
 if (airborne) {
 	

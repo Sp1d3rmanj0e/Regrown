@@ -2,7 +2,8 @@
 tilemap = layer_tilemap_get_id("tile_collision");
 width = sprite_get_width(sprite_index);
 height = sprite_get_height(sprite_index);
-tile = tilemap_get(tilemap,63,63);
+tile = 1;
+exists = true;
 
 for (var i = 0; i < width/TILE_SIZE; i++) {
 	

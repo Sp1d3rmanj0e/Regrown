@@ -22,13 +22,13 @@ else {
 	// draw screen damage cracks
 	if (instance_exists(obj_player)) and (global.overlay) {
 		
-		var _subimg = 4-4*(obj_player.P_health/obj_player.P_maxHealth);
+		var _subimg = 10-10*(obj_player.P_health/obj_player.P_maxHealth);
 		draw_sprite_stretched(spr_GlassShatter,_subimg,0, 0,global.guiWidth,global.guiHeight);
 	}
 	
 	// draw healthbars
 	with (obj_player) {
-		if (!instance_exists(inventory)) and (global.overlay) {
+		if (!instance_exists(inventory)) {
 	
 			// draw healthbar GUI
 			var healthPercent = P_health/P_maxHealth*100;

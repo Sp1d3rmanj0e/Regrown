@@ -1,8 +1,11 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
 function PlayerState_Attack_Slash() {
+	var _speed = walkSp/2;
+	
+	if (image_index > 2) _speed = walkSp;
 
-	Collisions(4);
+	Collisions(_speed);
 
 
 	if (!attackCalled) {
@@ -27,9 +30,14 @@ function PlayerState_Attack_Slash() {
 
 			// direct up
 			if (hsp == 0) {
-			
-				if (vsp < 0) and (!key_crouch) attack = ATK.UP;
-				else if (!key_right) and (!key_left) attack = ATK.DOWN;
+				if (!key_left) and (!key_right) {
+					if (vsp < 0) and (!key_crouch) attack = ATK.UP;
+					else if (!key_right) and (!key_left) attack = ATK.DOWN;
+				} 
+				else {
+					
+					attack = ATK.NORM;
+				}
 			}
 
 		} 
@@ -39,18 +47,7 @@ function PlayerState_Attack_Slash() {
 			if (key_crouch) attack = ATK.LOW; // 0
 		}
 		
-		var _powOrgName = ds_grid_get(global.powerup_grid,0,global.orgFill);
 		
-		if (key_orgAttack) {
-			switch(_powOrgName) {
-				
-				case "Moose":
-					
-					ProcessAttack(spr_playerAttack_Moose,spr_playerAttack_MooseHB);
-					attack = 0;
-				break;
-			}
-		}
 		
 	}
 	switch(attack) {

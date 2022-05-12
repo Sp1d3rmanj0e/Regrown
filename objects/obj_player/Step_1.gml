@@ -31,6 +31,7 @@ if (!global.gamePaused) {
 }
 
 // powerup state engine
+
 if (!global.gamePaused) {
 	
 	if (global.orgFill != -4) {
