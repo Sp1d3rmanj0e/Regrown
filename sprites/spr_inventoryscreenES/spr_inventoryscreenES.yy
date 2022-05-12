@@ -63,7 +63,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inventoryscreenES","path":"sprites/spr_inventoryscreenES/spr_inventoryscreenES.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_inventoryscreenES",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inventorycoverActive","path":"sprites/spr_inventorycoverActive/spr_inventorycoverActive.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_inventorycoverActive",
     "tags": [],
     "resourceType": "GMSequence",

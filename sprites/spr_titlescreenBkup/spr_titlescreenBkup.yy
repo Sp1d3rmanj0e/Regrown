@@ -85,7 +85,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_titlescreenBkup","path":"sprites/spr_titlescreenBkup/spr_titlescreenBkup.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_titlescreenBkup",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"logotest","path":"sprites/logotest/logotest.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "logotest",
     "tags": [],
     "resourceType": "GMSequence",

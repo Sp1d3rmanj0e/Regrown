@@ -25,16 +25,16 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"5911b292-d246-45bb-a49c-9c9fb0da190e","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5911b292-d246-45bb-a49c-9c9fb0da190e","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"0e2e44eb-dfec-4249-b229-9406005f71fa","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"5911b292-d246-45bb-a49c-9c9fb0da190e","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"2a364dcd-c7d4-4c24-b7cc-c8e6fec62cdb","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"5911b292-d246-45bb-a49c-9c9fb0da190e","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"0e2e44eb-dfec-4249-b229-9406005f71fa","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_checkpointRock","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"5911b292-d246-45bb-a49c-9c9fb0da190e","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"f5474a43-2b60-4162-9620-e5800542f0c2","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f5474a43-2b60-4162-9620-e5800542f0c2","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"0e2e44eb-dfec-4249-b229-9406005f71fa","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"f5474a43-2b60-4162-9620-e5800542f0c2","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"2a364dcd-c7d4-4c24-b7cc-c8e6fec62cdb","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"f5474a43-2b60-4162-9620-e5800542f0c2","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"0e2e44eb-dfec-4249-b229-9406005f71fa","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_checkpointRock","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"f5474a43-2b60-4162-9620-e5800542f0c2","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"0f81923a-e190-4016-b3c7-81a5db51ffb1","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0f81923a-e190-4016-b3c7-81a5db51ffb1","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"0e2e44eb-dfec-4249-b229-9406005f71fa","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"0f81923a-e190-4016-b3c7-81a5db51ffb1","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"2a364dcd-c7d4-4c24-b7cc-c8e6fec62cdb","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"0f81923a-e190-4016-b3c7-81a5db51ffb1","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"LayerId":{"name":"0e2e44eb-dfec-4249-b229-9406005f71fa","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_checkpointRock","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},"resourceVersion":"1.0","name":"0f81923a-e190-4016-b3c7-81a5db51ffb1","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -70,7 +70,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_checkpointRock","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_checkpointRock",
     "tags": [],
     "resourceType": "GMSequence",

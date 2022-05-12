@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_testbkgnd_distant","path":"sprites/spr_testbkgnd_distant/spr_testbkgnd_distant.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_testbkgnd_distant",
     "tags": [],
     "resourceType": "GMSequence",

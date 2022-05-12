@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAttack_DirDown","path":"sprites/spr_playerAttack_DirDown/spr_playerAttack_DirDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAttack_DirDown",
     "tags": [],
     "resourceType": "GMSequence",

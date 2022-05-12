@@ -62,7 +62,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_junglebckgrnd_middle","path":"sprites/spr_junglebckgrnd_middle/spr_junglebckgrnd_middle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_junglebckgrnd_middle",
     "tags": [],
     "resourceType": "GMSequence",

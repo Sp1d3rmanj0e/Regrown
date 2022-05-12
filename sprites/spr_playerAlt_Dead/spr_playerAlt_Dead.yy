@@ -166,7 +166,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt_Dead","path":"sprites/spr_playerAlt_Dead/spr_playerAlt_Dead.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAlt_Dead",
     "tags": [],
     "resourceType": "GMSequence",

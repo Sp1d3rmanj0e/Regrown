@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_NatureSet1","path":"sprites/Spr_NatureSet1/Spr_NatureSet1.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_NatureSet1",
     "tags": [],
     "resourceType": "GMSequence",
