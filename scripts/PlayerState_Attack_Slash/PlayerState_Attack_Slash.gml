@@ -3,10 +3,32 @@
 function PlayerState_Attack_Slash() {
 	var _speed = walkSp/2;
 	
-	if (image_index > 2) _speed = walkSp;
+	if (image_index > 3) {
+		
+		_speed = walkSp;
+	}
 
 	Collisions(_speed);
 
+	var p1 = tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2));
+	var p2 = tilemap_get_at_pixel(tilemap,bbox_right,bbox_top-(TILE_SIZE/2));
+
+	#region Jumping
+	if (key_spaceH) and (p1 == 0) and (p2 == 0)
+	{
+	    if (!airborne) or (jumpBuffer > 0)
+	    {
+			jumpBuffer = 0;
+		
+			if (instance_exists(obj_healing)) {
+				instance_destroy(Heffect);
+				healing = 0;
+			}
+	        vsp -= jumpH/1.5;
+	        airborne = true;
+	    }
+	}
+	#endregion
 
 	if (!attackCalled) {
 	
@@ -52,9 +74,9 @@ function PlayerState_Attack_Slash() {
 	}
 	switch(attack) {
 	
-		case ATK.NORM:
-			ProcessAttack(spr_playerAttack_Norm,spr_playerAttack_NormHB);
-		break;
+	case ATK.NORM:
+		ProcessAttack(spr_playerAttack_Norm,spr_playermelee_CHAR_HB);
+	break;
 	
 		case ATK.SLANTDOWN:
 			ProcessAttack(spr_playerAttack_SlantDown,spr_playerAttack_SlantDownHB);
