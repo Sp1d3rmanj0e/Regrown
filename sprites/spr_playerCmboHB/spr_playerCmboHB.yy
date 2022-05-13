@@ -164,7 +164,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerCmboHB","path":"sprites/spr_playerCmboHB/spr_playerCmboHB.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerCmboHB",
     "tags": [],
     "resourceType": "GMSequence",

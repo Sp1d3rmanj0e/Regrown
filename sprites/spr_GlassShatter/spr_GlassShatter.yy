@@ -143,7 +143,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_GlassShatter","path":"sprites/spr_GlassShatter/spr_GlassShatter.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_GlassShatter",
     "tags": [],
     "resourceType": "GMSequence",

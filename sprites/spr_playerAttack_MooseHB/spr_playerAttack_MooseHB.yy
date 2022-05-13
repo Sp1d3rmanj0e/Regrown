@@ -75,7 +75,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAttack_MooseHB","path":"sprites/spr_playerAttack_MooseHB/spr_playerAttack_MooseHB.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAttack_MooseHB",
     "tags": [],
     "resourceType": "GMSequence",

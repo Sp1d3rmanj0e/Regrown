@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"4a67df30-5d58-40f7-bf63-61533373f15a","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4a67df30-5d58-40f7-bf63-61533373f15a","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},"LayerId":{"name":"5a9a60f2-1dd2-4156-8226-27ddd0286c76","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"4a67df30-5d58-40f7-bf63-61533373f15a","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},"LayerId":{"name":"db0de6a5-0832-43e8-99ad-7b1f98787f52","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"4a67df30-5d58-40f7-bf63-61533373f15a","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},"LayerId":{"name":"5a9a60f2-1dd2-4156-8226-27ddd0286c76","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_NatureSetMerged","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},"resourceVersion":"1.0","name":"4a67df30-5d58-40f7-bf63-61533373f15a","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_NatureSetMerged","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_NatureSetMerged",
     "tags": [],
     "resourceType": "GMSequence",
