@@ -114,7 +114,7 @@ function PlayerState_Attack_Slash() {
 
 	if (animation_end())
 	{
-		sprite_index = spr_playerIdle;
+		sprite_index = spr_playerAlt_Idle;
 		state = PLAYERSTATE.FREE;
 		attackCalled = false;
 	}

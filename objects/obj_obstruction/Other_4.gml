@@ -1,3 +1,2 @@
 /// @description replace wall if necessary
-
-if (exists) event_user(1);
+if (exists) and (startRoom == room) event_user(1);
