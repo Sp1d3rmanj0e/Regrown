@@ -59,6 +59,7 @@
     {"id":{"name":"Spr_NatureSet4","path":"sprites/Spr_NatureSet4/Spr_NatureSet4.yy",},"order":19,},
     {"id":{"name":"spr_tutorialBotRun","path":"sprites/spr_tutorialBotRun/spr_tutorialBotRun.yy",},"order":4,},
     {"id":{"name":"spr_attack","path":"sprites/spr_attack/spr_attack.yy",},"order":15,},
+    {"id":{"name":"obj_powerupCollect","path":"objects/obj_powerupCollect/obj_powerupCollect.yy",},"order":13,},
     {"id":{"name":"ts_ground","path":"tilesets/ts_ground/ts_ground.yy",},"order":0,},
     {"id":{"name":"sh_flash","path":"shaders/sh_flash/sh_flash.yy",},"order":0,},
     {"id":{"name":"obj_button","path":"objects/obj_button/obj_button.yy",},"order":1,},
