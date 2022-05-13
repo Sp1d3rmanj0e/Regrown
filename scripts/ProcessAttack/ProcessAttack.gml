@@ -33,7 +33,7 @@ function ProcessAttack(argument0,argument1) {
 		}
 	}
 	ds_list_destroy(hitByAttackNow);
-	mask_index = spr_playerIdle;
+	mask_index = spr_playerAlt_Idle;
 
 	}
 }

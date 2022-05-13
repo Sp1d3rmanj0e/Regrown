@@ -1,5 +1,7 @@
 /// @description place wall
 
+exists = true;
+
 for (var i = 0; i < width/TILE_SIZE; i++) {
 	
 	for (var j = 0; j < height/TILE_SIZE; j++) {
