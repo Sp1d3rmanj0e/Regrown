@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAttack_DirUpHB","path":"sprites/spr_playerAttack_DirUpHB/spr_playerAttack_DirUpHB.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAttack_DirUpHB",
     "tags": [],
     "resourceType": "GMSequence",

@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_brokenTerminal","path":"sprites/spr_brokenTerminal/spr_brokenTerminal.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_brokenTerminal",
     "tags": [],
     "resourceType": "GMSequence",

@@ -109,7 +109,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAttack_Norm","path":"sprites/spr_playerAttack_Norm/spr_playerAttack_Norm.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAttack_Norm",
     "tags": [],
     "resourceType": "GMSequence",

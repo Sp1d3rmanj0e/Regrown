@@ -70,7 +70,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_checkpointRock","path":"sprites/spr_checkpointRock/spr_checkpointRock.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_checkpointRock",
     "tags": [],
     "resourceType": "GMSequence",

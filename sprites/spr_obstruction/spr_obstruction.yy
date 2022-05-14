@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_obstruction","path":"sprites/spr_obstruction/spr_obstruction.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_obstruction",
     "tags": [],
     "resourceType": "GMSequence",

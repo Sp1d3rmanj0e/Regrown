@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_blankWall2","path":"sprites/Spr_blankWall2/Spr_blankWall2.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "Spr_blankWall2",
     "tags": [],
     "resourceType": "GMSequence",

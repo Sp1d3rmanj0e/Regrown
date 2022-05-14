@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt_AtkSide","path":"sprites/spr_playerAlt_AtkSide/spr_playerAlt_AtkSide.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAlt_AtkSide",
     "tags": [],
     "resourceType": "GMSequence",

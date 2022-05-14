@@ -119,7 +119,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inventoryscreenSchematics","path":"sprites/spr_inventoryscreenSchematics/spr_inventoryscreenSchematics.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_inventoryscreenSchematics",
     "tags": [],
     "resourceType": "GMSequence",

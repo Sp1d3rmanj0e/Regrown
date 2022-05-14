@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAttack_NormHB","path":"sprites/spr_playerAttack_NormHB/spr_playerAttack_NormHB.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAttack_NormHB",
     "tags": [],
     "resourceType": "GMSequence",
