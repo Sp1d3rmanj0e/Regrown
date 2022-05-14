@@ -38,7 +38,7 @@ if (key_right) {
 //Animation
 
 if (!freeze) {
-if (vsp != 0) {
+if (airborne) {
 	if (key_spaceH) and (vsp < 5)
 		{
 			sprite_index = spr_playerAlt_AirUp;
@@ -49,9 +49,9 @@ if (vsp != 0) {
 	else if (hsp != 0) sprite_index = spr_playerAlt_Walk;
 	else sprite_index = spr_playerAlt_Idle;
 }
-else sprite_index = spr_playerChk; //Checkpoint animation resets to 0 (Create of Inventory)
+else sprite_index = spr_playerAlt_Checkpoint; //Checkpoint animation resets to 0 (Create of Inventory)
 
-if (sprite_index = spr_playerChk) and (animation_end())
+if (sprite_index = spr_playerAlt_Checkpoint) and (animation_end())
 {
 	imageSpeed = 0;
 }

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Powerups",
-    "path": "folders/Sprites/GUI/Powerups.yy",
+    "name": "Archived",
+    "path": "folders/Sprites/Archived.yy",
   },
   "resourceVersion": "1.0",
   "name": "spr_powSyn",
