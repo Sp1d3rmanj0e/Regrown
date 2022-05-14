@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_powOrg",
-    "path": "sprites/spr_powOrg/spr_powOrg.yy",
+    "name": "spr_powerup_border",
+    "path": "sprites/spr_powerup_border/spr_powerup_border.yy",
   },
   "solid": false,
   "visible": true,
