@@ -142,7 +142,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerWalk","path":"sprites/spr_playerWalk/spr_playerWalk.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerWalk",
     "tags": [],
     "resourceType": "GMSequence",

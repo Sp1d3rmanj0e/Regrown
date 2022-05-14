@@ -144,7 +144,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_player_initial","path":"sprites/spr_player_initial/spr_player_initial.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_player_initial",
     "tags": [],
     "resourceType": "GMSequence",

@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inventoryscreen_close","path":"sprites/spr_inventoryscreen_close/spr_inventoryscreen_close.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_inventoryscreen_close",
     "tags": [],
     "resourceType": "GMSequence",

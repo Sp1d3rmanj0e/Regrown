@@ -105,7 +105,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playermelee_CHAR","path":"sprites/spr_playermelee_CHAR/spr_playermelee_CHAR.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playermelee_CHAR",
     "tags": [],
     "resourceType": "GMSequence",

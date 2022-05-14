@@ -153,7 +153,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt_Idle","path":"sprites/spr_playerAlt_Idle/spr_playerAlt_Idle.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAlt_Idle",
     "tags": [],
     "resourceType": "GMSequence",

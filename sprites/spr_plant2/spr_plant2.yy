@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_plant2","path":"sprites/spr_plant2/spr_plant2.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_plant2",
     "tags": [],
     "resourceType": "GMSequence",
