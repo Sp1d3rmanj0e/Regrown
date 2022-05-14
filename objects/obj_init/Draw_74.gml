@@ -19,11 +19,50 @@ if (global.gamePaused) {
 }
 else {
 	
-	// draw screen damage cracks
-	if (instance_exists(obj_player)) and (global.overlay) {
+	if (instance_exists(obj_player)) and (global.overlay) and (instance_exists(inventory)) {
 		
+		// draw screen damage cracks
 		var _subimg = 10-10*(obj_player.P_health/obj_player.P_maxHealth);
 		draw_sprite_stretched(spr_GlassShatter,_subimg,0, 0,global.guiWidth,global.guiHeight);
+		
+		// draw powerup info
+		draw_sprite_ext(spr_powInfo,0,global.guiWidth/2,global.guiHeight,_scale,_scale,0,c_white,1);
+		var _combinedScale = clamp(global.guiSize+global.textScale, 1,2);
+		_combinedScale *= 2;
+		var orgCool = obj_player.orgCooldown;
+		var synCool = obj_player.synCooldown;
+		var sprWidth = sprite_get_width(spr_powInfo) * _scale;
+		
+			draw_set_halign(fa_center);
+		if (global.orgFill != -4) {
+			if (orgCool == 0) {
+			
+				// draw button to activate powerup
+				draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,get_input_name(KB.ORGATTACK),
+				_combinedScale,_combinedScale,0);
+			}
+			else {
+			
+				draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,orgCool,
+				_combinedScale,_combinedScale,0);
+			}
+		}
+		
+		if (global.synFill != -4) {
+			if (orgCool == 0) {
+			
+				// draw button to activate powerup
+				draw_text_transformed(global.guiWidth/2 + sprWidth/3,global.guiHeight - 20 - 20 * _scale,get_input_name(KB.SYNATTACK),
+				_combinedScale,_combinedScale,0);
+			}
+			else {
+			
+				draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,synCool,
+				_combinedScale,_combinedScale,0);
+			}
+		}
+		
+			draw_set_halign(fa_left);
 	}
 	
 	// draw healthbars
