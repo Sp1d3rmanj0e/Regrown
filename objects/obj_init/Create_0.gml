@@ -1,5 +1,7 @@
 /// @description initialize
 
+audio_play_sound(snd_musicTheme,1,false);
+
 global.cameraScale = 1.33; // camera zoom
 global.playerSight = 1.33; // how much the player can see
 

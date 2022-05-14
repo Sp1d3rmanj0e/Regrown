@@ -111,6 +111,7 @@
     {"id":{"name":"spr_keybindInfo","path":"sprites/spr_keybindInfo/spr_keybindInfo.yy",},"order":8,},
     {"id":{"name":"Resources","path":"notes/Resources/Resources.yy",},"order":0,},
     {"id":{"name":"PlayerState_Attack_Moose","path":"scripts/PlayerState_Attack_Moose/PlayerState_Attack_Moose.yy",},"order":4,},
+    {"id":{"name":"snd_musicTheme","path":"sounds/snd_musicTheme/snd_musicTheme.yy",},"order":9,},
     {"id":{"name":"spr_playerAlt_AtkSide","path":"sprites/spr_playerAlt_AtkSide/spr_playerAlt_AtkSide.yy",},"order":4,},
     {"id":{"name":"ratWander","path":"scripts/ratWander/ratWander.yy",},"order":10,},
     {"id":{"name":"spr_playerAttack_Moose","path":"sprites/spr_playerAttack_Moose/spr_playerAttack_Moose.yy",},"order":20,},
