@@ -20,3 +20,6 @@ if (enemyAggroRadius >= distance_to_object(obj_player))
 
 // player is safe while in inventory
 if (obj_player.safe) state = ENEMYSTATE.WANDER;
+
+tilemap_solid = layer_tilemap_get_id("tile_ground");
+tilemap = layer_tilemap_get_id("tile_collision");

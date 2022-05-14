@@ -19,7 +19,7 @@ if (global.gamePaused) {
 }
 else {
 	
-	if (instance_exists(obj_player)) and (global.overlay) and (instance_exists(inventory)) {
+	if (instance_exists(obj_player)) and (global.overlay) and (!instance_exists(inventory)) {
 		
 		// draw screen damage cracks
 		var _subimg = 10-10*(obj_player.P_health/obj_player.P_maxHealth);
