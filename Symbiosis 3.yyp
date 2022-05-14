@@ -148,6 +148,7 @@
     {"id":{"name":"spr_tutorialBotExplode","path":"sprites/spr_tutorialBotExplode/spr_tutorialBotExplode.yy",},"order":5,},
     {"id":{"name":"spr_playerAlt_Dead","path":"sprites/spr_playerAlt_Dead/spr_playerAlt_Dead.yy",},"order":7,},
     {"id":{"name":"obj_init","path":"objects/obj_init/obj_init.yy",},"order":3,},
+    {"id":{"name":"obj_POBot","path":"objects/obj_POBot/obj_POBot.yy",},"order":4,},
     {"id":{"name":"spr_healthbarExample","path":"sprites/spr_healthbarExample/spr_healthbarExample.yy",},"order":4,},
     {"id":{"name":"room_control","path":"objects/room_control/room_control.yy",},"order":0,},
     {"id":{"name":"get_input_name","path":"scripts/get_input_name/get_input_name.yy",},"order":3,},
