@@ -31,7 +31,7 @@ if (p1 == 1) {
 		draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,0,ds_grid_get(global.powerup_grid,6,count),100);
 	
 		// draw icons for the powerups
-		if (sprite_index == spr_powOrg)
+		if (count < 8)
 		{
 			draw_sprite_ext(spr_powOrgIcon,powerup_type,x,y,1,1,0,shade,100);
 		}
@@ -47,7 +47,7 @@ if (p1 == 1) {
 		draw_sprite_ext(sprite_index,0,x,y,image_xscale,image_yscale,0,c_gray,0.75);
 		
 		// draw gray icons for the powerups
-		if (sprite_index = spr_powOrg)
+		if (count < 8)
 		{
 			draw_sprite_ext(spr_powOrgIcon,0,x,y,1,1,0,c_gray,0.75);
 		}
