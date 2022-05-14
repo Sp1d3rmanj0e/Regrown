@@ -1,21 +1,25 @@
 function ratAttack() {
-
+	
+	sprite_index = sprAttack;
+	
+	image_xscale = sign(obj_player.x-x);
+	
 	enemySpeed = ogwalkSp * 1.5;
 
 	attackSequenceTime += 1/room_speed;
 
 	// prep for jump
-	
-	//NERFED RAT OPTION
-//if (attackSequenceTime < 1) moveDirection = sign(target.x-x); // figures out which direction to go
+	if (attackSequenceTime < 1) moveDirection = sign(target.x-x); // figures out which direction to go
 
 	// jump and move after delay
 	if (attackSequenceTime > 1) and (attackSequenceTime < 2) {
 	
 		key_spaceH = 1;
-	
-		followTarget(target,1);
-	
+		switch (moveDirection) {
+		
+			case 1: key_right = 1; break;
+			case -1: key_left = 1; break;
+		}
 	}
 
 	// check if able to attack
@@ -38,7 +42,7 @@ function ratAttack() {
 	}
 
 	// revert back to chase state after attacking
-	if ((attackSequenceTime > 3) and (!airborne)) or (!lineof_sight) {
+	if ((attackSequenceTime > 3) and (!airborne)) {
 	
 	enemySpeed = ogwalkSp;
 	switchState(ENEMYSTATE.CHASE);
@@ -47,12 +51,15 @@ function ratAttack() {
 	
 function ratChase() {
 	
+	if (hsp == 0) sprite_index = sprIdle;
+	else sprite_index = sprMove;
+	
 	// if going to player
 	followTarget(target,1);
 	
 	// attack if close enough
 	if (distance_to_object(target) < enemyAttackRadius) and (!enemyPassive) {
-		sprite_index = sprAttack;
+		//sprite_index = sprAttack;
 		attackSequenceTime = 0;
 		switchState(ENEMYSTATE.ATTACK);
 		
@@ -117,7 +124,10 @@ function ratIdle() {
 }
 	
 function ratRun() {
-
+	
+	if (hsp == 0) sprite_index = sprIdle;
+	else sprite_index = sprMove;
+	
 	// increase running speed
 	enemySpeed = ogwalkSp+0.75;
 
@@ -136,7 +146,10 @@ function ratRun() {
 }
 	
 function ratWander() {
-
+	
+	if (hsp == 0) sprite_index = sprIdle;
+	else sprite_index = sprMove;
+	
 	// if changing directions
 	if (motionTime <= 0) {
 		

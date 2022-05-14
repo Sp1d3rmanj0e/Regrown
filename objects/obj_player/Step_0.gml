@@ -1,6 +1,5 @@
 /// @description
 
-
 // Main Code 
 
 if (airborne) {
@@ -9,7 +8,7 @@ if (airborne) {
 } 
 else {
 	
-	jumpBuffer = 0.25;
+	jumpBuffer = 0.1;
 }
 
 // Makes flash go down over time
@@ -41,4 +40,19 @@ else { // if game is paused
 	}
 	
 	image_speed = 0;
+}
+
+if (input_check_pressed(KB.HEAL)) and (P_health < P_maxHealth) {
+	
+	// healing
+	if (state != PLAYERSTATE.DEAD) and (nanobotCount > 0) and (!instance_exists(inventory)) {
+		if (healing = 0) 
+		{
+			healing = 1;
+			Heffect = instance_create_depth(x,y,depth-1,obj_healing);
+		} else {
+			healing = 0;
+			instance_destroy(Heffect);
+		}
+	}
 }

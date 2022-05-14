@@ -1,5 +1,4 @@
 /// @description initialize
-
 #region setups
 //Initializing
 
@@ -16,6 +15,7 @@ P_health = 10;
 nanobotCount = 10; // healing capsules
 
 // dynamic initialize
+attackCalled = false;
 jumpBuffer = 0; // coyote jumping
 imageSpeed = 1;
 lock = false; // don't touch this
@@ -28,12 +28,19 @@ safe = false;
 x_move = 0; //referenced in collisions
 y_move = 0; //fling y
 
+orgCooldown = 0;
+synCooldown = 0;
+
+// powerup statuses
+thorns = false;
+shockImmunity = false;
+
 // reference initialize
 ogwalkSp = walkSp;
 P_maxHealth = 10;
 maxNanobotCount = 10;
-Xoffset = 500; // healthbar
-Yoffset = 50; // healthbar
+Xoffset = 498; // healthbar
+Yoffset = 48; // healthbar
 flash_colour = c_red;
 
 //Respawn is changed on obj_checkpoint collision
@@ -58,16 +65,16 @@ hitByAttack = ds_list_create();
 // Layer Ids
 
 //back3 = layer_get_id("BgBack3"); // Mountains and Such
-b3 = 0.05;
+b3 = -0.005;
 
 //back2 = layer_get_id("BgBack2"); //Far Foliage, Towns, Deep Caves
-b2 = 0.13;
+b2 = -0.013;
 
 //back1 = layer_get_id("BgBack1"); //Trees, Bushes, Stalagtites, Combines with Front1
-b1 = 0.25;
+b1 = -0.025;
 
 //front1 = layer_get_id("BgFront1"); //Boxes, Grass, Bushes, Trees, Combines with Back 1
-f1 = -0.1;
+f1 = 0;
 
 x_origin = room_width/2; // Another reference is in room_control.
 
@@ -113,7 +120,6 @@ function pause(toggle)
 		imageSpeed = 1;
 	}
 }
-
 
 
 

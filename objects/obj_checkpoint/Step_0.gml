@@ -5,12 +5,14 @@ if (place_meeting(x,y,obj_player))
 and (obj_player.state != PLAYERSTATE.DEAD) {
 	
 	// only activate if e is pressed
-	if (keyboard_check_pressed(ord("E"))) {
+	if (input_check_pressed(KB.SELECT)) {
 		
 		// save respawn information
 		obj_player.respawnX = x;
 		obj_player.respawnY = y;
 		obj_player.respawnRoom = room;
+		obj_player.P_health = obj_player.P_maxHealth;
+		obj_player.nanobotCount = obj_player.maxNanobotCount;
 	
 		// spawn inventory if not already existant
 		if (!instance_exists(inventory))

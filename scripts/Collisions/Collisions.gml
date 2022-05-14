@@ -15,21 +15,22 @@ vsp += grv;
 
 function fling(dir,mag)
 {
-	x_move = clamp(lengthdir_x(mag,dir),-mag/2, mag/2);
-	y_move = clamp(lengthdir_y(mag,dir),-mag/2, mag/2);
+	vsp = 0;
+		x_move = clamp(lengthdir_x(mag,dir),-mag/2, mag/2);
+		//y_move = clamp(lengthdir_y(mag,dir),-5, mag);
 }
 if (abs(x_move) > 0.1)
 {
 	x_move /= 1.1;
 } else x_move = 0;
-
+/*
 if (abs(y_move) > 0.1)
 {
 	y_move /= 1.6;
 } else y_move = 0;
-
+*/
 hsp += x_move;
-vsp += y_move;
+//vsp += y_move;
 
 #region Wall collisions tilemap
 
@@ -54,7 +55,6 @@ if (p1 != 0) or (p2 != 0) or (p3 != 0) {
 	hsp = 0;
 } else touching_wall = 0;
 
-//vsp = min(vsp,TILE_SIZE);
 //Vertical Collision
 if (vsp > 0) bbox_side = bbox_bottom; else bbox_side = bbox_top;
 p1 = tilemap_get_at_pixel(tilemap, bbox_left, bbox_side+min(vsp,TILE_SIZE));
@@ -67,9 +67,9 @@ if (p1 != 0) or (p2 != 0) or (p3 != 0){
 }
 
 // extreme emergency case if pla
-if (tilemap_get_at_pixel(tilemap,x,y) != 0) {
-	y -= TILE_SIZE;
-}
+//if (tilemap_get_at_pixel(tilemap,x,y) != 0) {
+	//y -= TILE_SIZE;
+//}
 
 if (tilemap_get_at_pixel(tilemap,bbox_right,bbox_bottom) != 0) {
 	x-= 32;

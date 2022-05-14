@@ -25,24 +25,26 @@ targetInstance = noone; // clear target
 // load saved instances
 if (global.saveObjects == 1) { // run if not actively resetting
 	
-// remove all current instances
-if (array_length(global.roomData) > room) and (is_array(global.roomData[room])) {
+	// remove all current instances
+	if (array_length(global.roomData) > room) and (is_array(global.roomData[room])) {
 	
-	var _objectCount = array_length(global.objectsToSave);
-	for (var i = 0; i < _objectCount; i++) {
-		instance_destroy(global.objectsToSave[i]);
-	}
+		var _objectCount = array_length(global.objectsToSave);
+		for (var i = 0; i < _objectCount; i++) {
+			instance_destroy(global.objectsToSave[i]);
+		}
 
-// load Instances
-	var _roomData = global.roomData[room];
-	var _instanceCount = array_length(_roomData);
+	// load Instances
+		var _roomData = global.roomData[room];
+		var _instanceCount = array_length(_roomData);
 	
-	for (var i = 0; i < _instanceCount; i++) {
-		_roomData[i].Create();
+		for (var i = 0; i < _instanceCount; i++) {
+			_roomData[i].Create();
+		}
+	
 	}
+} 
+else {
 	
-}
-} else {
 	global.saveObjects = 1;
 	global.roomData = [];
 }

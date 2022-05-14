@@ -1,8 +1,7 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-if (instance_exists(obj_player))
-{
-	
+function PlayerState_Free() {
+
 Collisions(walkSp);
 
 var p1 = tilemap_get_at_pixel(tilemap,bbox_left,bbox_top-(TILE_SIZE/2));
@@ -27,7 +26,6 @@ if (key_spaceH) and (p1 == 0) and (p2 == 0)
 
 
 #region animations
-
 
 if (key_right) {
 	
@@ -61,11 +59,9 @@ if (sprite_index = spr_playerChk) and (animation_end())
 #endregion
 
 
-if (key_attack) {
+	if (key_attack) {
+		state = PLAYERSTATE.ATTACK_SLASH;
 	
-	state = PLAYERSTATE.ATTACK_SLASH;
-	
-	if (healing == 1) instance_destroy(obj_healing);
-}
-
+		if (healing == 1) instance_destroy(obj_healing);
+	}
 }

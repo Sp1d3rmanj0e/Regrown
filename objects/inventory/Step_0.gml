@@ -1,5 +1,8 @@
 /// @description dynamic features
 
+// zoom camera to fit inventory
+cameraZoom(targetZoom, 0.15);
+
 if (!global.gamePaused) {
 
 	//counts frames manually when activated
@@ -60,4 +63,28 @@ else {
 	
 	alarm[0]++;
 	alarm[1]++;
+}
+
+if (input_check_pressed(KB.SELECT)) or (keyboard_check_pressed(vk_escape)) {
+	
+	//close inventory
+
+
+	if (!closeOn) { // only activate if not actively closing
+		closeOn = true;
+		audio_play_sound(snd_close,0,false);
+		targetZoom = storedZoom;
+	
+		secsPerFrame = 0.7; // change animation speed
+		transAnimation = spr_inventoryscreen_close;
+		toggleFrames(15);
+
+		removePowerups(); // removes powerup selection options
+
+		ds_list_destroy(objects); // prevents memory leak
+
+		inventoryOpen = false;
+
+		 alarm[1] = 15; //delay destroying self to allow closing animation
+	}
 }

@@ -1,6 +1,6 @@
 function createButton(_x,_y,_width,_height,_text,_buttonScript) {
 	
-	var _button = instance_create_layer(_x,_y,layer,obj_button);
+	var _button = instance_create_layer(_x,_y,"gui",obj_button);
 	
 	with (_button) {
 		
@@ -9,7 +9,7 @@ function createButton(_x,_y,_width,_height,_text,_buttonScript) {
 		width = _width;
 		height = _height;
 		text = _text;
-		buttonScript = _buttonScript;
+		bScript = _buttonScript;
 	}
 	
 	 return _button;

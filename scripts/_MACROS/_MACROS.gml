@@ -17,18 +17,62 @@ enum PLAYERSTATE {
 	FREE,
 	ATTACK_SLASH,
 	ATTACK_COMBO,
-	DEAD
+	DEAD,
+	ATTACK_MOOSE
 }
 
 enum LIST_TYPE {
 	
 	PAUSE,
-	SETTINGS
+	OPTIONS,
+	KEYBINDS,
+	VISIBILITY,
+	AUDIO
 }
 
-enum PR {
+enum OS {
 	
 	NAME,
-	SELECTED,
-	VALUES
+	SEL,
+	VALS
+}
+
+enum B_ACTION {
+	
+	PLAY,
+	CREDITS,
+	QUIT,
+	BACK
+}
+
+enum ATK {
+	
+	LOW,
+	NORM,
+	SLANTUP,
+	SLANTDOWN,
+	UP,
+	DOWN
+}
+
+enum KB {
+	
+	JUMP,
+	JUMPALT,
+	LEFT,
+	RIGHT,
+	CROUCH,
+	CROUCHALT,
+	ATTACK,
+	ORGATTACK,
+	SYNATTACK,
+	SELECT,
+	HEAL,
+	NONE
+}
+
+enum MK {
+	
+	MOU,
+	KEY
 }
