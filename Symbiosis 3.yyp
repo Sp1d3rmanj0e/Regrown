@@ -116,12 +116,8 @@
     {"id":{"name":"spr_playerAttack_Moose","path":"sprites/spr_playerAttack_Moose/spr_playerAttack_Moose.yy",},"order":20,},
     {"id":{"name":"spr_bunker","path":"sprites/spr_bunker/spr_bunker.yy",},"order":5,},
     {"id":{"name":"spr_playerChk","path":"sprites/spr_playerChk/spr_playerChk.yy",},"order":1,},
-<<<<<<< HEAD
     {"id":{"name":"Spr_org_Pup_border","path":"sprites/Spr_org_Pup_border/Spr_org_Pup_border.yy",},"order":5,},
     {"id":{"name":"cameraZoom","path":"scripts/cameraZoom/cameraZoom.yy",},"order":19,},
-=======
-    {"id":{"name":"cameraZoom","path":"scripts/cameraZoom/cameraZoom.yy",},"order":13,},
->>>>>>> 7860967381f04726f4d06b44654cee225a586cb2
     {"id":{"name":"snd_batteryCharge_s","path":"sounds/snd_batteryCharge_s/snd_batteryCharge_s.yy",},"order":0,},
     {"id":{"name":"spr_playerAttack_DirDownHB","path":"sprites/spr_playerAttack_DirDownHB/spr_playerAttack_DirDownHB.yy",},"order":16,},
     {"id":{"name":"spr_ratIdle","path":"sprites/spr_ratIdle/spr_ratIdle.yy",},"order":0,},
