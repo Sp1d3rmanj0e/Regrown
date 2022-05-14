@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "spr_obstruction",
-    "path": "sprites/spr_obstruction/spr_obstruction.yy",
+    "name": "Spr_PowerUp_BreakWall",
+    "path": "sprites/Spr_PowerUp_BreakWall/Spr_PowerUp_BreakWall.yy",
   },
   "solid": false,
   "visible": true,
