@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt_AirUp","path":"sprites/spr_playerAlt_AirUp/spr_playerAlt_AirUp.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAlt_AirUp",
     "tags": [],
     "resourceType": "GMSequence",

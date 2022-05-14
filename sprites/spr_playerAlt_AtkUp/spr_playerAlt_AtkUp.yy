@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt_AtkUp","path":"sprites/spr_playerAlt_AtkUp/spr_playerAlt_AtkUp.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAlt_AtkUp",
     "tags": [],
     "resourceType": "GMSequence",

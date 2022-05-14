@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_attack","path":"sprites/spr_attack/spr_attack.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_attack",
     "tags": [],
     "resourceType": "GMSequence",

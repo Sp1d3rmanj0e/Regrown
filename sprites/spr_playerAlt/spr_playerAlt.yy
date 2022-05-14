@@ -85,7 +85,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt","path":"sprites/spr_playerAlt/spr_playerAlt.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAlt",
     "tags": [],
     "resourceType": "GMSequence",

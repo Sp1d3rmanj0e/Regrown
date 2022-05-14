@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"_scalingSprite","path":"sprites/_scalingSprite/_scalingSprite.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "_scalingSprite",
     "tags": [],
     "resourceType": "GMSequence",

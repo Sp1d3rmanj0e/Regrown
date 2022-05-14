@@ -65,7 +65,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_inventoryscreenPassive","path":"sprites/spr_inventoryscreenPassive/spr_inventoryscreenPassive.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_inventoryscreenPassive",
     "tags": [],
     "resourceType": "GMSequence",

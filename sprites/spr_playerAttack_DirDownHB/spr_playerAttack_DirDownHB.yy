@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAttack_DirDownHB","path":"sprites/spr_playerAttack_DirDownHB/spr_playerAttack_DirDownHB.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAttack_DirDownHB",
     "tags": [],
     "resourceType": "GMSequence",

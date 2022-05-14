@@ -147,7 +147,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_welderHeals",
     "tags": [],
     "resourceType": "GMSequence",

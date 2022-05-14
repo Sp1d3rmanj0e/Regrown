@@ -87,7 +87,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAttack_SlantUpHB","path":"sprites/spr_playerAttack_SlantUpHB/spr_playerAttack_SlantUpHB.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_playerAttack_SlantUpHB",
     "tags": [],
     "resourceType": "GMSequence",

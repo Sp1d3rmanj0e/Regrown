@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_infoBox","path":"sprites/spr_infoBox/spr_infoBox.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_infoBox",
     "tags": [],
     "resourceType": "GMSequence",

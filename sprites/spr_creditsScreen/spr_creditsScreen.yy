@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_creditsScreen","path":"sprites/spr_creditsScreen/spr_creditsScreen.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_creditsScreen",
     "tags": [],
     "resourceType": "GMSequence",

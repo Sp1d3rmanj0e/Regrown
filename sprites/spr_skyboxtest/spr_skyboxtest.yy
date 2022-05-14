@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_skyboxtest","path":"sprites/spr_skyboxtest/spr_skyboxtest.yy",},
-    "resourceVersion": "1.4",
+    "resourceVersion": "1.3",
     "name": "spr_skyboxtest",
     "tags": [],
     "resourceType": "GMSequence",
