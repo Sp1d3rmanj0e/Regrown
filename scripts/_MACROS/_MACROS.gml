@@ -17,7 +17,8 @@ enum PLAYERSTATE {
 	FREE,
 	ATTACK_SLASH,
 	ATTACK_COMBO,
-	DEAD
+	DEAD,
+	ATTACK_MOOSE
 }
 
 enum LIST_TYPE {
@@ -66,7 +67,8 @@ enum KB {
 	ORGATTACK,
 	SYNATTACK,
 	SELECT,
-	HEAL
+	HEAL,
+	NONE
 }
 
 enum MK {

@@ -26,22 +26,31 @@ if (!global.gamePaused) {
 		case PLAYERSTATE.ATTACK_SLASH: PlayerState_Attack_Slash(); break;
 		case PLAYERSTATE.ATTACK_COMBO: PlayerState_Attack_Combo(); break;
 		case PLAYERSTATE.DEAD: PlayerState_Dead(); break;
+		case PLAYERSTATE.ATTACK_MOOSE: PlayerState_Attack_Moose(); break;
 	}
 }
 
 // powerup state engine
+
 if (!global.gamePaused) {
 	
 	if (global.orgFill != -4) {
-		if (ds_grid_get(global.powerup_grid,4,global.orgFill)) {
+		
+		// get script and execute
+		var _orgScript = ds_grid_get(global.powerup_grid,4,global.orgFill);
+		if (_orgScript) {
 			
-			powScript(global.orgFill);
+			_orgScript(key_orgAttack);
 		}
 	}
+	
 	if (global.synFill != -4) {
-		if (ds_grid_get(global.powerup_grid,4,global.synFill)) {
+		
+		// get script and execute
+		var _synScript = ds_grid_get(global.powerup_grid,4,global.synFill);
+		if (_synScript) {
 			
-			powScript(global.synFill);
+			_synScript(key_synAttack);
 		}
 	}
 }

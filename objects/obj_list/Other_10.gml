@@ -64,7 +64,7 @@ switch (list[i2][OS.NAME]) {
 		
 		if (options2Open == -1) {
 			
-			options2Open = createList(x+width+padding, y, width, 0, LIST_TYPE.VISIBILITY);
+			options2Open = createList(x+width+padding, y, width, 0, LIST_TYPE.AUDIO);
 		}
 		else {
 			
@@ -101,7 +101,7 @@ switch (list[i2][OS.NAME]) {
 		changeKeybind(KB.JUMPALT,ord("W"),MK.KEY);
 		changeKeybind(KB.LEFT,ord("A"),MK.KEY);
 		changeKeybind(KB.RIGHT,ord("D"),MK.KEY);
-		changeKeybind(KB.CROUCH,vk_control,MK.KEY);
+		changeKeybind(KB.CROUCH,vk_lcontrol,MK.KEY);
 		changeKeybind(KB.CROUCHALT,ord("S"),MK.KEY);
 		changeKeybind(KB.ATTACK,mb_left,MK.MOU);
 		changeKeybind(KB.ORGATTACK,ord("Z"),MK.KEY);

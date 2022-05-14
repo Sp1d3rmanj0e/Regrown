@@ -1,7 +1,6 @@
 // Script assets have changed for v2.3.0 see
 // https://help.yoyogames.com/hc/en-us/articles/360005277377 for more information
-if (instance_exists(obj_player))
-{
+function PlayerState_Free() {
 
 Collisions(walkSp);
 
@@ -60,10 +59,9 @@ if (sprite_index = spr_playerChk) and (animation_end())
 #endregion
 
 
-if (key_attack) {
-	state = PLAYERSTATE.ATTACK_SLASH;
+	if (key_attack) {
+		state = PLAYERSTATE.ATTACK_SLASH;
 	
-	if (healing == 1) instance_destroy(obj_healing);
-}
-
+		if (healing == 1) instance_destroy(obj_healing);
+	}
 }

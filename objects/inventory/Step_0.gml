@@ -65,14 +65,14 @@ else {
 	alarm[1]++;
 }
 
-if (input_check_pressed(KB.SELECT)) {
+if (input_check_pressed(KB.SELECT)) or (keyboard_check_pressed(vk_escape)) {
 	
 	//close inventory
 
 
 	if (!closeOn) { // only activate if not actively closing
 		closeOn = true;
-	
+		audio_play_sound(snd_close,0,false);
 		targetZoom = storedZoom;
 	
 		secsPerFrame = 0.7; // change animation speed

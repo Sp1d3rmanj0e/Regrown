@@ -2,8 +2,8 @@
   "isDnD": false,
   "isCompatibility": false,
   "parent": {
-    "name": "Scripts",
-    "path": "folders/Scripts.yy",
+    "name": "Settings",
+    "path": "folders/Scripts/Settings.yy",
   },
   "resourceVersion": "1.0",
   "name": "input_check",

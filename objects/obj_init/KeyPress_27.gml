@@ -1,6 +1,18 @@
 /// @description toggle pause
 
-if (room != rm_titleScreen) and (room != rm_credits) and (!instance_exists(obj_keybind)) {
+// make sure current room isn't on the doNotPause array
+var _pause = true;
+for (var i = 0; i < array_length(doNotPauseRoom); i++) {
+	
+	if (room == doNotPauseRoom[i]) _pause = false;
+}
+for (i = 0; i < array_length(doNotPauseInst); i++) {
+	
+	if (instance_exists(doNotPauseInst[i])) _pause = false;
+}
+
+// create pause menu
+if (_pause) {
 	
 	global.gamePaused = !global.gamePaused;
 	

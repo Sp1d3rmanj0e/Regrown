@@ -49,9 +49,9 @@ if (p1 == 1) {
 		// draw gray icons for the powerups
 		if (sprite_index = spr_powOrg)
 		{
-			draw_sprite_ext(spr_powOrgIcon,powerup_type,x,y,1,1,0,c_gray,0.75);
+			draw_sprite_ext(spr_powOrgIcon,0,x,y,1,1,0,c_gray,0.75);
 		}
-		else draw_sprite_ext(spr_powSynIcon,powerup_type,x,y,1,1,0,c_gray,0.75);
+		else draw_sprite_ext(spr_powSynIcon,0,x,y,1,1,0,c_gray,0.75);
 	}
 }
 	

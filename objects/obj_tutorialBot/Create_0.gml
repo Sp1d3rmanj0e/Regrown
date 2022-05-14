@@ -36,6 +36,7 @@ target = obj_player;
 	runCalmTime = 0;
 	attackSequenceTime = 0;
 	fleeingValor = 0;
+	fuse = 0;
 
 lineof_sight = false;
 safeFall = true;
@@ -54,10 +55,10 @@ cliff_height = 5; //How many tiles down is scary
 // enemy scripts
 state = ENEMYSTATE.WANDER;
 
-enemyScript[ENEMYSTATE.WANDER] = ratWander;
-enemyScript[ENEMYSTATE.CHASE] = ratChase;
-enemyScript[ENEMYSTATE.FLEE] = ratRun;
-enemyScript[ENEMYSTATE.ATTACK] = ratAttack;
-enemyScript[ENEMYSTATE.DIE] = ratDie;
-enemyScript[ENEMYSTATE.IDLE] = ratIdle;
-enemyScript[ENEMYSTATE.HURT] = ratHurt;
+enemyScript[ENEMYSTATE.WANDER] = tBotWander;
+enemyScript[ENEMYSTATE.CHASE] = tBotChase;
+enemyScript[ENEMYSTATE.FLEE] = tBotRun;
+enemyScript[ENEMYSTATE.ATTACK] = tBotAttack;
+enemyScript[ENEMYSTATE.DIE] = tBotDie;
+enemyScript[ENEMYSTATE.IDLE] = tBotIdle;
+enemyScript[ENEMYSTATE.HURT] = tBotHurt;

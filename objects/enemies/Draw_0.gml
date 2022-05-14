@@ -1,7 +1,7 @@
 /// @description draw healthbar
 draw_self();
 
-if (global.visibleEnemies) draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_red, 0.5);
+if (global.visibleEnemies) draw_sprite_ext(sprite_index, image_index, x, y, image_xscale, image_yscale, 0, c_red, 1);
 
 // show healthbar after getting attacked
 if (showHealthBarTimer != -1) and (state != ENEMYSTATE.DIE) {
