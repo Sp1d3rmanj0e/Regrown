@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_drippingPipe","path":"sprites/spr_drippingPipe/spr_drippingPipe.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_drippingPipe",
     "tags": [],
     "resourceType": "GMSequence",

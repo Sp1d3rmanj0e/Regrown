@@ -25,9 +25,9 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"eff56efd-6f3b-4a7b-bb05-489c93975a02","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eff56efd-6f3b-4a7b-bb05-489c93975a02","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"LayerId":{"name":"27151547-1bb7-4150-b52b-169d77b3098a","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"eff56efd-6f3b-4a7b-bb05-489c93975a02","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"LayerId":{"name":"8aeb6dac-e9ba-4fab-815b-8a181be2b86e","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"eff56efd-6f3b-4a7b-bb05-489c93975a02","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"LayerId":{"name":"d9407f61-3822-4c9b-baea-b8db38de1979","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-        {"FrameId":{"name":"eff56efd-6f3b-4a7b-bb05-489c93975a02","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"LayerId":{"name":"27151547-1bb7-4150-b52b-169d77b3098a","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_titlescreen","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"resourceVersion":"1.0","name":"eff56efd-6f3b-4a7b-bb05-489c93975a02","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"2d0463db-b3e8-4390-b3c0-32609919246a","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"2d0463db-b3e8-4390-b3c0-32609919246a","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"LayerId":{"name":"27151547-1bb7-4150-b52b-169d77b3098a","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_titlescreen","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_titlescreen",
     "tags": [],
     "resourceType": "GMSequence",

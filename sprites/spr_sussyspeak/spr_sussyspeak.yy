@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_sussyspeak","path":"sprites/spr_sussyspeak/spr_sussyspeak.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_sussyspeak",
     "tags": [],
     "resourceType": "GMSequence",

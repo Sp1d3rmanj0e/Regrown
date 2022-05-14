@@ -147,7 +147,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_bunker","path":"sprites/spr_bunker/spr_bunker.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_bunker",
     "tags": [],
     "resourceType": "GMSequence",

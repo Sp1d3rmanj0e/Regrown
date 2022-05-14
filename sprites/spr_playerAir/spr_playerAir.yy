@@ -142,7 +142,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAir","path":"sprites/spr_playerAir/spr_playerAir.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAir",
     "tags": [],
     "resourceType": "GMSequence",

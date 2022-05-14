@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_transferSpace","path":"sprites/spr_transferSpace/spr_transferSpace.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_transferSpace",
     "tags": [],
     "resourceType": "GMSequence",

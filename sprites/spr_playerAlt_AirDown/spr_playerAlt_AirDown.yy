@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt_AirDown","path":"sprites/spr_playerAlt_AirDown/spr_playerAlt_AirDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAlt_AirDown",
     "tags": [],
     "resourceType": "GMSequence",

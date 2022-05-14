@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_junglepalatte_org","path":"sprites/spr_junglepalatte_org/spr_junglepalatte_org.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_junglepalatte_org",
     "tags": [],
     "resourceType": "GMSequence",
