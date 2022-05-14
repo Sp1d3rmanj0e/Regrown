@@ -36,38 +36,37 @@ function PlayerState_Attack_Slash() {
 	
 		// default attack
 		attack = ATK.NORM; // 1
-
-		// air attacks
-		if (vsp != 0) {
-
-			// slant down
-			if (vsp > 0) {
-				if (key_crouch) attack = ATK.DOWN;
-				else attack = ATK.SLANTDOWN; // 3
+		
+		// side
+		// up
+		if (key_spaceH) {
 			
+			if ((key_right) or (key_left)) {
+				
+				attack = ATK.SLANTUP;
 			}
-
-			// slant up
-			else if (vsp < 0) attack = ATK.SLANTUP;
-
-			// direct up
-			if (hsp == 0) {
-				if (!key_left) and (!key_right) {
-					if (vsp < 0) and (!key_crouch) attack = ATK.UP;
-					else if (!key_right) and (!key_left) attack = ATK.DOWN;
-				} 
+			else {
+				
+				attack = ATK.UP;
+			}
+		} 
+		// down
+		if (airborne) {
+			
+			if (key_crouch) {
+				
+				if (key_right) or (key_left) {
+					
+					attack = ATK.SLANTDOWN;
+				}
 				else {
 					
-					attack = ATK.NORM;
+					attack = ATK.DOWN;
 				}
 			}
-
-		} 
-		// low hit
-		else {
-		
-			if (key_crouch) attack = ATK.LOW; // 0
+			
 		}
+		else if (key_crouch) attack = ATK.LOW;
 		
 		
 		
@@ -114,7 +113,7 @@ function PlayerState_Attack_Slash() {
 
 	if (animation_end())
 	{
-		sprite_index = spr_playerIdle;
+		sprite_index = spr_playerAlt_Idle;
 		state = PLAYERSTATE.FREE;
 		attackCalled = false;
 	}

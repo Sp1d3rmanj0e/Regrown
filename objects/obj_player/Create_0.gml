@@ -33,6 +33,7 @@ synCooldown = 0;
 
 // powerup statuses
 thorns = false;
+shockImmunity = false;
 
 // reference initialize
 ogwalkSp = walkSp;

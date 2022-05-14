@@ -38,11 +38,12 @@ for (var i = 0; i < maxpowerups; i++) {
 
 // test manual fill
 	// org pows
-createPowerup(0, "Moose", 1, true, "Hits a heavy, one-directional blow.", powMoose, noone, c_orange, 2);
+createPowerup(0, "Moose", 1, true, "Hits a heavy, one-directional blow.         Also, It breaks rock walls!", powMoose, noone, c_orange, 2);
 createPowerup(1, "Cheetah TEST", 2, true, "WWW", noone, noone, c_yellow, -1);
 createPowerup(2, "Thorns", 3, true, "Hurt enemies that hit you for half your current damage.", powThorns, noone, c_green, -1);
 
 	// syn pows
-createPowerup(8, "Springy Legs", 0, true, "Boosts Jump", powJump, noone, c_silver, -1)
+createPowerup(8, "Springs", 1, true, "Boosts Jump", powJump, noone, c_silver, -1);
+createPowerup(9, "Rubber Pads", 2, false, "Immune to electrical wires", powShock, noone, c_blue, -1);
 #endregion
 
