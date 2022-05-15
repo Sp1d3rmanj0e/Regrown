@@ -6,7 +6,7 @@ event_inherited()
 // enemy sprites
 sprIdle = spr_ratIdle;
 sprMove = spr_ratRun;
-sprAttack = spr_ratRun;
+sprAttack = spr_ratIdle;
 sprDie = spr_enemyDie;
 
 // basic initializations

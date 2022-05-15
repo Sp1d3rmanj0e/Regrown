@@ -1,4 +1,6 @@
 /// @description
+event_inherited();
+
 tilemap = layer_tilemap_get_id("tile_collision");
 startRoom = room;
 width = sprite_get_width(sprite_index);

@@ -9,7 +9,7 @@ if (shake) and (global.cameraShake){ //If screenshake is activated
 // Background Movement
 x_change = x-x_origin;
 
-layer_x(back1,x_change*b1);
+//layer_x(back1,x_change*b1);
 layer_x(back2,x_change*b2);
 layer_x(back3,x_change*b3);
 layer_x(front1,x_change*f1); 

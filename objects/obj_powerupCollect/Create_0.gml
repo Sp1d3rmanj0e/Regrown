@@ -1,4 +1,5 @@
 /// @description
+roomStart = room;
 shade = c_white
 image_speed = 0;
 
@@ -8,3 +9,6 @@ if (ds_grid_get(global.powerup_grid,2,powerupNumber) == true) {
 	shade = c_gray;
 	image_blend = c_gray;
 }
+
+height = 0;
+hover = 1;

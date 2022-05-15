@@ -1,0 +1,3 @@
+/// @description
+
+hover = 1;
