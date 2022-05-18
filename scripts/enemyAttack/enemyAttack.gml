@@ -49,6 +49,9 @@ function enemyAttack(target, damage, mag){
 				}
 			}
 			
+			// extra checks
+			
+			// attack back if thorns is enabled
 			if (thorns = true) and (obj_player.state != PLAYERSTATE.DEAD) {
 				
 				other.enemyHealth -= obj_player.damage/2;

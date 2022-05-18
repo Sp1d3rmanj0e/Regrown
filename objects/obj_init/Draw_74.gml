@@ -25,7 +25,7 @@ else {
 		var _subimg = 10-10*(obj_player.P_health/obj_player.P_maxHealth);
 		draw_sprite_stretched(spr_GlassShatter,_subimg,0, 0,global.guiWidth,global.guiHeight);
 		
-		// draw powerup info
+		// draw powerup info (bottom middle)
 		draw_sprite_ext(spr_powInfo,0,global.guiWidth/2,global.guiHeight,_scale,_scale,0,c_white,1);
 		var _combinedScale = clamp(global.guiSize+global.textScale, 1,2);
 		_combinedScale *= 2;
@@ -34,14 +34,45 @@ else {
 		var sprWidth = sprite_get_width(spr_powInfo) * _scale;
 		
 			draw_set_halign(fa_center);
+		
+		// draw organic powerup info
+		if (global.orgFill != -4) and (ds_grid_get(global.powerup_grid,7,global.orgFill) != -1) {
+			
+			// draw button to activate powerup
+			draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,get_input_name(KB.ORGATTACK),
+				_combinedScale,_combinedScale,0);
+		}
+		else { 	// draw "empty" text
+			
+			draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,"~",
+				_combinedScale,_combinedScale,0);
+		}
+		
+		// draw synthetic powerup info
+		if (global.synFill != -4) and (ds_grid_get(global.powerup_grid,7,global.synFill) != -1) {
+			
+			// draw button to activate powerup
+			draw_text_transformed(global.guiWidth/2 + sprWidth/3,global.guiHeight - 20 - 20 * _scale,get_input_name(KB.SYNATTACK),
+			_combinedScale,_combinedScale,0);
+		}
+		else { // draw "empty" text
+
+			draw_text_transformed(global.guiWidth/2 + sprWidth/3,global.guiHeight - 20 - 20 * _scale,"~",
+			_combinedScale,_combinedScale,0);
+		}
+		
+		draw_set_halign(fa_left);
+			/*
 		if (global.orgFill != -4) {
+			
+			// of cooldown is 0
 			if (orgCool == 0) {
 			
 				// draw button to activate powerup
 				draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,get_input_name(KB.ORGATTACK),
 				_combinedScale,_combinedScale,0);
 			}
-			else {
+			else { //if currently on cooldown
 			
 				draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,orgCool,
 				_combinedScale,_combinedScale,0);
@@ -64,7 +95,7 @@ else {
 		
 			draw_set_halign(fa_left);
 	}
-	
+	*/
 	// draw healthbars
 	with (obj_player) {
 		if (!instance_exists(inventory)) {
@@ -79,5 +110,6 @@ else {
 			draw_healthbar(0,Yoffset*_scale,Xoffset*_scale,Yoffset*2*_scale,nanobotPercent,c_black,make_color_rgb(179, 222, 226),make_color_rgb(179,106,205),0,true,true);
 			draw_sprite_ext(spr_healthbarNew,-1,0,Yoffset*_scale,_scale,_scale,0,c_white,1);
 		}
+	}
 	}
 }

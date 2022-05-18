@@ -12,8 +12,6 @@ function powShock(_activate) constructor {
 			
 		}
 		
-		if (synCooldown > 0) synCooldown -= 1/room_speed;
-		
 	}
 	// reset passive changes
 	static resetChanges = function() {

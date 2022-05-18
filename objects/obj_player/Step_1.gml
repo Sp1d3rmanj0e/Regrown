@@ -54,3 +54,7 @@ if (!global.gamePaused) {
 		}
 	}
 }
+
+//powerup cooldowns
+if (orgCooldown > 0) orgCooldown -= 1/room_speed;
+if (orgCooldown > 0) orgCooldown -= 1/room_speed;

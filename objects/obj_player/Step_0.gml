@@ -56,3 +56,8 @@ if (input_check_pressed(KB.HEAL)) and (P_health < P_maxHealth) {
 		}
 	}
 }
+
+if (place_meeting(x,y,obj_weeds)) {
+	
+	walkSp = ogwalkSp/2;
+} else walkSp = ogwalkSp;

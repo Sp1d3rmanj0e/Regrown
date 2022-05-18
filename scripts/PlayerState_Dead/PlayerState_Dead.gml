@@ -6,7 +6,7 @@ function PlayerState_Dead() {
 		audio_play_sound(snd_die,100,false);
 	}
 	Collisions(0); 
-	sprite_index = spr_playerAlt_Dead;
+	sprite_index = spr_enemyDie;
 
 	
 	if (animation_end()) {

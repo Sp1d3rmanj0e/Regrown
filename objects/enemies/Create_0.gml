@@ -3,7 +3,6 @@
 state = ENEMYSTATE.IDLE;
 hsp = 0;
 vsp = 0;
-
 // default sprite
 sprMove = spr_ratIdle;
 
@@ -21,6 +20,8 @@ tilemap_solid = layer_tilemap_get_id("tile_ground");
 tilemap = layer_tilemap_get_id("tile_collision");
 
 // dynamic variables
+target = obj_player;
+
 x_move = 0;
 y_move = 0;
 

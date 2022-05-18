@@ -12,8 +12,6 @@
 			
 		}
 		
-		if (orgCooldown > 0) orgCooldown -= 1/room_speed;
-		
 	}
 	// reset passive changes
 	static resetChanges = function() {
