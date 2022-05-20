@@ -162,7 +162,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tutorialBotExplode","path":"sprites/spr_tutorialBotExplode/spr_tutorialBotExplode.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tutorialBotExplode",
     "tags": [],
     "resourceType": "GMSequence",

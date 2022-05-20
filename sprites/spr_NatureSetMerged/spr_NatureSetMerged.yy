@@ -60,7 +60,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_NatureSetMerged","path":"sprites/spr_NatureSetMerged/spr_NatureSetMerged.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_NatureSetMerged",
     "tags": [],
     "resourceType": "GMSequence",

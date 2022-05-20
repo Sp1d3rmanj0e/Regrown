@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_powerup_border","path":"sprites/spr_powerup_border/spr_powerup_border.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_powerup_border",
     "tags": [],
     "resourceType": "GMSequence",

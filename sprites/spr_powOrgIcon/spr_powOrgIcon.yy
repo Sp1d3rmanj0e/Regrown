@@ -158,7 +158,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_powOrgIcon","path":"sprites/spr_powOrgIcon/spr_powOrgIcon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_powOrgIcon",
     "tags": [],
     "resourceType": "GMSequence",

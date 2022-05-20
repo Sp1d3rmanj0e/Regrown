@@ -138,7 +138,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_nanobotCapsuleIcon","path":"sprites/spr_nanobotCapsuleIcon/spr_nanobotCapsuleIcon.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_nanobotCapsuleIcon",
     "tags": [],
     "resourceType": "GMSequence",

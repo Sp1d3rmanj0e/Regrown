@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_PObot","path":"sprites/spr_PObot/spr_PObot.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_PObot",
     "tags": [],
     "resourceType": "GMSequence",

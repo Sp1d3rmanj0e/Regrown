@@ -251,7 +251,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_PowerUp_BreakWall","path":"sprites/Spr_PowerUp_BreakWall/Spr_PowerUp_BreakWall.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_PowerUp_BreakWall",
     "tags": [],
     "resourceType": "GMSequence",

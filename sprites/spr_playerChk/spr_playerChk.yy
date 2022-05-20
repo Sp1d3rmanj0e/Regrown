@@ -186,7 +186,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerChk","path":"sprites/spr_playerChk/spr_playerChk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerChk",
     "tags": [],
     "resourceType": "GMSequence",

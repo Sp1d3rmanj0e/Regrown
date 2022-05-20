@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Spr_org_Pup_border","path":"sprites/Spr_org_Pup_border/Spr_org_Pup_border.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "Spr_org_Pup_border",
     "tags": [],
     "resourceType": "GMSequence",

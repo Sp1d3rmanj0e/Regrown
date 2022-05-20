@@ -25,8 +25,8 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"dcb329d7-8763-420e-b225-4a8f6f00750e","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dcb329d7-8763-420e-b225-4a8f6f00750e","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"LayerId":{"name":"56a67d95-addf-44f5-bc1e-670bc2740af3","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"dcb329d7-8763-420e-b225-4a8f6f00750e","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"LayerId":{"name":"71f3f25d-d234-4aa4-84ee-a4e2c8c685bf","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"dcb329d7-8763-420e-b225-4a8f6f00750e","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"LayerId":{"name":"56a67d95-addf-44f5-bc1e-670bc2740af3","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_playerAttack_SlantDown","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"resourceVersion":"1.0","name":"dcb329d7-8763-420e-b225-4a8f6f00750e","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"92f72885-d075-41e1-81f2-c90556e16fb5","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"92f72885-d075-41e1-81f2-c90556e16fb5","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"LayerId":{"name":"71f3f25d-d234-4aa4-84ee-a4e2c8c685bf","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
@@ -100,7 +100,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAttack_SlantDown","path":"sprites/spr_playerAttack_SlantDown/spr_playerAttack_SlantDown.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAttack_SlantDown",
     "tags": [],
     "resourceType": "GMSequence",

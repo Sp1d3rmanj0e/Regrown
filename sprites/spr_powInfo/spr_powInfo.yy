@@ -59,7 +59,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_powInfo","path":"sprites/spr_powInfo/spr_powInfo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_powInfo",
     "tags": [],
     "resourceType": "GMSequence",

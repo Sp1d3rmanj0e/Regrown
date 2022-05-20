@@ -139,7 +139,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt_Checkpoint","path":"sprites/spr_playerAlt_Checkpoint/spr_playerAlt_Checkpoint.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAlt_Checkpoint",
     "tags": [],
     "resourceType": "GMSequence",

@@ -103,7 +103,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_titlescreen","path":"sprites/spr_titlescreen/spr_titlescreen.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_titlescreen",
     "tags": [],
     "resourceType": "GMSequence",

@@ -142,7 +142,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tutorialBotIdle","path":"sprites/spr_tutorialBotIdle/spr_tutorialBotIdle.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tutorialBotIdle",
     "tags": [],
     "resourceType": "GMSequence",

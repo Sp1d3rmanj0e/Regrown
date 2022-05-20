@@ -67,7 +67,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_tutorialBotRun","path":"sprites/spr_tutorialBotRun/spr_tutorialBotRun.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_tutorialBotRun",
     "tags": [],
     "resourceType": "GMSequence",

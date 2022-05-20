@@ -104,16 +104,16 @@
   "gridY": 0,
   "frames": [
     {"compositeImage":{"FrameId":{"name":"5fc70023-6c08-4415-9746-5074effbf6d3","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5fc70023-6c08-4415-9746-5074effbf6d3","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"4cec0d82-c69c-430e-902a-d2d8decfeb49","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"5fc70023-6c08-4415-9746-5074effbf6d3","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"6695bef7-7299-4086-ad45-f91ef20663d1","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"5fc70023-6c08-4415-9746-5074effbf6d3","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"4cec0d82-c69c-430e-902a-d2d8decfeb49","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_weeds","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"5fc70023-6c08-4415-9746-5074effbf6d3","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"7f369636-7b1b-42df-bbdb-11dfd04aed7a","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"7f369636-7b1b-42df-bbdb-11dfd04aed7a","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"4cec0d82-c69c-430e-902a-d2d8decfeb49","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"7f369636-7b1b-42df-bbdb-11dfd04aed7a","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"6695bef7-7299-4086-ad45-f91ef20663d1","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"7f369636-7b1b-42df-bbdb-11dfd04aed7a","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"4cec0d82-c69c-430e-902a-d2d8decfeb49","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_weeds","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"7f369636-7b1b-42df-bbdb-11dfd04aed7a","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"4bd5a36f-dd9e-4f17-b37f-bbd4f6605335","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4bd5a36f-dd9e-4f17-b37f-bbd4f6605335","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"4cec0d82-c69c-430e-902a-d2d8decfeb49","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
         {"FrameId":{"name":"4bd5a36f-dd9e-4f17-b37f-bbd4f6605335","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"6695bef7-7299-4086-ad45-f91ef20663d1","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+        {"FrameId":{"name":"4bd5a36f-dd9e-4f17-b37f-bbd4f6605335","path":"sprites/spr_weeds/spr_weeds.yy",},"LayerId":{"name":"4cec0d82-c69c-430e-902a-d2d8decfeb49","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"spr_weeds","path":"sprites/spr_weeds/spr_weeds.yy",},"resourceVersion":"1.0","name":"4bd5a36f-dd9e-4f17-b37f-bbd4f6605335","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
@@ -149,7 +149,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_weeds","path":"sprites/spr_weeds/spr_weeds.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_weeds",
     "tags": [],
     "resourceType": "GMSequence",

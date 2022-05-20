@@ -62,7 +62,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_keybindInfo","path":"sprites/spr_keybindInfo/spr_keybindInfo.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_keybindInfo",
     "tags": [],
     "resourceType": "GMSequence",

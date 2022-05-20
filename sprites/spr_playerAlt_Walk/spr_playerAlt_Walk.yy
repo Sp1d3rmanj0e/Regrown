@@ -115,7 +115,7 @@
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"spr_playerAlt_Walk","path":"sprites/spr_playerAlt_Walk/spr_playerAlt_Walk.yy",},
-    "resourceVersion": "1.3",
+    "resourceVersion": "1.4",
     "name": "spr_playerAlt_Walk",
     "tags": [],
     "resourceType": "GMSequence",
