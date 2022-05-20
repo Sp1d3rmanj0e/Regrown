@@ -14,6 +14,7 @@ if (inventoryOpen) {
 	draw_set_color(c_white);
 	draw_set_alpha(1);
 	draw_sprite(pageSprite,0,global.halfViewX,global.halfViewY);
+	
 } else {
 	
 	draw_sprite(transAnimation,frame,global.halfViewX,global.halfViewY);

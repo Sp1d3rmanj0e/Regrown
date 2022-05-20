@@ -37,7 +37,6 @@ if (p1 == 1) {
 		}
 		else draw_sprite_ext(spr_powSynIcon,powerup_type,x,y,1,1,0,shade,100);
 			draw_set_halign(fa_center);
-			draw_text(x,y-20,powerup_type);
 			draw_text(x,y+20,powerup_name);
 			draw_set_halign(fa_left);
 	}

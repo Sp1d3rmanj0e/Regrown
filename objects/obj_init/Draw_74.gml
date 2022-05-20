@@ -32,34 +32,53 @@ else {
 		var orgCool = obj_player.orgCooldown;
 		var synCool = obj_player.synCooldown;
 		var sprWidth = sprite_get_width(spr_powInfo) * _scale;
+		var orgText = "";
+		var synText = "";
 		
 			draw_set_halign(fa_center);
 		
 		// draw organic powerup info
 		if (global.orgFill != -4) and (ds_grid_get(global.powerup_grid,7,global.orgFill) != -1) {
 			
-			// draw button to activate powerup
-			draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,get_input_name(KB.ORGATTACK),
-				_combinedScale,_combinedScale,0);
+			if (orgCool == 0) { // show button to press if cooldown is at 0
+				
+				orgText = get_input_name(KB.ORGATTACK);
+			}
+			else { // show cooldown number
+				
+				orgText = orgCool;
+			}
 		}
 		else { 	// draw "empty" text
 			
-			draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale,"~",
-				_combinedScale,_combinedScale,0);
+			orgText = "~";
 		}
+		
+		// draw button to activate powerup
+		draw_text_transformed(global.guiWidth/2 - sprWidth/3,global.guiHeight - 20 - 20 * _scale, orgText,
+			_combinedScale,_combinedScale,0);
+		
 		
 		// draw synthetic powerup info
 		if (global.synFill != -4) and (ds_grid_get(global.powerup_grid,7,global.synFill) != -1) {
 			
-			// draw button to activate powerup
-			draw_text_transformed(global.guiWidth/2 + sprWidth/3,global.guiHeight - 20 - 20 * _scale,get_input_name(KB.SYNATTACK),
-			_combinedScale,_combinedScale,0);
+			if (synCool == 0) { // show button to press if cooldown is at 0
+				
+				synText = get_input_name(KB.SYNATTACK);
+			}
+			else { // show cooldown number
+				
+				synText = synCool;
+			}
 		}
-		else { // draw "empty" text
-
-			draw_text_transformed(global.guiWidth/2 + sprWidth/3,global.guiHeight - 20 - 20 * _scale,"~",
-			_combinedScale,_combinedScale,0);
+		else { 	// draw "empty" text
+			
+			synText = "~";
 		}
+		
+		// draw button to activate powerup
+		draw_text_transformed(global.guiWidth/2 + sprWidth/3,global.guiHeight - 20 - 20 * _scale, synText,
+			_combinedScale,_combinedScale,0);
 		
 		draw_set_halign(fa_left);
 			/*
