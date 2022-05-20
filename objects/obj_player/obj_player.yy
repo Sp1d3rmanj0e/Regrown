@@ -10,7 +10,10 @@
     "path": "sprites/spr_playerAlt_Idle/spr_playerAlt_Idle.yy",
   },
   "persistent": true,
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_lightParent",
+    "path": "objects/obj_lightParent/obj_lightParent.yy",
+  },
   "physicsObject": false,
   "physicsSensor": false,
   "physicsShape": 1,

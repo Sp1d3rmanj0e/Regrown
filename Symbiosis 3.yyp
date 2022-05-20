@@ -1,6 +1,7 @@
 {
   "resources": [
     {"id":{"name":"spr_powOrgIcon","path":"sprites/spr_powOrgIcon/spr_powOrgIcon.yy",},"order":2,},
+    {"id":{"name":"spr_light","path":"sprites/spr_light/spr_light.yy",},"order":11,},
     {"id":{"name":"spr_background1","path":"sprites/spr_background1/spr_background1.yy",},"order":0,},
     {"id":{"name":"createButton","path":"scripts/createButton/createButton.yy",},"order":1,},
     {"id":{"name":"spr_playerAtk","path":"sprites/spr_playerAtk/spr_playerAtk.yy",},"order":0,},
@@ -59,6 +60,7 @@
     {"id":{"name":"obstruction","path":"objects/obstruction/obstruction.yy",},"order":1,},
     {"id":{"name":"spr_playerAttack_LowHB","path":"sprites/spr_playerAttack_LowHB/spr_playerAttack_LowHB.yy",},"order":27,},
     {"id":{"name":"spr_enemy","path":"sprites/spr_enemy/spr_enemy.yy",},"order":2,},
+    {"id":{"name":"obj_light","path":"objects/obj_light/obj_light.yy",},"order":4,},
     {"id":{"name":"Spr_NatureSet4","path":"sprites/Spr_NatureSet4/Spr_NatureSet4.yy",},"order":19,},
     {"id":{"name":"spr_tutorialBotRun","path":"sprites/spr_tutorialBotRun/spr_tutorialBotRun.yy",},"order":4,},
     {"id":{"name":"spr_attack","path":"sprites/spr_attack/spr_attack.yy",},"order":15,},
@@ -115,6 +117,7 @@
     {"id":{"name":"PlayerState_Attack_Moose","path":"scripts/PlayerState_Attack_Moose/PlayerState_Attack_Moose.yy",},"order":4,},
     {"id":{"name":"snd_musicTheme","path":"sounds/snd_musicTheme/snd_musicTheme.yy",},"order":9,},
     {"id":{"name":"spr_playerAlt_AtkSide","path":"sprites/spr_playerAlt_AtkSide/spr_playerAlt_AtkSide.yy",},"order":4,},
+    {"id":{"name":"obj_lightParent","path":"objects/obj_lightParent/obj_lightParent.yy",},"order":2,},
     {"id":{"name":"ratWander","path":"scripts/ratWander/ratWander.yy",},"order":10,},
     {"id":{"name":"spr_playerAttack_Moose","path":"sprites/spr_playerAttack_Moose/spr_playerAttack_Moose.yy",},"order":20,},
     {"id":{"name":"spr_bunker","path":"sprites/spr_bunker/spr_bunker.yy",},"order":5,},
