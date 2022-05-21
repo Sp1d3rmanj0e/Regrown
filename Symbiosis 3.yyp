@@ -85,6 +85,7 @@
     {"id":{"name":"spr_playerCrouch","path":"sprites/spr_playerCrouch/spr_playerCrouch.yy",},"order":2,},
     {"id":{"name":"spr_playerAttack_MooseHB","path":"sprites/spr_playerAttack_MooseHB/spr_playerAttack_MooseHB.yy",},"order":21,},
     {"id":{"name":"spr_playerAttack_SlantUpHB","path":"sprites/spr_playerAttack_SlantUpHB/spr_playerAttack_SlantUpHB.yy",},"order":26,},
+    {"id":{"name":"spr_tile_factory","path":"sprites/spr_tile_factory/spr_tile_factory.yy",},"order":5,},
     {"id":{"name":"spr_checkpoint","path":"sprites/spr_checkpoint/spr_checkpoint.yy",},"order":0,},
     {"id":{"name":"rm_titleScreen","path":"rooms/rm_titleScreen/rm_titleScreen.yy",},"order":3,},
     {"id":{"name":"spr_player_initial","path":"sprites/spr_player_initial/spr_player_initial.yy",},"order":4,},
