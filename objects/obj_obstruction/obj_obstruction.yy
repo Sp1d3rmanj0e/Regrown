@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Spr_PowerUp_BreakWall",
-    "path": "sprites/Spr_PowerUp_BreakWall/Spr_PowerUp_BreakWall.yy",
+    "name": "spr_rockWall",
+    "path": "sprites/spr_rockWall/spr_rockWall.yy",
   },
   "solid": false,
   "visible": true,
@@ -36,8 +36,8 @@
     {"propertyId":{"name":"destroyedBy","path":"objects/obstruction/obstruction.yy",},"objectId":{"name":"obstruction","path":"objects/obstruction/obstruction.yy",},"value":"\"Moose\"","resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMOverriddenProperty",},
   ],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "interactiveWorld",
+    "path": "folders/Objects/interactiveWorld.yy",
   },
   "resourceVersion": "1.0",
   "name": "obj_obstruction",
