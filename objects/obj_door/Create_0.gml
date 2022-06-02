@@ -3,6 +3,10 @@
 // Inherit the parent event
 event_inherited();
 
+// properties
+height = sprite_height;
+width = sprite_width;
+
 open = true;
 
 function changeDoor(_open) {
