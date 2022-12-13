@@ -1,4 +1,7 @@
 {
+  "resourceType": "GMSprite",
+  "resourceVersion": "1.0",
+  "name": "spr_welderHeals",
   "bboxMode": 2,
   "collisionKind": 1,
   "type": 0,
@@ -14,6 +17,7 @@
   "HTile": false,
   "VTile": false,
   "For3D": false,
+  "DynamicTexturePage": false,
   "width": 100,
   "height": 100,
   "textureGroupId": {
@@ -24,78 +28,34 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"a7aa101c-7b54-41c9-ba28-0c55a904ff69","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"a7aa101c-7b54-41c9-ba28-0c55a904ff69","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"a7aa101c-7b54-41c9-ba28-0c55a904ff69","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"1dfae554-92c0-47c5-9723-7a2f028145f2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"1dfae554-92c0-47c5-9723-7a2f028145f2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"1dfae554-92c0-47c5-9723-7a2f028145f2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"fab998ae-cea4-4300-a72b-65cb605e52bc","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"fab998ae-cea4-4300-a72b-65cb605e52bc","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"fab998ae-cea4-4300-a72b-65cb605e52bc","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0869d2aa-2ef6-45c3-bfb7-09fb0f072a09","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0869d2aa-2ef6-45c3-bfb7-09fb0f072a09","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"0869d2aa-2ef6-45c3-bfb7-09fb0f072a09","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"989769ff-2cab-4d1e-8621-60ef474ff57b","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"989769ff-2cab-4d1e-8621-60ef474ff57b","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"989769ff-2cab-4d1e-8621-60ef474ff57b","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"87f7a5fc-31cf-433e-a15e-07b0930f5abe","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"87f7a5fc-31cf-433e-a15e-07b0930f5abe","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"87f7a5fc-31cf-433e-a15e-07b0930f5abe","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"efe37d8e-a872-4152-af55-496012a17b3c","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"efe37d8e-a872-4152-af55-496012a17b3c","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"efe37d8e-a872-4152-af55-496012a17b3c","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"973bd766-9ca9-40d0-84f9-0ef091bff4f2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"973bd766-9ca9-40d0-84f9-0ef091bff4f2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"973bd766-9ca9-40d0-84f9-0ef091bff4f2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"562e4e27-5aa0-4f8f-a706-26f3fd3b838e","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"562e4e27-5aa0-4f8f-a706-26f3fd3b838e","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"562e4e27-5aa0-4f8f-a706-26f3fd3b838e","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"f4cc087c-9d4e-4c35-aa3c-c74900406a06","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f4cc087c-9d4e-4c35-aa3c-c74900406a06","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"f4cc087c-9d4e-4c35-aa3c-c74900406a06","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"eac3968e-9398-4f01-9461-24029f6d2f2a","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eac3968e-9398-4f01-9461-24029f6d2f2a","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"eac3968e-9398-4f01-9461-24029f6d2f2a","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"ad4b3d17-5949-4cd2-8fe8-4b016e1b42f7","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"ad4b3d17-5949-4cd2-8fe8-4b016e1b42f7","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"ad4b3d17-5949-4cd2-8fe8-4b016e1b42f7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"bd03752d-2702-4137-ac4e-386c4627e4f4","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"bd03752d-2702-4137-ac4e-386c4627e4f4","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"bd03752d-2702-4137-ac4e-386c4627e4f4","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"69ecd818-dfa1-4314-8810-04bf0110f6b2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"69ecd818-dfa1-4314-8810-04bf0110f6b2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"69ecd818-dfa1-4314-8810-04bf0110f6b2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"2a4d8314-92b5-460b-a15c-b372858255a7","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"2a4d8314-92b5-460b-a15c-b372858255a7","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"2a4d8314-92b5-460b-a15c-b372858255a7","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"0afbbf03-8979-4446-bb2b-277cf70bdf61","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"0afbbf03-8979-4446-bb2b-277cf70bdf61","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"0afbbf03-8979-4446-bb2b-277cf70bdf61","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"6c978f42-5219-467a-acad-683e6dbcef41","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"6c978f42-5219-467a-acad-683e6dbcef41","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"6c978f42-5219-467a-acad-683e6dbcef41","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"122986d8-ff77-45a8-94f6-9dedcf89ffc2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"122986d8-ff77-45a8-94f6-9dedcf89ffc2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"122986d8-ff77-45a8-94f6-9dedcf89ffc2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"8173603c-c99f-49ae-99a4-d38879ab0820","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"8173603c-c99f-49ae-99a4-d38879ab0820","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"8173603c-c99f-49ae-99a4-d38879ab0820","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4ce09654-5790-4b45-895e-87dc5d8460ff","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4ce09654-5790-4b45-895e-87dc5d8460ff","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"4ce09654-5790-4b45-895e-87dc5d8460ff","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"dd3aed4f-531c-4c1d-8bfc-eca2f0c531e2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"dd3aed4f-531c-4c1d-8bfc-eca2f0c531e2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"dd3aed4f-531c-4c1d-8bfc-eca2f0c531e2","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"5dfdc284-6aa6-4b17-b9d6-48241562a930","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"5dfdc284-6aa6-4b17-b9d6-48241562a930","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"5dfdc284-6aa6-4b17-b9d6-48241562a930","tags":[],"resourceType":"GMSpriteFrame",},
-    {"compositeImage":{"FrameId":{"name":"4196b937-78f9-4e6b-bb2a-a9d46e1301e8","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"4196b937-78f9-4e6b-bb2a-a9d46e1301e8","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"LayerId":{"name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","name":"4196b937-78f9-4e6b-bb2a-a9d46e1301e8","tags":[],"resourceType":"GMSpriteFrame",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a7aa101c-7b54-41c9-ba28-0c55a904ff69",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1dfae554-92c0-47c5-9723-7a2f028145f2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"fab998ae-cea4-4300-a72b-65cb605e52bc",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0869d2aa-2ef6-45c3-bfb7-09fb0f072a09",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"989769ff-2cab-4d1e-8621-60ef474ff57b",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"87f7a5fc-31cf-433e-a15e-07b0930f5abe",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"efe37d8e-a872-4152-af55-496012a17b3c",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"973bd766-9ca9-40d0-84f9-0ef091bff4f2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"562e4e27-5aa0-4f8f-a706-26f3fd3b838e",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"f4cc087c-9d4e-4c35-aa3c-c74900406a06",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"eac3968e-9398-4f01-9461-24029f6d2f2a",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"ad4b3d17-5949-4cd2-8fe8-4b016e1b42f7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"bd03752d-2702-4137-ac4e-386c4627e4f4",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"69ecd818-dfa1-4314-8810-04bf0110f6b2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"2a4d8314-92b5-460b-a15c-b372858255a7",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"0afbbf03-8979-4446-bb2b-277cf70bdf61",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"6c978f42-5219-467a-acad-683e6dbcef41",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"122986d8-ff77-45a8-94f6-9dedcf89ffc2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"8173603c-c99f-49ae-99a4-d38879ab0820",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4ce09654-5790-4b45-895e-87dc5d8460ff",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"dd3aed4f-531c-4c1d-8bfc-eca2f0c531e2",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"5dfdc284-6aa6-4b17-b9d6-48241562a930",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"4196b937-78f9-4e6b-bb2a-a9d46e1301e8",},
   ],
   "sequence": {
-    "spriteId": {"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},
+    "resourceType": "GMSequence",
+    "resourceVersion": "1.4",
+    "name": "spr_welderHeals",
     "timeUnits": 1,
     "playback": 1,
     "playbackSpeed": 7.0,
@@ -106,7 +66,7 @@
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
-      {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
+      {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","spriteId":null,"keyframes":{"Keyframes":[
             {"id":"2b1a5c7b-0fa9-46c0-ac4e-412148cc7900","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"a7aa101c-7b54-41c9-ba28-0c55a904ff69","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"24d9b17a-9f3f-4d80-961e-9a51cc4ce62d","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"1dfae554-92c0-47c5-9723-7a2f028145f2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"74883c6e-0243-4ea9-8f47-069c42bb513f","Key":2.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"fab998ae-cea4-4300-a72b-65cb605e52bc","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
@@ -130,7 +90,7 @@
             {"id":"bb8a4520-c3d6-4f4b-bb43-949609e677a3","Key":20.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"dd3aed4f-531c-4c1d-8bfc-eca2f0c531e2","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"d58d5a64-cbe5-45a9-a4f5-be0e788e3f1b","Key":21.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5dfdc284-6aa6-4b17-b9d6-48241562a930","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"bee29ed8-cd53-4397-bac1-2a83ef866498","Key":22.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"4196b937-78f9-4e6b-bb2a-a9d46e1301e8","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
+          ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"modifiers":[],},
     ],
     "visibleRange": null,
     "lockOrigin": false,
@@ -146,22 +106,13 @@
     "yorigin": 74,
     "eventToFunction": {},
     "eventStubScript": null,
-    "parent": {"name":"spr_welderHeals","path":"sprites/spr_welderHeals/spr_welderHeals.yy",},
-    "resourceVersion": "1.3",
-    "name": "spr_welderHeals",
-    "tags": [],
-    "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","tags":[],"resourceType":"GMImageLayer",},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"b3ad56ec-58ad-45ed-a9b7-9b20c2d077ec","visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default",},
   ],
   "nineSlice": null,
   "parent": {
     "name": "Player",
     "path": "folders/Sprites/Player.yy",
   },
-  "resourceVersion": "1.0",
-  "name": "spr_welderHeals",
-  "tags": [],
-  "resourceType": "GMSprite",
 }
